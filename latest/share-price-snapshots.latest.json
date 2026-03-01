@@ -1,0 +1,117 @@
+{
+  "version": "share_price_snapshots_v1",
+  "tag": "b4.22.78.2-verify",
+  "generatedAt": "2026-03-01T21:56:56.368Z",
+  "provenance": {
+    "rpcUrl": "https://rpc.plasma.to",
+    "chainId": 9745,
+    "blockNumber": 15470460,
+    "blockTimestamp": 1772402216
+  },
+  "snapshots": {
+    "plasma_pendle_yt_syrupusdt_volatility": {
+      "vaultId": "plasma_pendle_yt_syrupusdt_volatility",
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ],
+      "sharePrice": null,
+      "timestamp": 1772402216,
+      "method": "none",
+      "evidence": null
+    },
+    "plasma_flow_engine_pendle_lp_susde": {
+      "vaultId": "plasma_flow_engine_pendle_lp_susde",
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ],
+      "sharePrice": null,
+      "timestamp": 1772402216,
+      "method": "none",
+      "evidence": null
+    },
+    "plasma_delta_fee_engine_pendle_lp_usde": {
+      "vaultId": "plasma_delta_fee_engine_pendle_lp_usde",
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ],
+      "sharePrice": null,
+      "timestamp": 1772402216,
+      "method": "none",
+      "evidence": null
+    },
+    "plasma_stable_allocator": {
+      "vaultId": "plasma_stable_allocator",
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ],
+      "sharePrice": null,
+      "timestamp": 1772402216,
+      "method": "none",
+      "evidence": null
+    },
+    "plasma_syrup_barbell": {
+      "vaultId": "plasma_syrup_barbell",
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ],
+      "sharePrice": null,
+      "timestamp": 1772402216,
+      "method": "none",
+      "evidence": null
+    },
+    "plasma_syrup_glidepath_allocator": {
+      "vaultId": "plasma_syrup_glidepath_allocator",
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ],
+      "sharePrice": null,
+      "timestamp": 1772402216,
+      "method": "none",
+      "evidence": null
+    },
+    "plasma_pendle_pt_syrupusdt": {
+      "vaultId": "plasma_pendle_pt_syrupusdt",
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ],
+      "sharePrice": null,
+      "timestamp": 1772402216,
+      "method": "none",
+      "evidence": null
+    },
+    "plasma_fluid_euler_aggregator": {
+      "vaultId": "plasma_fluid_euler_aggregator",
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ],
+      "sharePrice": null,
+      "timestamp": 1772402216,
+      "method": "none",
+      "evidence": null
+    }
+  }
+}

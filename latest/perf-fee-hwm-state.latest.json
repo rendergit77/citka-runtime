@@ -1,0 +1,124 @@
+{
+  "version": "perf_fee_hwm_state_v1",
+  "generatedAt": "2026-03-01T21:56:56.552Z",
+  "stalenessPolicy": {
+    "type": "HOURS",
+    "value": 48
+  },
+  "policyVersionHash": "sha256:0ac23e0600ee29240ae8f9fe5d0f866c559bfd02313fc979443a3ab1af77e7bb",
+  "vaults": {
+    "plasma_pendle_yt_syrupusdt_volatility": {
+      "mode": "OFFCHAIN_ACCOUNTING",
+      "lastHwmSharePrice": null,
+      "lastHwmTimestamp": null,
+      "currentSharePrice": null,
+      "currentTimestamp": null,
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "evidence": null,
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ]
+    },
+    "plasma_flow_engine_pendle_lp_susde": {
+      "mode": "OFFCHAIN_ACCOUNTING",
+      "lastHwmSharePrice": null,
+      "lastHwmTimestamp": null,
+      "currentSharePrice": null,
+      "currentTimestamp": null,
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "evidence": null,
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ]
+    },
+    "plasma_delta_fee_engine_pendle_lp_usde": {
+      "mode": "OFFCHAIN_ACCOUNTING",
+      "lastHwmSharePrice": null,
+      "lastHwmTimestamp": null,
+      "currentSharePrice": null,
+      "currentTimestamp": null,
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "evidence": null,
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ]
+    },
+    "plasma_stable_allocator": {
+      "mode": "OFFCHAIN_ACCOUNTING",
+      "lastHwmSharePrice": null,
+      "lastHwmTimestamp": null,
+      "currentSharePrice": null,
+      "currentTimestamp": null,
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "evidence": null,
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ]
+    },
+    "plasma_syrup_barbell": {
+      "mode": "OFFCHAIN_ACCOUNTING",
+      "lastHwmSharePrice": null,
+      "lastHwmTimestamp": null,
+      "currentSharePrice": null,
+      "currentTimestamp": null,
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "evidence": null,
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ]
+    },
+    "plasma_syrup_glidepath_allocator": {
+      "mode": "OFFCHAIN_ACCOUNTING",
+      "lastHwmSharePrice": null,
+      "lastHwmTimestamp": null,
+      "currentSharePrice": null,
+      "currentTimestamp": null,
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "evidence": null,
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ]
+    },
+    "plasma_pendle_pt_syrupusdt": {
+      "mode": "OFFCHAIN_ACCOUNTING",
+      "lastHwmSharePrice": null,
+      "lastHwmTimestamp": null,
+      "currentSharePrice": null,
+      "currentTimestamp": null,
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "evidence": null,
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ]
+    },
+    "plasma_fluid_euler_aggregator": {
+      "mode": "OFFCHAIN_ACCOUNTING",
+      "lastHwmSharePrice": null,
+      "lastHwmTimestamp": null,
+      "currentSharePrice": null,
+      "currentTimestamp": null,
+      "status": "MISSING",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
+      "evidence": null,
+      "instructions": [
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
+      ]
+    }
+  },
+  "checksum": "sha256:759d33344b17a6bb77179718cd0eeb6fb83309b2f429d3b5a9aeafd0e0560605"
+}
