@@ -1,6 +1,6 @@
 {
-  "tag": "b4.22.78.2-verify",
-  "generatedAt": "2026-03-01T21:56:55.870Z",
+  "tag": "spread-release-1",
+  "generatedAt": "2026-03-01T22:16:08.687Z",
   "status": "PASS",
   "policy": {
     "writePolicy": "WRITE_POLICY_BLOCKED",
@@ -13,8 +13,8 @@
   "provenance": {
     "rpcUrl": "https://rpc.plasma.to",
     "chainId": 9745,
-    "blockNumber": 15470441,
-    "blockTimestamp": 1772402197,
+    "blockNumber": 15471592,
+    "blockTimestamp": 1772403348,
     "dependencyArtifact": "ops/runtime/dependency-health.latest.json",
     "health": {
       "rpcGreen": true,
@@ -38,10 +38,10 @@
       "observationWindowRef": "ops/runtime/ci-manual-4-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "b4.22.78.2-verify",
-        "timestamp": "2026-03-01T21:56:44.904Z",
-        "blockNumber": 15470441,
-        "blockTimestamp": 1772402197,
+        "tag": "spread-release-1",
+        "timestamp": "2026-03-01T22:15:57.490Z",
+        "blockNumber": 15471592,
+        "blockTimestamp": 1772403348,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0xB9F752B054f492a31B02d1b48af7253A7f13d27d",
@@ -53,9 +53,9 @@
           "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
         },
         "valuationOutputs": {
-          "buyAmountOutRaw": "7012488",
-          "markToMarketUsdt0Raw": "47327",
-          "sellAmountOutRaw": "47327"
+          "buyAmountOutRaw": "7013598",
+          "markToMarketUsdt0Raw": "47317",
+          "sellAmountOutRaw": "47317"
         },
         "quoteEvidence": {
           "buy": {
@@ -75,18 +75,18 @@
         "delta": {
           "previousValueRaw": "47751",
           "baselineValueRaw": "47751",
-          "fromPreviousRaw": "-424",
-          "fromBaselineRaw": "-424",
-          "stepReturn": -0.008879395195912127,
-          "cumulativeReturn": -0.008879395195912127
+          "fromPreviousRaw": "-434",
+          "fromBaselineRaw": "-434",
+          "stepReturn": -0.009088814893928923,
+          "cumulativeReturn": -0.009088814893928923
         }
       },
       "metrics": {
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.5311458333333333,
-        "cumulativeReturn": -0.008879395195912127,
+        "daysElapsed": 0.5444675925925926,
+        "cumulativeReturn": -0.009088814893928923,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",
         "apyStatus": "OBSERVING"
@@ -104,10 +104,10 @@
       "observationWindowRef": "ops/runtime/ci-manual-4-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "b4.22.78.2-verify",
-        "timestamp": "2026-03-01T21:56:50.634Z",
-        "blockNumber": 15470441,
-        "blockTimestamp": 1772402197,
+        "tag": "spread-release-1",
+        "timestamp": "2026-03-01T22:16:03.820Z",
+        "blockNumber": 15471592,
+        "blockTimestamp": 1772403348,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
@@ -119,7 +119,7 @@
           "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
         },
         "valuationOutputs": {
-          "buyAmountOutRaw": "16572737345044756",
+          "buyAmountOutRaw": "16572753084702159",
           "markToMarketUsdt0Raw": "49982",
           "sellAmountOutRaw": "49982"
         },
@@ -151,7 +151,7 @@
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.5311458333333333,
+        "daysElapsed": 0.5444675925925926,
         "cumulativeReturn": -0.00020003200512081932,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",
@@ -170,10 +170,10 @@
       "observationWindowRef": "ops/runtime/ci-manual-4-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "b4.22.78.2-verify",
-        "timestamp": "2026-03-01T21:56:55.870Z",
-        "blockNumber": 15470441,
-        "blockTimestamp": 1772402197,
+        "tag": "spread-release-1",
+        "timestamp": "2026-03-01T22:16:08.687Z",
+        "blockNumber": 15471592,
+        "blockTimestamp": 1772403348,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
@@ -185,7 +185,7 @@
           "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
         },
         "valuationOutputs": {
-          "buyAmountOutRaw": "18364863108749142",
+          "buyAmountOutRaw": "18364854356500782",
           "markToMarketUsdt0Raw": "49998",
           "sellAmountOutRaw": "49998"
         },
@@ -217,7 +217,7 @@
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.5311458333333333,
+        "daysElapsed": 0.5444675925925926,
         "cumulativeReturn": 0,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",

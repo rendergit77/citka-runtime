@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "extractedAt": "2026-03-01T22:16:09.361Z",
+    "version": "b4.22.79",
+    "source": "b4.22.51-controlled-canary"
+  },
+  "vaults": {
+    "plasma_aave_core": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_aave_usde_supply": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_aave_weeth_carry": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_pendle_pt_usde": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_pendle_pt_syrupusdt": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_fluid_usdt0_supply": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_fluid_euler_aggregator": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_stable_allocator": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_syrup_barbell": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    },
+    "plasma_syrup_glidepath_allocator": {
+      "status": "SKIPPED",
+      "executionSpreadBps": null,
+      "reasonCode": "MISSING_CANARY_EVIDENCE",
+      "actionRequired": "Operator must run controlled canary write using B4.22.51 runner to generate evidence."
+    }
+  }
+}
