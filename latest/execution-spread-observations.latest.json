@@ -1,67 +1,67 @@
 {
   "metadata": {
-    "extractedAt": "2026-03-01T22:57:11.181Z",
+    "extractedAt": "2026-03-01T23:06:40.848Z",
     "version": "b4.22.79",
     "source": "b4.22.51-controlled-canary"
   },
   "vaults": {
     "plasma_aave_core": {
       "status": "MEASURED",
-      "executionSpreadBps": 0,
+      "measuredExecutionLossBps": 0,
       "reasonCode": null,
       "evidenceTx": "0xcc921c31a54637f106c7f81272cc3275d5b46d231181ad9aa012cfa92b0e0c43"
     },
     "plasma_aave_usde_supply": {
       "status": "SKIPPED",
-      "executionSpreadBps": null,
+      "measuredExecutionLossBps": null,
       "reasonCode": "SKIP_SWAP_UNAVAILABLE_USDe",
       "actionRequired": "Resolve the canary gating issue for this vault."
     },
     "plasma_aave_weeth_carry": {
       "status": "SKIPPED",
-      "executionSpreadBps": null,
+      "measuredExecutionLossBps": null,
       "reasonCode": "SKIP_SWAP_UNAVAILABLE_weETH",
       "actionRequired": "Resolve the canary gating issue for this vault."
     },
     "plasma_pendle_pt_usde": {
       "status": "SKIPPED",
-      "executionSpreadBps": null,
+      "measuredExecutionLossBps": null,
       "reasonCode": "SKIP_SWAP_UNAVAILABLE_USDe",
       "actionRequired": "Resolve the canary gating issue for this vault."
     },
     "plasma_pendle_pt_syrupusdt": {
       "status": "MEASURED",
-      "executionSpreadBps": 20,
+      "measuredExecutionLossBps": 20,
       "reasonCode": null,
       "evidenceTx": "0x5f5746e9bbfeb3299ca9c423d2fe74061caaebfd732baa09106e76034d0de0df"
     },
     "plasma_fluid_usdt0_supply": {
       "status": "MEASURED",
-      "executionSpreadBps": 0,
+      "measuredExecutionLossBps": 0,
       "reasonCode": null,
       "evidenceTx": "0xa3a22ff5d64fa512687f6cc24c323dabaa6209fe7ab1460a4b7db39f493e5569"
     },
     "plasma_fluid_euler_aggregator": {
       "status": "MEASURED",
-      "executionSpreadBps": 0,
+      "measuredExecutionLossBps": 0,
       "reasonCode": null,
       "evidenceTx": "0x49cfbafd87d065e274ac45698fbc899293044e2e474c61c3057a7a2a009a29d9"
     },
     "plasma_stable_allocator": {
       "status": "MEASURED",
-      "executionSpreadBps": 0,
+      "measuredExecutionLossBps": 0,
       "reasonCode": null,
       "evidenceTx": "0xa0367937ffaea1aa79b0892ee2315bb9241e3a465a4c732f138156481c62ad04"
     },
     "plasma_syrup_barbell": {
       "status": "MEASURED",
-      "executionSpreadBps": 14,
+      "measuredExecutionLossBps": 14,
       "reasonCode": null,
       "evidenceTx": "0x525c0eaa113c3289486743b88548fd0ac2605b76dfbfeb4e44efc302627878af"
     },
     "plasma_syrup_glidepath_allocator": {
       "status": "MEASURED",
-      "executionSpreadBps": 16,
+      "measuredExecutionLossBps": 16,
       "reasonCode": null,
       "evidenceTx": "0x5c6fe2a649945771253035c7fa1199a92befbc0c4c6b2540015902c75ccab8df"
     }

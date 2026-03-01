@@ -1,6 +1,6 @@
 {
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-01T22:57:11.214Z",
+  "generatedAt": "2026-03-01T23:06:40.885Z",
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
@@ -47,7 +47,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -165,7 +167,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -283,7 +287,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -401,7 +407,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": 0,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "MEASURED"
           },
@@ -514,12 +522,14 @@
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 14
+          "spreadFeeBps": 0
         },
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 14,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": 14,
+            "appliedBps": 14,
             "appliedUsd": 0,
             "evidenceType": "MEASURED"
           },
@@ -632,12 +642,14 @@
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 16
+          "spreadFeeBps": 0
         },
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 16,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": 16,
+            "appliedBps": 16,
             "appliedUsd": 0,
             "evidenceType": "MEASURED"
           },
@@ -750,12 +762,14 @@
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 20
+          "spreadFeeBps": 0
         },
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 20,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": 20,
+            "appliedBps": 20,
             "appliedUsd": 0,
             "evidenceType": "MEASURED"
           },
@@ -873,7 +887,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": 0,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "MEASURED"
           },
@@ -987,7 +1003,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": 0,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "MEASURED"
           },
@@ -1101,7 +1119,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": 0,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "MEASURED"
           },
@@ -1220,7 +1240,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -1334,7 +1356,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -1448,7 +1472,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -1562,7 +1588,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -1676,7 +1704,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -1789,7 +1819,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -1902,7 +1934,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -2016,7 +2050,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
@@ -2133,7 +2169,9 @@
         "rails": {
           "spread": {
             "mode": "MEASURED_ONLY",
-            "scheduleBps": 0,
+            "policyScheduleBps": 0,
+            "measuredExecutionLossBps": null,
+            "appliedBps": 0,
             "appliedUsd": 0,
             "evidenceType": "NOT_MEASURED"
           },
