@@ -1,0 +1,102 @@
+{
+  "version": "onchain_yield_observations.v1",
+  "tag": "b4.22.81",
+  "generatedAt": "2026-03-02T00:26:59.911Z",
+  "provenance": {
+    "rpcUrl": "https://rpc.plasma.to",
+    "chainId": 9745,
+    "blockNumber": 15479463,
+    "blockTimestamp": 1772411219
+  },
+  "vaults": {
+    "plasma_pendle_yt_syrupusdt_volatility": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "NO_OBSERVE_LOGIC",
+      "instructions": null
+    },
+    "plasma_flow_engine_pendle_lp_susde": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "VAULT_PARAMS_MISSING",
+      "instructions": null
+    },
+    "plasma_delta_fee_engine_pendle_lp_usde": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "VAULT_PARAMS_MISSING",
+      "instructions": null
+    },
+    "plasma_stable_allocator": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "ALLOCATOR_MEASURED_PENDING",
+      "instructions": null
+    },
+    "plasma_syrup_barbell": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "COMPOSITE_MEASURED_PENDING",
+      "instructions": null
+    },
+    "plasma_syrup_glidepath_allocator": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "COMPOSITE_MEASURED_PENDING",
+      "instructions": null
+    },
+    "plasma_pendle_pt_syrupusdt": {
+      "status": "MEASURED",
+      "grossApyPct": 4.418231717047627,
+      "evidence": {
+        "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
+        "expiry": 1777507200,
+        "method": "PendleMarket._storage:lastLnImpliedRate",
+        "blockNumber": 15479463,
+        "blockTimestamp": 1772411219
+      },
+      "reasonCode": null,
+      "instructions": null
+    },
+    "plasma_aave_core": {
+      "status": "MEASURED",
+      "grossApyPct": 2.619739108987295,
+      "evidence": {
+        "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
+        "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "method": "AaveDataProvider.getReserveData:liquidityRate",
+        "blockNumber": 15479463,
+        "blockTimestamp": 1772411219
+      },
+      "reasonCode": null,
+      "instructions": null
+    },
+    "plasma_fluid_usdt0_supply": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "FLUID_RATE_UNREADABLE",
+      "instructions": "Fluid native rate unproven or throws: missing revert data (action=\"call\", data=null, reason=null, transaction={ \"data\": \"0xad2961a3\", \"to\": \"0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B\" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.16.0)"
+    },
+    "plasma_fluid_euler_aggregator": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "NO_OBSERVE_LOGIC",
+      "instructions": null
+    },
+    "plasma_emode_usde_looper": {
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "NO_OBSERVE_LOGIC",
+      "instructions": null
+    }
+  }
+}

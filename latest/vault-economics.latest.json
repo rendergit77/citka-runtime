@@ -1,11 +1,11 @@
 {
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-01T23:06:40.885Z",
+  "generatedAt": "2026-03-02T00:27:00.154Z",
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
     "feePolicyFile": "config/fees.policy.json",
-    "onchainYieldsFile": null,
+    "onchainYieldsFile": "onchain-yield-observations",
     "spreadObservationsFile": "execution-spread-observations",
     "productReadMeta": {
       "source": "synthesized_fallback_ALL_NULL",
@@ -37,21 +37,28 @@
   },
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -141,6 +148,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "NO_OBSERVE_LOGIC",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_pendle_yt_syrupusdt_volatility",
@@ -157,21 +170,28 @@
       }
     },
     "plasma_flow_engine_pendle_lp_susde": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -261,6 +281,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "VAULT_PARAMS_MISSING",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_flow_engine_pendle_lp_susde",
@@ -277,21 +303,28 @@
       }
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -381,6 +414,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "VAULT_PARAMS_MISSING",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_delta_fee_engine_pendle_lp_usde",
@@ -397,21 +436,31 @@
       }
     },
     "plasma_stable_allocator": {
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 0,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0xa0367937ffaea1aa79b0892ee2315bb9241e3a465a4c732f138156481c62ad04"
+          }
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": 0,
-            "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "MEASURED"
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -501,6 +550,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "ALLOCATOR_MEASURED_PENDING",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_stable_allocator",
@@ -517,21 +572,31 @@
       }
     },
     "plasma_syrup_barbell": {
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 14,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0x525c0eaa113c3289486743b88548fd0ac2605b76dfbfeb4e44efc302627878af"
+          }
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": 14,
-            "appliedBps": 14,
-            "appliedUsd": 0,
-            "evidenceType": "MEASURED"
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -621,6 +686,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "COMPOSITE_MEASURED_PENDING",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_syrup_barbell",
@@ -637,21 +708,31 @@
       }
     },
     "plasma_syrup_glidepath_allocator": {
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 16,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0x5c6fe2a649945771253035c7fa1199a92befbc0c4c6b2540015902c75ccab8df"
+          }
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": 16,
-            "appliedBps": 16,
-            "appliedUsd": 0,
-            "evidenceType": "MEASURED"
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -741,6 +822,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "COMPOSITE_MEASURED_PENDING",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_syrup_glidepath_allocator",
@@ -757,21 +844,31 @@
       }
     },
     "plasma_pendle_pt_syrupusdt": {
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 20,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0x5f5746e9bbfeb3299ca9c423d2fe74061caaebfd732baa09106e76034d0de0df"
+          }
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": 20,
-            "appliedBps": 20,
-            "appliedUsd": 0,
-            "evidenceType": "MEASURED"
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -824,13 +921,13 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.04418231717047627,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
-          "apr": null,
+          "apy": 0.04418231717047627,
+          "apr": 0.04418231717047627,
           "defaultDisplayed": true
         },
         "components": {
@@ -859,8 +956,16 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees."
       ],
+      "status": "MEASURED",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": 4.418231717047627,
+      "netApyPct": 4.418231717047627,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_pendle_pt_syrupusdt",
@@ -877,21 +982,31 @@
       }
     },
     "plasma_aave_core": {
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 0,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0xcc921c31a54637f106c7f81272cc3275d5b46d231181ad9aa012cfa92b0e0c43"
+          }
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": 0,
-            "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "MEASURED"
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -939,13 +1054,13 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.026197391089872946,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
-          "apr": null,
+          "apy": 0.026197391089872946,
+          "apr": 0.026197391089872946,
           "defaultDisplayed": true
         },
         "components": {
@@ -975,8 +1090,16 @@
       "leverageCosts": null,
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees."
       ],
+      "status": "MEASURED",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": 2.619739108987295,
+      "netApyPct": 2.619739108987295,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_aave_core",
@@ -993,21 +1116,31 @@
       }
     },
     "plasma_fluid_usdt0_supply": {
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 0,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0xa3a22ff5d64fa512687f6cc24c323dabaa6209fe7ab1460a4b7db39f493e5569"
+          }
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": 0,
-            "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "MEASURED"
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -1093,6 +1226,12 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "FLUID_RATE_UNREADABLE",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_fluid_usdt0_supply",
@@ -1109,21 +1248,31 @@
       }
     },
     "plasma_fluid_euler_aggregator": {
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 0,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0x49cfbafd87d065e274ac45698fbc899293044e2e474c61c3057a7a2a009a29d9"
+          }
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": 0,
-            "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "MEASURED"
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -1214,6 +1363,12 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "NO_OBSERVE_LOGIC",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_fluid_euler_aggregator",
@@ -1230,21 +1385,28 @@
       }
     },
     "plasma_emode_usde_looper": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -1330,6 +1492,12 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "NO_OBSERVE_LOGIC",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_emode_usde_looper",
@@ -1346,21 +1514,28 @@
       }
     },
     "plasma_aave_usde_supply": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "SKIP_SWAP_UNAVAILABLE_USDe",
+          "actionRequired": "Resolve the canary gating issue for this vault."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -1446,6 +1621,12 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_aave_usde_supply",
@@ -1462,21 +1643,28 @@
       }
     },
     "plasma_aave_weeth_carry": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "SKIP_SWAP_UNAVAILABLE_weETH",
+          "actionRequired": "Resolve the canary gating issue for this vault."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -1562,6 +1750,12 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_aave_weeth_carry",
@@ -1578,21 +1772,28 @@
       }
     },
     "plasma_pendle_pt_usde": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "SKIP_SWAP_UNAVAILABLE_USDe",
+          "actionRequired": "Resolve the canary gating issue for this vault."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -1678,6 +1879,12 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_pendle_pt_usde",
@@ -1694,21 +1901,28 @@
       }
     },
     "plasma_across_usdt0_spokepool_lp": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -1793,6 +2007,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_across_usdt0_spokepool_lp",
@@ -1809,21 +2029,28 @@
       }
     },
     "plasma_xpl_usdt0_clmm_lazy_lp": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -1908,6 +2135,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_xpl_usdt0_clmm_lazy_lp",
@@ -1924,21 +2157,28 @@
       }
     },
     "plasma_yt_susde_speculator": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -2024,6 +2264,12 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_yt_susde_speculator",
@@ -2040,21 +2286,28 @@
       }
     },
     "plasma_usdai_leverage_farm": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -2143,6 +2396,12 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_usdai_leverage_farm",
@@ -2159,21 +2418,28 @@
       }
     },
     "plasma_pbtc_basis_shield": {
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
       "fees": {
         "schedule": {
           "performanceFeeBps": null,
           "hwmMode": "NONE",
           "exitFeeBps": null,
-          "spreadFeeBps": 0
+          "spreadFeeBps": 10
         },
         "rails": {
-          "spread": {
+          "executionFee": {
             "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 0,
-            "measuredExecutionLossBps": null,
+            "policyScheduleBps": 10,
             "appliedBps": 0,
-            "appliedUsd": 0,
-            "evidenceType": "NOT_MEASURED"
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
             "bps": null,
@@ -2258,6 +2524,12 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
       ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
       "provenance": {
         "sources": {
           "vaultId": "plasma_pbtc_basis_shield",
