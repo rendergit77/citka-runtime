@@ -1,0 +1,30 @@
+{
+  "version": "rpc_health_v1",
+  "tag": "ci-obs-22588976821",
+  "generatedAt": "2026-03-02T18:02:47.057Z",
+  "chainId": 9745,
+  "endpoints": [
+    {
+      "label": "primary_env",
+      "priority": 0,
+      "status": "GREEN",
+      "latestBlock": 15542810,
+      "avgLatencyMs": 169,
+      "successRate": 1,
+      "reasons": []
+    },
+    {
+      "label": "public_fallback",
+      "priority": 1,
+      "status": "GREEN",
+      "latestBlock": 15542811,
+      "avgLatencyMs": 136,
+      "successRate": 1,
+      "reasons": []
+    }
+  ],
+  "rpcUsed": "https://rpc.plasma.to",
+  "status": "GREEN",
+  "failClosed": false,
+  "instructions": null
+}

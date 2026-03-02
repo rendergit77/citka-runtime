@@ -1,6 +1,6 @@
 {
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-02T13:51:13.619Z",
+  "generatedAt": "2026-03-02T18:03:28.323Z",
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
@@ -167,6 +167,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_flow_engine_pendle_lp_susde": {
@@ -300,6 +305,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
@@ -433,6 +443,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_stable_allocator": {
@@ -513,12 +528,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.025045942537236254,
+          "apy": 0.025555344430726254,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.025045942537236254,
+          "apy": 0.025555344430726254,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -555,8 +570,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.504594253723625,
-      "netApyPct": 2.504594253723625,
+      "grossApyPct": 2.5555344430726255,
+      "netApyPct": 2.5555344430726255,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -572,6 +587,12 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 2.5555344430726255,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_syrup_barbell": {
@@ -652,12 +673,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.038956684889046474,
+          "apy": 0.03915177039764587,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.038956684889046474,
+          "apy": 0.03915177039764587,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -694,8 +715,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.895668488904647,
-      "netApyPct": 3.895668488904647,
+      "grossApyPct": 3.915177039764587,
+      "netApyPct": 3.915177039764587,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -711,6 +732,12 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 3.915177039764587,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_syrup_glidepath_allocator": {
@@ -791,12 +818,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.040355042198127224,
+          "apy": 0.040456922576825226,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.040355042198127224,
+          "apy": 0.040456922576825226,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -833,8 +860,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 4.035504219812722,
-      "netApyPct": 4.035504219812722,
+      "grossApyPct": 4.045692257682522,
+      "netApyPct": 4.045692257682522,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -850,6 +877,12 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 4.045692257682522,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_pendle_pt_syrupusdt": {
@@ -989,6 +1022,12 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 4.418231711334997,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_aave_core": {
@@ -1064,12 +1103,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.026763543032338317,
+          "apy": 0.02741382806100299,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.026763543032338317,
+          "apy": 0.02741382806100299,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1107,8 +1146,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.6763543032338317,
-      "netApyPct": 2.6763543032338317,
+      "grossApyPct": 2.7413828061002987,
+      "netApyPct": 2.7413828061002987,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1124,6 +1163,12 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 2.7413828061002987,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_fluid_usdt0_supply": {
@@ -1199,12 +1244,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.023328342042134187,
+          "apy": 0.023696860800449526,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.023328342042134187,
+          "apy": 0.023696860800449526,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1242,8 +1287,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.3328342042134187,
-      "netApyPct": 2.3328342042134187,
+      "grossApyPct": 2.3696860800449526,
+      "netApyPct": 2.3696860800449526,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1259,6 +1304,12 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 2.3696860800449526,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_fluid_euler_aggregator": {
@@ -1339,12 +1390,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.034225022725527854,
+          "apy": 0.03385427562051824,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.034225022725527854,
+          "apy": 0.03385427562051824,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1382,8 +1433,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.4225022725527854,
-      "netApyPct": 3.4225022725527854,
+      "grossApyPct": 3.3854275620518237,
+      "netApyPct": 3.3854275620518237,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1399,6 +1450,12 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 3.3854275620518237,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_emode_usde_looper": {
@@ -1528,6 +1585,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_aave_usde_supply": {
@@ -1657,6 +1719,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_aave_weeth_carry": {
@@ -1786,6 +1853,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_pendle_pt_usde": {
@@ -1915,6 +1987,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_across_usdt0_spokepool_lp": {
@@ -2043,6 +2120,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_xpl_usdt0_clmm_lazy_lp": {
@@ -2171,6 +2253,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_yt_susde_speculator": {
@@ -2300,6 +2387,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_usdai_leverage_farm": {
@@ -2432,6 +2524,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     },
     "plasma_pbtc_basis_shield": {
@@ -2560,6 +2657,11 @@
           "apyApr": "fraction",
           "feeBps": "bps"
         }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": 0,
+        "label": "SCENARIO_YIELD"
       }
     }
   }
