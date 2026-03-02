@@ -1,14 +1,14 @@
 {
   "version": "revenue_scenarios_v2",
   "tag": "b4.22.74.0",
-  "generatedAt": "2026-03-02T00:30:38.641Z",
+  "generatedAt": "2026-03-02T08:38:03.871Z",
   "modeSupport": [
     "MEASURED",
     "SCENARIO"
   ],
   "inputs": {
     "feePolicyHash": "sha256:3f3bf87b99a23956e825a8c0ff476254d863b02aeadf067a206c9fa9b2209149",
-    "economicsChecksum": "sha256:01491c619e5c06dbea36d9931482674c8907527eecd5414f240da3b18155dc38",
+    "economicsChecksum": "sha256:ea1b34090380e8cd7f4d45d0672210d1b772012f19c16b5902fb8f1153bdb2a5",
     "yieldAvailability": "PARTIAL",
     "excludedVaults": [
       "plasma_emode_usde_looper"
@@ -189,8 +189,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.026197395900713228,
-              "grossApyFraction": 0.026197395900713228,
+              "netApyFraction": 0.026365305331428474,
+              "grossApyFraction": 0.026365305331428474,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -212,18 +212,18 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": null,
-              "grossApyFraction": null,
+              "netApyFraction": 0.023328667963176786,
+              "grossApyFraction": 0.023328667963176786,
               "grossSource": "hidden",
-              "apyAvailable": false
+              "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 500,
-              "perfAnnualUsd": null,
+              "perfAnnualUsd": 0,
               "executionFeeAnnualUsd": 100,
-              "perfRevenueMode": "UNKNOWN_APY_NULL",
+              "perfRevenueMode": "MEASURED_GROSS",
               "totalAnnualUsd": 600,
-              "totalRevenueComplete": false
+              "totalRevenueComplete": true
             }
           },
           "plasma_fluid_euler_aggregator": {
@@ -478,8 +478,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.026197395900713228,
-              "grossApyFraction": 0.026197395900713228,
+              "netApyFraction": 0.026365305331428474,
+              "grossApyFraction": 0.026365305331428474,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -501,18 +501,18 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": null,
-              "grossApyFraction": null,
+              "netApyFraction": 0.023328667963176786,
+              "grossApyFraction": 0.023328667963176786,
               "grossSource": "hidden",
-              "apyAvailable": false
+              "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 5000,
-              "perfAnnualUsd": null,
+              "perfAnnualUsd": 0,
               "executionFeeAnnualUsd": 1000,
-              "perfRevenueMode": "UNKNOWN_APY_NULL",
+              "perfRevenueMode": "MEASURED_GROSS",
               "totalAnnualUsd": 6000,
-              "totalRevenueComplete": false
+              "totalRevenueComplete": true
             }
           },
           "plasma_fluid_euler_aggregator": {
@@ -767,8 +767,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.026197395900713228,
-              "grossApyFraction": 0.026197395900713228,
+              "netApyFraction": 0.026365305331428474,
+              "grossApyFraction": 0.026365305331428474,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -790,18 +790,18 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": null,
-              "grossApyFraction": null,
+              "netApyFraction": 0.023328667963176786,
+              "grossApyFraction": 0.023328667963176786,
               "grossSource": "hidden",
-              "apyAvailable": false
+              "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 50000,
-              "perfAnnualUsd": null,
+              "perfAnnualUsd": 0,
               "executionFeeAnnualUsd": 10000,
-              "perfRevenueMode": "UNKNOWN_APY_NULL",
+              "perfRevenueMode": "MEASURED_GROSS",
               "totalAnnualUsd": 60000,
-              "totalRevenueComplete": false
+              "totalRevenueComplete": true
             }
           },
           "plasma_fluid_euler_aggregator": {
@@ -887,5 +887,5 @@
     "notes": "Using actual observed APY fractions where available."
   },
   "scenario": null,
-  "checksum": "sha256:36d7a674de211f0a1c20240536def1081533d49e66b15d74dd362c85b290e403"
+  "checksum": "sha256:c233b3aef06fe927bb622198a9d4fa5592dabb3c1dd419a8fc347d80434b8fea"
 }

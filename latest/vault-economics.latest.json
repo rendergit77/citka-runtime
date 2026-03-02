@@ -1,6 +1,6 @@
 {
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-02T00:30:38.592Z",
+  "generatedAt": "2026-03-02T08:38:03.823Z",
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
@@ -1055,12 +1055,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.026197395900713228,
+          "apy": 0.026365305331428474,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.026197395900713228,
+          "apy": 0.026365305331428474,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1098,8 +1098,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.619739590071323,
-      "netApyPct": 2.619739590071323,
+      "grossApyPct": 2.6365305331428472,
+      "netApyPct": 2.6365305331428472,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1190,12 +1190,12 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.023328667963176786,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.023328667963176786,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1226,14 +1226,17 @@
       "leverageCosts": null,
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "FLUID_RATE_UNREADABLE",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 2.3328667963176786,
+      "netApyPct": 2.3328667963176786,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_fluid_usdt0_supply",
