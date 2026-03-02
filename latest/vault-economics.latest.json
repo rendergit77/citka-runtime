@@ -1,6 +1,6 @@
 {
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-02T00:27:00.154Z",
+  "generatedAt": "2026-03-02T00:27:53.717Z",
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
@@ -927,7 +927,7 @@
         },
         "net": {
           "apy": 0.04418231717047627,
-          "apr": 0.04418231717047627,
+          "apr": null,
           "defaultDisplayed": true
         },
         "components": {
@@ -958,10 +958,11 @@
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "MEASURED: grossApyPct derived from onchain probe.",
-        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees."
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
       "status": "MEASURED",
-      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "reasonCode": null,
       "grossApyPct": 4.418231717047627,
       "netApyPct": 4.418231717047627,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
@@ -1054,13 +1055,13 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.026197391089872946,
+          "apy": 0.02619739273666051,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.026197391089872946,
-          "apr": 0.026197391089872946,
+          "apy": 0.02619739273666051,
+          "apr": null,
           "defaultDisplayed": true
         },
         "components": {
@@ -1092,12 +1093,13 @@
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "YIELD_MODEL_GENERIC_UNMODELED",
         "MEASURED: grossApyPct derived from onchain probe.",
-        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees."
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
       "status": "MEASURED",
-      "reasonCode": "No structural or orthogonal pilot evidence found",
-      "grossApyPct": 2.619739108987295,
-      "netApyPct": 2.619739108987295,
+      "reasonCode": null,
+      "grossApyPct": 2.619739273666051,
+      "netApyPct": 2.619739273666051,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
