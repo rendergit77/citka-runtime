@@ -1,12 +1,12 @@
 {
   "version": "onchain_yield_observations.v1",
   "tag": "b4.22.85",
-  "generatedAt": "2026-03-02T08:38:03.485Z",
+  "generatedAt": "2026-03-02T08:40:01.568Z",
   "provenance": {
     "rpcUrl": "https://rpc.plasma.to",
     "chainId": 9745,
-    "blockNumber": 15508927,
-    "blockTimestamp": 1772440683
+    "blockNumber": 15509044,
+    "blockTimestamp": 1772440800
   },
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
@@ -58,21 +58,21 @@
         "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
         "expiry": 1777507200,
         "method": "PendleMarket._storage:lastLnImpliedRate",
-        "blockNumber": 15508927,
-        "blockTimestamp": 1772440683
+        "blockNumber": 15509044,
+        "blockTimestamp": 1772440800
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_aave_core": {
       "status": "MEASURED",
-      "grossApyPct": 2.6365305331428472,
+      "grossApyPct": 2.6365307573970638,
       "evidence": {
         "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
         "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "method": "AaveDataProvider.getReserveData:liquidityRate",
-        "blockNumber": 15508927,
-        "blockTimestamp": 1772440683
+        "blockNumber": 15509044,
+        "blockTimestamp": 1772440800
       },
       "reasonCode": null,
       "instructions": null
@@ -82,18 +82,20 @@
       "grossApyPct": 2.3328667963176786,
       "evidence": {
         "venue": "0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B",
-        "method": "erc4626.convertToAssets.delta",
+        "method": "erc4626_exchange_rate_delta",
         "decimals": 6,
         "priceNow": "1013704",
         "priceOld": "1013640",
-        "blockNow": 15508927,
-        "blockOld": 15422527,
+        "blocksUsed": {
+          "now": 15509045,
+          "old": 15422645
+        },
         "windowSeconds": 86400,
         "growth": 0.00006313878694608199,
         "aprPct": 2.306144193205645,
         "compoundingConvention": "daily_365.25",
-        "blockNumber": 15508927,
-        "blockTimestamp": 1772440683
+        "blockNumber": 15509044,
+        "blockTimestamp": 1772440800
       },
       "reasonCode": null,
       "instructions": null

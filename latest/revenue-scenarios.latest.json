@@ -1,14 +1,14 @@
 {
   "version": "revenue_scenarios_v2",
   "tag": "b4.22.74.0",
-  "generatedAt": "2026-03-02T08:38:03.871Z",
+  "generatedAt": "2026-03-02T08:40:01.922Z",
   "modeSupport": [
     "MEASURED",
     "SCENARIO"
   ],
   "inputs": {
     "feePolicyHash": "sha256:3f3bf87b99a23956e825a8c0ff476254d863b02aeadf067a206c9fa9b2209149",
-    "economicsChecksum": "sha256:ea1b34090380e8cd7f4d45d0672210d1b772012f19c16b5902fb8f1153bdb2a5",
+    "economicsChecksum": "sha256:ff884dc7e41a80b74406d1b4f5b6443677486900410517058072ed6df1a8f266",
     "yieldAvailability": "PARTIAL",
     "excludedVaults": [
       "plasma_emode_usde_looper"
@@ -189,8 +189,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.026365305331428474,
-              "grossApyFraction": 0.026365305331428474,
+              "netApyFraction": 0.02636530757397064,
+              "grossApyFraction": 0.02636530757397064,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -478,8 +478,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.026365305331428474,
-              "grossApyFraction": 0.026365305331428474,
+              "netApyFraction": 0.02636530757397064,
+              "grossApyFraction": 0.02636530757397064,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -767,8 +767,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.026365305331428474,
-              "grossApyFraction": 0.026365305331428474,
+              "netApyFraction": 0.02636530757397064,
+              "grossApyFraction": 0.02636530757397064,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -887,5 +887,5 @@
     "notes": "Using actual observed APY fractions where available."
   },
   "scenario": null,
-  "checksum": "sha256:c233b3aef06fe927bb622198a9d4fa5592dabb3c1dd419a8fc347d80434b8fea"
+  "checksum": "sha256:c23b9704e9c17b696699cf31439ecbe01f3c72c5397d1d787cfc26a2118cc75c"
 }
