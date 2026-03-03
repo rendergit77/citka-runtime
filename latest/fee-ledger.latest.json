@@ -1,0 +1,38 @@
+{
+  "version": "fee_ledger.v1",
+  "generatedAt": "2026-03-03T20:51:41.397Z",
+  "status": "MISSING",
+  "reasonCode": "ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
+  "instructions": [
+    "Run build-fee-accrual-inputs.js and ensure epoch + economics inputs are present."
+  ],
+  "epochId": null,
+  "currentEpochReference": null,
+  "currentEpochRef": null,
+  "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
+  "snapshotVersionHash": null,
+  "sourceRefs": {
+    "accrualInputsRef": "ops/runtime/fee-accrual-inputs.latest.json",
+    "feePolicyRef": "config/fees.policy.json"
+  },
+  "vaults": {},
+  "totals": {
+    "vaultsTotal": 0,
+    "executionFeeUsd": 0,
+    "managementFeeUsd": 0,
+    "performanceFeeUsd": 0,
+    "totalAccruedUsd": 0,
+    "computableVaults": 0,
+    "stakersBps": 0,
+    "stakersAccrualUsdCap": 0
+  },
+  "invariants": {
+    "valid": false,
+    "noFutureEpoch": false,
+    "measuredOnlyIntegrity": false,
+    "recipientsSumValid": false,
+    "errors": [
+      "ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING"
+    ]
+  }
+}

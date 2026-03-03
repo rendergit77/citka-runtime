@@ -1,0 +1,40 @@
+{
+  "version": "staking_rebates_merkle.v2",
+  "generatedAt": "2026-03-03T20:51:41.622Z",
+  "status": "NOT_ENABLED",
+  "reasonCode": "STAKERS_BPS_ZERO",
+  "instructions": [
+    "Set config/fees.policy.json defaults.recipients.stakersBps > 0 after staking distribution policy is activated."
+  ],
+  "epochId": null,
+  "merkleRoot": null,
+  "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
+  "snapshotVersionHash": null,
+  "leavesCount": 0,
+  "claims": [],
+  "totals": {
+    "previousCumulativeAmountWei": "0",
+    "cumulativeAmountWei": "0",
+    "deltaAmountWei": "0",
+    "globalCapWei": "1000000000000000000000000",
+    "remainingCapWei": "1000000000000000000000000",
+    "stakersBps": 0
+  },
+  "sourceRefs": {
+    "feePolicyRef": "config/fees.policy.json",
+    "feeLedgerRef": "ops/runtime/fee-ledger.latest.json",
+    "allocationsRef": "ops/runtime/staking-rebate-allocations.latest.json",
+    "previousMerkleRef": "ops/runtime/staking-rebates-merkle.latest.json"
+  },
+  "invariants": {
+    "valid": true,
+    "noReplay": true,
+    "noDowngrade": true,
+    "monotonicCumulative": true,
+    "capWithinGlobal": true,
+    "feeLedgerAligned": true,
+    "errors": [
+      "STAKERS_BPS_ZERO"
+    ]
+  }
+}

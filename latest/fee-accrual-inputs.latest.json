@@ -1,0 +1,33 @@
+{
+  "version": "fee_accrual_inputs.v1",
+  "generatedAt": "2026-03-03T20:51:41.358Z",
+  "status": "MISSING",
+  "reasonCode": "EPOCH_ID_MISSING",
+  "instructions": [
+    "Provide --epoch <id> or generate ops/runtime/points-epoch.real.latest.json."
+  ],
+  "mode": "MEASURED_ONLY",
+  "epochId": null,
+  "epochRef": null,
+  "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
+  "snapshotVersionHash": null,
+  "sourceRefs": {
+    "economicsRef": "ops/runtime/vault-economics.latest.json",
+    "feePolicyRef": "config/fees.policy.json",
+    "canonicalRef": "config/canonical.vaults.json"
+  },
+  "vaults": {},
+  "totals": {
+    "vaultsTotal": 0,
+    "vaultsActive": 0,
+    "vaultsMissing": 0,
+    "executionModeCounts": {},
+    "executionEvidenceCounts": {}
+  },
+  "invariants": {
+    "valid": false,
+    "errors": [
+      "EPOCH_ID_MISSING"
+    ]
+  }
+}
