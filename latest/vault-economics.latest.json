@@ -1,6 +1,6 @@
 {
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-03T20:51:41.241Z",
+  "generatedAt": "2026-03-03T21:02:08.559Z",
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
@@ -47,9 +47,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 1000,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -61,7 +61,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 1000,
             "hwmMode": "OFFCHAIN_ACCOUNTING",
             "enforcement": "DISCLOSE_ONLY",
             "evidenceType": "HWM_STATE_MISSING",
@@ -131,12 +131,12 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.530258089223407,
+          "apy": -0.5303255466254331,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": -0.530258089223407,
+          "apy": -0.5303255466254331,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -173,8 +173,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": -53.0258089223407,
-      "netApyPct": -53.0258089223407,
+      "grossApyPct": -53.032554662543305,
+      "netApyPct": -53.032554662543305,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -193,7 +193,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": -53.0258089223407,
+        "headlineYieldPct": -53.032554662543305,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -209,9 +209,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 1000,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -223,7 +223,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 1000,
             "hwmMode": "OFFCHAIN_ACCOUNTING",
             "enforcement": "DISCLOSE_ONLY",
             "evidenceType": "HWM_STATE_MISSING",
@@ -298,7 +298,7 @@
           "source": "hidden"
         },
         "net": {
-          "apy": 0.09384880697899907,
+          "apy": 0.08446392628109917,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -336,7 +336,7 @@
       "status": "MEASURED",
       "reasonCode": null,
       "grossApyPct": 9.384880697899908,
-      "netApyPct": 9.384880697899908,
+      "netApyPct": 8.446392628109917,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -355,7 +355,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 9.384880697899908,
+        "headlineYieldPct": 8.446392628109917,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -371,9 +371,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 1000,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -385,7 +385,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 1000,
             "hwmMode": "OFFCHAIN_ACCOUNTING",
             "enforcement": "DISCLOSE_ONLY",
             "evidenceType": "HWM_STATE_MISSING",
@@ -460,7 +460,7 @@
           "source": "hidden"
         },
         "net": {
-          "apy": 0.010842965659550048,
+          "apy": 0.009758669093595043,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -498,7 +498,7 @@
       "status": "MEASURED",
       "reasonCode": null,
       "grossApyPct": 1.0842965659550048,
-      "netApyPct": 1.0842965659550048,
+      "netApyPct": 0.9758669093595043,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -517,7 +517,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 1.0842965659550048,
+        "headlineYieldPct": 0.9758669093595043,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -536,9 +536,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 1000,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -550,7 +550,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 1000,
             "hwmMode": "OFFCHAIN_ACCOUNTING",
             "enforcement": "DISCLOSE_ONLY",
             "evidenceType": "HWM_STATE_MISSING",
@@ -620,12 +620,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.025403626843154246,
+          "apy": 0.025588668252900123,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.025403626843154246,
+          "apy": 0.023029801427610113,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -662,8 +662,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.540362684315425,
-      "netApyPct": 2.540362684315425,
+      "grossApyPct": 2.5588668252900124,
+      "netApyPct": 2.3029801427610113,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -682,7 +682,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.540362684315425,
+        "headlineYieldPct": 2.3029801427610113,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -701,9 +701,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 1000,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -715,7 +715,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 1000,
             "hwmMode": "OFFCHAIN_ACCOUNTING",
             "enforcement": "DISCLOSE_ONLY",
             "evidenceType": "HWM_STATE_MISSING",
@@ -785,12 +785,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.039172045927697,
+          "apy": 0.03917244909506551,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.039172045927697,
+          "apy": 0.03525520418555896,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -827,8 +827,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.9172045927697,
-      "netApyPct": 3.9172045927697,
+      "grossApyPct": 3.917244909506551,
+      "netApyPct": 3.525520418555896,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -847,7 +847,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.9172045927697,
+        "headlineYieldPct": 3.525520418555896,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -866,9 +866,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 1000,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -880,7 +880,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 1000,
             "hwmMode": "OFFCHAIN_ACCOUNTING",
             "enforcement": "DISCLOSE_ONLY",
             "evidenceType": "HWM_STATE_MISSING",
@@ -950,12 +950,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.040426579059310824,
+          "apy": 0.040463587341259995,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.040426579059310824,
+          "apy": 0.036417228607134,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -992,8 +992,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 4.042657905931082,
-      "netApyPct": 4.042657905931082,
+      "grossApyPct": 4.046358734126,
+      "netApyPct": 3.6417228607134,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1012,7 +1012,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 4.042657905931082,
+        "headlineYieldPct": 3.6417228607134,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1031,9 +1031,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 1000,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -1045,7 +1045,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 1000,
             "hwmMode": "OFFCHAIN_ACCOUNTING",
             "enforcement": "DISCLOSE_ONLY",
             "evidenceType": "HWM_STATE_MISSING",
@@ -1120,7 +1120,7 @@
           "source": "hidden"
         },
         "net": {
-          "apy": 0.04418231711334997,
+          "apy": 0.03976408540201497,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1158,7 +1158,7 @@
       "status": "MEASURED",
       "reasonCode": null,
       "grossApyPct": 4.418231711334997,
-      "netApyPct": 4.418231711334997,
+      "netApyPct": 3.976408540201497,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1177,7 +1177,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 4.418231711334997,
+        "headlineYieldPct": 3.976408540201497,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1196,9 +1196,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -1210,7 +1210,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -1275,12 +1275,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.027481413161173408,
+          "apy": 0.027482757052401774,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.027481413161173408,
+          "apy": 0.027482757052401774,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1318,8 +1318,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.7481413161173407,
-      "netApyPct": 2.7481413161173407,
+      "grossApyPct": 2.7482757052401774,
+      "netApyPct": 2.7482757052401774,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1338,7 +1338,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.7481413161173407,
+        "headlineYieldPct": 2.7482757052401774,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1357,9 +1357,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -1371,7 +1371,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -1436,12 +1436,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.02332584052513509,
+          "apy": 0.02369457945339848,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.02332584052513509,
+          "apy": 0.02369457945339848,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1479,8 +1479,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.332584052513509,
-      "netApyPct": 2.332584052513509,
+      "grossApyPct": 2.369457945339848,
+      "netApyPct": 2.369457945339848,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1499,7 +1499,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.332584052513509,
+        "headlineYieldPct": 2.369457945339848,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1518,9 +1518,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 1000,
           "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -1532,7 +1532,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 1000,
             "hwmMode": "OFFCHAIN_ACCOUNTING",
             "enforcement": "DISCLOSE_ONLY",
             "evidenceType": "HWM_STATE_MISSING",
@@ -1602,12 +1602,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.029787395345754142,
+          "apy": 0.03015606461462239,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.029787395345754142,
+          "apy": 0.02714045815316015,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1645,8 +1645,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.978739534575414,
-      "netApyPct": 2.978739534575414,
+      "grossApyPct": 3.015606461462239,
+      "netApyPct": 2.714045815316015,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1665,7 +1665,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.978739534575414,
+        "headlineYieldPct": 2.714045815316015,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1681,9 +1681,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -1695,7 +1695,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -1839,9 +1839,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -1853,7 +1853,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -1994,9 +1994,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -2008,7 +2008,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -2149,9 +2149,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -2163,7 +2163,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -2304,9 +2304,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -2318,7 +2318,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -2458,9 +2458,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -2472,7 +2472,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -2612,9 +2612,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -2626,7 +2626,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -2767,9 +2767,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -2781,7 +2781,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
@@ -2925,9 +2925,9 @@
       },
       "fees": {
         "schedule": {
-          "performanceFeeBps": null,
+          "performanceFeeBps": 0,
           "hwmMode": "NONE",
-          "exitFeeBps": null,
+          "exitFeeBps": 0,
           "spreadFeeBps": 10
         },
         "rails": {
@@ -2939,7 +2939,7 @@
             "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
           },
           "performance": {
-            "bps": null,
+            "bps": 0,
             "hwmMode": "NONE",
             "enforcement": "NONE",
             "evidenceType": "NOT_APPLICABLE",
