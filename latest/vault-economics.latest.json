@@ -1,6 +1,6 @@
 {
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-02T18:03:28.323Z",
+  "generatedAt": "2026-03-03T17:14:15.514Z",
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
@@ -105,18 +105,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": -0.5288651522047971,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": -0.01,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -146,14 +166,17 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "NO_OBSERVE_LOGIC",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": -52.886515220479716,
+      "netApyPct": -1,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_pendle_yt_syrupusdt_volatility",
@@ -169,9 +192,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": 0,
-        "label": "SCENARIO_YIELD"
+        "mode": "MEASURED",
+        "headlineYieldPct": -1,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_flow_engine_pendle_lp_susde": {
@@ -243,18 +267,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.0930547383458534,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.0930547383458534,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -284,14 +328,17 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "VAULT_PARAMS_MISSING",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 9.30547383458534,
+      "netApyPct": 9.30547383458534,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_flow_engine_pendle_lp_susde",
@@ -307,9 +354,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": 0,
-        "label": "SCENARIO_YIELD"
+        "mode": "MEASURED",
+        "headlineYieldPct": 9.30547383458534,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
@@ -381,18 +429,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.010806414603240664,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.010806414603240664,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -422,14 +490,17 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "VAULT_PARAMS_MISSING",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 1.0806414603240664,
+      "netApyPct": 1.0806414603240664,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_delta_fee_engine_pendle_lp_usde",
@@ -445,9 +516,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": 0,
-        "label": "SCENARIO_YIELD"
+        "mode": "MEASURED",
+        "headlineYieldPct": 1.0806414603240664,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_stable_allocator": {
@@ -522,18 +594,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": 0.025555344430726254,
+          "apy": 0.025589079997240836,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.025555344430726254,
+          "apy": 0.025589079997240836,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -570,8 +662,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.5555344430726255,
-      "netApyPct": 2.5555344430726255,
+      "grossApyPct": 2.5589079997240836,
+      "netApyPct": 2.5589079997240836,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -590,7 +682,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.5555344430726255,
+        "headlineYieldPct": 2.5589079997240836,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -667,18 +759,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": 0.03915177039764587,
+          "apy": 0.039172625198558485,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03915177039764587,
+          "apy": 0.039172625198558485,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -715,8 +827,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.915177039764587,
-      "netApyPct": 3.915177039764587,
+      "grossApyPct": 3.917262519855848,
+      "netApyPct": 3.917262519855848,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -735,7 +847,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.915177039764587,
+        "headlineYieldPct": 3.917262519855848,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -812,18 +924,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": 0.040456922576825226,
+          "apy": 0.040463669690128136,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.040456922576825226,
+          "apy": 0.040463669690128136,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -860,8 +992,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 4.045692257682522,
-      "netApyPct": 4.045692257682522,
+      "grossApyPct": 4.046366969012814,
+      "netApyPct": 4.046366969012814,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -880,7 +1012,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 4.045692257682522,
+        "headlineYieldPct": 4.046366969012814,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -957,8 +1089,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -1097,18 +1249,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": 0.02741382806100299,
+          "apy": 0.02748334406404502,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.02741382806100299,
+          "apy": 0.02748334406404502,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1146,8 +1318,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.7413828061002987,
-      "netApyPct": 2.7413828061002987,
+      "grossApyPct": 2.748334406404502,
+      "netApyPct": 2.748334406404502,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1166,7 +1338,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.7413828061002987,
+        "headlineYieldPct": 2.748334406404502,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1238,18 +1410,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": 0.023696860800449526,
+          "apy": 0.023694815930436652,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.023696860800449526,
+          "apy": 0.023694815930436652,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1287,8 +1479,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.3696860800449526,
-      "netApyPct": 2.3696860800449526,
+      "grossApyPct": 2.3694815930436652,
+      "netApyPct": 2.3694815930436652,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1307,7 +1499,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.3696860800449526,
+        "headlineYieldPct": 2.3694815930436652,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1384,18 +1576,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": 0.03385427562051824,
+          "apy": 0.030156454563920354,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03385427562051824,
+          "apy": 0.030156454563920354,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1433,8 +1645,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.3854275620518237,
-      "netApyPct": 3.3854275620518237,
+      "grossApyPct": 3.0156454563920354,
+      "netApyPct": 3.0156454563920354,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1453,7 +1665,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.3854275620518237,
+        "headlineYieldPct": 3.0156454563920354,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1522,18 +1734,38 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": -0.016446769308854813,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": -0.01,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1564,14 +1796,17 @@
       "leverageCosts": null,
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "NO_OBSERVE_LOGIC",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": -1.6446769308854812,
+      "netApyPct": -1,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_emode_usde_looper",
@@ -1587,9 +1822,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": 0,
-        "label": "SCENARIO_YIELD"
+        "mode": "MEASURED",
+        "headlineYieldPct": -1,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_aave_usde_supply": {
@@ -1656,8 +1892,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -1722,7 +1978,7 @@
       },
       "headline": {
         "mode": "SCENARIO",
-        "headlineYieldPct": 0,
+        "headlineYieldPct": null,
         "label": "SCENARIO_YIELD"
       }
     },
@@ -1790,8 +2046,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -1856,7 +2132,7 @@
       },
       "headline": {
         "mode": "SCENARIO",
-        "headlineYieldPct": 0,
+        "headlineYieldPct": null,
         "label": "SCENARIO_YIELD"
       }
     },
@@ -1924,8 +2200,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -1990,7 +2286,7 @@
       },
       "headline": {
         "mode": "SCENARIO",
-        "headlineYieldPct": 0,
+        "headlineYieldPct": null,
         "label": "SCENARIO_YIELD"
       }
     },
@@ -2058,8 +2354,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -2123,7 +2439,7 @@
       },
       "headline": {
         "mode": "SCENARIO",
-        "headlineYieldPct": 0,
+        "headlineYieldPct": null,
         "label": "SCENARIO_YIELD"
       }
     },
@@ -2191,8 +2507,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -2256,7 +2592,7 @@
       },
       "headline": {
         "mode": "SCENARIO",
-        "headlineYieldPct": 0,
+        "headlineYieldPct": null,
         "label": "SCENARIO_YIELD"
       }
     },
@@ -2324,8 +2660,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -2390,7 +2746,7 @@
       },
       "headline": {
         "mode": "SCENARIO",
-        "headlineYieldPct": 0,
+        "headlineYieldPct": null,
         "label": "SCENARIO_YIELD"
       }
     },
@@ -2458,8 +2814,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -2527,7 +2903,7 @@
       },
       "headline": {
         "mode": "SCENARIO",
-        "headlineYieldPct": 0,
+        "headlineYieldPct": null,
         "label": "SCENARIO_YIELD"
       }
     },
@@ -2595,8 +2971,28 @@
           "includedInApy": false,
           "notes": "Incentives shown as EV only; excluded from base APY."
         },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
         "provenance": {
-          "policy": "yieldSurface.points"
+          "policy": "yieldSurface.points + config/params.plasma.json"
         }
       },
       "apy": {
@@ -2660,7 +3056,7 @@
       },
       "headline": {
         "mode": "SCENARIO",
-        "headlineYieldPct": 0,
+        "headlineYieldPct": null,
         "label": "SCENARIO_YIELD"
       }
     }
