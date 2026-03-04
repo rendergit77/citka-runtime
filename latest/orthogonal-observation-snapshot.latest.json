@@ -1,6 +1,6 @@
 {
-  "tag": "ci-obs-22683324390",
-  "generatedAt": "2026-03-04T18:28:06.898Z",
+  "tag": "ci-obs-22684213906",
+  "generatedAt": "2026-03-04T18:52:26.610Z",
   "status": "PASS",
   "policy": {
     "writePolicy": "WRITE_POLICY_BLOCKED",
@@ -13,8 +13,8 @@
   "provenance": {
     "rpcUrl": "https://rpc.plasma.to",
     "chainId": 9745,
-    "blockNumber": 15717107,
-    "blockTimestamp": 1772648865,
+    "blockNumber": 15718571,
+    "blockTimestamp": 1772650329,
     "dependencyArtifact": "ops/runtime/dependency-health.latest.json",
     "health": {
       "rpcGreen": true,
@@ -38,10 +38,10 @@
       "observationWindowRef": "ops/runtime/ci-obs-22649158726-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "ci-obs-22683324390",
-        "timestamp": "2026-03-04T18:27:53.687Z",
-        "blockNumber": 15717107,
-        "blockTimestamp": 1772648865,
+        "tag": "ci-obs-22684213906",
+        "timestamp": "2026-03-04T18:52:16.465Z",
+        "blockNumber": 15718571,
+        "blockTimestamp": 1772650329,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0xB9F752B054f492a31B02d1b48af7253A7f13d27d",
@@ -53,9 +53,9 @@
           "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
         },
         "valuationOutputs": {
-          "buyAmountOutRaw": "7379193",
-          "markToMarketUsdt0Raw": "47274",
-          "sellAmountOutRaw": "47274"
+          "buyAmountOutRaw": "7381415",
+          "markToMarketUsdt0Raw": "47259",
+          "sellAmountOutRaw": "47259"
         },
         "quoteEvidence": {
           "buy": {
@@ -75,18 +75,18 @@
         "delta": {
           "previousValueRaw": "47902",
           "baselineValueRaw": "47902",
-          "fromPreviousRaw": "-628",
-          "fromBaselineRaw": "-628",
-          "stepReturn": -0.013110099787065259,
-          "cumulativeReturn": -0.013110099787065259
+          "fromPreviousRaw": "-643",
+          "fromBaselineRaw": "-643",
+          "stepReturn": -0.013423239113189428,
+          "cumulativeReturn": -0.013423239113189428
         }
       },
       "metrics": {
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.7515856481481481,
-        "cumulativeReturn": -0.013110099787065259,
+        "daysElapsed": 0.7685300925925926,
+        "cumulativeReturn": -0.013423239113189428,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",
         "apyStatus": "OBSERVING"
@@ -104,10 +104,10 @@
       "observationWindowRef": "ops/runtime/ci-obs-22649158726-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "ci-obs-22683324390",
-        "timestamp": "2026-03-04T18:28:00.610Z",
-        "blockNumber": 15717107,
-        "blockTimestamp": 1772648865,
+        "tag": "ci-obs-22684213906",
+        "timestamp": "2026-03-04T18:52:22.375Z",
+        "blockNumber": 15718571,
+        "blockTimestamp": 1772650329,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
@@ -119,9 +119,9 @@
           "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
         },
         "valuationOutputs": {
-          "buyAmountOutRaw": "16551541971816027",
-          "markToMarketUsdt0Raw": "50014",
-          "sellAmountOutRaw": "50014"
+          "buyAmountOutRaw": "16551530947299911",
+          "markToMarketUsdt0Raw": "50015",
+          "sellAmountOutRaw": "50015"
         },
         "quoteEvidence": {
           "buy": {
@@ -141,18 +141,18 @@
         "delta": {
           "previousValueRaw": "49997",
           "baselineValueRaw": "49997",
-          "fromPreviousRaw": "17",
-          "fromBaselineRaw": "17",
-          "stepReturn": 0.00034002040122407346,
-          "cumulativeReturn": 0.00034002040122407346
+          "fromPreviousRaw": "18",
+          "fromBaselineRaw": "18",
+          "stepReturn": 0.0003600216012960778,
+          "cumulativeReturn": 0.0003600216012960778
         }
       },
       "metrics": {
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.7515856481481481,
-        "cumulativeReturn": 0.00034002040122407346,
+        "daysElapsed": 0.7685300925925926,
+        "cumulativeReturn": 0.0003600216012960778,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",
         "apyStatus": "OBSERVING"
@@ -170,10 +170,10 @@
       "observationWindowRef": "ops/runtime/ci-obs-22649158726-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "ci-obs-22683324390",
-        "timestamp": "2026-03-04T18:28:06.898Z",
-        "blockNumber": 15717107,
-        "blockTimestamp": 1772648865,
+        "tag": "ci-obs-22684213906",
+        "timestamp": "2026-03-04T18:52:26.610Z",
+        "blockNumber": 15718571,
+        "blockTimestamp": 1772650329,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
@@ -185,9 +185,9 @@
           "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
         },
         "valuationOutputs": {
-          "buyAmountOutRaw": "18363906094057095",
-          "markToMarketUsdt0Raw": "49998",
-          "sellAmountOutRaw": "49998"
+          "buyAmountOutRaw": "18363913534242493",
+          "markToMarketUsdt0Raw": "49996",
+          "sellAmountOutRaw": "49996"
         },
         "quoteEvidence": {
           "buy": {
@@ -207,18 +207,18 @@
         "delta": {
           "previousValueRaw": "50003",
           "baselineValueRaw": "50003",
-          "fromPreviousRaw": "-5",
-          "fromBaselineRaw": "-5",
-          "stepReturn": -0.0000999940003599784,
-          "cumulativeReturn": -0.0000999940003599784
+          "fromPreviousRaw": "-7",
+          "fromBaselineRaw": "-7",
+          "stepReturn": -0.00013999160050396977,
+          "cumulativeReturn": -0.00013999160050396977
         }
       },
       "metrics": {
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.7515856481481481,
-        "cumulativeReturn": -0.0000999940003599784,
+        "daysElapsed": 0.7685300925925926,
+        "cumulativeReturn": -0.00013999160050396977,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",
         "apyStatus": "OBSERVING"
