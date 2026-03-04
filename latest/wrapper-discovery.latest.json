@@ -1,39 +1,38 @@
 {
   "version": "wrapper_discovery.v1",
-  "generatedAt": "2026-03-04T18:52:38.510Z",
+  "generatedAt": "2026-03-04T19:27:33.628Z",
   "chainId": 9745,
-  "rpcUsed": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
+  "rpcUsed": "https://rpc.plasma.to",
   "wrappers": [
     {
       "label": "Fluid-fUSDT0",
       "address": "0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B",
       "source": "config/addresses.plasma.json",
       "hasCode": true,
-      "isErc4626": true,
-      "convertToAssetsViable": true,
+      "isErc4626": false,
+      "convertToAssetsViable": false,
       "decimals": 6,
-      "asset": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-      "totalAssets": "143393826809295",
-      "error": null,
-      "convertToAssetsResult": "1013867"
+      "asset": null,
+      "totalAssets": "143394053674307",
+      "error": null
     },
     {
       "label": "Euler-eUSDT0",
       "address": "0xe818ad0D20D504C55601b9d5e0E137314414dec4",
       "source": "config/params.plasma.json",
       "hasCode": true,
-      "isErc4626": true,
+      "isErc4626": false,
       "convertToAssetsViable": true,
-      "decimals": 6,
+      "decimals": null,
       "asset": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-      "totalAssets": "23470351905697",
+      "totalAssets": null,
       "error": null,
-      "convertToAssetsResult": "1020467"
+      "convertToAssetsResult": "1020469"
     }
   ],
   "summary": {
     "total": 2,
-    "erc4626Viable": 2,
+    "erc4626Viable": 0,
     "errors": 0
   }
 }

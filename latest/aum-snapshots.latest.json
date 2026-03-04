@@ -1,8 +1,8 @@
 {
   "version": "aum_snapshots.v1",
-  "generatedAt": "2026-03-04T18:52:38.929Z",
-  "observedAt": "2026-03-04T18:52:38.929Z",
-  "expiresAt": "2026-03-04T22:52:38.929Z",
+  "generatedAt": "2026-03-04T19:27:33.964Z",
+  "observedAt": "2026-03-04T19:27:33.964Z",
+  "expiresAt": "2026-03-04T23:27:33.964Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -16,8 +16,24 @@
     "vaultsTotal": 11,
     "computableVaults": 1,
     "activeVaults": 1,
-    "missingVaults": 8,
-    "blockedVaults": 2
+    "missingVaults": 0,
+    "blockedVaults": 10
+  },
+  "invariants": {
+    "valid": true,
+    "errors": [],
+    "sharedAttributionGroups": {
+      "plasma_shared_staging_v1": {
+        "method": "SHARED_VAULT_WEIGHTED_ATTRIBUTION_V1",
+        "lanes": [
+          "plasma_aave_core"
+        ],
+        "weightsSumBps": 10000,
+        "sharedAumAssetsRaw": "100001",
+        "allocatedAumAssetsRaw": "100001",
+        "matched": true
+      }
+    }
   },
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
@@ -40,23 +56,17 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_flow_engine_pendle_lp_susde": {
       "vaultId": "plasma_flow_engine_pendle_lp_susde",
-      "status": "MISSING",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        }
-      ],
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "requiredInputs": [],
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
       "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "settlementComputable": false,
@@ -70,23 +80,17 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
       "vaultId": "plasma_delta_fee_engine_pendle_lp_usde",
-      "status": "MISSING",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        }
-      ],
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "requiredInputs": [],
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
       "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "settlementComputable": false,
@@ -100,23 +104,17 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_stable_allocator": {
       "vaultId": "plasma_stable_allocator",
-      "status": "MISSING",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        }
-      ],
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "requiredInputs": [],
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
       "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "settlementComputable": false,
@@ -130,23 +128,17 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_syrup_barbell": {
       "vaultId": "plasma_syrup_barbell",
-      "status": "MISSING",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        }
-      ],
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "requiredInputs": [],
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
       "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "settlementComputable": false,
@@ -160,23 +152,17 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_syrup_glidepath_allocator": {
       "vaultId": "plasma_syrup_glidepath_allocator",
-      "status": "MISSING",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        }
-      ],
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "requiredInputs": [],
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
       "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "settlementComputable": false,
@@ -190,23 +176,17 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_pendle_pt_syrupusdt": {
       "vaultId": "plasma_pendle_pt_syrupusdt",
-      "status": "MISSING",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        }
-      ],
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "requiredInputs": [],
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
       "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "settlementComputable": false,
@@ -220,8 +200,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_aave_core": {
@@ -230,7 +210,7 @@
       "reasonCode": null,
       "requiredInputs": [],
       "howToFix": [],
-      "aumReadMethod": "VAULT_ASSET_BALANCE_PLUS_STRATEGY_TVL",
+      "aumReadMethod": "SHARED_VAULT_WEIGHTED_ATTRIBUTION_V1",
       "settlementComputable": true,
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "decimals": 6,
@@ -242,32 +222,37 @@
         "confidence": "ASSUMED_STABLE_PEG"
       },
       "evidence": {
-        "vaultAssetBalanceRaw": "100001",
-        "strategyTvlRaw": "0",
-        "strategyAddress": "0xcade94009819fe46b173223f4e2a03022f14fab4",
-        "formula": "vaultAssetBalanceRaw + strategyTvlRaw",
-        "canonicalReadCalls": [
-          "IERC20(asset).balanceOf(vault)",
-          "strategy.getTVL()"
-        ]
+        "attributionMode": "SHARED_VAULT_WEIGHTED_ATTRIBUTION_V1",
+        "groupId": "plasma_shared_staging_v1",
+        "weightBps": 10000,
+        "sharedAumAssetsRaw": "100001",
+        "sharedAumMethodUsed": "VAULT_ASSET_BALANCE_PLUS_STRATEGY_TVL",
+        "sharedEvidence": {
+          "canonicalReadCalls": [
+            "IERC20(asset).balanceOf(vault)",
+            "strategy.getTVL()"
+          ],
+          "formula": "vaultAssetBalanceRaw + strategyTvlRaw",
+          "vaultAssetBalanceRaw": "100001",
+          "strategyTvlRaw": "0",
+          "strategyAddress": "0xcade94009819fe46b173223f4e2a03022f14fab4",
+          "totalAssetsErrors": [
+            "missing revert data (action=\"call\", data=null, reason=null, transaction={ \"data\": \"0x01e1d114\", \"to\": \"0x266F607368c6D8a6C82148bCfa8dD10701040ad4\" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.16.0)"
+          ]
+        },
+        "formula": "laneAumAssetsRaw = sharedAumAssetsRaw * weightBps / 10000"
       },
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_fluid_usdt0_supply": {
       "vaultId": "plasma_fluid_usdt0_supply",
-      "status": "MISSING",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        }
-      ],
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "requiredInputs": [],
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
       "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "settlementComputable": false,
@@ -281,23 +266,17 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_fluid_euler_aggregator": {
       "vaultId": "plasma_fluid_euler_aggregator",
-      "status": "MISSING",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        }
-      ],
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "requiredInputs": [],
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
       "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "settlementComputable": false,
@@ -311,8 +290,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_emode_usde_looper": {
@@ -335,8 +314,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T18:52:38.929Z",
-      "expiresAt": "2026-03-04T22:52:38.929Z",
+      "observedAt": "2026-03-04T19:27:33.964Z",
+      "expiresAt": "2026-03-04T23:27:33.964Z",
       "freshnessStatus": "FRESH"
     }
   }

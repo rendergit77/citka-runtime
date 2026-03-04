@@ -1,8 +1,8 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-03-04T18:52:39.325Z",
-  "observedAt": "2026-03-04T18:52:39.325Z",
-  "expiresAt": "2026-03-04T22:52:39.325Z",
+  "generatedAt": "2026-03-04T19:27:35.034Z",
+  "observedAt": "2026-03-04T19:27:35.034Z",
+  "expiresAt": "2026-03-04T23:27:35.034Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -14,15 +14,16 @@
     "feePolicyRef": "config/fees.policy.json",
     "canonicalRef": "config/canonical.vaults.json",
     "aumSnapshotsRef": "ops/runtime/aum-snapshots.latest.json",
+    "flowMetricsRef": "ops/runtime/flow-metrics.latest.json",
     "sharePriceRef": "ops/runtime/share-price-snapshots.latest.json"
   },
   "totals": {
     "vaultsTotal": 11,
     "computableVaults": 1,
     "railModeCounts": {
-      "settlementActive": 1,
-      "disclosureOnly": 20,
-      "notMeasured": 23
+      "settlementActive": 2,
+      "disclosureOnly": 0,
+      "notMeasured": 42
     }
   },
   "vaults": {
@@ -36,8 +37,8 @@
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "DISCLOSE_ONLY",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
       "feeScheduleBps": {
@@ -47,34 +48,13 @@
         "exit": 0
       },
       "howToFix": [
-        "Measured net APY >= 0 across sustained window and explicit policy review.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
+        "Measured net APY >= 0 across sustained window and explicit policy review."
       ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "NEGATIVE_NET_APY_BLOCKED",
-          "upgradeHint": "Measured net APY >= 0 across sustained window and explicit policy review.",
-          "howToObtain": "Measured net APY >= 0 across sustained window and explicit policy review."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "requiredInputs": []
     },
     "plasma_flow_engine_pendle_lp_susde": {
-      "status": "MISSING",
-      "reasonCode": "REQUIRED_INPUTS_MISSING",
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
@@ -82,8 +62,8 @@
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "DISCLOSE_ONLY",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
       "feeScheduleBps": {
@@ -93,34 +73,13 @@
         "exit": 0
       },
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "upgradeHint": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "requiredInputs": []
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
-      "status": "MISSING",
-      "reasonCode": "REQUIRED_INPUTS_MISSING",
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
@@ -128,8 +87,8 @@
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "DISCLOSE_ONLY",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
       "feeScheduleBps": {
@@ -139,34 +98,13 @@
         "exit": 0
       },
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "upgradeHint": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "requiredInputs": []
     },
     "plasma_stable_allocator": {
-      "status": "MISSING",
-      "reasonCode": "REQUIRED_INPUTS_MISSING",
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
@@ -174,8 +112,8 @@
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "DISCLOSE_ONLY",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
       "feeScheduleBps": {
@@ -185,80 +123,13 @@
         "exit": 0
       },
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "upgradeHint": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "requiredInputs": []
     },
     "plasma_syrup_barbell": {
-      "status": "MISSING",
-      "reasonCode": "REQUIRED_INPUTS_MISSING",
-      "aumUsd": null,
-      "volumeUsd": null,
-      "withdrawUsd": null,
-      "grossApyFraction": 0.03918396913155146,
-      "periodSeconds": 604800,
-      "railModes": {
-        "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "DISCLOSE_ONLY",
-        "exit": "NOT_MEASURED"
-      },
-      "feeScheduleBps": {
-        "mgmt": 0,
-        "exec": 10,
-        "perf": 1000,
-        "exit": 0
-      },
-      "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
-      ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "upgradeHint": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
-    },
-    "plasma_syrup_glidepath_allocator": {
-      "status": "MISSING",
-      "reasonCode": "REQUIRED_INPUTS_MISSING",
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
@@ -266,8 +137,8 @@
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "DISCLOSE_ONLY",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
       "feeScheduleBps": {
@@ -277,43 +148,22 @@
         "exit": 0
       },
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "upgradeHint": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "requiredInputs": []
     },
-    "plasma_pendle_pt_syrupusdt": {
-      "status": "MISSING",
-      "reasonCode": "REQUIRED_INPUTS_MISSING",
+    "plasma_syrup_glidepath_allocator": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.04418231711334997,
+      "grossApyFraction": null,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "DISCLOSE_ONLY",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
       "feeScheduleBps": {
@@ -323,42 +173,46 @@
         "exit": 0
       },
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "upgradeHint": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "requiredInputs": []
+    },
+    "plasma_pendle_pt_syrupusdt": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": null,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ],
+      "requiredInputs": []
     },
     "plasma_aave_core": {
       "status": "ACTIVE",
       "reasonCode": null,
       "aumUsd": 0.100001,
-      "volumeUsd": null,
-      "withdrawUsd": null,
-      "grossApyFraction": 0.027521157174021635,
+      "volumeUsd": 0.100001,
+      "withdrawUsd": 0,
+      "grossApyFraction": 0.026967623741474052,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "SETTLEMENT_ACTIVE",
-        "exec": "DISCLOSE_ONLY",
+        "exec": "SETTLEMENT_ACTIVE",
         "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
@@ -368,74 +222,12 @@
         "perf": 0,
         "exit": 0
       },
-      "howToFix": [
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
-      ],
-      "requiredInputs": [
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "howToFix": [],
+      "requiredInputs": []
     },
     "plasma_fluid_usdt0_supply": {
-      "status": "MISSING",
-      "reasonCode": "REQUIRED_INPUTS_MISSING",
-      "aumUsd": null,
-      "volumeUsd": null,
-      "withdrawUsd": null,
-      "grossApyFraction": null,
-      "periodSeconds": 604800,
-      "railModes": {
-        "mgmt": "DISCLOSE_ONLY",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "NOT_MEASURED",
-        "exit": "NOT_MEASURED"
-      },
-      "feeScheduleBps": {
-        "mgmt": 50,
-        "exec": 10,
-        "perf": 0,
-        "exit": 0
-      },
-      "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
-      ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "upgradeHint": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
-    },
-    "plasma_fluid_euler_aggregator": {
-      "status": "MISSING",
-      "reasonCode": "REQUIRED_INPUTS_MISSING",
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
@@ -443,8 +235,33 @@
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
-        "perf": "DISCLOSE_ONLY",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 50,
+        "exec": 10,
+        "perf": 0,
+        "exit": 0
+      },
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ],
+      "requiredInputs": []
+    },
+    "plasma_fluid_euler_aggregator": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": null,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "NOT_MEASURED",
+        "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
       "feeScheduleBps": {
@@ -454,30 +271,9 @@
         "exit": 0
       },
       "howToFix": [
-        "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
       ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "LANE_AUM_ATTRIBUTION_UNAVAILABLE",
-          "upgradeHint": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances.",
-          "howToObtain": "Deploy lane-dedicated vault or implement deterministic lane attribution from shared vault balances."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "requiredInputs": []
     },
     "plasma_emode_usde_looper": {
       "status": "BLOCKED",
@@ -489,7 +285,7 @@
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "DISCLOSE_ONLY",
+        "exec": "NOT_MEASURED",
         "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
@@ -500,30 +296,9 @@
         "exit": 0
       },
       "howToFix": [
-        "Global write policy unblock.",
-        "Integrate deposit/withdraw event log aggregation.",
-        "Integrate withdrawal event log for exit premium computation."
+        "Global write policy unblock."
       ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "WRITE_POLICY_BLOCKED",
-          "upgradeHint": "Global write policy unblock.",
-          "howToObtain": "Global write policy unblock."
-        },
-        {
-          "field": "volumeUsd",
-          "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
-          "howToObtain": "Integrate deposit/withdraw event log aggregation."
-        },
-        {
-          "field": "withdrawUsd",
-          "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
-          "howToObtain": "Integrate withdrawal event log for exit premium computation."
-        }
-      ]
+      "requiredInputs": []
     }
   }
 }
