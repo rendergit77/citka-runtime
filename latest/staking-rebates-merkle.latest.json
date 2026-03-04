@@ -1,15 +1,15 @@
 {
   "version": "staking_rebates_merkle.v2",
-  "generatedAt": "2026-03-04T01:06:56.103Z",
+  "generatedAt": "2026-03-04T01:10:42.270Z",
   "status": "NOT_ENABLED",
   "reasonCode": "STAKERS_BPS_ZERO",
   "instructions": [
     "Set config/fees.policy.json defaults.recipients.stakersBps > 0 after staking distribution policy is activated."
   ],
-  "epochId": 23,
+  "epochId": null,
   "merkleRoot": null,
   "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
-  "snapshotVersionHash": "sha256:901196f3426ace4943632c9fdf20e599d8570f40b06e5e327d9ae42c90b9d795",
+  "snapshotVersionHash": null,
   "leavesCount": 0,
   "claims": [],
   "totals": {
