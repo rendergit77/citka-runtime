@@ -1,23 +1,320 @@
 {
   "version": "fee_ledger.v1",
-  "generatedAt": "2026-03-04T00:25:53.516Z",
-  "status": "MISSING",
-  "reasonCode": "ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
-  "instructions": [
-    "Run build-fee-accrual-inputs.js and ensure epoch + economics inputs are present."
-  ],
-  "epochId": null,
-  "currentEpochReference": null,
-  "currentEpochRef": null,
+  "generatedAt": "2026-03-04T00:27:29.115Z",
+  "status": "ACTIVE",
+  "reasonCode": null,
+  "instructions": [],
+  "epochId": 23,
+  "currentEpochReference": 23,
+  "currentEpochRef": "ops/runtime/points-epoch.real.latest.json",
   "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
-  "snapshotVersionHash": null,
+  "snapshotVersionHash": "sha256:31a7fa00ecc832a871b7867c7364504a86231dd1256708e4dddbf222bfe1df98",
   "sourceRefs": {
     "accrualInputsRef": "ops/runtime/fee-accrual-inputs.latest.json",
-    "feePolicyRef": "config/fees.policy.json"
+    "feePolicyRef": "config/fees.policy.json",
+    "currentEpochRef": "ops/runtime/points-epoch.real.latest.json"
   },
-  "vaults": {},
+  "vaults": {
+    "plasma_pendle_yt_syrupusdt_volatility": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceType": "NOT_MEASURED",
+        "evidenceRef": "ops/runtime/vault-economics.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_flow_engine_pendle_lp_susde": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceType": "NOT_MEASURED",
+        "evidenceRef": "ops/runtime/vault-economics.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_delta_fee_engine_pendle_lp_usde": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceType": "NOT_MEASURED",
+        "evidenceRef": "ops/runtime/vault-economics.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_stable_allocator": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/vault-economics.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_syrup_barbell": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_syrup_glidepath_allocator": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/vault-economics.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_pendle_pt_syrupusdt": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_aave_core": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 50,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_fluid_usdt0_supply": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/vault-economics.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 50,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_fluid_euler_aggregator": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/vault-economics.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    },
+    "plasma_emode_usde_looper": {
+      "status": "ACTIVE",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceType": "NOT_MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false
+    }
+  },
   "totals": {
-    "vaultsTotal": 0,
+    "vaultsTotal": 11,
     "executionFeeUsd": 0,
     "managementFeeUsd": 0,
     "performanceFeeUsd": 0,
@@ -27,12 +324,10 @@
     "stakersAccrualUsdCap": 0
   },
   "invariants": {
-    "valid": false,
-    "noFutureEpoch": false,
-    "measuredOnlyIntegrity": false,
-    "recipientsSumValid": false,
-    "errors": [
-      "ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING"
-    ]
+    "valid": true,
+    "noFutureEpoch": true,
+    "measuredOnlyIntegrity": true,
+    "recipientsSumValid": true,
+    "errors": []
   }
 }
