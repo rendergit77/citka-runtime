@@ -1,8 +1,8 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-03-04T20:55:00.155Z",
-  "observedAt": "2026-03-04T20:55:00.155Z",
-  "expiresAt": "2026-03-05T00:55:00.155Z",
+  "generatedAt": "2026-03-04T21:18:05.987Z",
+  "observedAt": "2026-03-04T21:18:05.987Z",
+  "expiresAt": "2026-03-05T01:18:05.987Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -19,11 +19,11 @@
   },
   "totals": {
     "vaultsTotal": 11,
-    "computableVaults": 1,
+    "computableVaults": 2,
     "railModeCounts": {
-      "settlementActive": 2,
-      "disclosureOnly": 1,
-      "notMeasured": 41
+      "settlementActive": 3,
+      "disclosureOnly": 2,
+      "notMeasured": 39
     }
   },
   "vaults": {
@@ -208,7 +208,7 @@
       "aumUsd": 0.100001,
       "volumeUsd": 0.100001,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.027116748134438654,
+      "grossApyFraction": 0.02711677389025559,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "SETTLEMENT_ACTIVE",
@@ -226,16 +226,16 @@
       "requiredInputs": []
     },
     "plasma_fluid_usdt0_supply": {
-      "status": "BLOCKED",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
-      "aumUsd": null,
+      "status": "ACTIVE",
+      "reasonCode": null,
+      "aumUsd": 0.000986,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": null,
+      "grossApyFraction": 0.025169791513711903,
       "periodSeconds": 604800,
       "railModes": {
-        "mgmt": "NOT_MEASURED",
-        "exec": "NOT_MEASURED",
+        "mgmt": "SETTLEMENT_ACTIVE",
+        "exec": "DISCLOSE_ONLY",
         "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
@@ -246,9 +246,23 @@
         "exit": 0
       },
       "howToFix": [
-        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+        "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE.",
+        "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
       ],
-      "requiredInputs": []
+      "requiredInputs": [
+        {
+          "field": "volumeUsd",
+          "reason": "FLOW_METHOD_NOT_SUPPORTED",
+          "upgradeHint": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE.",
+          "howToObtain": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "FLOW_METHOD_NOT_SUPPORTED",
+          "upgradeHint": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE.",
+          "howToObtain": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
+        }
+      ]
     },
     "plasma_fluid_euler_aggregator": {
       "status": "BLOCKED",
@@ -278,7 +292,7 @@
     "plasma_emode_usde_looper": {
       "status": "MISSING",
       "reasonCode": "REQUIRED_INPUTS_MISSING",
-      "aumUsd": null,
+      "aumUsd": 0.001,
       "volumeUsd": null,
       "withdrawUsd": null,
       "grossApyFraction": null,
@@ -296,28 +310,21 @@
         "exit": 0
       },
       "howToFix": [
-        "Global write policy unblock is required before enabling settlement rails for this lane.",
-        "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE.",
-        "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE."
+        "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE.",
+        "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
       ],
       "requiredInputs": [
         {
-          "field": "aumUsd",
-          "reason": "WRITE_POLICY_BLOCKED",
-          "upgradeHint": "Global write policy unblock is required before enabling settlement rails for this lane.",
-          "howToObtain": "Global write policy unblock is required before enabling settlement rails for this lane."
-        },
-        {
           "field": "volumeUsd",
           "reason": "FLOW_METHOD_NOT_SUPPORTED",
-          "upgradeHint": "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE.",
-          "howToObtain": "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE."
+          "upgradeHint": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE.",
+          "howToObtain": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
         },
         {
           "field": "withdrawUsd",
           "reason": "FLOW_METHOD_NOT_SUPPORTED",
-          "upgradeHint": "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE.",
-          "howToObtain": "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE."
+          "upgradeHint": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE.",
+          "howToObtain": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
         }
       ]
     }

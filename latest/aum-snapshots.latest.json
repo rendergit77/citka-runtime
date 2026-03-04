@@ -1,8 +1,8 @@
 {
   "version": "aum_snapshots.v1",
-  "generatedAt": "2026-03-04T20:54:58.960Z",
-  "observedAt": "2026-03-04T20:54:58.960Z",
-  "expiresAt": "2026-03-05T00:54:58.960Z",
+  "generatedAt": "2026-03-04T21:18:04.639Z",
+  "observedAt": "2026-03-04T21:18:04.639Z",
+  "expiresAt": "2026-03-05T01:18:04.639Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -14,10 +14,11 @@
   },
   "totals": {
     "vaultsTotal": 11,
-    "computableVaults": 1,
-    "activeVaults": 1,
-    "missingVaults": 1,
-    "blockedVaults": 9
+    "computableVaults": 3,
+    "activeVaults": 3,
+    "missingVaults": 0,
+    "blockedVaults": 8,
+    "totalAumUsd": null
   },
   "invariants": {
     "valid": true,
@@ -56,8 +57,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_flow_engine_pendle_lp_susde": {
@@ -80,8 +81,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
@@ -104,8 +105,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_stable_allocator": {
@@ -128,8 +129,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_syrup_barbell": {
@@ -152,8 +153,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_syrup_glidepath_allocator": {
@@ -176,8 +177,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_pendle_pt_syrupusdt": {
@@ -200,8 +201,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_aave_core": {
@@ -242,32 +243,42 @@
         },
         "formula": "laneAumAssetsRaw = sharedAumAssetsRaw * weightBps / 10000"
       },
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_fluid_usdt0_supply": {
       "vaultId": "plasma_fluid_usdt0_supply",
-      "status": "BLOCKED",
-      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "status": "ACTIVE",
+      "reasonCode": null,
       "requiredInputs": [],
-      "howToFix": [
-        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
-      ],
-      "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
-      "settlementComputable": false,
+      "howToFix": [],
+      "aumReadMethod": "RECEIPT_TOKEN_BALANCE",
+      "settlementComputable": true,
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "decimals": 6,
-      "aumAssetsRaw": null,
-      "aumUsd": null,
+      "aumAssetsRaw": "986",
+      "aumUsd": 0.000986,
       "price": {
         "source": null,
         "usd": null,
         "confidence": null
       },
-      "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "evidence": {
+        "attributionMode": "RECEIPT_TOKEN_BALANCE",
+        "receiptToken": "0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B",
+        "holder": "0xB9D02045154e6690EfA366d61775681a271fD262",
+        "receiptDecimals": 6,
+        "balanceRaw": "986",
+        "balanceFormatted": 0.000986,
+        "price": {
+          "usd": 1,
+          "source": "STABLE_PEG_1_USD",
+          "confidence": "CONFIG_EXPLICIT"
+        }
+      },
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_fluid_euler_aggregator": {
@@ -290,38 +301,42 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_emode_usde_looper": {
       "vaultId": "plasma_emode_usde_looper",
-      "status": "MISSING",
-      "reasonCode": "WRITE_POLICY_BLOCKED",
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "WRITE_POLICY_BLOCKED",
-          "howToObtain": "Global write policy unblock is required before enabling settlement rails for this lane."
-        }
-      ],
-      "howToFix": [
-        "Global write policy unblock is required before enabling settlement rails for this lane."
-      ],
-      "aumReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
-      "settlementComputable": false,
+      "status": "ACTIVE",
+      "reasonCode": null,
+      "requiredInputs": [],
+      "howToFix": [],
+      "aumReadMethod": "RECEIPT_TOKEN_BALANCE",
+      "settlementComputable": true,
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "decimals": 6,
-      "aumAssetsRaw": null,
-      "aumUsd": null,
+      "aumAssetsRaw": "1000010825291408",
+      "aumUsd": 0.001,
       "price": {
         "source": null,
         "usd": null,
         "confidence": null
       },
-      "evidence": null,
-      "observedAt": "2026-03-04T20:54:58.960Z",
-      "expiresAt": "2026-03-05T00:54:58.960Z",
+      "evidence": {
+        "attributionMode": "RECEIPT_TOKEN_BALANCE",
+        "receiptToken": "0x7519403E12111ff6b710877Fcd821D0c12CAF43A",
+        "holder": "0xB9D02045154e6690EfA366d61775681a271fD262",
+        "receiptDecimals": 18,
+        "balanceRaw": "1000010825291408",
+        "balanceFormatted": 0.001000010825291408,
+        "price": {
+          "usd": 1,
+          "source": "STABLE_PEG_USDE_1_USD",
+          "confidence": "CONFIG_EXPLICIT"
+        }
+      },
+      "observedAt": "2026-03-04T21:18:04.639Z",
+      "expiresAt": "2026-03-05T01:18:04.639Z",
       "freshnessStatus": "FRESH"
     }
   }
