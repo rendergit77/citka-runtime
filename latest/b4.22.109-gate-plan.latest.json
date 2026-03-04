@@ -1,0 +1,37 @@
+{
+  "tag": "b4.22.109_staging_gate_config",
+  "generatedAt": "2026-03-04T17:10:47.536Z",
+  "rpcUrl": "https://rpc.plasma.to",
+  "gateAddress": "0x7523E8861bE1d544130AA6eed8d1504B7676c2Ba",
+  "mode": "dry_run",
+  "write": false,
+  "reasonCode": "MODE_DRY_RUN",
+  "before": {
+    "owner": "0x61377d8BB71a349Be873bB1d1865a4D2e6c3B476",
+    "paused": true,
+    "allowlistOnly": true,
+    "maxTotalAssets": "0"
+  },
+  "requested": {
+    "paused": null,
+    "allowlistOnly": null,
+    "maxTotalAssets": "0",
+    "allowlistCount": 3,
+    "allowFlag": true
+  },
+  "plan": [
+    {
+      "fn": "setAllowlistedBatch",
+      "args": [
+        [
+          "0xB9D02045154e6690EfA366d61775681a271fD262",
+          "0x619d5D1E620c70442e67726b0E4cBf8c6E111b19",
+          "0xC3f2c61C4836Afeb9Ae601c91F6FE661df3D634E"
+        ],
+        true
+      ]
+    }
+  ],
+  "txs": [],
+  "status": "DRY_RUN"
+}
