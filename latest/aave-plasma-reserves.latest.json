@@ -1,6 +1,6 @@
 {
   "version": "aave_plasma_reserves.v2",
-  "generatedAt": "2026-03-04T14:33:00.962Z",
+  "generatedAt": "2026-03-04T15:02:55.094Z",
   "chainId": 9745,
   "rpcUsed": "https://rpc.plasma.to",
   "provider": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
@@ -19,8 +19,8 @@
       "stableBorrowRateEnabled": false,
       "isActive": true,
       "isFrozen": false,
-      "supplyApyPct": 2.7440909412055583,
-      "liquidityIndex": "1015695469757787235170972863"
+      "supplyApyPct": 2.7441243184906283,
+      "liquidityIndex": "1015697045576047398505552196"
     },
     {
       "symbol": "USDe",
@@ -35,8 +35,8 @@
       "stableBorrowRateEnabled": false,
       "isActive": true,
       "isFrozen": false,
-      "supplyApyPct": 1.3207481363823326,
-      "liquidityIndex": "1005285372736240347665846936"
+      "supplyApyPct": 1.3229607625592361,
+      "liquidityIndex": "1005287373409621912691557257"
     },
     {
       "symbol": "sUSDe",
@@ -97,8 +97,8 @@
       "stableBorrowRateEnabled": false,
       "isActive": true,
       "isFrozen": false,
-      "supplyApyPct": 1.9282647120862182,
-      "liquidityIndex": "1008130686018718666263289415"
+      "supplyApyPct": 1.9282651882676125,
+      "liquidityIndex": "1008131806054922444666876457"
     },
     {
       "symbol": "PT-USDe-15JAN2026",
@@ -219,6 +219,20 @@
       "isFrozen": false,
       "supplyApyPct": 0,
       "liquidityIndex": "1000000000000000000000000000"
+    },
+    {
+      "symbol": "GHO",
+      "tokenAddress": "0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3",
+      "decimals": 18,
+      "ltv": 0,
+      "liquidationThreshold": 0,
+      "liquidationBonus": 0,
+      "reserveFactor": 500,
+      "usageAsCollateralEnabled": false,
+      "borrowingEnabled": true,
+      "stableBorrowRateEnabled": false,
+      "isActive": true,
+      "isFrozen": false
     }
   ],
   "foundTargets": {
