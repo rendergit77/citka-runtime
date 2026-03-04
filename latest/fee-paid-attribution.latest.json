@@ -1,20 +1,20 @@
 {
   "version": "fee_paid_attribution.v1",
-  "generatedAt": "2026-03-04T17:13:14.300Z",
-  "status": "NOT_AVAILABLE",
-  "reasonCode": "SHARE_SNAPSHOT_MISSING",
+  "generatedAt": "2026-03-04T17:30:30.539Z",
+  "status": "MISSING",
+  "reasonCode": "FEE_LEDGER_NOT_ACTIVE:ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
   "model": "PRO_RATA_BY_USER_SHARES",
   "instructions": [
     "Ensure fee-ledger.latest.json is ACTIVE and points-epoch share snapshots are available."
   ],
   "diagnostics": {
     "requiredInputs": [
-      "points-epoch.real.latest.json (users[].vaultShares)"
+      "fee-ledger.latest.json (status=ACTIVE)"
     ]
   },
-  "epochId": 23,
-  "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
-  "snapshotVersionHash": "sha256:aeaa9e46f70b40af592f4f2ad76fdf8e72652a29216abc20bd4b8863b92aff03",
+  "epochId": null,
+  "policyVersionHash": null,
+  "snapshotVersionHash": null,
   "sourceRefs": {
     "feeLedgerRef": "ops/runtime/fee-ledger.latest.json"
   },
