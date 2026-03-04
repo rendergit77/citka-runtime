@@ -1,6 +1,9 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-03-04T18:01:29.251Z",
+  "generatedAt": "2026-03-04T18:28:13.431Z",
+  "observedAt": "2026-03-04T18:28:13.431Z",
+  "expiresAt": "2026-03-04T22:28:13.431Z",
+  "freshnessStatus": "FRESH",
   "status": "MISSING",
   "reasonCode": "NO_COMPUTABLE_BASES",
   "instructions": [
@@ -46,17 +49,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -64,7 +70,7 @@
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.09288582823936517,
+      "grossApyFraction": 0.09318208824378468,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -82,17 +88,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -118,17 +127,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -136,7 +148,7 @@
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.026367000792915762,
+      "grossApyFraction": 0.026551728206988878,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -154,17 +166,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -172,7 +187,7 @@
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.03919681713295586,
+      "grossApyFraction": 0.039196844412811946,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -190,17 +205,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -208,7 +226,7 @@
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.040619253849263126,
+      "grossApyFraction": 0.04065619933207775,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -226,17 +244,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -262,17 +283,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -280,7 +304,7 @@
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.02756398384536962,
+      "grossApyFraction": 0.027564074778223223,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "DISCLOSE_ONLY",
@@ -298,17 +322,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -316,7 +343,7 @@
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.025170017740461903,
+      "grossApyFraction": 0.025539381635754532,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "DISCLOSE_ONLY",
@@ -334,17 +361,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -352,7 +382,7 @@
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.028312644150174426,
+      "grossApyFraction": 0.02831261601509194,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -370,17 +400,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     },
@@ -406,17 +439,20 @@
         {
           "field": "aumUsd",
           "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot.",
+          "howToObtain": "Integrate onchain totalAssets() or share-price * supply snapshot."
         },
         {
           "field": "volumeUsd",
           "reason": "NO_VOLUME_TRACKING",
-          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation.",
+          "howToObtain": "Integrate deposit/withdraw event log aggregation."
         },
         {
           "field": "withdrawUsd",
           "reason": "NO_WITHDRAW_LOG",
-          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation.",
+          "howToObtain": "Integrate withdrawal event log for exit premium computation."
         }
       ]
     }

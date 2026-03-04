@@ -1,6 +1,15 @@
 {
+  "version": "vault_economics_snapshot.v2",
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-04T18:01:29.136Z",
+  "generatedAt": "2026-03-04T18:28:13.305Z",
+  "observedAt": "2026-03-04T18:28:13.305Z",
+  "expiresAt": "2026-03-04T22:28:13.305Z",
+  "freshnessStatus": "FRESH",
+  "totalsByMode": {
+    "MEASURED": 11,
+    "OBSERVED": 0,
+    "SCENARIO": 8
+  },
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
@@ -131,12 +140,12 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.341935512909995,
+          "apy": -0.34204788918605755,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": -0.341935512909995,
+          "apy": -0.34204788918605755,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -173,8 +182,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": -34.1935512909995,
-      "netApyPct": -34.1935512909995,
+      "grossApyPct": -34.20478891860576,
+      "netApyPct": -34.20478891860576,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -193,7 +202,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": -34.1935512909995,
+        "headlineYieldPct": -34.20478891860576,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -293,12 +302,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.09288582823936517,
+          "apy": 0.09318208824378468,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.08359724541542865,
+          "apy": 0.0838638794194062,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -335,8 +344,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 9.288582823936517,
-      "netApyPct": 8.359724541542866,
+      "grossApyPct": 9.318208824378468,
+      "netApyPct": 8.38638794194062,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -355,7 +364,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 8.359724541542866,
+        "headlineYieldPct": 8.38638794194062,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -620,12 +629,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.026367000792915762,
+          "apy": 0.026551728206988878,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.023730300713624187,
+          "apy": 0.02389655538628999,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -662,8 +671,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.6367000792915762,
-      "netApyPct": 2.3730300713624186,
+      "grossApyPct": 2.655172820698888,
+      "netApyPct": 2.389655538628999,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -682,7 +691,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.3730300713624186,
+        "headlineYieldPct": 2.389655538628999,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -785,12 +794,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.03919681713295586,
+          "apy": 0.039196844412811946,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03527713541966028,
+          "apy": 0.03527715997153075,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -827,8 +836,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.9196817132955863,
-      "netApyPct": 3.527713541966028,
+      "grossApyPct": 3.9196844412811944,
+      "netApyPct": 3.527715997153075,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -847,7 +856,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.527713541966028,
+        "headlineYieldPct": 3.527715997153075,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -950,12 +959,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.040619253849263126,
+          "apy": 0.04065619933207775,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03655732846433681,
+          "apy": 0.03659057939886998,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -992,8 +1001,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 4.061925384926313,
-      "netApyPct": 3.6557328464336813,
+      "grossApyPct": 4.065619933207775,
+      "netApyPct": 3.6590579398869973,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1012,7 +1021,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.6557328464336813,
+        "headlineYieldPct": 3.6590579398869973,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1275,12 +1284,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.02756398384536962,
+          "apy": 0.027564074778223223,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.02756398384536962,
+          "apy": 0.027564074778223223,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1318,8 +1327,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.7563983845369617,
-      "netApyPct": 2.7563983845369617,
+      "grossApyPct": 2.7564074778223224,
+      "netApyPct": 2.7564074778223224,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1338,7 +1347,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.7563983845369617,
+        "headlineYieldPct": 2.7564074778223224,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1436,12 +1445,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.025170017740461903,
+          "apy": 0.025539381635754532,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.025170017740461903,
+          "apy": 0.025539381635754532,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1479,8 +1488,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.5170017740461903,
-      "netApyPct": 2.5170017740461903,
+      "grossApyPct": 2.5539381635754532,
+      "netApyPct": 2.5539381635754532,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1499,7 +1508,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.5170017740461903,
+        "headlineYieldPct": 2.5539381635754532,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1602,12 +1611,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.028312644150174426,
+          "apy": 0.02831261601509194,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.025481379735156982,
+          "apy": 0.025481354413582746,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1645,8 +1654,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.8312644150174426,
-      "netApyPct": 2.5481379735156984,
+      "grossApyPct": 2.831261601509194,
+      "netApyPct": 2.5481354413582746,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1665,7 +1674,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.5481379735156984,
+        "headlineYieldPct": 2.5481354413582746,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
