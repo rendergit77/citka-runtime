@@ -1,7 +1,7 @@
 {
   "version": "scenario_yields_v2",
-  "tag": "ci-obs-22681156665",
-  "generatedAt": "2026-03-04T17:30:30.313Z",
+  "tag": "ci-obs-22681684317",
+  "generatedAt": "2026-03-04T17:44:27.827Z",
   "policyHash": "sha256:dc7188db1aca2495b2b24f1ec824c15bdb36870b04bd2284120530a538f3bb53",
   "coverage": {
     "total": 11,
@@ -21,7 +21,7 @@
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
       "status": "MEASURED",
-      "measuredGrossApyPct": -34.1805,
+      "measuredGrossApyPct": -34.1864,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -130,5 +130,5 @@
       "explanationShort": "Yield measured onchain."
     }
   },
-  "checksum": "sha256:992499fd5f9e7b41d3ddd6930e26d4c280e4a2c01a6935b5d924b544c47fc723"
+  "checksum": "sha256:d45a65974e37de0074430276c3e04dede356c4b7f8baa8dfc627db7a74037f38"
 }
