@@ -1,7 +1,7 @@
 {
   "version": "orthogonal_observation_state.v1",
-  "generatedAt": "2026-03-04T00:59:19.291Z",
-  "updatedTag": "ci-obs-22650071295",
+  "generatedAt": "2026-03-04T00:59:28.415Z",
+  "updatedTag": "ci-manual",
   "policy": {
     "writePolicy": "WRITE_POLICY_BLOCKED",
     "publicWriteBlocked": true,
@@ -30,7 +30,7 @@
       "baselineValueRaw": "47902",
       "baselineTimestamp": 1772583928,
       "latestValueRaw": "47884",
-      "latestTimestamp": 1772585944,
+      "latestTimestamp": 1772585950,
       "observationCount": 2,
       "requiredObservationCount": 3,
       "snapshots": [
@@ -81,10 +81,10 @@
         },
         {
           "index": 2,
-          "tag": "ci-obs-22650071295",
-          "timestamp": "2026-03-04T00:59:10.305Z",
-          "blockNumber": 15654186,
-          "blockTimestamp": 1772585944,
+          "tag": "ci-manual",
+          "timestamp": "2026-03-04T00:59:17.702Z",
+          "blockNumber": 15654192,
+          "blockTimestamp": 1772585950,
           "valuationInputs": {
             "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
             "tokenOut": "0xB9F752B054f492a31B02d1b48af7253A7f13d27d",
@@ -142,7 +142,7 @@
       "baselineValueRaw": "49997",
       "baselineTimestamp": 1772583928,
       "latestValueRaw": "49997",
-      "latestTimestamp": 1772585944,
+      "latestTimestamp": 1772585950,
       "observationCount": 2,
       "requiredObservationCount": 3,
       "snapshots": [
@@ -193,10 +193,10 @@
         },
         {
           "index": 2,
-          "tag": "ci-obs-22650071295",
-          "timestamp": "2026-03-04T00:59:15.148Z",
-          "blockNumber": 15654186,
-          "blockTimestamp": 1772585944,
+          "tag": "ci-manual",
+          "timestamp": "2026-03-04T00:59:23.109Z",
+          "blockNumber": 15654192,
+          "blockTimestamp": 1772585950,
           "valuationInputs": {
             "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
             "tokenOut": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
@@ -208,7 +208,7 @@
             "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
           },
           "valuationOutputs": {
-            "buyAmountOutRaw": "16560070032643542",
+            "buyAmountOutRaw": "16560069979764270",
             "markToMarketUsdt0Raw": "49997",
             "sellAmountOutRaw": "49997"
           },
@@ -254,7 +254,7 @@
       "baselineValueRaw": "50003",
       "baselineTimestamp": 1772583928,
       "latestValueRaw": "50004",
-      "latestTimestamp": 1772585944,
+      "latestTimestamp": 1772585950,
       "observationCount": 2,
       "requiredObservationCount": 3,
       "snapshots": [
@@ -305,10 +305,10 @@
         },
         {
           "index": 2,
-          "tag": "ci-obs-22650071295",
-          "timestamp": "2026-03-04T00:59:19.291Z",
-          "blockNumber": 15654186,
-          "blockTimestamp": 1772585944,
+          "tag": "ci-manual",
+          "timestamp": "2026-03-04T00:59:28.415Z",
+          "blockNumber": 15654192,
+          "blockTimestamp": 1772585950,
           "valuationInputs": {
             "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
             "tokenOut": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
@@ -320,7 +320,7 @@
             "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
           },
           "valuationOutputs": {
-            "buyAmountOutRaw": "18362065871998262",
+            "buyAmountOutRaw": "18362065857704206",
             "markToMarketUsdt0Raw": "50004",
             "sellAmountOutRaw": "50004"
           },
@@ -355,12 +355,12 @@
       "cumulativeReturn": 0.000019998800071995682
     }
   },
-  "lastSnapshotArtifact": "ops/runtime/ci-obs-22650071295-orthogonal-observation-snapshot.latest.json",
+  "lastSnapshotArtifact": "ops/runtime/ci-manual-orthogonal-observation-snapshot.latest.json",
   "provenance": {
     "rpcUrl": "https://rpc.plasma.to",
     "chainId": 9745,
-    "blockNumber": 15654186,
-    "blockTimestamp": 1772585944,
+    "blockNumber": 15654192,
+    "blockTimestamp": 1772585950,
     "dependencyArtifact": "ops/runtime/dependency-health.latest.json",
     "health": {
       "rpcGreen": true,

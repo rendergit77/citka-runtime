@@ -1,14 +1,14 @@
 {
   "version": "revenue_scenarios_v2",
   "tag": "b4.22.74.0",
-  "generatedAt": "2026-03-04T00:59:26.344Z",
+  "generatedAt": "2026-03-04T00:59:34.115Z",
   "modeSupport": [
     "MEASURED",
     "SCENARIO"
   ],
   "inputs": {
     "feePolicyHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
-    "economicsChecksum": "sha256:8d09d8eabeacd141eb72d0f176054b4c94e3038dd2358a8f496bd603bfbd51a7",
+    "economicsChecksum": "sha256:72a9c5e5a3c22cafd6aeeeff514597bacdfc816e0a82f93d2463eda78e5bdd6b",
     "yieldAvailability": "COMPLETE",
     "excludedVaults": []
   },
@@ -26,8 +26,8 @@
               "executionFeeBps": 0
             },
             "truthInputs": {
-              "netApyFraction": -0.5317116774222235,
-              "grossApyFraction": -0.5317116774222235,
+              "netApyFraction": -0.531712646547897,
+              "grossApyFraction": -0.531712646547897,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -338,8 +338,8 @@
               "executionFeeBps": 0
             },
             "truthInputs": {
-              "netApyFraction": -0.5317116774222235,
-              "grossApyFraction": -0.5317116774222235,
+              "netApyFraction": -0.531712646547897,
+              "grossApyFraction": -0.531712646547897,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -650,8 +650,8 @@
               "executionFeeBps": 0
             },
             "truthInputs": {
-              "netApyFraction": -0.5317116774222235,
-              "grossApyFraction": -0.5317116774222235,
+              "netApyFraction": -0.531712646547897,
+              "grossApyFraction": -0.531712646547897,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -954,5 +954,5 @@
     "notes": "Using actual observed APY fractions where available."
   },
   "scenario": null,
-  "checksum": "sha256:36ea9a13d1a092a53a730bc9b1bdf6563f7e8bcadccf9447af61c3f5dc620eae"
+  "checksum": "sha256:9ba0e9289385f03127e19824e12ca8facf2c56bb86f32e256008c4100a9b8def"
 }

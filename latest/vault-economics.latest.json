@@ -1,6 +1,6 @@
 {
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-04T00:59:26.269Z",
+  "generatedAt": "2026-03-04T00:59:34.033Z",
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
     "paramsFile": "config/params.plasma.json",
@@ -131,12 +131,12 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.5317116774222235,
+          "apy": -0.531712646547897,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": -0.5317116774222235,
+          "apy": -0.531712646547897,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -173,8 +173,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": -53.171167742222345,
-      "netApyPct": -53.171167742222345,
+      "grossApyPct": -53.171264654789695,
+      "netApyPct": -53.171264654789695,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -193,7 +193,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": -53.171167742222345,
+        "headlineYieldPct": -53.171264654789695,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
