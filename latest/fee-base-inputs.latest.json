@@ -1,0 +1,424 @@
+{
+  "version": "fee_base_inputs.v1",
+  "generatedAt": "2026-03-04T10:59:04.588Z",
+  "status": "MISSING",
+  "reasonCode": "NO_COMPUTABLE_BASES",
+  "instructions": [
+    "No vault has proven USD base inputs. See per-vault requiredInputs for upgrade path."
+  ],
+  "periodSeconds": 604800,
+  "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
+  "sourceRefs": {
+    "economicsRef": "ops/runtime/vault-economics.latest.json",
+    "feePolicyRef": "config/fees.policy.json",
+    "canonicalRef": "config/canonical.vaults.json",
+    "sharePriceRef": "ops/runtime/share-price-snapshots.latest.json"
+  },
+  "totals": {
+    "vaultsTotal": 11,
+    "computableVaults": 0,
+    "railModeCounts": {
+      "settlementActive": 0,
+      "disclosureOnly": 21,
+      "notMeasured": 23
+    }
+  },
+  "vaults": {
+    "plasma_pendle_yt_syrupusdt_volatility": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": null,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "DISCLOSE_ONLY",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_flow_engine_pendle_lp_susde": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.0938313453748489,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "DISCLOSE_ONLY",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_delta_fee_engine_pendle_lp_usde": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.01084267851569377,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "DISCLOSE_ONLY",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_stable_allocator": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.026123086544821445,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "DISCLOSE_ONLY",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_syrup_barbell": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.03916110444608639,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "DISCLOSE_ONLY",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_syrup_glidepath_allocator": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.04057047099964426,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "DISCLOSE_ONLY",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_pendle_pt_syrupusdt": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.04418231711334997,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "DISCLOSE_ONLY",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_aave_core": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.027444941555804722,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "DISCLOSE_ONLY",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "NOT_MEASURED",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 50,
+        "exec": 10,
+        "perf": 0,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_fluid_usdt0_supply": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.024801231533838175,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "DISCLOSE_ONLY",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "NOT_MEASURED",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 50,
+        "exec": 10,
+        "perf": 0,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_fluid_euler_aggregator": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": 0.02831331940764592,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "DISCLOSE_ONLY",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 1000,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    },
+    "plasma_emode_usde_looper": {
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": null,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "NOT_MEASURED",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 0,
+        "exit": 0
+      },
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets() or share-price * supply snapshot."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "NO_VOLUME_TRACKING",
+          "upgradeHint": "Integrate deposit/withdraw event log aggregation."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "NO_WITHDRAW_LOG",
+          "upgradeHint": "Integrate withdrawal event log for exit premium computation."
+        }
+      ]
+    }
+  }
+}

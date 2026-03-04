@@ -1,6 +1,6 @@
 {
   "version": "fee_ledger.v1",
-  "generatedAt": "2026-03-04T02:01:48.168Z",
+  "generatedAt": "2026-03-04T10:59:04.664Z",
   "status": "MISSING",
   "reasonCode": "ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
   "instructions": [
@@ -13,7 +13,8 @@
   "snapshotVersionHash": null,
   "sourceRefs": {
     "accrualInputsRef": "ops/runtime/fee-accrual-inputs.latest.json",
-    "feePolicyRef": "config/fees.policy.json"
+    "feePolicyRef": "config/fees.policy.json",
+    "baseInputsRef": "ops/runtime/fee-base-inputs.latest.json"
   },
   "vaults": {},
   "totals": {
