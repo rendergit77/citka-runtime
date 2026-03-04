@@ -1,6 +1,6 @@
 {
-  "tag": "ci-obs-22650147567",
-  "generatedAt": "2026-03-04T01:02:14.915Z",
+  "tag": "ci-manual",
+  "generatedAt": "2026-03-04T01:02:26.917Z",
   "status": "PASS",
   "policy": {
     "writePolicy": "WRITE_POLICY_BLOCKED",
@@ -13,8 +13,8 @@
   "provenance": {
     "rpcUrl": "https://rpc.plasma.to",
     "chainId": 9745,
-    "blockNumber": 15654356,
-    "blockTimestamp": 1772586114,
+    "blockNumber": 15654369,
+    "blockTimestamp": 1772586127,
     "dependencyArtifact": "ops/runtime/dependency-health.latest.json",
     "health": {
       "rpcGreen": true,
@@ -38,10 +38,10 @@
       "observationWindowRef": "ops/runtime/ci-obs-22649158726-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "ci-obs-22650147567",
-        "timestamp": "2026-03-04T01:02:01.948Z",
-        "blockNumber": 15654356,
-        "blockTimestamp": 1772586114,
+        "tag": "ci-manual",
+        "timestamp": "2026-03-04T01:02:14.926Z",
+        "blockNumber": 15654369,
+        "blockTimestamp": 1772586127,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0xB9F752B054f492a31B02d1b48af7253A7f13d27d",
@@ -85,7 +85,7 @@
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.025300925925925925,
+        "daysElapsed": 0.025451388888888888,
         "cumulativeReturn": -0.0003966431464239489,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",
@@ -104,10 +104,10 @@
       "observationWindowRef": "ops/runtime/ci-obs-22649158726-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "ci-obs-22650147567",
-        "timestamp": "2026-03-04T01:02:07.913Z",
-        "blockNumber": 15654356,
-        "blockTimestamp": 1772586114,
+        "tag": "ci-manual",
+        "timestamp": "2026-03-04T01:02:19.148Z",
+        "blockNumber": 15654369,
+        "blockTimestamp": 1772586127,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
@@ -119,7 +119,7 @@
           "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
         },
         "valuationOutputs": {
-          "buyAmountOutRaw": "16560068740878384",
+          "buyAmountOutRaw": "16560068642674021",
           "markToMarketUsdt0Raw": "49997",
           "sellAmountOutRaw": "49997"
         },
@@ -151,7 +151,7 @@
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.025300925925925925,
+        "daysElapsed": 0.025451388888888888,
         "cumulativeReturn": 0,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",
@@ -170,10 +170,10 @@
       "observationWindowRef": "ops/runtime/ci-obs-22649158726-orthogonal-observation-start.latest.json",
       "snapshot": {
         "index": 2,
-        "tag": "ci-obs-22650147567",
-        "timestamp": "2026-03-04T01:02:14.915Z",
-        "blockNumber": 15654356,
-        "blockTimestamp": 1772586114,
+        "tag": "ci-manual",
+        "timestamp": "2026-03-04T01:02:26.917Z",
+        "blockNumber": 15654369,
+        "blockTimestamp": 1772586127,
         "valuationInputs": {
           "tokenIn": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
           "tokenOut": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
@@ -185,7 +185,7 @@
           "apiUrl": "https://api-v2.pendle.finance/core/v3/sdk/9745/convert"
         },
         "valuationOutputs": {
-          "buyAmountOutRaw": "18362065597234731",
+          "buyAmountOutRaw": "18362065578175988",
           "markToMarketUsdt0Raw": "50004",
           "sellAmountOutRaw": "50004"
         },
@@ -217,7 +217,7 @@
         "observationCount": 2,
         "requiredObservationCount": 3,
         "sufficientObservations": false,
-        "daysElapsed": 0.025300925925925925,
+        "daysElapsed": 0.025451388888888888,
         "cumulativeReturn": 0.000019998800071995682,
         "observedApy": null,
         "apyLabel": "APY: — (observing)",
