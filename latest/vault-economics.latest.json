@@ -1,9 +1,9 @@
 {
   "version": "vault_economics_snapshot.v2",
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-04T19:27:33.735Z",
-  "observedAt": "2026-03-04T19:27:33.735Z",
-  "expiresAt": "2026-03-04T23:27:33.735Z",
+  "generatedAt": "2026-03-04T19:27:43.386Z",
+  "observedAt": "2026-03-04T19:27:43.386Z",
+  "expiresAt": "2026-03-04T23:27:43.386Z",
   "freshnessStatus": "FRESH",
   "totalsByMode": {
     "MEASURED": 11,
@@ -140,12 +140,12 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.3422980905954322,
+          "apy": -0.34229879333344315,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": -0.3422980905954322,
+          "apy": -0.34229879333344315,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -182,8 +182,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": -34.22980905954322,
-      "netApyPct": -34.22980905954322,
+      "grossApyPct": -34.229879333344314,
+      "netApyPct": -34.229879333344314,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -202,7 +202,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": -34.22980905954322,
+        "headlineYieldPct": -34.229879333344314,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
