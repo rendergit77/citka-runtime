@@ -1,14 +1,14 @@
 {
   "version": "revenue_scenarios_v2",
   "tag": "b4.22.74.0",
-  "generatedAt": "2026-03-04T17:44:27.870Z",
+  "generatedAt": "2026-03-04T18:01:29.215Z",
   "modeSupport": [
     "MEASURED",
     "SCENARIO"
   ],
   "inputs": {
     "feePolicyHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
-    "economicsChecksum": "sha256:fa480f488e06a7779489fb4b070f79e42828036118954960ba8aac7eebfa3c64",
+    "economicsChecksum": "sha256:a2303ba56492b1e98fa046ec9f767011036834ecdd0444d66f5853b33adb1092",
     "yieldAvailability": "COMPLETE",
     "excludedVaults": []
   },
@@ -26,8 +26,8 @@
               "executionFeeBps": 0
             },
             "truthInputs": {
-              "netApyFraction": -0.3418637907819832,
-              "grossApyFraction": -0.3418637907819832,
+              "netApyFraction": -0.341935512909995,
+              "grossApyFraction": -0.341935512909995,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -95,17 +95,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.023898409359278706,
-              "grossApyFraction": 0.02655378817697634,
+              "netApyFraction": 0.023730300713624187,
+              "grossApyFraction": 0.026367000792915762,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 265.54,
+              "perfAnnualUsd": 263.67,
               "executionFeeAnnualUsd": 100,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 365.54,
+              "totalAnnualUsd": 363.67,
               "totalRevenueComplete": true
             }
           },
@@ -118,17 +118,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.03527825857992308,
-              "grossApyFraction": 0.03919806508880342,
+              "netApyFraction": 0.03527713541966028,
+              "grossApyFraction": 0.03919681713295586,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 391.98,
+              "perfAnnualUsd": 391.97,
               "executionFeeAnnualUsd": 100,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 491.98,
+              "totalAnnualUsd": 491.97,
               "totalRevenueComplete": true
             }
           },
@@ -141,17 +141,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.03659095019346772,
-              "grossApyFraction": 0.040656611326075245,
+              "netApyFraction": 0.03655732846433681,
+              "grossApyFraction": 0.040619253849263126,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 406.57,
+              "perfAnnualUsd": 406.19,
               "executionFeeAnnualUsd": 100,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 506.57,
+              "totalAnnualUsd": 506.19,
               "totalRevenueComplete": true
             }
           },
@@ -187,8 +187,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.02756814369819482,
-              "grossApyFraction": 0.02756814369819482,
+              "netApyFraction": 0.02756398384536962,
+              "grossApyFraction": 0.02756398384536962,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -210,8 +210,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.025539432655757865,
-              "grossApyFraction": 0.025539432655757865,
+              "netApyFraction": 0.025170017740461903,
+              "grossApyFraction": 0.025170017740461903,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -233,8 +233,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.02548140505673202,
-              "grossApyFraction": 0.0283126722852578,
+              "netApyFraction": 0.025481379735156982,
+              "grossApyFraction": 0.028312644150174426,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -294,11 +294,11 @@
               "plasma_stable_allocator"
             ],
             "mgmtAnnualUsd": 0,
-            "perfAnnualUsd": 1789.04,
+            "perfAnnualUsd": 1786.78,
             "executionFeeAnnualUsd": 500,
             "perfRevenueComplete": true,
-            "totalAnnualUsd": 2289.04,
-            "totalLowerBound": 2289.04,
+            "totalAnnualUsd": 2286.78,
+            "totalLowerBound": 2286.78,
             "anyRevenue": true
           },
           "ORTHOGONAL_ENGINES": {
@@ -338,8 +338,8 @@
               "executionFeeBps": 0
             },
             "truthInputs": {
-              "netApyFraction": -0.3418637907819832,
-              "grossApyFraction": -0.3418637907819832,
+              "netApyFraction": -0.341935512909995,
+              "grossApyFraction": -0.341935512909995,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -407,17 +407,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.023898409359278706,
-              "grossApyFraction": 0.02655378817697634,
+              "netApyFraction": 0.023730300713624187,
+              "grossApyFraction": 0.026367000792915762,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 2655.38,
+              "perfAnnualUsd": 2636.7,
               "executionFeeAnnualUsd": 1000,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 3655.38,
+              "totalAnnualUsd": 3636.7,
               "totalRevenueComplete": true
             }
           },
@@ -430,17 +430,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.03527825857992308,
-              "grossApyFraction": 0.03919806508880342,
+              "netApyFraction": 0.03527713541966028,
+              "grossApyFraction": 0.03919681713295586,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 3919.81,
+              "perfAnnualUsd": 3919.68,
               "executionFeeAnnualUsd": 1000,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 4919.8099999999995,
+              "totalAnnualUsd": 4919.68,
               "totalRevenueComplete": true
             }
           },
@@ -453,17 +453,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.03659095019346772,
-              "grossApyFraction": 0.040656611326075245,
+              "netApyFraction": 0.03655732846433681,
+              "grossApyFraction": 0.040619253849263126,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 4065.66,
+              "perfAnnualUsd": 4061.93,
               "executionFeeAnnualUsd": 1000,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 5065.66,
+              "totalAnnualUsd": 5061.93,
               "totalRevenueComplete": true
             }
           },
@@ -499,8 +499,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.02756814369819482,
-              "grossApyFraction": 0.02756814369819482,
+              "netApyFraction": 0.02756398384536962,
+              "grossApyFraction": 0.02756398384536962,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -522,8 +522,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.025539432655757865,
-              "grossApyFraction": 0.025539432655757865,
+              "netApyFraction": 0.025170017740461903,
+              "grossApyFraction": 0.025170017740461903,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -545,17 +545,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.02548140505673202,
-              "grossApyFraction": 0.0283126722852578,
+              "netApyFraction": 0.025481379735156982,
+              "grossApyFraction": 0.028312644150174426,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 2831.27,
+              "perfAnnualUsd": 2831.26,
               "executionFeeAnnualUsd": 1000,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 3831.27,
+              "totalAnnualUsd": 3831.26,
               "totalRevenueComplete": true
             }
           },
@@ -606,11 +606,11 @@
               "plasma_stable_allocator"
             ],
             "mgmtAnnualUsd": 0,
-            "perfAnnualUsd": 17890.35,
+            "perfAnnualUsd": 17867.8,
             "executionFeeAnnualUsd": 5000,
             "perfRevenueComplete": true,
-            "totalAnnualUsd": 22890.35,
-            "totalLowerBound": 22890.35,
+            "totalAnnualUsd": 22867.8,
+            "totalLowerBound": 22867.8,
             "anyRevenue": true
           },
           "ORTHOGONAL_ENGINES": {
@@ -650,8 +650,8 @@
               "executionFeeBps": 0
             },
             "truthInputs": {
-              "netApyFraction": -0.3418637907819832,
-              "grossApyFraction": -0.3418637907819832,
+              "netApyFraction": -0.341935512909995,
+              "grossApyFraction": -0.341935512909995,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -719,17 +719,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.023898409359278706,
-              "grossApyFraction": 0.02655378817697634,
+              "netApyFraction": 0.023730300713624187,
+              "grossApyFraction": 0.026367000792915762,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 26553.79,
+              "perfAnnualUsd": 26367,
               "executionFeeAnnualUsd": 10000,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 36553.79,
+              "totalAnnualUsd": 36367,
               "totalRevenueComplete": true
             }
           },
@@ -742,17 +742,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.03527825857992308,
-              "grossApyFraction": 0.03919806508880342,
+              "netApyFraction": 0.03527713541966028,
+              "grossApyFraction": 0.03919681713295586,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 39198.07,
+              "perfAnnualUsd": 39196.82,
               "executionFeeAnnualUsd": 10000,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 49198.07,
+              "totalAnnualUsd": 49196.82,
               "totalRevenueComplete": true
             }
           },
@@ -765,17 +765,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.03659095019346772,
-              "grossApyFraction": 0.040656611326075245,
+              "netApyFraction": 0.03655732846433681,
+              "grossApyFraction": 0.040619253849263126,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 40656.61,
+              "perfAnnualUsd": 40619.25,
               "executionFeeAnnualUsd": 10000,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 50656.61,
+              "totalAnnualUsd": 50619.25,
               "totalRevenueComplete": true
             }
           },
@@ -811,8 +811,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.02756814369819482,
-              "grossApyFraction": 0.02756814369819482,
+              "netApyFraction": 0.02756398384536962,
+              "grossApyFraction": 0.02756398384536962,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -834,8 +834,8 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.025539432655757865,
-              "grossApyFraction": 0.025539432655757865,
+              "netApyFraction": 0.025170017740461903,
+              "grossApyFraction": 0.025170017740461903,
               "grossSource": "hidden",
               "apyAvailable": true
             },
@@ -857,17 +857,17 @@
               "executionFeeBps": 10
             },
             "truthInputs": {
-              "netApyFraction": 0.02548140505673202,
-              "grossApyFraction": 0.0283126722852578,
+              "netApyFraction": 0.025481379735156982,
+              "grossApyFraction": 0.028312644150174426,
               "grossSource": "hidden",
               "apyAvailable": true
             },
             "revenue": {
               "mgmtAnnualUsd": 0,
-              "perfAnnualUsd": 28312.67,
+              "perfAnnualUsd": 28312.64,
               "executionFeeAnnualUsd": 10000,
               "perfRevenueMode": "MEASURED_GROSS",
-              "totalAnnualUsd": 38312.67,
+              "totalAnnualUsd": 38312.64,
               "totalRevenueComplete": true
             }
           },
@@ -918,11 +918,11 @@
               "plasma_stable_allocator"
             ],
             "mgmtAnnualUsd": 0,
-            "perfAnnualUsd": 178903.46,
+            "perfAnnualUsd": 178678.03,
             "executionFeeAnnualUsd": 50000,
             "perfRevenueComplete": true,
-            "totalAnnualUsd": 228903.46,
-            "totalLowerBound": 228903.46,
+            "totalAnnualUsd": 228678.03,
+            "totalLowerBound": 228678.03,
             "anyRevenue": true
           },
           "ORTHOGONAL_ENGINES": {
@@ -954,5 +954,5 @@
     "notes": "Using actual observed APY fractions where available."
   },
   "scenario": null,
-  "checksum": "sha256:e7f131c3b951729b1e6f15ecdef978a780f468d8633898fe4132a8b5e89b4e40"
+  "checksum": "sha256:9b8a5fcb2d0c1550dd632bb274561913cfa6cbb1bd5a7d425209ebca6af0089f"
 }
