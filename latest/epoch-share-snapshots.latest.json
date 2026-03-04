@@ -1,6 +1,6 @@
 {
   "version": "epoch_share_snapshots.v1",
-  "generatedAt": "2026-03-04T13:21:56.211Z",
+  "generatedAt": "2026-03-04T14:07:34.070Z",
   "status": "NOT_AVAILABLE",
   "reasonCode": "VAULT_DEPLOYMENT",
   "model": "ONCHAIN_BALANCE_SNAPSHOT",
@@ -8,11 +8,11 @@
     "requiredInputs": [
       "VAULT_DEPLOYMENT: CitkaVault7540 must be deployed on Plasma (chainId=9745)",
       "USER_ALLOWLIST: At least one user address must be configured for snapshotting",
-      "RPC_URL: Plasma RPC endpoint required for onchain reads",
       "ONCHAIN_READER_NOT_IMPLEMENTED: integrate vault.balanceOf(user) collector before ACTIVE mode"
     ],
     "deploymentStatus": "PENDING",
     "allowlistCount": 0,
+    "rpcConfigured": true,
     "readerMode": "SCHEMA_ONLY"
   },
   "epochId": null,
