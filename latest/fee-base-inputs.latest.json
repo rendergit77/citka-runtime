@@ -1,8 +1,8 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-03-04T19:27:44.716Z",
-  "observedAt": "2026-03-04T19:27:44.716Z",
-  "expiresAt": "2026-03-04T23:27:44.716Z",
+  "generatedAt": "2026-03-04T20:16:19.901Z",
+  "observedAt": "2026-03-04T20:16:19.901Z",
+  "expiresAt": "2026-03-05T00:16:19.901Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -22,8 +22,8 @@
     "computableVaults": 1,
     "railModeCounts": {
       "settlementActive": 2,
-      "disclosureOnly": 0,
-      "notMeasured": 42
+      "disclosureOnly": 1,
+      "notMeasured": 41
     }
   },
   "vaults": {
@@ -208,7 +208,7 @@
       "aumUsd": 0.100001,
       "volumeUsd": 0.100001,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.026967623741474052,
+      "grossApyFraction": 0.027127425580370183,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "SETTLEMENT_ACTIVE",
@@ -276,8 +276,8 @@
       "requiredInputs": []
     },
     "plasma_emode_usde_looper": {
-      "status": "BLOCKED",
-      "reasonCode": "WRITE_POLICY_BLOCKED",
+      "status": "MISSING",
+      "reasonCode": "REQUIRED_INPUTS_MISSING",
       "aumUsd": null,
       "volumeUsd": null,
       "withdrawUsd": null,
@@ -285,7 +285,7 @@
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
-        "exec": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
         "perf": "NOT_MEASURED",
         "exit": "NOT_MEASURED"
       },
@@ -296,9 +296,30 @@
         "exit": 0
       },
       "howToFix": [
-        "Global write policy unblock."
+        "Global write policy unblock is required before enabling settlement rails for this lane.",
+        "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE.",
+        "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE."
       ],
-      "requiredInputs": []
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "WRITE_POLICY_BLOCKED",
+          "upgradeHint": "Global write policy unblock is required before enabling settlement rails for this lane.",
+          "howToObtain": "Global write policy unblock is required before enabling settlement rails for this lane."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "FLOW_METHOD_NOT_SUPPORTED",
+          "upgradeHint": "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE.",
+          "howToObtain": "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "FLOW_METHOD_NOT_SUPPORTED",
+          "upgradeHint": "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE.",
+          "howToObtain": "Implement flow settlement source for method LANE_LEVEL_AUM_UNAVAILABLE."
+        }
+      ]
     }
   }
 }

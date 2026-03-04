@@ -1,7 +1,7 @@
 {
   "version": "scenario_yields_v2",
-  "tag": "ci-obs-22685544298",
-  "generatedAt": "2026-03-04T19:27:43.425Z",
+  "tag": "ci-obs-22687347119",
+  "generatedAt": "2026-03-04T20:16:18.671Z",
   "policyHash": "sha256:dc7188db1aca2495b2b24f1ec824c15bdb36870b04bd2284120530a538f3bb53",
   "coverage": {
     "total": 11,
@@ -21,7 +21,7 @@
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
       "status": "MEASURED",
-      "measuredGrossApyPct": -34.2299,
+      "measuredGrossApyPct": -34.2504,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -51,7 +51,7 @@
     },
     "plasma_stable_allocator": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 2.6253,
+      "measuredGrossApyPct": 2.6333,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -61,7 +61,7 @@
     },
     "plasma_syrup_barbell": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 3.9018,
+      "measuredGrossApyPct": 3.9066,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -71,7 +71,7 @@
     },
     "plasma_syrup_glidepath_allocator": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 4.0597,
+      "measuredGrossApyPct": 4.0613,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -91,7 +91,7 @@
     },
     "plasma_aave_core": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 2.6968,
+      "measuredGrossApyPct": 2.7127,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -111,7 +111,7 @@
     },
     "plasma_fluid_euler_aggregator": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 2.8313,
+      "measuredGrossApyPct": 2.8681,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -130,5 +130,5 @@
       "explanationShort": "Yield measured onchain."
     }
   },
-  "checksum": "sha256:f6ef99ad7eceae8a7459a0db6d9afd9a3695e3220b82e05e3bacd4262187fcb1"
+  "checksum": "sha256:1258a2d3f01105bfb2e1cdbcc8fd46d235a59f94d974a17eb3d871a33327d551"
 }
