@@ -1,0 +1,37 @@
+{
+  "version": "staking_rebate_allocations.v1",
+  "generatedAt": "2026-03-04T01:38:54.540Z",
+  "status": "NOT_ENABLED",
+  "reasonCode": "STAKERS_BPS_ZERO",
+  "model": "FEE_PAID_TIMES_TIER_REBATE",
+  "instructions": [
+    "Ensure all upstream artifacts are ACTIVE: fee-ledger, fee-paid-attribution, rebate-tier-registry."
+  ],
+  "epochId": null,
+  "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
+  "snapshotVersionHash": null,
+  "stakersPoolUsd": 0,
+  "stressGuard": {
+    "active": false,
+    "multiplier": 1
+  },
+  "claims": [],
+  "totals": {
+    "totalAllocatedWei": "0",
+    "totalAllocatedUsd": 0,
+    "claimCount": 0
+  },
+  "sourceRefs": {
+    "feePolicyRef": "config/fees.policy.json",
+    "feeLedgerRef": "ops/runtime/fee-ledger.latest.json",
+    "attributionRef": "ops/runtime/fee-paid-attribution.latest.json",
+    "tierRegistryRef": "ops/runtime/rebate-tier-registry.latest.json"
+  },
+  "invariants": {
+    "valid": true,
+    "noNegative": true,
+    "sumsReconcile": true,
+    "deterministicOrder": true,
+    "errors": []
+  }
+}
