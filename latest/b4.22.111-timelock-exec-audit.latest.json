@@ -1,0 +1,92 @@
+{
+  "tag": "b4.22.111_timelock_exec_audit",
+  "generatedAt": "2026-03-04T17:11:36.996Z",
+  "rpcUrl": "https://rpc.plasma.to",
+  "mode": "dry_run",
+  "write": false,
+  "addresses": {
+    "timelock": "0x61377d8BB71a349Be873bB1d1865a4D2e6c3B476",
+    "target": "0x7523E8861bE1d544130AA6eed8d1504B7676c2Ba",
+    "openExecutor": "0x0000000000000000000000000000000000000000"
+  },
+  "action": {
+    "actionType": "setPaused",
+    "actionValue": "true",
+    "targetFn": "setPaused",
+    "metadata": {
+      "actionType": "setPaused",
+      "value": true
+    },
+    "calldata": "0x16c38b3c0000000000000000000000000000000000000000000000000000000000000001",
+    "value": "0",
+    "predecessor": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "opId": "0x00e14a6da0c43beb49ad5c9d7f0c1c44e0c03a51173292c45456be4abc73cf74",
+    "scheduleIfMissing": false,
+    "requestedDelay": null
+  },
+  "roles": {
+    "proposerRole": {
+      "ok": true,
+      "value": "0xb09aa5aeb3702cfd50b6b62bc4532604938f21248a27a1d5ca736082b6819cc1"
+    },
+    "executorRole": {
+      "ok": true,
+      "value": "0xd8aa0f3194971a2a116679f7c2090f6939c8d4e01a2a8d7e41d55e5351469e63"
+    },
+    "minDelay": {
+      "ok": true,
+      "value": "86400"
+    }
+  },
+  "pre": {
+    "operation": {
+      "isOperation": {
+        "ok": true,
+        "value": false
+      },
+      "isPending": {
+        "ok": true,
+        "value": false
+      },
+      "isReady": {
+        "ok": true,
+        "value": false
+      },
+      "isDone": {
+        "ok": true,
+        "value": false
+      },
+      "timestamp": {
+        "ok": true,
+        "value": "0"
+      }
+    },
+    "gate": {
+      "owner": {
+        "ok": true,
+        "value": "0x61377d8BB71a349Be873bB1d1865a4D2e6c3B476"
+      },
+      "guardian": {
+        "ok": true,
+        "value": "0x363a93Ddb0fBCA775FC58F5bBf7849287F8F2c1B"
+      },
+      "paused": {
+        "ok": true,
+        "value": true
+      },
+      "allowlistOnly": {
+        "ok": true,
+        "value": true
+      },
+      "maxTotalAssets": {
+        "ok": true,
+        "value": "0"
+      }
+    }
+  },
+  "txs": [],
+  "post": null,
+  "status": "DRY_RUN",
+  "reasonCode": "MODE_DRY_RUN"
+}
