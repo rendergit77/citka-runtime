@@ -1,0 +1,40 @@
+{
+  "tag": "b4.22.107_staging_gate_read",
+  "generatedAt": "2026-03-04T15:32:55.189Z",
+  "rpcUrl": "https://rpc.plasma.to",
+  "gateAddress": "0x7523E8861bE1d544130AA6eed8d1504B7676c2Ba",
+  "reads": {
+    "owner": {
+      "ok": true,
+      "value": "0xB9D02045154e6690EfA366d61775681a271fD262"
+    },
+    "guardian": {
+      "ok": true,
+      "value": "0x619d5D1E620c70442e67726b0E4cBf8c6E111b19"
+    },
+    "vault": {
+      "ok": true,
+      "value": "0x266F607368c6D8a6C82148bCfa8dD10701040ad4"
+    },
+    "paused": {
+      "ok": true,
+      "value": true
+    },
+    "allowlistOnly": {
+      "ok": true,
+      "value": true
+    },
+    "maxTotalAssets": {
+      "ok": true,
+      "value": "0"
+    },
+    "currentTotalAssets": {
+      "ok": true,
+      "value": "100001"
+    },
+    "probeUserAllowlisted": {
+      "ok": false,
+      "error": "NO_PROBE_USER"
+    }
+  }
+}
