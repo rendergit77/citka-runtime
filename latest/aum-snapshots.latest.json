@@ -1,8 +1,8 @@
 {
   "version": "aum_snapshots.v1",
-  "generatedAt": "2026-03-05T09:00:28.988Z",
-  "observedAt": "2026-03-05T09:00:28.988Z",
-  "expiresAt": "2026-03-05T13:00:28.988Z",
+  "generatedAt": "2026-03-05T18:21:39.175Z",
+  "observedAt": "2026-03-05T18:21:39.175Z",
+  "expiresAt": "2026-03-05T22:21:39.175Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -57,8 +57,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_flow_engine_pendle_lp_susde": {
@@ -81,8 +81,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
@@ -105,8 +105,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_stable_allocator": {
@@ -129,8 +129,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_syrup_barbell": {
@@ -153,8 +153,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_syrup_glidepath_allocator": {
@@ -177,8 +177,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_pendle_pt_syrupusdt": {
@@ -201,8 +201,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_aave_core": {
@@ -234,8 +234,8 @@
             "strategy.getTVL()"
           ],
           "formula": "vaultAssetBalanceRaw + strategyTvlRaw",
-          "vaultAssetBalanceRaw": "110001",
-          "strategyTvlRaw": "0",
+          "vaultAssetBalanceRaw": "0",
+          "strategyTvlRaw": "110001",
           "strategyAddress": "0xcade94009819fe46b173223f4e2a03022f14fab4",
           "totalAssetsErrors": [
             "missing revert data (action=\"call\", data=null, reason=null, transaction={ \"data\": \"0x01e1d114\", \"to\": \"0x266F607368c6D8a6C82148bCfa8dD10701040ad4\" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.16.0)"
@@ -243,8 +243,8 @@
         },
         "formula": "laneAumAssetsRaw = sharedAumAssetsRaw * weightBps / 10000"
       },
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_fluid_usdt0_supply": {
@@ -277,8 +277,8 @@
           "confidence": "CONFIG_EXPLICIT"
         }
       },
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_fluid_euler_aggregator": {
@@ -301,8 +301,8 @@
         "confidence": null
       },
       "evidence": null,
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     },
     "plasma_emode_usde_looper": {
@@ -315,7 +315,7 @@
       "settlementComputable": true,
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
       "decimals": 6,
-      "aumAssetsRaw": "1000028494418736",
+      "aumAssetsRaw": "1000042601105295",
       "aumUsd": 0.001,
       "price": {
         "source": null,
@@ -327,16 +327,16 @@
         "receiptToken": "0x7519403E12111ff6b710877Fcd821D0c12CAF43A",
         "holder": "0xB9D02045154e6690EfA366d61775681a271fD262",
         "receiptDecimals": 18,
-        "balanceRaw": "1000028494418736",
-        "balanceFormatted": 0.001000028494418736,
+        "balanceRaw": "1000042601105295",
+        "balanceFormatted": 0.001000042601105295,
         "price": {
           "usd": 1,
           "source": "STABLE_PEG_USDE_1_USD",
           "confidence": "CONFIG_EXPLICIT"
         }
       },
-      "observedAt": "2026-03-05T09:00:28.988Z",
-      "expiresAt": "2026-03-05T13:00:28.988Z",
+      "observedAt": "2026-03-05T18:21:39.175Z",
+      "expiresAt": "2026-03-05T22:21:39.175Z",
       "freshnessStatus": "FRESH"
     }
   }
