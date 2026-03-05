@@ -1,14 +1,14 @@
 {
   "version": "vault_economics_snapshot.v2",
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-05T04:49:27.399Z",
-  "observedAt": "2026-03-05T04:49:27.399Z",
-  "expiresAt": "2026-03-05T08:49:27.399Z",
+  "generatedAt": "2026-03-05T05:00:09.472Z",
+  "observedAt": "2026-03-05T05:00:09.472Z",
+  "expiresAt": "2026-03-05T09:00:09.472Z",
   "freshnessStatus": "FRESH",
   "totalsByMode": {
-    "MEASURED": 4,
+    "MEASURED": 11,
     "OBSERVED": 0,
-    "SCENARIO": 15
+    "SCENARIO": 8
   },
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
@@ -140,12 +140,12 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": -0.3447294059614366,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": -0.3447294059614366,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -175,14 +175,17 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "PENDLE_YT_READ_FAILED",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": -34.47294059614366,
+      "netApyPct": -34.47294059614366,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_pendle_yt_syrupusdt_volatility",
@@ -198,10 +201,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "PENDLE_YT_READ_FAILED"
+        "mode": "MEASURED",
+        "headlineYieldPct": -34.47294059614366,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_flow_engine_pendle_lp_susde": {
@@ -299,12 +302,12 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.09294919006493453,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.08365427105844107,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -334,14 +337,17 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "PENDLE_LP_READ_FAILED",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 9.294919006493453,
+      "netApyPct": 8.365427105844107,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_flow_engine_pendle_lp_susde",
@@ -357,10 +363,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "PENDLE_LP_READ_FAILED"
+        "mode": "MEASURED",
+        "headlineYieldPct": 8.365427105844107,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
@@ -458,12 +464,12 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.01083691865357233,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.009753226788215098,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -493,14 +499,17 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "PENDLE_LP_READ_FAILED",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 1.083691865357233,
+      "netApyPct": 0.9753226788215097,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_delta_fee_engine_pendle_lp_usde",
@@ -516,10 +525,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "PENDLE_LP_READ_FAILED"
+        "mode": "MEASURED",
+        "headlineYieldPct": 0.9753226788215097,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_stable_allocator": {
@@ -620,12 +629,12 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.025969028340728922,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.02337212550665603,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -655,14 +664,17 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "MISSING_LEG_YIELD_FLUID",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 2.596902834072892,
+      "netApyPct": 2.337212550665603,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_stable_allocator",
@@ -678,10 +690,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "MISSING_LEG_YIELD_FLUID"
+        "mode": "MEASURED",
+        "headlineYieldPct": 2.337212550665603,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_syrup_barbell": {
@@ -782,12 +794,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.039069044661342894,
+          "apy": 0.03906904839775642,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03516214019520861,
+          "apy": 0.03516214355798078,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -824,8 +836,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.9069044661342898,
-      "netApyPct": 3.5162140195208607,
+      "grossApyPct": 3.906904839775642,
+      "netApyPct": 3.516214355798078,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -844,7 +856,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.5162140195208607,
+        "headlineYieldPct": 3.516214355798078,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -947,12 +959,12 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.04053965935882576,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.03648569342294318,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -982,14 +994,17 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "MISSING_LEG_YIELD_STABLE",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 4.053965935882576,
+      "netApyPct": 3.648569342294318,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_syrup_glidepath_allocator",
@@ -1005,10 +1020,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "MISSING_LEG_YIELD_STABLE"
+        "mode": "MEASURED",
+        "headlineYieldPct": 3.648569342294318,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_pendle_pt_syrupusdt": {
@@ -1269,12 +1284,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.02713807560665974,
+          "apy": 0.027138088061371465,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.02713807560665974,
+          "apy": 0.027138088061371465,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1312,8 +1327,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.713807560665974,
-      "netApyPct": 2.713807560665974,
+      "grossApyPct": 2.7138088061371466,
+      "netApyPct": 2.7138088061371466,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1332,7 +1347,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.713807560665974,
+        "headlineYieldPct": 2.7138088061371466,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1430,12 +1445,12 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.024799968620086377,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.024799968620086377,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1466,14 +1481,17 @@
       "leverageCosts": null,
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "FLUID_RATE_UNREADABLE",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 2.4799968620086377,
+      "netApyPct": 2.4799968620086377,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_fluid_usdt0_supply",
@@ -1489,10 +1507,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "FLUID_RATE_UNREADABLE"
+        "mode": "MEASURED",
+        "headlineYieldPct": 2.4799968620086377,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_fluid_euler_aggregator": {
@@ -1593,12 +1611,12 @@
       },
       "apy": {
         "gross": {
-          "apy": null,
+          "apy": 0.030153533798531695,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": null,
+          "apy": 0.027138180418678527,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1629,14 +1647,17 @@
       "leverageCosts": null,
       "truthNotes": [
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
       ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "EULER_RATE_UNREADABLE",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 3.0153533798531695,
+      "netApyPct": 2.7138180418678526,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
         "sources": {
           "vaultId": "plasma_fluid_euler_aggregator",
@@ -1652,10 +1673,10 @@
         }
       },
       "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "EULER_RATE_UNREADABLE"
+        "mode": "MEASURED",
+        "headlineYieldPct": 2.7138180418678526,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_emode_usde_looper": {
