@@ -1,52 +1,52 @@
 {
   "version": "onchain_yield_observations.v1",
   "tag": "b4.22.85",
-  "generatedAt": "2026-03-05T05:02:27.036Z",
+  "generatedAt": "2026-03-05T05:15:53.724Z",
   "provenance": {
     "rpcUsed": "https://rpc.plasma.to",
     "rpcAttempts": 1,
     "rpcEndpointsAvailable": 1,
     "chainId": 9745,
-    "blockNumber": 15755187,
-    "blockTimestamp": 1772686945
+    "blockNumber": 15755994,
+    "blockTimestamp": 1772687752
   },
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
       "status": "MEASURED",
-      "grossApyPct": -34.47395278566687,
+      "grossApyPct": -34.47970629122692,
       "evidence": {
         "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
         "method": "PendleMarket.yt_implied_yield",
         "syApyPct": 4.19132338962509,
         "ptApyPct": 4.418231711334997,
-        "timeToMaturityYears": 0.15274466372601211,
-        "ptPrice": 0.9934179778245723,
-        "ytPrice": 0.006582022175427693,
+        "timeToMaturityYears": 0.1527190914391462,
+        "ptPrice": 0.9934190761431271,
+        "ytPrice": 0.006580923856872922,
         "lastLnImpliedRateStr": "43234107464171066",
         "syExchangeRateNowStr": "1118348796501338589",
         "note": "YT yield = (SY_APY - PT_APY) / YT_Price.",
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_flow_engine_pendle_lp_susde": {
       "status": "MEASURED",
-      "grossApyPct": 9.294919006493453,
+      "grossApyPct": 9.294901457581755,
       "evidence": {
         "venue": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
         "method": "PendleMarket.lp_structural_yield",
         "syApyPct": 3.536359044264259,
-        "ptApyPct": 4.414867685139745,
-        "syPortion": 2.1805957425520095,
-        "ptPortion": 0.3586856149201655,
-        "lastLnImpliedRateStr": "43201890098195601",
+        "ptApyPct": 4.414829761812955,
+        "syPortion": 2.180597838310466,
+        "ptPortion": 0.3586830422922515,
+        "lastLnImpliedRateStr": "43201526899596396",
         "syExchangeRateNowStr": "1222516457460728570",
         "syExchangeRateHistStr": "1222400143489965433",
         "note": "Conservative structural yield excluding swap fees & incentives.",
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
@@ -65,15 +65,15 @@
         "syExchangeRateNowStr": "1000000000000000000",
         "syExchangeRateHistStr": "1000000000000000000",
         "note": "Conservative structural yield excluding swap fees & incentives.",
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_stable_allocator": {
       "status": "MEASURED",
-      "grossApyPct": 2.596903341305344,
+      "grossApyPct": 2.59690386196288,
       "evidence": {
         "method": "composite_weighted_gross",
         "weightsBps": {
@@ -92,43 +92,43 @@
               "priceNow": "1013895",
               "priceOld": "1013827",
               "blocksUsed": {
-                "now": 15755187,
-                "old": 15668787
+                "now": 15755994,
+                "old": 15669594
               },
               "windowSeconds": 86400,
               "growth": 0.00006707258733484878,
               "aprPct": 2.4498262524053516,
               "compoundingConvention": "daily_365.25",
-              "attemptsTotal": 6,
-              "blockNumber": 15755187,
-              "blockTimestamp": 1772686945
+              "attemptsTotal": 5,
+              "blockNumber": 15755994,
+              "blockTimestamp": 1772687752
             }
           },
           "aave": {
             "status": "MEASURED",
             "weightBps": 5000,
-            "grossApyPct": 2.7138098206020507,
+            "grossApyPct": 2.7138108619171217,
             "source": {
               "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
               "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
               "method": "AaveDataProvider.getReserveData:liquidityRate",
-              "rateRayStr": "27138098206020507383803555",
+              "rateRayStr": "27138108619171218305929637",
               "conversionMethod": "rayToPct_bigint_safe",
-              "blockNumber": 15755187,
-              "blockTimestamp": 1772686945
+              "blockNumber": 15755994,
+              "blockTimestamp": 1772687752
             }
           }
         },
-        "weightedGrossApyPct": 2.596903341305344,
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "weightedGrossApyPct": 2.59690386196288,
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_syrup_barbell": {
       "status": "MEASURED",
-      "grossApyPct": 3.906905144115113,
+      "grossApyPct": 3.906905456509634,
       "evidence": {
         "method": "composite_weighted_gross",
         "weightsBps": {
@@ -146,35 +146,35 @@
               "method": "PendleMarket._storage:lastLnImpliedRate",
               "lastLnImpliedRateStr": "43234107464171066",
               "scale": "uint96_div_1e18",
-              "blockNumber": 15755187,
-              "blockTimestamp": 1772686945
+              "blockNumber": 15755994,
+              "blockTimestamp": 1772687752
             }
           },
           "aave": {
             "status": "MEASURED",
             "weightBps": 3000,
-            "grossApyPct": 2.7138098206020507,
+            "grossApyPct": 2.7138108619171217,
             "source": {
               "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
               "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
               "method": "AaveDataProvider.getReserveData:liquidityRate",
-              "rateRayStr": "27138098206020507383803555",
+              "rateRayStr": "27138108619171218305929637",
               "conversionMethod": "rayToPct_bigint_safe",
-              "blockNumber": 15755187,
-              "blockTimestamp": 1772686945
+              "blockNumber": 15755994,
+              "blockTimestamp": 1772687752
             }
           }
         },
-        "weightedGrossApyPct": 3.906905144115113,
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "weightedGrossApyPct": 3.906905456509634,
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_syrup_glidepath_allocator": {
       "status": "MEASURED",
-      "grossApyPct": 4.053966037329066,
+      "grossApyPct": 4.053966141460573,
       "evidence": {
         "method": "composite_weighted_gross",
         "weightsBps": {
@@ -192,14 +192,14 @@
               "method": "PendleMarket._storage:lastLnImpliedRate",
               "lastLnImpliedRateStr": "43234107464171066",
               "scale": "uint96_div_1e18",
-              "blockNumber": 15755187,
-              "blockTimestamp": 1772686945
+              "blockNumber": 15755994,
+              "blockTimestamp": 1772687752
             }
           },
           "stable": {
             "status": "MEASURED",
             "weightBps": 2000,
-            "grossApyPct": 2.596903341305344,
+            "grossApyPct": 2.59690386196288,
             "source": {
               "method": "composite_weighted_gross",
               "weightsBps": {
@@ -218,42 +218,42 @@
                     "priceNow": "1013895",
                     "priceOld": "1013827",
                     "blocksUsed": {
-                      "now": 15755187,
-                      "old": 15668787
+                      "now": 15755994,
+                      "old": 15669594
                     },
                     "windowSeconds": 86400,
                     "growth": 0.00006707258733484878,
                     "aprPct": 2.4498262524053516,
                     "compoundingConvention": "daily_365.25",
-                    "attemptsTotal": 6,
-                    "blockNumber": 15755187,
-                    "blockTimestamp": 1772686945
+                    "attemptsTotal": 5,
+                    "blockNumber": 15755994,
+                    "blockTimestamp": 1772687752
                   }
                 },
                 "aave": {
                   "status": "MEASURED",
                   "weightBps": 5000,
-                  "grossApyPct": 2.7138098206020507,
+                  "grossApyPct": 2.7138108619171217,
                   "source": {
                     "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
                     "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
                     "method": "AaveDataProvider.getReserveData:liquidityRate",
-                    "rateRayStr": "27138098206020507383803555",
+                    "rateRayStr": "27138108619171218305929637",
                     "conversionMethod": "rayToPct_bigint_safe",
-                    "blockNumber": 15755187,
-                    "blockTimestamp": 1772686945
+                    "blockNumber": 15755994,
+                    "blockTimestamp": 1772687752
                   }
                 }
               },
-              "weightedGrossApyPct": 2.596903341305344,
-              "blockNumber": 15755187,
-              "blockTimestamp": 1772686945
+              "weightedGrossApyPct": 2.59690386196288,
+              "blockNumber": 15755994,
+              "blockTimestamp": 1772687752
             }
           }
         },
-        "weightedGrossApyPct": 4.053966037329066,
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "weightedGrossApyPct": 4.053966141460573,
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
@@ -267,23 +267,23 @@
         "method": "PendleMarket._storage:lastLnImpliedRate",
         "lastLnImpliedRateStr": "43234107464171066",
         "scale": "uint96_div_1e18",
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_aave_core": {
       "status": "MEASURED",
-      "grossApyPct": 2.7138098206020507,
+      "grossApyPct": 2.7138108619171217,
       "evidence": {
         "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
         "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "method": "AaveDataProvider.getReserveData:liquidityRate",
-        "rateRayStr": "27138098206020507383803555",
+        "rateRayStr": "27138108619171218305929637",
         "conversionMethod": "rayToPct_bigint_safe",
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
@@ -298,40 +298,40 @@
         "priceNow": "1013895",
         "priceOld": "1013827",
         "blocksUsed": {
-          "now": 15755187,
-          "old": 15668787
+          "now": 15755994,
+          "old": 15669594
         },
         "windowSeconds": 86400,
         "growth": 0.00006707258733484878,
         "aprPct": 2.4498262524053516,
         "compoundingConvention": "daily_365.25",
-        "attemptsTotal": 6,
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "attemptsTotal": 5,
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_fluid_euler_aggregator": {
       "status": "MEASURED",
-      "grossApyPct": 3.0153533798531695,
+      "grossApyPct": 3.015350380857784,
       "evidence": {
         "venue": "0xe818ad0D20D504C55601b9d5e0E137314414dec4",
         "method": "erc4626_exchange_rate_delta",
         "decimals": 6,
-        "priceNow": "1020504",
-        "priceOld": "1020421",
+        "priceNow": "1020505",
+        "priceOld": "1020422",
         "blocksUsed": {
-          "now": 15755188,
-          "old": 15668788
+          "now": 15755994,
+          "old": 15669594
         },
         "windowSeconds": 86400,
-        "growth": 0.00008133897675577373,
-        "aprPct": 2.970906126004636,
+        "growth": 0.00008133889704464714,
+        "aprPct": 2.970903214555737,
         "compoundingConvention": "daily_365.25",
-        "attemptsTotal": 5,
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "attemptsTotal": 6,
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
@@ -351,8 +351,8 @@
         "effectiveLtvBps": 6000,
         "leverage": 2.5,
         "note": "Uses base reserve LTV (not eMode category). Conservative estimate.",
-        "blockNumber": 15755187,
-        "blockTimestamp": 1772686945
+        "blockNumber": 15755994,
+        "blockTimestamp": 1772687752
       },
       "reasonCode": null,
       "instructions": null
