@@ -1,15 +1,15 @@
 {
   "version": "flow_metrics.v1",
-  "generatedAt": "2026-03-05T18:21:39.928Z",
-  "observedAt": "2026-03-05T18:21:39.928Z",
-  "expiresAt": "2026-03-05T22:21:39.928Z",
+  "generatedAt": "2026-03-05T18:58:32.441Z",
+  "observedAt": "2026-03-05T18:58:32.441Z",
+  "expiresAt": "2026-03-05T22:58:32.441Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
   "window": {
     "mode": "CUMULATIVE_SINCE_DEPLOY",
     "fromBlock": 15702634,
-    "toBlock": 15803142
+    "toBlock": 15805354
   },
   "instructions": [],
   "sourceRefs": {
@@ -40,7 +40,7 @@
         "allocatedWithdrawAssetsRaw": "0",
         "matched": true,
         "fromBlock": 15702634,
-        "toBlock": 15803142
+        "toBlock": 15805354
       }
     }
   },
@@ -59,8 +59,8 @@
       ],
       "flowReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -78,8 +78,8 @@
       ],
       "flowReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -97,8 +97,8 @@
       ],
       "flowReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -116,8 +116,8 @@
       ],
       "flowReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -135,8 +135,8 @@
       ],
       "flowReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -154,8 +154,8 @@
       ],
       "flowReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -173,8 +173,8 @@
       ],
       "flowReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -190,15 +190,15 @@
       "howToFix": [],
       "flowReadMethod": "SHARED_VAULT_WEIGHTED_ATTRIBUTION_V1",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "EVENT_LOGS_CUMULATIVE_SINCE_DEPLOY",
         "groupId": "plasma_shared_staging_v1",
         "weightBps": 10000,
         "fromBlock": 15702634,
-        "toBlock": 15803142,
+        "toBlock": 15805354,
         "sharedVaultAddress": "0x266f607368c6d8a6c82148bcfa8dd10701040ad4",
         "sharedVolumeAssetsRaw": "110001",
         "sharedWithdrawAssetsRaw": "0",
@@ -238,8 +238,8 @@
       ],
       "flowReadMethod": "RECEIPT_TOKEN_BALANCE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -257,8 +257,8 @@
       ],
       "flowReadMethod": "LANE_LEVEL_AUM_UNAVAILABLE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     },
@@ -287,8 +287,8 @@
       ],
       "flowReadMethod": "RECEIPT_TOKEN_BALANCE",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-05T18:21:39.928Z",
-      "expiresAt": "2026-03-05T22:21:39.928Z",
+      "observedAt": "2026-03-05T18:58:32.441Z",
+      "expiresAt": "2026-03-05T22:58:32.441Z",
       "freshnessStatus": "FRESH",
       "evidence": null
     }
