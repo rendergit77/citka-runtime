@@ -1,134 +1,47 @@
 {
   "version": "onchain_yield_observations.v1",
   "tag": "b4.22.85",
-  "generatedAt": "2026-03-05T04:36:20.259Z",
+  "generatedAt": "2026-03-05T04:49:22.506Z",
   "provenance": {
-    "rpcUsed": "https://rpc.plasma.to",
+    "rpcUsed": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
     "rpcAttempts": 1,
-    "rpcEndpointsAvailable": 1,
+    "rpcEndpointsAvailable": 2,
     "chainId": 9745,
-    "blockNumber": 15753621,
-    "blockTimestamp": 1772685379
+    "blockNumber": 15754398,
+    "blockTimestamp": 1772686156
   },
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
-      "status": "MEASURED",
-      "grossApyPct": -34.46279348512734,
-      "evidence": {
-        "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
-        "method": "PendleMarket.yt_implied_yield",
-        "syApyPct": 4.19132338962509,
-        "ptApyPct": 4.418231711334997,
-        "timeToMaturityYears": 0.15279428727152888,
-        "ptPrice": 0.9934158465184248,
-        "ytPrice": 0.00658415348157515,
-        "lastLnImpliedRateStr": "43234107464171066",
-        "syExchangeRateNowStr": "1118348796501338589",
-        "note": "YT yield = (SY_APY - PT_APY) / YT_Price.",
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
-      },
-      "reasonCode": null,
-      "instructions": null
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "PENDLE_YT_READ_FAILED",
+      "instructions": "missing revert data (action=\"call\", data=null, reason=null, transaction={ \"data\": \"0x3ba0b9a9\", \"to\": \"0xD8B49Fba7054a6eE2C4bd6813cdD6064430dB85C\" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.16.0)"
     },
     "plasma_flow_engine_pendle_lp_susde": {
-      "status": "MEASURED",
-      "grossApyPct": 9.294919006493453,
-      "evidence": {
-        "venue": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
-        "method": "PendleMarket.lp_structural_yield",
-        "syApyPct": 3.536359044264259,
-        "ptApyPct": 4.414867685139745,
-        "syPortion": 2.1805957425520095,
-        "ptPortion": 0.3586856149201655,
-        "lastLnImpliedRateStr": "43201890098195601",
-        "syExchangeRateNowStr": "1222516457460728570",
-        "syExchangeRateHistStr": "1222400143489965433",
-        "note": "Conservative structural yield excluding swap fees & incentives.",
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
-      },
-      "reasonCode": null,
-      "instructions": null
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "PENDLE_LP_READ_FAILED",
+      "instructions": "missing revert data (action=\"call\", data=null, reason=null, transaction={ \"data\": \"0x3ba0b9a9\", \"to\": \"0xdb3FaAD4436E2d133fdaB0788332845df9b0ABdF\" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.16.0)"
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
-      "status": "MEASURED",
-      "grossApyPct": 1.083691865357233,
-      "evidence": {
-        "venue": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
-        "method": "PendleMarket.lp_structural_yield",
-        "syApyPct": 0,
-        "ptApyPct": 3.768943940748981,
-        "syPortion": 2.437745982263287,
-        "ptPortion": 0.287531967148834,
-        "lastLnImpliedRateStr": "36996548654779735",
-        "syExchangeRateNowStr": "1000000000000000000",
-        "syExchangeRateHistStr": "1000000000000000000",
-        "note": "Conservative structural yield excluding swap fees & incentives.",
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
-      },
-      "reasonCode": null,
-      "instructions": null
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "PENDLE_LP_READ_FAILED",
+      "instructions": "missing revert data (action=\"call\", data=null, reason=null, transaction={ \"data\": \"0x3ba0b9a9\", \"to\": \"0x68930887e1318eF30653a4b7942AB07544ebEd4d\" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.16.0)"
     },
     "plasma_stable_allocator": {
-      "status": "MEASURED",
-      "grossApyPct": 2.6153544505358894,
-      "evidence": {
-        "method": "composite_weighted_gross",
-        "weightsBps": {
-          "fluid": 5000,
-          "aave": 5000
-        },
-        "legs": {
-          "fluid": {
-            "status": "MEASURED",
-            "weightBps": 5000,
-            "grossApyPct": 2.516926366711836,
-            "source": {
-              "venue": "0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B",
-              "method": "erc4626_exchange_rate_delta",
-              "decimals": 6,
-              "priceNow": "1013894",
-              "priceOld": "1013825",
-              "blocksUsed": {
-                "now": 15753621,
-                "old": 15667221
-              },
-              "windowSeconds": 86400,
-              "growth": 0.00006805908317519815,
-              "aprPct": 2.485858012974113,
-              "compoundingConvention": "daily_365.25",
-              "attemptsTotal": 5,
-              "blockNumber": 15753621,
-              "blockTimestamp": 1772685379
-            }
-          },
-          "aave": {
-            "status": "MEASURED",
-            "weightBps": 5000,
-            "grossApyPct": 2.713782534359943,
-            "source": {
-              "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
-              "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-              "method": "AaveDataProvider.getReserveData:liquidityRate",
-              "rateRayStr": "27137825343599430593516851",
-              "conversionMethod": "rayToPct_bigint_safe",
-              "blockNumber": 15753621,
-              "blockTimestamp": 1772685379
-            }
-          }
-        },
-        "weightedGrossApyPct": 2.6153544505358894,
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
-      },
-      "reasonCode": null,
-      "instructions": null
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "MISSING_LEG_YIELD_FLUID",
+      "instructions": "Composite plasma_stable_allocator requires all legs to be MEASURED. Leg 'fluid' is currently MISSING (reason: FLUID_RATE_UNREADABLE)."
     },
     "plasma_syrup_barbell": {
       "status": "MEASURED",
-      "grossApyPct": 3.9068969582424806,
+      "grossApyPct": 3.9069044661342898,
       "evidence": {
         "method": "composite_weighted_gross",
         "weightsBps": {
@@ -146,117 +59,38 @@
               "method": "PendleMarket._storage:lastLnImpliedRate",
               "lastLnImpliedRateStr": "43234107464171066",
               "scale": "uint96_div_1e18",
-              "blockNumber": 15753621,
-              "blockTimestamp": 1772685379
+              "blockNumber": 15754398,
+              "blockTimestamp": 1772686156
             }
           },
           "aave": {
             "status": "MEASURED",
             "weightBps": 3000,
-            "grossApyPct": 2.713782534359943,
+            "grossApyPct": 2.713807560665974,
             "source": {
               "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
               "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
               "method": "AaveDataProvider.getReserveData:liquidityRate",
-              "rateRayStr": "27137825343599430593516851",
+              "rateRayStr": "27138075606659743374647957",
               "conversionMethod": "rayToPct_bigint_safe",
-              "blockNumber": 15753621,
-              "blockTimestamp": 1772685379
+              "blockNumber": 15754398,
+              "blockTimestamp": 1772686156
             }
           }
         },
-        "weightedGrossApyPct": 3.9068969582424806,
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
+        "weightedGrossApyPct": 3.9069044661342898,
+        "blockNumber": 15754398,
+        "blockTimestamp": 1772686156
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_syrup_glidepath_allocator": {
-      "status": "MEASURED",
-      "grossApyPct": 4.057656259175175,
-      "evidence": {
-        "method": "composite_weighted_gross",
-        "weightsBps": {
-          "pt": 8000,
-          "stable": 2000
-        },
-        "legs": {
-          "pt": {
-            "status": "MEASURED",
-            "weightBps": 8000,
-            "grossApyPct": 4.418231711334997,
-            "source": {
-              "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
-              "expiry": 1777507200,
-              "method": "PendleMarket._storage:lastLnImpliedRate",
-              "lastLnImpliedRateStr": "43234107464171066",
-              "scale": "uint96_div_1e18",
-              "blockNumber": 15753621,
-              "blockTimestamp": 1772685379
-            }
-          },
-          "stable": {
-            "status": "MEASURED",
-            "weightBps": 2000,
-            "grossApyPct": 2.6153544505358894,
-            "source": {
-              "method": "composite_weighted_gross",
-              "weightsBps": {
-                "fluid": 5000,
-                "aave": 5000
-              },
-              "legs": {
-                "fluid": {
-                  "status": "MEASURED",
-                  "weightBps": 5000,
-                  "grossApyPct": 2.516926366711836,
-                  "source": {
-                    "venue": "0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B",
-                    "method": "erc4626_exchange_rate_delta",
-                    "decimals": 6,
-                    "priceNow": "1013894",
-                    "priceOld": "1013825",
-                    "blocksUsed": {
-                      "now": 15753621,
-                      "old": 15667221
-                    },
-                    "windowSeconds": 86400,
-                    "growth": 0.00006805908317519815,
-                    "aprPct": 2.485858012974113,
-                    "compoundingConvention": "daily_365.25",
-                    "attemptsTotal": 5,
-                    "blockNumber": 15753621,
-                    "blockTimestamp": 1772685379
-                  }
-                },
-                "aave": {
-                  "status": "MEASURED",
-                  "weightBps": 5000,
-                  "grossApyPct": 2.713782534359943,
-                  "source": {
-                    "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
-                    "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-                    "method": "AaveDataProvider.getReserveData:liquidityRate",
-                    "rateRayStr": "27137825343599430593516851",
-                    "conversionMethod": "rayToPct_bigint_safe",
-                    "blockNumber": 15753621,
-                    "blockTimestamp": 1772685379
-                  }
-                }
-              },
-              "weightedGrossApyPct": 2.6153544505358894,
-              "blockNumber": 15753621,
-              "blockTimestamp": 1772685379
-            }
-          }
-        },
-        "weightedGrossApyPct": 4.057656259175175,
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
-      },
-      "reasonCode": null,
-      "instructions": null
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "MISSING_LEG_YIELD_STABLE",
+      "instructions": "Composite plasma_syrup_glidepath_allocator requires all legs to be MEASURED. Leg 'stable' is currently MISSING (reason: MISSING_LEG_YIELD_FLUID)."
     },
     "plasma_pendle_pt_syrupusdt": {
       "status": "MEASURED",
@@ -267,74 +101,40 @@
         "method": "PendleMarket._storage:lastLnImpliedRate",
         "lastLnImpliedRateStr": "43234107464171066",
         "scale": "uint96_div_1e18",
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
+        "blockNumber": 15754398,
+        "blockTimestamp": 1772686156
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_aave_core": {
       "status": "MEASURED",
-      "grossApyPct": 2.713782534359943,
+      "grossApyPct": 2.713807560665974,
       "evidence": {
         "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
         "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "method": "AaveDataProvider.getReserveData:liquidityRate",
-        "rateRayStr": "27137825343599430593516851",
+        "rateRayStr": "27138075606659743374647957",
         "conversionMethod": "rayToPct_bigint_safe",
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
+        "blockNumber": 15754398,
+        "blockTimestamp": 1772686156
       },
       "reasonCode": null,
       "instructions": null
     },
     "plasma_fluid_usdt0_supply": {
-      "status": "MEASURED",
-      "grossApyPct": 2.516926366711836,
-      "evidence": {
-        "venue": "0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B",
-        "method": "erc4626_exchange_rate_delta",
-        "decimals": 6,
-        "priceNow": "1013894",
-        "priceOld": "1013825",
-        "blocksUsed": {
-          "now": 15753621,
-          "old": 15667221
-        },
-        "windowSeconds": 86400,
-        "growth": 0.00006805908317519815,
-        "aprPct": 2.485858012974113,
-        "compoundingConvention": "daily_365.25",
-        "attemptsTotal": 5,
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
-      },
-      "reasonCode": null,
-      "instructions": null
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "FLUID_RATE_UNREADABLE",
+      "instructions": "Fluid ERC4626 exchange-price read failed: server response 403 Forbidden (request={  }, response={  }, error=null, info={ \"requestUrl\": \"https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9\", \"responseBody\": \"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":32,\\\"error\\\":{\\\"code\\\":-32002,\\\"message\\\":\\\"Archive, Debug and Trace requests are not available on your current plan. Visit https://console.chainstack.com/user/settings/billing to upgrade..\\\"}}\", \"responseStatus\": \"403 Forbidden\" }, code=SERVER_ERROR, version=6.16.0)"
     },
     "plasma_fluid_euler_aggregator": {
-      "status": "MEASURED",
-      "grossApyPct": 2.9784925531790574,
-      "evidence": {
-        "venue": "0xe818ad0D20D504C55601b9d5e0E137314414dec4",
-        "method": "erc4626_exchange_rate_delta",
-        "decimals": 6,
-        "priceNow": "1020502",
-        "priceOld": "1020420",
-        "blocksUsed": {
-          "now": 15753622,
-          "old": 15667222
-        },
-        "windowSeconds": 86400,
-        "growth": 0.00008035906783487867,
-        "aprPct": 2.9351149526689433,
-        "compoundingConvention": "daily_365.25",
-        "attemptsTotal": 5,
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
-      },
-      "reasonCode": null,
-      "instructions": null
+      "status": "MISSING",
+      "grossApyPct": null,
+      "evidence": null,
+      "reasonCode": "EULER_RATE_UNREADABLE",
+      "instructions": "Euler ERC4626 exchange-price read failed: server response 403 Forbidden (request={  }, response={  }, error=null, info={ \"requestUrl\": \"https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9\", \"responseBody\": \"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":39,\\\"error\\\":{\\\"code\\\":-32002,\\\"message\\\":\\\"Archive, Debug and Trace requests are not available on your current plan. Visit https://console.chainstack.com/user/settings/billing to upgrade..\\\"}}\", \"responseStatus\": \"403 Forbidden\" }, code=SERVER_ERROR, version=6.16.0)"
     },
     "plasma_emode_usde_looper": {
       "status": "MEASURED",
@@ -351,8 +151,8 @@
         "effectiveLtvBps": 6000,
         "leverage": 2.5,
         "note": "Uses base reserve LTV (not eMode category). Conservative estimate.",
-        "blockNumber": 15753621,
-        "blockTimestamp": 1772685379
+        "blockNumber": 15754398,
+        "blockTimestamp": 1772686156
       },
       "reasonCode": null,
       "instructions": null

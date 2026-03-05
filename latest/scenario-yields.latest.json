@@ -1,15 +1,15 @@
 {
   "version": "scenario_yields_v2",
-  "tag": "ci-obs-22702481599",
-  "generatedAt": "2026-03-05T04:36:21.601Z",
+  "tag": "ci-obs-22702804149",
+  "generatedAt": "2026-03-05T04:49:27.441Z",
   "policyHash": "sha256:dc7188db1aca2495b2b24f1ec824c15bdb36870b04bd2284120530a538f3bb53",
   "coverage": {
     "total": 11,
-    "measured": 11,
+    "measured": 4,
     "observed": 0,
-    "scenario": 0,
-    "missing": 0,
-    "headlineReady": 11
+    "scenario": 3,
+    "missing": 4,
+    "headlineReady": 7
   },
   "hardRules": {
     "scenarioNeverPopulatesMeasured": true,
@@ -20,44 +20,89 @@
   },
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
-      "status": "MEASURED",
-      "measuredGrossApyPct": -34.4628,
-      "scenarioGrossApyPct": null,
-      "scenarioNetApyPct": null,
+      "status": "SCENARIO",
+      "measuredGrossApyPct": null,
+      "scenarioGrossApyPct": 12,
+      "scenarioNetApyPct": 10.8,
       "observedHeadlineYieldPct": null,
-      "assumptionsHash": null,
-      "labels": [],
-      "explanationShort": "Yield measured onchain."
+      "scenarioNetMethod": "scenario_net_after_policy_fees",
+      "confidenceLevel": "LOW",
+      "sourceType": "benchmark_aave_like",
+      "assumptionsHash": "sha256:d4096e49f777fbe2a3756f95894d909e1a484d41aaac1328118764b4077e1b96",
+      "labels": [
+        "SIMULATED",
+        "NOT_VERIFIED"
+      ],
+      "explanationShort": "Directional YT position. Scenario based on historical implied volatility premium for YT-sUSDe class. Actual returns are path-dependent and may diverge significantly.",
+      "assumptions": [
+        "syrupUSDT YT implied yield range 8-16% annualized",
+        "No rebalancing costs modeled",
+        "Assumes hold-to-maturity for underlying"
+      ],
+      "feeScheduleApplied": {
+        "mgmtFeeBps": 0,
+        "perfFeeBps": 1000
+      }
     },
     "plasma_flow_engine_pendle_lp_susde": {
-      "status": "MEASURED",
-      "measuredGrossApyPct": 9.2949,
-      "scenarioGrossApyPct": null,
-      "scenarioNetApyPct": null,
+      "status": "SCENARIO",
+      "measuredGrossApyPct": null,
+      "scenarioGrossApyPct": 10,
+      "scenarioNetApyPct": 9,
       "observedHeadlineYieldPct": null,
-      "assumptionsHash": null,
-      "labels": [],
-      "explanationShort": "Yield measured onchain."
+      "scenarioNetMethod": "scenario_net_after_policy_fees",
+      "confidenceLevel": "LOW",
+      "sourceType": "pendle_implied_rate_proxy",
+      "assumptionsHash": "sha256:558bdb51b549a7ddb6dd946e26ed33c61c703d3e65e1579b93036449423b0ee9",
+      "labels": [
+        "SIMULATED",
+        "NOT_VERIFIED"
+      ],
+      "explanationShort": "Flow engine LP position on sUSDe Pendle market. Scenario based on median LP fee APY observed on Pendle mainnet sUSDe markets.",
+      "assumptions": [
+        "LP fee income assumes moderate trading volume",
+        "No impermanent loss modeled",
+        "sUSDe intrinsic rate proxy from mainnet Ethena data"
+      ],
+      "feeScheduleApplied": {
+        "mgmtFeeBps": 0,
+        "perfFeeBps": 1000
+      }
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
-      "status": "MEASURED",
-      "measuredGrossApyPct": 1.0837,
-      "scenarioGrossApyPct": null,
-      "scenarioNetApyPct": null,
+      "status": "SCENARIO",
+      "measuredGrossApyPct": null,
+      "scenarioGrossApyPct": 10,
+      "scenarioNetApyPct": 9,
       "observedHeadlineYieldPct": null,
-      "assumptionsHash": null,
-      "labels": [],
-      "explanationShort": "Yield measured onchain."
+      "scenarioNetMethod": "scenario_net_after_policy_fees",
+      "confidenceLevel": "LOW",
+      "sourceType": "pendle_implied_rate_proxy",
+      "assumptionsHash": "sha256:50c6ee2e3caf474cddf10e677303bc842ccc17191a8e89ba983eb4303be83f3d",
+      "labels": [
+        "SIMULATED",
+        "NOT_VERIFIED"
+      ],
+      "explanationShort": "Delta-neutral fee engine on USDe Pendle LP. Scenario based on median LP yield from comparable Pendle markets.",
+      "assumptions": [
+        "LP fee income assumes moderate trading volume",
+        "Delta hedging costs not fully modeled",
+        "USDe peg stability assumed"
+      ],
+      "feeScheduleApplied": {
+        "mgmtFeeBps": 0,
+        "perfFeeBps": 1000
+      }
     },
     "plasma_stable_allocator": {
-      "status": "MEASURED",
-      "measuredGrossApyPct": 2.6154,
+      "status": "MISSING",
+      "measuredGrossApyPct": null,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
       "assumptionsHash": null,
       "labels": [],
-      "explanationShort": "Yield measured onchain."
+      "explanationShort": "MISSING_LEG_YIELD_FLUID"
     },
     "plasma_syrup_barbell": {
       "status": "MEASURED",
@@ -70,14 +115,14 @@
       "explanationShort": "Yield measured onchain."
     },
     "plasma_syrup_glidepath_allocator": {
-      "status": "MEASURED",
-      "measuredGrossApyPct": 4.0577,
+      "status": "MISSING",
+      "measuredGrossApyPct": null,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
       "assumptionsHash": null,
       "labels": [],
-      "explanationShort": "Yield measured onchain."
+      "explanationShort": "MISSING_LEG_YIELD_STABLE"
     },
     "plasma_pendle_pt_syrupusdt": {
       "status": "MEASURED",
@@ -100,24 +145,24 @@
       "explanationShort": "Yield measured onchain."
     },
     "plasma_fluid_usdt0_supply": {
-      "status": "MEASURED",
-      "measuredGrossApyPct": 2.5169,
+      "status": "MISSING",
+      "measuredGrossApyPct": null,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
       "assumptionsHash": null,
       "labels": [],
-      "explanationShort": "Yield measured onchain."
+      "explanationShort": "FLUID_RATE_UNREADABLE"
     },
     "plasma_fluid_euler_aggregator": {
-      "status": "MEASURED",
-      "measuredGrossApyPct": 2.9785,
+      "status": "MISSING",
+      "measuredGrossApyPct": null,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
       "assumptionsHash": null,
       "labels": [],
-      "explanationShort": "Yield measured onchain."
+      "explanationShort": "EULER_RATE_UNREADABLE"
     },
     "plasma_emode_usde_looper": {
       "status": "MEASURED",
@@ -130,5 +175,5 @@
       "explanationShort": "Yield measured onchain."
     }
   },
-  "checksum": "sha256:b16fef700cf144b2869ffb6cbd8c12a7fe5352b7288d72d3b9090966b7548b3b"
+  "checksum": "sha256:09a89e941021cb5c0f9a847615db92365f8320e5844ecaec6e2b9fdb268bd0a6"
 }
