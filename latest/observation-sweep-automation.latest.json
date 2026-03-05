@@ -1,13 +1,13 @@
 {
   "version": "observation_sweep_automation.v1",
-  "asOfTimestamp": "2026-03-05T18:58:24.662Z",
-  "tag": "ci-obs-22731936785",
-  "rpcMode": "ci",
+  "asOfTimestamp": "2026-03-02T09:45:18.825Z",
+  "tag": "auto-20260302",
+  "rpcMode": "local",
   "status": "RAN",
   "reasonCode": "OK",
   "note": "Sweep completed. Snapshot + APY + staleness updated.",
   "startArtifactMode": "existing",
-  "snapshotMode": "ci_minimal",
+  "snapshotMode": "standard",
   "policy": {
     "headlineWindowDays": 7,
     "secondaryWindowsDays": [
@@ -17,26 +17,26 @@
   "lanes": {
     "plasma_pendle_yt_syrupusdt_volatility": {
       "observationCount": 2,
-      "windowDays": 1.7726,
+      "windowDays": 1.0242,
       "annualizedEligible": false
     },
     "plasma_flow_engine_pendle_lp_susde": {
       "observationCount": 2,
-      "windowDays": 1.7726,
+      "windowDays": 1.0242,
       "annualizedEligible": false
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
       "observationCount": 2,
-      "windowDays": 1.7726,
+      "windowDays": 1.0242,
       "annualizedEligible": false
     }
   },
-  "staleBefore": null,
+  "staleBefore": false,
   "staleAfter": false,
   "steps": {
     "snapshot": "OK",
     "computeApy": "SKIPPED_NO_INPUTS",
     "staleness": "OK"
   },
-  "checksum": "sha256:7e8d6da687a5f50366be784c36d3b828be2cb8fcb5ad5d5cda06d7226248ce2f"
+  "checksum": "sha256:0de60aa9fb1b015b1f20ae31c4dc7745f43330d83ae83bf71a98c465454c8fb6"
 }

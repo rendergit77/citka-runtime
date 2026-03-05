@@ -1,42 +1,626 @@
 {
   "version": "fee_ledger.v1",
-  "generatedAt": "2026-03-05T18:58:36.811Z",
-  "observedAt": "2026-03-05T18:58:36.811Z",
-  "expiresAt": "2026-03-05T22:58:36.811Z",
+  "generatedAt": "2026-03-04T21:15:14.094Z",
+  "observedAt": "2026-03-04T21:15:14.094Z",
+  "expiresAt": "2026-03-05T01:15:14.094Z",
   "freshnessStatus": "FRESH",
-  "status": "MISSING",
-  "reasonCode": "ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
-  "instructions": [
-    "Run build-fee-accrual-inputs.js and ensure epoch + economics inputs are present."
-  ],
-  "epochId": null,
-  "currentEpochReference": null,
-  "currentEpochRef": null,
+  "status": "ACTIVE",
+  "reasonCode": null,
+  "instructions": [],
+  "epochId": 23,
+  "currentEpochReference": 23,
+  "currentEpochRef": "ops/runtime/points-epoch.real.latest.json",
   "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
-  "snapshotVersionHash": null,
+  "snapshotVersionHash": "sha256:5df79f17ffe976990218fa98642deeaec8e1b78a8e46995ce16d451f0ab6c5f6",
   "sourceRefs": {
     "accrualInputsRef": "ops/runtime/fee-accrual-inputs.latest.json",
     "feePolicyRef": "config/fees.policy.json",
-    "baseInputsRef": "ops/runtime/fee-base-inputs.latest.json"
+    "baseInputsRef": "ops/runtime/fee-base-inputs.latest.json",
+    "currentEpochRef": "ops/runtime/points-epoch.real.latest.json"
   },
-  "vaults": {},
+  "vaults": {
+    "plasma_pendle_yt_syrupusdt_volatility": {
+      "status": "BLOCKED",
+      "reasonCode": "NEGATIVE_NET_APY_BLOCKED",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceType": "NOT_MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [],
+      "howToFix": [
+        "Measured net APY >= 0 across sustained window and explicit policy review."
+      ]
+    },
+    "plasma_flow_engine_pendle_lp_susde": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceType": "NOT_MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [],
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ]
+    },
+    "plasma_delta_fee_engine_pendle_lp_usde": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceType": "NOT_MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [],
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ]
+    },
+    "plasma_stable_allocator": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [],
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ]
+    },
+    "plasma_syrup_barbell": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [],
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ]
+    },
+    "plasma_syrup_glidepath_allocator": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [],
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ]
+    },
+    "plasma_pendle_pt_syrupusdt": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [],
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ]
+    },
+    "plasma_aave_core": {
+      "status": "ACTIVE",
+      "reasonCode": "ZERO_ACCRUAL",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "SETTLEMENT_ACTIVE",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": 0,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "SETTLEMENT_ACTIVE",
+        "policyScheduleBps": 50,
+        "appliedBps": 0,
+        "appliedUsd": 0,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 2,
+      "requiredInputs": [],
+      "howToFix": []
+    },
+    "plasma_fluid_usdt0_supply": {
+      "status": "ACTIVE",
+      "reasonCode": "ZERO_ACCRUAL",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "DISCLOSE_ONLY",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "SETTLEMENT_ACTIVE",
+        "policyScheduleBps": 50,
+        "appliedBps": 0,
+        "appliedUsd": 0,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 1,
+      "requiredInputs": [
+        {
+          "field": "volumeUsd",
+          "reason": "FLOW_METHOD_NOT_SUPPORTED",
+          "howToObtain": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "FLOW_METHOD_NOT_SUPPORTED",
+          "howToObtain": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
+        }
+      ],
+      "howToFix": []
+    },
+    "plasma_fluid_euler_aggregator": {
+      "status": "BLOCKED",
+      "reasonCode": "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 10,
+        "appliedUsd": null,
+        "evidenceType": "MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 1000,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [],
+      "howToFix": [
+        "Deploy lane-dedicated vault or provide objective lane share accounting proven onchain."
+      ]
+    },
+    "plasma_emode_usde_looper": {
+      "status": "MISSING",
+      "reasonCode": "REQUIRED_INPUTS_MISSING",
+      "executionFee": {
+        "mode": "MEASURED_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 10,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceType": "NOT_MEASURED",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "managementFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "performanceFee": {
+        "mode": "DISCLOSE_ONLY",
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedBps": 0,
+        "appliedUsd": null,
+        "evidenceRef": "config/fees.policy.json"
+      },
+      "exitFee": {
+        "railMode": "NOT_MEASURED",
+        "policyScheduleBps": 0,
+        "appliedUsd": null
+      },
+      "totalAccruedUsd": 0,
+      "totalAccruedUsdComplete": false,
+      "settlementActiveRailsCount": 0,
+      "requiredInputs": [
+        {
+          "field": "volumeUsd",
+          "reason": "FLOW_METHOD_NOT_SUPPORTED",
+          "howToObtain": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "FLOW_METHOD_NOT_SUPPORTED",
+          "howToObtain": "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
+        }
+      ],
+      "howToFix": [
+        "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE.",
+        "Implement flow settlement source for method RECEIPT_TOKEN_BALANCE."
+      ]
+    }
+  },
   "totals": {
-    "vaultsTotal": 0,
+    "vaultsTotal": 11,
     "executionFeeUsd": 0,
     "managementFeeUsd": 0,
     "performanceFeeUsd": 0,
     "totalAccruedUsd": 0,
-    "computableVaults": 0,
+    "computableVaults": 2,
     "stakersBps": 0,
     "stakersAccrualUsdCap": 0
   },
   "invariants": {
-    "valid": false,
-    "noFutureEpoch": false,
-    "measuredOnlyIntegrity": false,
-    "recipientsSumValid": false,
-    "errors": [
-      "ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING"
-    ]
+    "valid": true,
+    "noFutureEpoch": true,
+    "measuredOnlyIntegrity": true,
+    "recipientsSumValid": true,
+    "errors": []
+  },
+  "diagnostics": {
+    "whyZeroAccrued": [
+      {
+        "vaultId": "plasma_pendle_yt_syrupusdt_volatility",
+        "reasons": [
+          "NEGATIVE_NET_APY_BLOCKED",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD"
+        ]
+      },
+      {
+        "vaultId": "plasma_flow_engine_pendle_lp_susde",
+        "reasons": [
+          "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD"
+        ]
+      },
+      {
+        "vaultId": "plasma_delta_fee_engine_pendle_lp_usde",
+        "reasons": [
+          "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD"
+        ]
+      },
+      {
+        "vaultId": "plasma_stable_allocator",
+        "reasons": [
+          "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD"
+        ]
+      },
+      {
+        "vaultId": "plasma_syrup_barbell",
+        "reasons": [
+          "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD"
+        ]
+      },
+      {
+        "vaultId": "plasma_syrup_glidepath_allocator",
+        "reasons": [
+          "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD"
+        ]
+      },
+      {
+        "vaultId": "plasma_pendle_pt_syrupusdt",
+        "reasons": [
+          "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD"
+        ]
+      },
+      {
+        "vaultId": "plasma_aave_core",
+        "reasons": [
+          "ZERO_ACCRUAL",
+          "EXEC_FEE_ZERO_FLOW",
+          "MGMT_FEE_ZERO_AUM"
+        ]
+      },
+      {
+        "vaultId": "plasma_fluid_usdt0_supply",
+        "reasons": [
+          "ZERO_ACCRUAL",
+          "MGMT_FEE_ZERO_AUM",
+          "REQUIRED_INPUTS_MISSING"
+        ]
+      },
+      {
+        "vaultId": "plasma_fluid_euler_aggregator",
+        "reasons": [
+          "LANE_AUM_ATTRIBUTION_POLICY_BLOCKED",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD"
+        ]
+      },
+      {
+        "vaultId": "plasma_emode_usde_looper",
+        "reasons": [
+          "REQUIRED_INPUTS_MISSING",
+          "EXEC_FEE_NOT_MEASURED",
+          "ALL_RAILS_NULL_USD",
+          "REQUIRED_INPUTS_MISSING",
+          "REQUIRED_INPUTS_MISSING"
+        ]
+      }
+    ],
+    "railSummary": {
+      "executionFee": {
+        "settlementActiveCount": 1,
+        "disclosureOnlyCount": 1,
+        "notMeasuredCount": 9
+      },
+      "managementFee": {
+        "settlementActiveCount": 2,
+        "disclosureOnlyCount": 0,
+        "notMeasuredCount": 9
+      },
+      "performanceFee": {
+        "settlementActiveCount": 0,
+        "disclosureOnlyCount": 0,
+        "notMeasuredCount": 11
+      },
+      "exitFee": {
+        "settlementActiveCount": 0,
+        "disclosureOnlyCount": 0,
+        "notMeasuredCount": 11
+      }
+    }
   }
 }
