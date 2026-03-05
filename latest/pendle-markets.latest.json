@@ -1,6 +1,6 @@
 {
   "version": "pendle_markets_discovery.v1",
-  "generatedAt": "2026-03-05T04:29:48.327Z",
+  "generatedAt": "2026-03-05T04:36:21.417Z",
   "chainId": 9745,
   "rpcUsed": "https://rpc.plasma.to",
   "markets": [
@@ -15,24 +15,24 @@
     {
       "label": "YT-sUSDe-9APR2026",
       "address": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
-      "isLive": true,
+      "isLive": false,
       "expiry": null,
       "tokens": null,
-      "error": null
+      "error": "NO_CODE"
     },
     {
       "label": "LP-syrupUSDT-30APR2026",
       "address": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
-      "isLive": true,
+      "isLive": false,
       "expiry": null,
       "tokens": null,
-      "error": null
+      "error": "NO_CODE"
     }
   ],
   "summary": {
     "total": 3,
-    "live": 3,
+    "live": 1,
     "expired": 0,
-    "errors": 0
+    "errors": 2
   }
 }
