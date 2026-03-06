@@ -1,14 +1,14 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-03-04T21:15:00.075Z",
-  "observedAt": "2026-03-04T21:15:00.075Z",
-  "expiresAt": "2026-03-05T01:15:00.075Z",
+  "generatedAt": "2026-03-06T18:49:29.495Z",
+  "observedAt": "2026-03-06T18:49:29.495Z",
+  "expiresAt": "2026-03-06T22:49:29.495Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
   "instructions": [],
   "periodSeconds": 604800,
-  "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
+  "policyVersionHash": "sha256:616c6537414fd7059d106775f2c172ee76249ada1b5d328b69ece090e7cf1e9a",
   "sourceRefs": {
     "economicsRef": "ops/runtime/vault-economics.latest.json",
     "feePolicyRef": "config/fees.policy.json",
@@ -205,10 +205,10 @@
     "plasma_aave_core": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 0.100001,
-      "volumeUsd": 0.100001,
+      "aumUsd": 0.110011,
+      "volumeUsd": 0.110001,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.02741294142515325,
+      "grossApyFraction": 0.032227173958141814,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "SETTLEMENT_ACTIVE",
@@ -231,7 +231,7 @@
       "aumUsd": 0.000986,
       "volumeUsd": null,
       "withdrawUsd": null,
-      "grossApyFraction": 0.023696671590161644,
+      "grossApyFraction": 0.020744869326953852,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "SETTLEMENT_ACTIVE",

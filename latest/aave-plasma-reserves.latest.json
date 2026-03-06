@@ -1,7 +1,8 @@
 {
-  "version": "aave_plasma_reserves.v1",
-  "generatedAt": "2026-03-02T15:36:42.247Z",
+  "version": "aave_plasma_reserves.v2",
+  "generatedAt": "2026-03-06T18:49:19.469Z",
   "chainId": 9745,
+  "rpcUsed": "https://rpc.plasma.to",
   "provider": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
   "status": "SUCCESS",
   "reserves": [
@@ -17,7 +18,9 @@
       "borrowingEnabled": true,
       "stableBorrowRateEnabled": false,
       "isActive": true,
-      "isFrozen": false
+      "isFrozen": false,
+      "supplyApyPct": 3.2227173958141813,
+      "liquidityIndex": "1015882054019982690475788391"
     },
     {
       "symbol": "USDe",
@@ -31,7 +34,9 @@
       "borrowingEnabled": true,
       "stableBorrowRateEnabled": false,
       "isActive": true,
-      "isFrozen": false
+      "isFrozen": false,
+      "supplyApyPct": 1.2566189804170302,
+      "liquidityIndex": "1005365005377043408394209739"
     },
     {
       "symbol": "sUSDe",
@@ -45,7 +50,9 @@
       "borrowingEnabled": false,
       "stableBorrowRateEnabled": false,
       "isActive": true,
-      "isFrozen": false
+      "isFrozen": false,
+      "supplyApyPct": 0,
+      "liquidityIndex": "1000000000000000000000000000"
     },
     {
       "symbol": "XAUt0",
@@ -73,7 +80,9 @@
       "borrowingEnabled": false,
       "stableBorrowRateEnabled": false,
       "isActive": true,
-      "isFrozen": false
+      "isFrozen": false,
+      "supplyApyPct": 0,
+      "liquidityIndex": "1000000000000000000000000000"
     },
     {
       "symbol": "WETH",
@@ -87,7 +96,9 @@
       "borrowingEnabled": true,
       "stableBorrowRateEnabled": false,
       "isActive": true,
-      "isFrozen": false
+      "isFrozen": false,
+      "supplyApyPct": 4.351961350017565,
+      "liquidityIndex": "1008551517621874001217232563"
     },
     {
       "symbol": "PT-USDe-15JAN2026",
@@ -101,7 +112,9 @@
       "borrowingEnabled": false,
       "stableBorrowRateEnabled": false,
       "isActive": true,
-      "isFrozen": false
+      "isFrozen": false,
+      "supplyApyPct": 0,
+      "liquidityIndex": "1000000000000000000000000000"
     },
     {
       "symbol": "PT-sUSDE-15JAN2026",
@@ -115,7 +128,9 @@
       "borrowingEnabled": false,
       "stableBorrowRateEnabled": false,
       "isActive": true,
-      "isFrozen": false
+      "isFrozen": false,
+      "supplyApyPct": 0,
+      "liquidityIndex": "1000000000000000000000000000"
     },
     {
       "symbol": "wstETH",
@@ -185,7 +200,9 @@
       "borrowingEnabled": false,
       "stableBorrowRateEnabled": false,
       "isActive": true,
-      "isFrozen": false
+      "isFrozen": false,
+      "supplyApyPct": 0,
+      "liquidityIndex": "1000000000000000000000000000"
     },
     {
       "symbol": "PT-USDe-9APR2026",
@@ -199,8 +216,59 @@
       "borrowingEnabled": false,
       "stableBorrowRateEnabled": false,
       "isActive": true,
+      "isFrozen": false,
+      "supplyApyPct": 0,
+      "liquidityIndex": "1000000000000000000000000000"
+    },
+    {
+      "symbol": "GHO",
+      "tokenAddress": "0xb77E872A68C62CfC0dFb02C067Ecc3DA23B4bbf3",
+      "decimals": 18,
+      "ltv": 0,
+      "liquidationThreshold": 0,
+      "liquidationBonus": 0,
+      "reserveFactor": 500,
+      "usageAsCollateralEnabled": false,
+      "borrowingEnabled": true,
+      "stableBorrowRateEnabled": false,
+      "isActive": true,
       "isFrozen": false
     }
   ],
+  "foundTargets": {
+    "USDe": {
+      "found": true,
+      "address": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
+      "isActive": true,
+      "isFrozen": false
+    },
+    "sUSDe": {
+      "found": true,
+      "address": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+      "isActive": true,
+      "isFrozen": false
+    },
+    "USDT0": {
+      "found": true,
+      "address": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+      "isActive": true,
+      "isFrozen": false
+    },
+    "weETH": {
+      "found": true,
+      "address": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+      "isActive": true,
+      "isFrozen": false
+    },
+    "USDC": {
+      "found": false
+    },
+    "WETH": {
+      "found": true,
+      "address": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
+      "isActive": true,
+      "isFrozen": false
+    }
+  },
   "error": null
 }

@@ -1,6 +1,6 @@
 {
   "version": "epoch_share_snapshots.v1",
-  "generatedAt": "2026-03-04T15:22:24.529Z",
+  "generatedAt": "2026-03-06T18:49:30.018Z",
   "status": "ACTIVE",
   "reasonCode": null,
   "model": "ONCHAIN_BALANCE_SNAPSHOT",
@@ -13,14 +13,14 @@
     "readerMode": "ONCHAIN_BALANCE_OF_V1",
     "partialFailures": []
   },
-  "epochId": 23,
+  "epochId": null,
   "vaults": {
     "plasma_aave_core": {
       "vaultAddress": "0x266f607368c6d8a6c82148bcfa8dd10701040ad4",
       "snapshotUserCount": 3,
       "failedUserCount": 0,
       "totalShares": "0",
-      "totalPendingDepositAssets": "100001"
+      "totalPendingDepositAssets": "0"
     }
   },
   "users": {
@@ -30,7 +30,7 @@
         "plasma_aave_core": "0"
       },
       "pendingDepositAssets": {
-        "plasma_aave_core": "100001"
+        "plasma_aave_core": "0"
       }
     },
     "0x619d5D1E620c70442e67726b0E4cBf8c6E111b19": {
@@ -57,7 +57,7 @@
     "userCount": 3,
     "snapshotCount": 3,
     "totalShares": "0",
-    "totalPendingDepositAssets": "100001"
+    "totalPendingDepositAssets": "0"
   },
   "invariants": {
     "valid": true,

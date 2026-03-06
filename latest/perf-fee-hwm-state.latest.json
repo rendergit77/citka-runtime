@@ -1,6 +1,6 @@
 {
   "version": "perf_fee_hwm_state_v1",
-  "generatedAt": "2026-03-05T22:38:36.208Z",
+  "generatedAt": "2026-03-06T18:48:56.449Z",
   "stalenessPolicy": {
     "type": "HOURS",
     "value": 48
@@ -14,10 +14,11 @@
       "currentSharePrice": null,
       "currentTimestamp": null,
       "status": "MISSING",
-      "reasonCode": "NO_SNAPSHOT_DATA",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
       "evidence": null,
       "instructions": [
-        "Generate a valid share price snapshot to unlock HWM accounting."
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
       ]
     },
     "plasma_flow_engine_pendle_lp_susde": {
@@ -27,10 +28,11 @@
       "currentSharePrice": null,
       "currentTimestamp": null,
       "status": "MISSING",
-      "reasonCode": "NO_SNAPSHOT_DATA",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
       "evidence": null,
       "instructions": [
-        "Generate a valid share price snapshot to unlock HWM accounting."
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
       ]
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
@@ -40,10 +42,11 @@
       "currentSharePrice": null,
       "currentTimestamp": null,
       "status": "MISSING",
-      "reasonCode": "NO_SNAPSHOT_DATA",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
       "evidence": null,
       "instructions": [
-        "Generate a valid share price snapshot to unlock HWM accounting."
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
       ]
     },
     "plasma_stable_allocator": {
@@ -53,10 +56,11 @@
       "currentSharePrice": null,
       "currentTimestamp": null,
       "status": "MISSING",
-      "reasonCode": "NO_SNAPSHOT_DATA",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
       "evidence": null,
       "instructions": [
-        "Generate a valid share price snapshot to unlock HWM accounting."
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
       ]
     },
     "plasma_syrup_barbell": {
@@ -66,10 +70,11 @@
       "currentSharePrice": null,
       "currentTimestamp": null,
       "status": "MISSING",
-      "reasonCode": "NO_SNAPSHOT_DATA",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
       "evidence": null,
       "instructions": [
-        "Generate a valid share price snapshot to unlock HWM accounting."
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
       ]
     },
     "plasma_syrup_glidepath_allocator": {
@@ -79,10 +84,11 @@
       "currentSharePrice": null,
       "currentTimestamp": null,
       "status": "MISSING",
-      "reasonCode": "NO_SNAPSHOT_DATA",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
       "evidence": null,
       "instructions": [
-        "Generate a valid share price snapshot to unlock HWM accounting."
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
       ]
     },
     "plasma_pendle_pt_syrupusdt": {
@@ -92,10 +98,11 @@
       "currentSharePrice": null,
       "currentTimestamp": null,
       "status": "MISSING",
-      "reasonCode": "NO_SNAPSHOT_DATA",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
       "evidence": null,
       "instructions": [
-        "Generate a valid share price snapshot to unlock HWM accounting."
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
       ]
     },
     "plasma_fluid_euler_aggregator": {
@@ -105,12 +112,13 @@
       "currentSharePrice": null,
       "currentTimestamp": null,
       "status": "MISSING",
-      "reasonCode": "NO_SNAPSHOT_DATA",
+      "reasonCode": "VAULT_NOT_DEPLOYED_NO_ERC4626",
       "evidence": null,
       "instructions": [
-        "Generate a valid share price snapshot to unlock HWM accounting."
+        "Deploy Citadel ERC4626 vault contract.",
+        "Update address registry to enable onchain share price reads."
       ]
     }
   },
-  "checksum": "sha256:d3948b48f6fb1bebd5cd01e2685fa574d428781ec29d0ca2c6e6f178f385249c"
+  "checksum": "sha256:cc3902606099d764995f558bb2b706c42c4586f2f6a2dda1d2873e3d4bada812"
 }

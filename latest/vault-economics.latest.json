@@ -1,14 +1,14 @@
 {
   "version": "vault_economics_snapshot.v3",
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-06T06:16:00.234Z",
-  "observedAt": "2026-03-06T06:16:00.234Z",
-  "expiresAt": "2026-03-06T10:16:00.234Z",
+  "generatedAt": "2026-03-06T18:49:22.599Z",
+  "observedAt": "2026-03-06T18:49:22.599Z",
+  "expiresAt": "2026-03-06T22:49:22.599Z",
   "freshnessStatus": "FRESH",
   "totalsByMode": {
     "MEASURED": 11,
     "OBSERVED": 9,
-    "SCENARIO": 8
+    "SCENARIO": 10
   },
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
@@ -17,12 +17,13 @@
     "onchainYieldsFile": "onchain-yield-observations",
     "productYieldsFile": "product-yield-observations",
     "spreadObservationsFile": "execution-spread-observations",
+    "aumSnapshotsFile": null,
     "productReadMeta": {
-      "source": "ProductReadAPI.v1.vaultExplorer",
+      "source": "synthesized_fallback_ALL_NULL",
       "apiVersion": null,
       "chainIdScope": null,
-      "policyVersionHash": "unknown",
-      "universeHash": "unknown"
+      "policyVersionHash": null,
+      "universeHash": null
     }
   },
   "policy": {
@@ -46,1595 +47,16 @@
     ]
   },
   "vaults": {
-    "plasma_aave_core": {
-      "metrics": {
-        "executionLoss": {
-          "status": "MEASURED",
-          "measuredExecutionLossBps": 0,
-          "reasonCode": null,
-          "evidence": {
-            "type": "CANARY_WRITE",
-            "tx": "0xcc921c31a54637f106c7f81272cc3275d5b46d231181ad9aa012cfa92b0e0c43"
-          }
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 10,
-            "evidenceType": "MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": 0.03366661898262014,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": 0.03366661898262014,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED",
-        "MEASURED: grossApyPct derived from onchain probe.",
-        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
-        "APR_NOT_MODELED"
-      ],
-      "status": "MEASURED",
-      "reasonCode": null,
-      "grossApyPct": 3.3666618982620142,
-      "netApyPct": 3.3666618982620142,
-      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_aave_core",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "MEASURED",
-        "headlineYieldPct": 3.3666618982620142,
-        "label": "MEASURED_NET_APY",
-        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
-      }
-    },
-    "plasma_fluid_usdt0_supply": {
-      "metrics": {
-        "executionLoss": {
-          "status": "MEASURED",
-          "measuredExecutionLossBps": 0,
-          "reasonCode": null,
-          "evidence": {
-            "type": "CANARY_WRITE",
-            "tx": "0xa3a22ff5d64fa512687f6cc24c323dabaa6209fe7ab1460a4b7db39f493e5569"
-          }
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 10,
-            "evidenceType": "MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": 0.022217393138836083,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": 0.022217393138836083,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED",
-        "MEASURED: grossApyPct derived from onchain probe.",
-        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
-        "APR_NOT_MODELED"
-      ],
-      "status": "MEASURED",
-      "reasonCode": null,
-      "grossApyPct": 2.2217393138836083,
-      "netApyPct": 2.2217393138836083,
-      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_fluid_usdt0_supply",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "MEASURED",
-        "headlineYieldPct": 2.2217393138836083,
-        "label": "MEASURED_NET_APY",
-        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
-      }
-    },
-    "plasma_pendle_pt_usde": {
-      "metrics": {
-        "executionLoss": {
-          "status": "SKIPPED",
-          "measuredExecutionLossBps": null,
-          "reasonCode": "SKIP_SWAP_UNAVAILABLE_USDe",
-          "actionRequired": "Resolve the canary gating issue for this vault."
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 0,
-            "evidenceType": "NOT_MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": null,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": null,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
-      ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "No structural or orthogonal pilot evidence found",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_pendle_pt_usde",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "No structural or orthogonal pilot evidence found"
-      }
-    },
-    "plasma_fluid_euler_aggregator": {
-      "metrics": {
-        "executionLoss": {
-          "status": "MEASURED",
-          "measuredExecutionLossBps": 0,
-          "reasonCode": null,
-          "evidence": {
-            "type": "CANARY_WRITE",
-            "tx": "0x49cfbafd87d065e274ac45698fbc899293044e2e474c61c3057a7a2a009a29d9"
-          }
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 1000,
-          "hwmMode": "OFFCHAIN_ACCOUNTING",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 10,
-            "evidenceType": "MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 1000,
-            "hwmMode": "OFFCHAIN_ACCOUNTING",
-            "enforcement": "DISCLOSE_ONLY",
-            "evidenceType": "HWM_STATE_MISSING",
-            "hwmState": {
-              "status": "MISSING",
-              "lastHwmTimestamp": null,
-              "stale": false,
-              "evidenceRef": null
-            }
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": 0.032734850464731124,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": 0.02946136541825801,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED",
-        "MEASURED: grossApyPct derived from onchain probe.",
-        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
-        "APR_NOT_MODELED"
-      ],
-      "status": "MEASURED",
-      "reasonCode": null,
-      "grossApyPct": 3.2734850464731124,
-      "netApyPct": 2.946136541825801,
-      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_fluid_euler_aggregator",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "MEASURED",
-        "headlineYieldPct": 2.946136541825801,
-        "label": "MEASURED_NET_APY",
-        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
-      }
-    },
-    "plasma_emode_usde_looper": {
-      "metrics": {
-        "executionLoss": {
-          "status": "SKIPPED",
-          "measuredExecutionLossBps": null,
-          "reasonCode": "MISSING_EVIDENCE",
-          "actionRequired": "Execution loss metric not available in observation input."
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 0,
-            "evidenceType": "NOT_MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": -0.016576354788619074,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": -0.016576354788619074,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED",
-        "MEASURED: grossApyPct derived from onchain probe.",
-        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
-        "APR_NOT_MODELED"
-      ],
-      "status": "MEASURED",
-      "reasonCode": null,
-      "grossApyPct": -1.6576354788619074,
-      "netApyPct": -1.6576354788619074,
-      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_emode_usde_looper",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "MEASURED",
-        "headlineYieldPct": -1.6576354788619074,
-        "label": "MEASURED_NET_APY",
-        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
-      }
-    },
-    "plasma_aave_usde_supply": {
-      "metrics": {
-        "executionLoss": {
-          "status": "SKIPPED",
-          "measuredExecutionLossBps": null,
-          "reasonCode": "SKIP_SWAP_UNAVAILABLE_USDe",
-          "actionRequired": "Resolve the canary gating issue for this vault."
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 0,
-            "evidenceType": "NOT_MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": null,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": null,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
-      ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "No structural or orthogonal pilot evidence found",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_aave_usde_supply",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "No structural or orthogonal pilot evidence found"
-      }
-    },
-    "plasma_yt_susde_speculator": {
-      "metrics": {
-        "executionLoss": {
-          "status": "SKIPPED",
-          "measuredExecutionLossBps": null,
-          "reasonCode": "MISSING_EVIDENCE",
-          "actionRequired": "Execution loss metric not available in observation input."
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 0,
-            "evidenceType": "NOT_MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": null,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": null,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
-      ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "No structural or orthogonal pilot evidence found",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_yt_susde_speculator",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "No structural or orthogonal pilot evidence found"
-      }
-    },
-    "plasma_usdai_leverage_farm": {
-      "metrics": {
-        "executionLoss": {
-          "status": "SKIPPED",
-          "measuredExecutionLossBps": null,
-          "reasonCode": "MISSING_EVIDENCE",
-          "actionRequired": "Execution loss metric not available in observation input."
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 0,
-            "evidenceType": "NOT_MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": null,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": null,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": {
-        "flashloanPremiumBpsEstimate": 9,
-        "swapSlippageBpsEstimate": 100
-      },
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
-      ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "No structural or orthogonal pilot evidence found",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_usdai_leverage_farm",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "No structural or orthogonal pilot evidence found"
-      }
-    },
-    "plasma_aave_weeth_carry": {
-      "metrics": {
-        "executionLoss": {
-          "status": "SKIPPED",
-          "measuredExecutionLossBps": null,
-          "reasonCode": "SKIP_SWAP_UNAVAILABLE_weETH",
-          "actionRequired": "Resolve the canary gating issue for this vault."
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 0,
-            "evidenceType": "NOT_MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": null,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": null,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
-        "YIELD_MODEL_GENERIC_UNMODELED"
-      ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "No structural or orthogonal pilot evidence found",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_aave_weeth_carry",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "No structural or orthogonal pilot evidence found"
-      }
-    },
-    "plasma_pbtc_basis_shield": {
-      "metrics": {
-        "executionLoss": {
-          "status": "SKIPPED",
-          "measuredExecutionLossBps": null,
-          "reasonCode": "MISSING_EVIDENCE",
-          "actionRequired": "Execution loss metric not available in observation input."
-        }
-      },
-      "fees": {
-        "schedule": {
-          "performanceFeeBps": 0,
-          "hwmMode": "NONE",
-          "exitFeeBps": 0,
-          "spreadFeeBps": 10
-        },
-        "rails": {
-          "executionFee": {
-            "mode": "MEASURED_ONLY",
-            "policyScheduleBps": 10,
-            "appliedBps": 0,
-            "evidenceType": "NOT_MEASURED",
-            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
-          },
-          "performance": {
-            "bps": 0,
-            "hwmMode": "NONE",
-            "enforcement": "NONE",
-            "evidenceType": "NOT_APPLICABLE",
-            "hwmState": null
-          }
-        },
-        "recipients": {
-          "treasuryBps": 10000,
-          "stakersBps": 0,
-          "activationConditions": [
-            "Staking contract deployed on Plasma + audited",
-            "Merkle proof distribution pipeline operational",
-            "Staker share accounting integrated into observation sweep"
-          ]
-        },
-        "caps": {
-          "perfFeeBpsCap": null
-        },
-        "costs": {
-          "perfFeeDragBps": null,
-          "exitPremiumBps": null,
-          "bufferDragBps": null,
-          "opsGasDragBps": null,
-          "estimateOnly": false
-        },
-        "provenance": {
-          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
-        }
-      },
-      "rewards": {
-        "incentivesEv": {
-          "enabled": false,
-          "type": "points",
-          "perEpoch": null,
-          "haircutBps": 6000,
-          "includedInApy": false,
-          "notes": "Incentives shown as EV only; excluded from base APY."
-        },
-        "multiplierPolicy": {
-          "streak": {
-            "enabled": true,
-            "description": "Consecutive epoch participation multiplier"
-          },
-          "liquidity": {
-            "enabled": true,
-            "description": "Share balance weighted multiplier"
-          },
-          "lock": {
-            "enabled": false,
-            "description": "Lock commitment multiplier (requires staking v0)"
-          }
-        },
-        "eligibility": {
-          "depositRequired": true,
-          "minSharesForPoints": 0,
-          "stakingRequired": false,
-          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
-        },
-        "provenance": {
-          "policy": "yieldSurface.points + config/params.plasma.json"
-        }
-      },
-      "apy": {
-        "gross": {
-          "apy": null,
-          "apr": null,
-          "source": "hidden"
-        },
-        "net": {
-          "apy": null,
-          "apr": null,
-          "defaultDisplayed": true
-        },
-        "components": {
-          "feeDragApy": null,
-          "feeDragApr": null,
-          "oracleAdjustmentApy": null,
-          "oracleAdjustmentApr": null,
-          "slippageSpreadApy": null,
-          "slippageSpreadApr": null,
-          "incentiveEvApy": null
-        },
-        "formulas": {
-          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
-          "incentivesPolicy": "incentives EV excluded from APY"
-        },
-        "provenance": {
-          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
-        }
-      },
-      "baselines": {
-        "underlyingDirectNetApy": null,
-        "citkaEdgeApy": null,
-        "edgeComputed": false,
-        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
-      },
-      "onchainYieldSource": null,
-      "leverageCosts": null,
-      "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
-        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
-      ],
-      "status": "STRUCTURAL_ONLY",
-      "reasonCode": "No structural or orthogonal pilot evidence found",
-      "grossApyPct": null,
-      "netApyPct": null,
-      "evidenceType": null,
-      "evidenceRef": null,
-      "provenance": {
-        "sources": {
-          "vaultId": "plasma_pbtc_basis_shield",
-          "paramsKey": true,
-          "onchainYieldOverlay": false
-        },
-        "selectors": {
-          "productRead": "/api/v1/vault-explorer"
-        },
-        "units": {
-          "apyApr": "fraction",
-          "feeBps": "bps"
-        }
-      },
-      "headline": {
-        "mode": "SCENARIO",
-        "headlineYieldPct": null,
-        "label": "SCENARIO_YIELD",
-        "reasonCode": "No structural or orthogonal pilot evidence found"
-      }
-    },
     "plasma_pendle_yt_syrupusdt_volatility": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "SKIPPED",
@@ -1729,12 +151,12 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.29993693865826543,
+          "apy": -0.31314545524472953,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": -0.29993693865826543,
+          "apy": -0.31314545524472953,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1764,7 +186,6 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "MEASURED: grossApyPct derived from onchain probe.",
         "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
@@ -1772,8 +193,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": -29.993693865826543,
-      "netApyPct": -29.993693865826543,
+      "grossApyPct": -31.314545524472955,
+      "netApyPct": -31.314545524472955,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1792,12 +213,21 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": -29.993693865826543,
+        "headlineYieldPct": -31.314545524472955,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_flow_engine_pendle_lp_susde": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "SKIPPED",
@@ -1892,12 +322,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.09321090493111693,
+          "apy": 0.09086954354751961,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.08388981443800525,
+          "apy": 0.08178258919276765,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1927,7 +357,6 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "MEASURED: grossApyPct derived from onchain probe.",
         "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
@@ -1935,8 +364,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 9.321090493111694,
-      "netApyPct": 8.388981443800525,
+      "grossApyPct": 9.086954354751962,
+      "netApyPct": 8.178258919276765,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1955,12 +384,21 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 8.388981443800525,
+        "headlineYieldPct": 8.178258919276765,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "SKIPPED",
@@ -2055,12 +493,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.010837662893245267,
+          "apy": 0.01083623807249307,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.009753896603920741,
+          "apy": 0.009752614265243762,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -2090,7 +528,6 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "MEASURED: grossApyPct derived from onchain probe.",
         "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
@@ -2098,8 +535,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 1.0837662893245268,
-      "netApyPct": 0.9753896603920741,
+      "grossApyPct": 1.083623807249307,
+      "netApyPct": 0.9752614265243762,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -2118,12 +555,21 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 0.9753896603920741,
+        "headlineYieldPct": 0.9752614265243762,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_stable_allocator": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "MEASURED",
@@ -2221,12 +667,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.027942006060728115,
+          "apy": 0.026486021642547833,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.025147805454655305,
+          "apy": 0.02383741947829305,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -2256,7 +702,6 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "MEASURED: grossApyPct derived from onchain probe.",
         "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
@@ -2264,8 +709,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.7942006060728115,
-      "netApyPct": 2.5147805454655305,
+      "grossApyPct": 2.6486021642547835,
+      "netApyPct": 2.383741947829305,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -2284,12 +729,21 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.5147805454655305,
+        "headlineYieldPct": 2.383741947829305,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_syrup_barbell": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "MEASURED",
@@ -2387,12 +841,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.04102760767413102,
+          "apy": 0.04059577416678752,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03692484690671791,
+          "apy": 0.03653619675010877,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -2422,7 +876,6 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "MEASURED: grossApyPct derived from onchain probe.",
         "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
@@ -2430,8 +883,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 4.102760767413102,
-      "netApyPct": 3.6924846906717916,
+      "grossApyPct": 4.059577416678752,
+      "netApyPct": 3.6536196750108765,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -2450,12 +903,21 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.6924846906717916,
+        "headlineYieldPct": 3.6536196750108765,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_syrup_glidepath_allocator": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "MEASURED",
@@ -2553,12 +1015,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.040934254902825595,
+          "apy": 0.04064305801918954,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03684082941254303,
+          "apy": 0.03657875221727059,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -2588,7 +1050,6 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "MEASURED: grossApyPct derived from onchain probe.",
         "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
@@ -2596,8 +1057,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 4.093425490282559,
-      "netApyPct": 3.6840829412543035,
+      "grossApyPct": 4.064305801918954,
+      "netApyPct": 3.6578752217270587,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -2616,12 +1077,21 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.6840829412543035,
+        "headlineYieldPct": 3.6578752217270587,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
     "plasma_pendle_pt_syrupusdt": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "MEASURED",
@@ -2754,7 +1224,6 @@
       "onchainYieldSource": null,
       "leverageCosts": null,
       "truthNotes": [
-        "YIELD_WITHHELD:CONFIG_MISSING",
         "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
         "MEASURED: grossApyPct derived from onchain probe.",
         "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
@@ -2787,7 +1256,2012 @@
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
     },
+    "plasma_aave_core": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 0,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0xcc921c31a54637f106c7f81272cc3275d5b46d231181ad9aa012cfa92b0e0c43"
+          }
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": 0.032227173958141814,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": 0.032227173958141814,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
+      ],
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 3.2227173958141813,
+      "netApyPct": 3.2227173958141813,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_aave_core",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 3.2227173958141813,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      }
+    },
+    "plasma_fluid_usdt0_supply": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 0,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0xa3a22ff5d64fa512687f6cc24c323dabaa6209fe7ab1460a4b7db39f493e5569"
+          }
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": 0.020744869326953852,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": 0.020744869326953852,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
+      ],
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 2.074486932695385,
+      "netApyPct": 2.074486932695385,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_fluid_usdt0_supply",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 2.074486932695385,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      }
+    },
+    "plasma_fluid_euler_aggregator": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "MEASURED",
+          "measuredExecutionLossBps": 0,
+          "reasonCode": null,
+          "evidence": {
+            "type": "CANARY_WRITE",
+            "tx": "0x49cfbafd87d065e274ac45698fbc899293044e2e474c61c3057a7a2a009a29d9"
+          }
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 1000,
+          "hwmMode": "OFFCHAIN_ACCOUNTING",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 10,
+            "evidenceType": "MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 1000,
+            "hwmMode": "OFFCHAIN_ACCOUNTING",
+            "enforcement": "DISCLOSE_ONLY",
+            "evidenceType": "HWM_STATE_MISSING",
+            "hwmState": {
+              "status": "MISSING",
+              "lastHwmTimestamp": null,
+              "stale": false,
+              "evidenceRef": null
+            }
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": 0.03606484957375966,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": 0.0324583646163837,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
+      ],
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": 3.606484957375966,
+      "netApyPct": 3.2458364616383695,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_fluid_euler_aggregator",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": 3.2458364616383695,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      }
+    },
+    "plasma_emode_usde_looper": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": -0.016838448149016062,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": -0.016838448149016062,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED",
+        "MEASURED: grossApyPct derived from onchain probe.",
+        "MEASURED: netApyPct computed by subtracting structural mgmt and perf fees.",
+        "APR_NOT_MODELED"
+      ],
+      "status": "MEASURED",
+      "reasonCode": null,
+      "grossApyPct": -1.6838448149016063,
+      "netApyPct": -1.6838448149016063,
+      "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_emode_usde_looper",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "MEASURED",
+        "headlineYieldPct": -1.6838448149016063,
+        "label": "MEASURED_NET_APY",
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      }
+    },
+    "plasma_aave_usde_supply": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "SKIP_SWAP_UNAVAILABLE_USDe",
+          "actionRequired": "Resolve the canary gating issue for this vault."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": null,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": null,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED"
+      ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_aave_usde_supply",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": null,
+        "label": "SCENARIO_YIELD",
+        "reasonCode": "No structural or orthogonal pilot evidence found"
+      }
+    },
+    "plasma_aave_weeth_carry": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "SKIP_SWAP_UNAVAILABLE_weETH",
+          "actionRequired": "Resolve the canary gating issue for this vault."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": null,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": null,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED"
+      ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_aave_weeth_carry",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": null,
+        "label": "SCENARIO_YIELD",
+        "reasonCode": "No structural or orthogonal pilot evidence found"
+      }
+    },
+    "plasma_pendle_pt_usde": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "SKIP_SWAP_UNAVAILABLE_USDe",
+          "actionRequired": "Resolve the canary gating issue for this vault."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": null,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": null,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED"
+      ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_pendle_pt_usde",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": null,
+        "label": "SCENARIO_YIELD",
+        "reasonCode": "No structural or orthogonal pilot evidence found"
+      }
+    },
+    "plasma_across_usdt0_spokepool_lp": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": null,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": null,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+      ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_across_usdt0_spokepool_lp",
+          "paramsKey": false,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": null,
+        "label": "SCENARIO_YIELD",
+        "reasonCode": "No structural or orthogonal pilot evidence found"
+      }
+    },
+    "plasma_xpl_usdt0_clmm_lazy_lp": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": null,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": null,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+      ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_xpl_usdt0_clmm_lazy_lp",
+          "paramsKey": false,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": null,
+        "label": "SCENARIO_YIELD",
+        "reasonCode": "No structural or orthogonal pilot evidence found"
+      }
+    },
+    "plasma_yt_susde_speculator": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": null,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": null,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED"
+      ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_yt_susde_speculator",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": null,
+        "label": "SCENARIO_YIELD",
+        "reasonCode": "No structural or orthogonal pilot evidence found"
+      }
+    },
+    "plasma_usdai_leverage_farm": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": null,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": null,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": {
+        "flashloanPremiumBpsEstimate": 9,
+        "swapSlippageBpsEstimate": 100
+      },
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN",
+        "YIELD_MODEL_GENERIC_UNMODELED"
+      ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_usdai_leverage_farm",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": null,
+        "label": "SCENARIO_YIELD",
+        "reasonCode": "No structural or orthogonal pilot evidence found"
+      }
+    },
+    "plasma_pbtc_basis_shield": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetSymbol": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
+      "metrics": {
+        "executionLoss": {
+          "status": "SKIPPED",
+          "measuredExecutionLossBps": null,
+          "reasonCode": "MISSING_EVIDENCE",
+          "actionRequired": "Execution loss metric not available in observation input."
+        }
+      },
+      "fees": {
+        "schedule": {
+          "performanceFeeBps": 0,
+          "hwmMode": "NONE",
+          "exitFeeBps": 0,
+          "spreadFeeBps": 10
+        },
+        "rails": {
+          "executionFee": {
+            "mode": "MEASURED_ONLY",
+            "policyScheduleBps": 10,
+            "appliedBps": 0,
+            "evidenceType": "NOT_MEASURED",
+            "activationCondition": "MEASURED_ONLY requires MEASURED executionLoss evidence"
+          },
+          "performance": {
+            "bps": 0,
+            "hwmMode": "NONE",
+            "enforcement": "NONE",
+            "evidenceType": "NOT_APPLICABLE",
+            "hwmState": null
+          }
+        },
+        "recipients": {
+          "treasuryBps": 10000,
+          "stakersBps": 0,
+          "activationConditions": [
+            "Staking contract deployed on Plasma + audited",
+            "Merkle proof distribution pipeline operational",
+            "Staker share accounting integrated into observation sweep"
+          ]
+        },
+        "caps": {
+          "perfFeeBpsCap": null
+        },
+        "costs": {
+          "perfFeeDragBps": null,
+          "exitPremiumBps": null,
+          "bufferDragBps": null,
+          "opsGasDragBps": null,
+          "estimateOnly": false
+        },
+        "provenance": {
+          "policy": "vault.feePolicy + yieldSurface.feeSplit + yieldSurface.costBreakdown"
+        }
+      },
+      "rewards": {
+        "incentivesEv": {
+          "enabled": false,
+          "type": "points",
+          "perEpoch": null,
+          "haircutBps": 6000,
+          "includedInApy": false,
+          "notes": "Incentives shown as EV only; excluded from base APY."
+        },
+        "multiplierPolicy": {
+          "streak": {
+            "enabled": true,
+            "description": "Consecutive epoch participation multiplier"
+          },
+          "liquidity": {
+            "enabled": true,
+            "description": "Share balance weighted multiplier"
+          },
+          "lock": {
+            "enabled": false,
+            "description": "Lock commitment multiplier (requires staking v0)"
+          }
+        },
+        "eligibility": {
+          "depositRequired": true,
+          "minSharesForPoints": 0,
+          "stakingRequired": false,
+          "notes": "Points accrue to any depositor with vault shares. Staking not yet required."
+        },
+        "provenance": {
+          "policy": "yieldSurface.points + config/params.plasma.json"
+        }
+      },
+      "apy": {
+        "gross": {
+          "apy": null,
+          "apr": null,
+          "source": "hidden"
+        },
+        "net": {
+          "apy": null,
+          "apr": null,
+          "defaultDisplayed": true
+        },
+        "components": {
+          "feeDragApy": null,
+          "feeDragApr": null,
+          "oracleAdjustmentApy": null,
+          "oracleAdjustmentApr": null,
+          "slippageSpreadApy": null,
+          "slippageSpreadApr": null,
+          "incentiveEvApy": null
+        },
+        "formulas": {
+          "netApyFormula": "netApy = observed_epoch_realized_net (Product Read)",
+          "incentivesPolicy": "incentives EV excluded from APY"
+        },
+        "provenance": {
+          "policy": "yieldSurface.netApy + yieldSurface.netApyBreakdown"
+        }
+      },
+      "baselines": {
+        "underlyingDirectNetApy": null,
+        "citkaEdgeApy": null,
+        "edgeComputed": false,
+        "formula": "citkaEdgeApy = citkaNetApy - underlyingDirectNetApy"
+      },
+      "onchainYieldSource": null,
+      "leverageCosts": null,
+      "truthNotes": [
+        "GROSS_REFERENCE_UNAVAILABLE_OR_UNPROVEN"
+      ],
+      "status": "STRUCTURAL_ONLY",
+      "reasonCode": "No structural or orthogonal pilot evidence found",
+      "grossApyPct": null,
+      "netApyPct": null,
+      "evidenceType": null,
+      "evidenceRef": null,
+      "provenance": {
+        "sources": {
+          "vaultId": "plasma_pbtc_basis_shield",
+          "paramsKey": true,
+          "onchainYieldOverlay": false
+        },
+        "selectors": {
+          "productRead": "/api/v1/vault-explorer"
+        },
+        "units": {
+          "apyApr": "fraction",
+          "feeBps": "bps"
+        }
+      },
+      "headline": {
+        "mode": "SCENARIO",
+        "headlineYieldPct": null,
+        "label": "SCENARIO_YIELD",
+        "reasonCode": "No structural or orthogonal pilot evidence found"
+      }
+    },
     "plasma_aave_susde": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "sUSDe",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -2883,7 +3357,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.035283737557,
+          "apy": 0.034522571143,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -2907,7 +3381,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 3.5283737556699224,
+        "underlyingDirectNetApy": 3.452257114271595,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -2919,13 +3393,13 @@
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 3.5283737556699224,
+      "grossApyPct": 3.452257114271595,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 3.5283737556699224,
+        "headlineYieldPct": 3.452257114271595,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -2934,19 +3408,19 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 3.5283737556699224,
+          "apyPct": 3.452257114271595,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
             "asset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
             "method": "AaveDataProvider.getReserveData:liquidityRate + AaveOracleRatioProvider.latestRoundData",
             "rateRayStr": "0",
             "liquidityApyPct": 0,
-            "intrinsicApyPct": 3.5283737556699224,
-            "combinedGrossApyPct": 3.5283737556699224,
+            "intrinsicApyPct": 3.452257114271595,
+            "combinedGrossApyPct": 3.452257114271595,
             "intrinsicSource": {
               "oracle": "0x33E0b3fc976DC9C516926BA48CfC0A9E10a2aAA5",
               "oracleSource": "0x40eE40D7332995CACA49Db46B94237Fa64647Bd4",
@@ -2954,20 +3428,20 @@
               "ratioProvider": "0x802033dc696B92e5ED5bF68E1750F7Ed3329eabD",
               "ratioProviderDescription": "SUSDE / USDE Exchange Rate",
               "method": "AaveOracle.getSourceOfAsset -> RATIO_PROVIDER.latestRoundData",
-              "ratioNow": "1222632524320413075",
-              "ratioOld": "1222516457460728570",
+              "ratioNow": "1222746139981949997",
+              "ratioOld": "1222632524320413075",
               "ratioDecimals": 18,
-              "blockNumberNow": 15845992,
-              "blockNumberOld": 15759592,
-              "blockTimestampNow": 1772777750,
-              "blockTimestampOld": 1772691350,
+              "blockNumberNow": 15891182,
+              "blockNumberOld": 15804782,
+              "blockTimestampNow": 1772822940,
+              "blockTimestampOld": 1772736540,
               "windowSeconds": 86400,
               "attemptsTotal": 9
             },
             "conversionMethod": "rayToPct_bigint_safe",
             "attempts": 1,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -2982,7 +3456,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -3013,6 +3487,17 @@
       }
     },
     "plasma_aave_usdt0": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "USDT0",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -3108,7 +3593,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.033666618983,
+          "apy": 0.032227173958,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -3132,7 +3617,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 3.3666618982620142,
+        "underlyingDirectNetApy": 3.2227173958141813,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -3144,7 +3629,7 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.3666618982620142,
+      "grossApyPct": 3.2227173958141813,
       "netApyPct": null,
       "evidenceType": "PRODUCT_REALIZED",
       "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
@@ -3159,24 +3644,24 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 3.3666618982620142,
+          "apyPct": 3.2227173958141813,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
             "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
             "method": "AaveDataProvider.getReserveData:liquidityRate",
-            "rateRayStr": "33666618982620143381762033",
-            "liquidityApyPct": 3.3666618982620142,
+            "rateRayStr": "32227173958141812478195785",
+            "liquidityApyPct": 3.2227173958141813,
             "intrinsicApyPct": null,
-            "combinedGrossApyPct": 3.3666618982620142,
+            "combinedGrossApyPct": 3.2227173958141813,
             "intrinsicSource": null,
             "conversionMethod": "rayToPct_bigint_safe",
             "attempts": 1,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -3191,7 +3676,7 @@
           "reasonCode": null,
           "explanation": "Realized (last epoch return) comes from the most recent settled product-controlled epoch. Annualized Product APY remains pending until two settled epochs.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 1,
           "settlesCount": 1,
           "latestSettleTx": null,
@@ -3222,6 +3707,17 @@
       }
     },
     "plasma_fluid_usdt0": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "USDT0",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -3317,7 +3813,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.022217393139,
+          "apy": 0.020744869327,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -3341,7 +3837,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 2.2217393138836083,
+        "underlyingDirectNetApy": 2.074486932695385,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -3353,7 +3849,7 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.2217393138836083,
+      "grossApyPct": 2.074486932695385,
       "netApyPct": null,
       "evidenceType": "PRODUCT_REALIZED",
       "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
@@ -3368,28 +3864,28 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 2.2217393138836083,
+          "apyPct": 2.074486932695385,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B",
             "method": "erc4626_exchange_rate_delta",
             "decimals": 6,
-            "priceNow": "1013959",
-            "priceOld": "1013898",
+            "priceNow": "1013988",
+            "priceOld": "1013931",
             "blocksUsed": {
-              "now": 15845994,
-              "old": 15759594
+              "now": 15891184,
+              "old": 15804784
             },
             "windowSeconds": 86400,
-            "growth": 0.00006016384291118726,
-            "aprPct": 2.1974843623311147,
+            "growth": 0.000056216843157930185,
+            "aprPct": 2.0533201963434,
             "compoundingConvention": "daily_365.25",
             "attemptsTotal": 5,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -3404,10 +3900,10 @@
           "reasonCode": null,
           "explanation": "Realized (last epoch return) comes from the most recent settled product-controlled epoch. Annualized Product APY remains pending until two settled epochs.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 1,
           "settlesCount": 1,
-          "latestSettleTx": "0x33bc594399f655e892de5c36fbabf295e9dd139808b8fa4daf67bf86dcebc437",
+          "latestSettleTx": null,
           "lastSettleAt": "2026-03-06T06:08:47.000Z",
           "currentEpochId": 2,
           "epochStart": "2026-03-06T06:08:47.000Z",
@@ -3435,6 +3931,17 @@
       }
     },
     "plasma_pt_susde": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "sUSDe",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -3530,7 +4037,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.045075428282,
+          "apy": 0.043618256641,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -3554,7 +4061,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 4.507542828153421,
+        "underlyingDirectNetApy": 4.36182566414034,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -3566,13 +4073,13 @@
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 4.507542828153421,
+      "grossApyPct": 4.36182566414034,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 4.507542828153421,
+        "headlineYieldPct": 4.36182566414034,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -3581,20 +4088,20 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 4.507542828153421,
+          "apyPct": 4.36182566414034,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
             "expiry": 1775692800,
             "method": "PendleMarket._storage:lastLnImpliedRate",
-            "lastLnImpliedRateStr": "44089062985627965",
+            "lastLnImpliedRateStr": "42693768034475516",
             "scale": "uint96_div_1e18",
             "attemptsTotal": 2,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -3609,7 +4116,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -3640,6 +4147,17 @@
       }
     },
     "plasma_pt_usde": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "USDT0",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -3735,7 +4253,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.037690937877,
+          "apy": 0.03768806904,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -3759,7 +4277,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 3.7690937877305153,
+        "underlyingDirectNetApy": 3.76880690400756,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -3771,13 +4289,13 @@
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 3.7690937877305153,
+      "grossApyPct": 3.76880690400756,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 3.7690937877305153,
+        "headlineYieldPct": 3.76880690400756,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -3786,20 +4304,20 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 3.7690937877305153,
+          "apyPct": 3.76880690400756,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
             "expiry": 1775692800,
             "method": "PendleMarket._storage:lastLnImpliedRate",
-            "lastLnImpliedRateStr": "36997992698321515",
+            "lastLnImpliedRateStr": "36995228058976051",
             "scale": "uint96_div_1e18",
             "attemptsTotal": 2,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -3814,7 +4332,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -3845,6 +4363,17 @@
       }
     },
     "plasma_pt_syrup": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "syrupUSDT",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -3995,7 +4524,7 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
             "expiry": 1777507200,
@@ -4003,8 +4532,8 @@
             "lastLnImpliedRateStr": "43234107464171066",
             "scale": "uint96_div_1e18",
             "attemptsTotal": 2,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -4019,7 +4548,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4050,6 +4579,17 @@
       }
     },
     "plasma_susde_loop": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "sUSDe",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -4145,7 +4685,7 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.000021954131,
+          "apy": -0.00002147967,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4169,7 +4709,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": -0.0021954130615741262,
+        "underlyingDirectNetApy": -0.002147966992837489,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -4182,43 +4722,43 @@
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": -0.0021954130615741262,
+      "grossApyPct": -0.002147966992837489,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": -0.0021954130615741262,
+        "headlineYieldPct": -0.002147966992837489,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
       "strategyGuard": {
         "status": "BLOCKED",
         "reasonCode": "CARRY_NOT_VIABLE",
-        "explanation": "Observed carry is -0.002195% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
+        "explanation": "Observed carry is -0.002148% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
         "nextAction": "PARK_IN_AAVE_SUSDE_SUPPLY",
         "parkMode": "AAVE_SUSDE_SUPPLY",
         "minCarryBps": 50,
         "activeLeverageAllowed": false,
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-        "updatedAt": "2026-03-06T06:15:54.074Z"
+        "updatedAt": "2026-03-06T18:49:04.080Z"
       },
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": -0.0021954130615741262,
+          "apyPct": -0.002147966992837489,
           "reasonCode": "CARRY_NOT_VIABLE",
           "explanation": "Carry gate active: live loop carry is below the 50 bps minimum, so the product should park in aave susde supply.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
             "collateralAsset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
             "borrowAsset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
             "method": "AaveDataProvider.loop_carry_model",
             "supplyRatePct": 0,
-            "borrowRatePct": 4.388630710087964,
+            "borrowRatePct": 4.293786018683399,
             "targetLtvBps": 6000,
             "maxLtvBps": 7000,
             "reserveLtvBps": 5,
@@ -4228,7 +4768,7 @@
             "leverage": 1.0005002501250624,
             "positivityCondition": "supplyRatePct * leverage > borrowRatePct * (leverage - 1)",
             "viabilityCondition": "grossApyPct >= 0.5%",
-            "rawGrossApyPct6": -0.002195,
+            "rawGrossApyPct6": -0.002148,
             "nearZero": true,
             "displayEpsilonPct": 0.005,
             "currentStrategyMode": "SINGLE_LOOP_IDLE_BORROW",
@@ -4236,19 +4776,19 @@
             "minCarryBps": 50,
             "carryViable": false,
             "parkMode": "AAVE_SUSDE_SUPPLY",
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": {
             "status": "BLOCKED",
             "reasonCode": "CARRY_NOT_VIABLE",
-            "explanation": "Observed carry is -0.002195% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
+            "explanation": "Observed carry is -0.002148% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
             "nextAction": "PARK_IN_AAVE_SUSDE_SUPPLY",
             "parkMode": "AAVE_SUSDE_SUPPLY",
             "minCarryBps": 50,
             "activeLeverageAllowed": false,
             "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-            "updatedAt": "2026-03-06T06:15:54.074Z"
+            "updatedAt": "2026-03-06T18:49:04.080Z"
           }
         },
         "productRealized": {
@@ -4262,7 +4802,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement. Carry gate active: park in Aave sUSDe supply until carry recovers.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4276,13 +4816,13 @@
           "guard": {
             "status": "BLOCKED",
             "reasonCode": "CARRY_NOT_VIABLE",
-            "explanation": "Observed carry is -0.002195% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
+            "explanation": "Observed carry is -0.002148% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
             "nextAction": "PARK_IN_AAVE_SUSDE_SUPPLY",
             "parkMode": "AAVE_SUSDE_SUPPLY",
             "minCarryBps": 50,
             "activeLeverageAllowed": false,
             "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-            "updatedAt": "2026-03-06T06:15:54.074Z"
+            "updatedAt": "2026-03-06T18:49:04.080Z"
           }
         }
       },
@@ -4303,6 +4843,17 @@
       }
     },
     "plasma_lp_susde": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "sUSDe",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -4398,7 +4949,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.093210904931,
+          "apy": 0.090869543548,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4422,7 +4973,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 9.321090493111694,
+        "underlyingDirectNetApy": 9.086954354751962,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -4434,13 +4985,13 @@
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 9.321090493111694,
+      "grossApyPct": 9.086954354751962,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 9.321090493111694,
+        "headlineYieldPct": 9.086954354751962,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -4449,25 +5000,25 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 9.321090493111694,
+          "apyPct": 9.086954354751962,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
             "method": "PendleMarket.lp_structural_yield",
-            "syApyPct": 3.5283737556783157,
-            "ptApyPct": 4.507542828153421,
-            "syPortion": 2.17543783768731,
-            "ptPortion": 0.3650176564556883,
-            "lastLnImpliedRateStr": "44089062985627965",
-            "syExchangeRateNowStr": "1222632524320413075",
-            "syExchangeRateHistStr": "1222516457460728570",
+            "syApyPct": 3.452257114271595,
+            "ptApyPct": 4.36182566414034,
+            "syPortion": 2.183514546145198,
+            "ptPortion": 0.3551037680026022,
+            "lastLnImpliedRateStr": "42693768034475516",
+            "syExchangeRateNowStr": "1222746139981949997",
+            "syExchangeRateHistStr": "1222632524320413075",
             "note": "Conservative structural yield excluding swap fees & incentives.",
             "attemptsTotal": 7,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -4482,7 +5033,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4513,6 +5064,17 @@
       }
     },
     "plasma_lp_syrup": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "syrupUSDT",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -4608,7 +5170,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.095640543156,
+          "apy": 0.095511681875,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4632,7 +5194,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 9.564054315596787,
+        "underlyingDirectNetApy": 9.551168187510818,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -4644,13 +5206,13 @@
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 9.564054315596787,
+      "grossApyPct": 9.551168187510818,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 9.564054315596787,
+        "headlineYieldPct": 9.551168187510818,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -4659,25 +5221,25 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 9.564054315596787,
+          "apyPct": 9.551168187510818,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
             "method": "PendleMarket.lp_structural_yield",
-            "syApyPct": 4.224519460362575,
+            "syApyPct": 4.217914983991111,
             "ptApyPct": 4.418231711334997,
             "syPortion": 1.951120325245725,
             "ptPortion": 0.2991034917197592,
             "lastLnImpliedRateStr": "43234107464171066",
-            "syExchangeRateNowStr": "1118475495456530685",
-            "syExchangeRateHistStr": "1118348796501338589",
+            "syExchangeRateNowStr": "1118602014691450128",
+            "syExchangeRateHistStr": "1118475495456530685",
             "note": "Conservative structural yield excluding swap fees & incentives.",
-            "attemptsTotal": 7,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "attemptsTotal": 10,
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -4692,7 +5254,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4723,6 +5285,17 @@
       }
     },
     "plasma_lp_usde": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "USDe",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -4818,7 +5391,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.010837662893,
+          "apy": 0.010836238072,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4842,7 +5415,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 1.0837662893245268,
+        "underlyingDirectNetApy": 1.083623807249307,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -4854,13 +5427,13 @@
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 1.0837662893245268,
+      "grossApyPct": 1.083623807249307,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 1.0837662893245268,
+        "headlineYieldPct": 1.083623807249307,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -4869,25 +5442,25 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 1.0837662893245268,
+          "apyPct": 1.083623807249307,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
             "method": "PendleMarket.lp_structural_yield",
             "syApyPct": 0,
-            "ptApyPct": 3.7690937877305153,
-            "syPortion": 2.4377376962598016,
-            "ptPortion": 0.2875402816593468,
-            "lastLnImpliedRateStr": "36997992698321515",
+            "ptApyPct": 3.76880690400756,
+            "syPortion": 2.4377535603092517,
+            "ptPortion": 0.2875243637706765,
+            "lastLnImpliedRateStr": "36995228058976051",
             "syExchangeRateNowStr": "1000000000000000000",
             "syExchangeRateHistStr": "1000000000000000000",
             "note": "Conservative structural yield excluding swap fees & incentives.",
-            "attemptsTotal": 11,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "attemptsTotal": 7,
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -4902,7 +5475,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4933,6 +5506,17 @@
       }
     },
     "plasma_aave_weeth": {
+      "tvl": {
+        "tvlUsd": null,
+        "totalAssets": null,
+        "assetAmount": null,
+        "decimals": null,
+        "assetSymbol": "weETH",
+        "priceUsd": null,
+        "priceSource": null,
+        "reasonCode": "AUM_SNAPSHOT_MISSING",
+        "generatedAt": null
+      },
       "metrics": {
         "executionLoss": {
           "status": "NOT_MEASURED",
@@ -5028,7 +5612,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.026579721612,
+          "apy": 0.025227581713,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -5052,7 +5636,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 2.6579721611965423,
+        "underlyingDirectNetApy": 2.5227581713310743,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -5064,13 +5648,13 @@
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 2.6579721611965423,
+      "grossApyPct": 2.5227581713310743,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 2.6579721611965423,
+        "headlineYieldPct": 2.5227581713310743,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -5079,19 +5663,19 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 2.6579721611965423,
+          "apyPct": 2.5227581713310743,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "updatedAt": "2026-03-06T18:49:04.080Z",
           "evidence": {
             "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
             "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
             "method": "AaveDataProvider.getReserveData:liquidityRate + AaveOracleRatioProvider.latestRoundData",
             "rateRayStr": "0",
             "liquidityApyPct": 0,
-            "intrinsicApyPct": 2.6579721611965423,
-            "combinedGrossApyPct": 2.6579721611965423,
+            "intrinsicApyPct": 2.5227581713310743,
+            "combinedGrossApyPct": 2.5227581713310743,
             "intrinsicSource": {
               "oracle": "0x33E0b3fc976DC9C516926BA48CfC0A9E10a2aAA5",
               "oracleSource": "0xA7786e3042435f88869e5a4e384B0AD6B009800b",
@@ -5099,20 +5683,20 @@
               "ratioProvider": "0x00D7d8816E969EA6cA9125c3f5D279f9a6D253f6",
               "ratioProviderDescription": "weETH-eETH Exchange Rate",
               "method": "AaveOracle.getSourceOfAsset -> RATIO_PROVIDER.latestRoundData",
-              "ratioNow": "1089617305685171669",
-              "ratioOld": "1089539051097598013",
+              "ratioNow": "1089691633750383989",
+              "ratioOld": "1089617305685171669",
               "ratioDecimals": 18,
-              "blockNumberNow": 15845995,
-              "blockNumberOld": 15759595,
-              "blockTimestampNow": 1772777753,
-              "blockTimestampOld": 1772691353,
+              "blockNumberNow": 15891185,
+              "blockNumberOld": 15804785,
+              "blockTimestampNow": 1772822943,
+              "blockTimestampOld": 1772736543,
               "windowSeconds": 86400,
               "attemptsTotal": 9
             },
             "conversionMethod": "rayToPct_bigint_safe",
             "attempts": 1,
-            "blockNumber": 15845989,
-            "blockTimestamp": 1772777747
+            "blockNumber": 15891178,
+            "blockTimestamp": 1772822936
           },
           "guard": null
         },
@@ -5127,7 +5711,7 @@
           "reasonCode": "READY_TO_SETTLE",
           "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "updatedAt": "2026-03-06T18:49:16.162Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,

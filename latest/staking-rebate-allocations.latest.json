@@ -1,15 +1,15 @@
 {
   "version": "staking_rebate_allocations.v1",
-  "generatedAt": "2026-03-04T01:36:03.636Z",
+  "generatedAt": "2026-03-06T18:49:29.661Z",
   "status": "NOT_ENABLED",
   "reasonCode": "STAKERS_BPS_ZERO",
   "model": "FEE_PAID_TIMES_TIER_REBATE",
   "instructions": [
     "Ensure all upstream artifacts are ACTIVE: fee-ledger, fee-paid-attribution, rebate-tier-registry."
   ],
-  "epochId": 23,
-  "policyVersionHash": "sha256:3977f08aa9cd2ec6ee63c5b406db06a5f7106939ecaa22a5d865c78fd293bfdc",
-  "snapshotVersionHash": "sha256:cc292d6537b7ddc8e324d9be2ff6872caf4ec781daf5351f7dc8a5268ccdd814",
+  "epochId": null,
+  "policyVersionHash": "sha256:616c6537414fd7059d106775f2c172ee76249ada1b5d328b69ece090e7cf1e9a",
+  "snapshotVersionHash": null,
   "stakersPoolUsd": 0,
   "stressGuard": {
     "active": false,
