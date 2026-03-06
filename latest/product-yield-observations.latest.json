@@ -1,6 +1,6 @@
 {
   "version": "product_yield_observations.v3",
-  "generatedAt": "2026-03-06T20:09:24.901Z",
+  "generatedAt": "2026-03-06T20:34:51.258Z",
   "chainId": 9745,
   "rpcUrl": "https://rpc.plasma.to",
   "sourceConfig": "config/vault-lineup.v3.json",
@@ -285,7 +285,7 @@
         "explanation": "Observed carry is -0.002148% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
         "activeLeverageAllowed": false,
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-        "updatedAt": "2026-03-06T20:09:12.823Z"
+        "updatedAt": "2026-03-06T20:34:39.140Z"
       },
       "nextAction": "PARK_IN_AAVE_SUSDE_SUPPLY"
     },
