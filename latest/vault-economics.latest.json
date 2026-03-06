@@ -1,14 +1,14 @@
 {
   "version": "vault_economics_snapshot.v3",
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-05T22:43:13.369Z",
-  "observedAt": "2026-03-05T22:43:13.369Z",
-  "expiresAt": "2026-03-06T02:43:13.369Z",
+  "generatedAt": "2026-03-06T06:16:00.234Z",
+  "observedAt": "2026-03-06T06:16:00.234Z",
+  "expiresAt": "2026-03-06T10:16:00.234Z",
   "freshnessStatus": "FRESH",
   "totalsByMode": {
     "MEASURED": 11,
-    "OBSERVED": 11,
-    "SCENARIO": 6
+    "OBSERVED": 9,
+    "SCENARIO": 8
   },
   "source": {
     "productReadFile": "ops/runtime/vault-explorer.product-read.latest.json",
@@ -139,12 +139,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.03381818281284016,
+          "apy": 0.03366661898262014,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03381818281284016,
+          "apy": 0.03366661898262014,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -183,8 +183,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.381818281284016,
-      "netApyPct": 3.381818281284016,
+      "grossApyPct": 3.3666618982620142,
+      "netApyPct": 3.3666618982620142,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -203,7 +203,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.381818281284016,
+        "headlineYieldPct": 3.3666618982620142,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -301,12 +301,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.022954588304262336,
+          "apy": 0.022217393138836083,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.022954588304262336,
+          "apy": 0.022217393138836083,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -345,8 +345,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.2954588304262336,
-      "netApyPct": 2.2954588304262336,
+      "grossApyPct": 2.2217393138836083,
+      "netApyPct": 2.2217393138836083,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -365,7 +365,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.2954588304262336,
+        "headlineYieldPct": 2.2217393138836083,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -624,12 +624,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.03199678709924347,
+          "apy": 0.032734850464731124,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.028797108389319127,
+          "apy": 0.02946136541825801,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -668,8 +668,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.1996787099243473,
-      "netApyPct": 2.8797108389319126,
+      "grossApyPct": 3.2734850464731124,
+      "netApyPct": 2.946136541825801,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -688,7 +688,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.8797108389319126,
+        "headlineYieldPct": 2.946136541825801,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -783,12 +783,12 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.016608898971421197,
+          "apy": -0.016576354788619074,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": -0.016608898971421197,
+          "apy": -0.016576354788619074,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -827,8 +827,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": -1.6608898971421198,
-      "netApyPct": -1.6608898971421198,
+      "grossApyPct": -1.6576354788619074,
+      "netApyPct": -1.6576354788619074,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -847,7 +847,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": -1.6608898971421198,
+        "headlineYieldPct": -1.6576354788619074,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1729,12 +1729,12 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.2982295447304369,
+          "apy": -0.29993693865826543,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": -0.2982295447304369,
+          "apy": -0.29993693865826543,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1772,8 +1772,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": -29.82295447304369,
-      "netApyPct": -29.82295447304369,
+      "grossApyPct": -29.993693865826543,
+      "netApyPct": -29.993693865826543,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1792,7 +1792,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": -29.82295447304369,
+        "headlineYieldPct": -29.993693865826543,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -1892,12 +1892,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.09321090533116516,
+          "apy": 0.09321090493111693,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.08388981479804865,
+          "apy": 0.08388981443800525,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -1935,8 +1935,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 9.321090533116516,
-      "netApyPct": 8.388981479804865,
+      "grossApyPct": 9.321090493111694,
+      "netApyPct": 8.388981443800525,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -1955,7 +1955,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 8.388981479804865,
+        "headlineYieldPct": 8.388981443800525,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -2055,12 +2055,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.01083691865357233,
+          "apy": 0.010837662893245267,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.009753226788215098,
+          "apy": 0.009753896603920741,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -2098,8 +2098,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 1.083691865357233,
-      "netApyPct": 0.9753226788215097,
+      "grossApyPct": 1.0837662893245268,
+      "netApyPct": 0.9753896603920741,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -2118,7 +2118,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 0.9753226788215097,
+        "headlineYieldPct": 0.9753896603920741,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -2221,12 +2221,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.02838638555855125,
+          "apy": 0.027942006060728115,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.025547747002696127,
+          "apy": 0.025147805454655305,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -2264,8 +2264,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.838638555855125,
-      "netApyPct": 2.5547747002696126,
+      "grossApyPct": 2.7942006060728115,
+      "netApyPct": 2.5147805454655305,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -2284,7 +2284,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.5547747002696126,
+        "headlineYieldPct": 2.5147805454655305,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -2387,12 +2387,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.041073076823197024,
+          "apy": 0.04102760767413102,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.03696576914087732,
+          "apy": 0.03692484690671791,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -2430,8 +2430,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 4.107307682319703,
-      "netApyPct": 3.696576914087732,
+      "grossApyPct": 4.102760767413102,
+      "netApyPct": 3.6924846906717916,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -2450,7 +2450,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.696576914087732,
+        "headlineYieldPct": 3.6924846906717916,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -2553,12 +2553,12 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.04102313080239022,
+          "apy": 0.040934254902825595,
           "apr": null,
           "source": "hidden"
         },
         "net": {
-          "apy": 0.036920817722151195,
+          "apy": 0.03684082941254303,
           "apr": null,
           "defaultDisplayed": true
         },
@@ -2596,8 +2596,8 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 4.102313080239022,
-      "netApyPct": 3.69208177221512,
+      "grossApyPct": 4.093425490282559,
+      "netApyPct": 3.6840829412543035,
       "evidenceType": "ONCHAIN_YIELD_OBSERVATION",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "provenance": {
@@ -2616,7 +2616,7 @@
       },
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.69208177221512,
+        "headlineYieldPct": 3.6840829412543035,
         "label": "MEASURED_NET_APY",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       }
@@ -2914,7 +2914,7 @@
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
@@ -2929,6 +2929,7 @@
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
@@ -2937,23 +2938,62 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
+            "asset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+            "method": "AaveDataProvider.getReserveData:liquidityRate + AaveOracleRatioProvider.latestRoundData",
+            "rateRayStr": "0",
+            "liquidityApyPct": 0,
+            "intrinsicApyPct": 3.5283737556699224,
+            "combinedGrossApyPct": 3.5283737556699224,
+            "intrinsicSource": {
+              "oracle": "0x33E0b3fc976DC9C516926BA48CfC0A9E10a2aAA5",
+              "oracleSource": "0x40eE40D7332995CACA49Db46B94237Fa64647Bd4",
+              "oracleSourceDescription": "Capped sUSDe / USDe / USD",
+              "ratioProvider": "0x802033dc696B92e5ED5bF68E1750F7Ed3329eabD",
+              "ratioProviderDescription": "SUSDE / USDE Exchange Rate",
+              "method": "AaveOracle.getSourceOfAsset -> RATIO_PROVIDER.latestRoundData",
+              "ratioNow": "1222632524320413075",
+              "ratioOld": "1222516457460728570",
+              "ratioDecimals": 18,
+              "blockNumberNow": 15845992,
+              "blockNumberOld": 15759592,
+              "blockTimestampNow": 1772777750,
+              "blockTimestampOld": 1772691350,
+              "windowSeconds": 86400,
+              "attemptsTotal": 9
+            },
+            "conversionMethod": "rayToPct_bigint_safe",
+            "attempts": 1,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T04:54:22.000Z",
           "epochEnd": "2026-03-06T04:54:22.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": null
         }
       },
       "provenance": {
@@ -3068,14 +3108,14 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.033818182813,
+          "apy": 0.033666618983,
           "apr": null,
           "source": "market_observed_onchain"
         },
         "net": {
           "apy": null,
           "apr": null,
-          "defaultDisplayed": false
+          "defaultDisplayed": true
         },
         "components": {
           "feeDragApy": null,
@@ -3092,53 +3132,77 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 3.381818281284016,
+        "underlyingDirectNetApy": 3.3666618982620142,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:INSUFFICIENT_HISTORY",
+        "PRODUCT_LAST_EPOCH_RETURN_REALIZED",
         "APR_NOT_MODELED"
       ],
-      "status": "OBSERVED",
+      "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.381818281284016,
+      "grossApyPct": 3.3666618982620142,
       "netApyPct": null,
-      "evidenceType": "MARKET_OBSERVED",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+      "evidenceType": "PRODUCT_REALIZED",
+      "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
       "headline": {
-        "mode": "OBSERVED",
-        "headlineYieldPct": 3.381818281284016,
-        "label": "Market APY (Observed)",
-        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+        "mode": "REALIZED_EPOCH_RETURN",
+        "headlineYieldPct": 0,
+        "label": "Realized (Last Epoch)",
+        "evidenceRef": "ops/runtime/product-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 3.381818281284016,
+          "apyPct": 3.3666618982620142,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
+            "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+            "method": "AaveDataProvider.getReserveData:liquidityRate",
+            "rateRayStr": "33666618982620143381762033",
+            "liquidityApyPct": 3.3666618982620142,
+            "intrinsicApyPct": null,
+            "combinedGrossApyPct": 3.3666618982620142,
+            "intrinsicSource": null,
+            "conversionMethod": "rayToPct_bigint_safe",
+            "attempts": 1,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
-          "label": "Product APY (Realized)",
-          "status": "PENDING",
+          "label": "Realized (Last Epoch)",
+          "status": "ACTIVE",
           "apyPct": null,
-          "reasonCode": "INSUFFICIENT_HISTORY",
-          "explanation": "Pending realized window: requires at least 2 settled epochs and 86400 seconds before annualizing Product APY.",
+          "annualizedApyPct": null,
+          "epochReturnPct": 0,
+          "realizedMetricKind": "EPOCH_RETURN",
+          "realizedMetricPct": 0,
+          "reasonCode": null,
+          "explanation": "Realized (last epoch return) comes from the most recent settled product-controlled epoch. Annualized Product APY remains pending until two settled epochs.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 1,
+          "settlesCount": 1,
           "latestSettleTx": null,
+          "lastSettleAt": "2026-03-05T15:24:30.000Z",
           "currentEpochId": 2,
           "epochStart": "2026-03-05T15:24:30.000Z",
           "epochEnd": "2026-03-06T15:24:30.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 86400
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 86400,
+          "guard": null
         }
       },
       "provenance": {
@@ -3253,14 +3317,14 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.022954588304,
+          "apy": 0.022217393139,
           "apr": null,
           "source": "market_observed_onchain"
         },
         "net": {
           "apy": null,
           "apr": null,
-          "defaultDisplayed": false
+          "defaultDisplayed": true
         },
         "components": {
           "feeDragApy": null,
@@ -3277,53 +3341,81 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 2.2954588304262336,
+        "underlyingDirectNetApy": 2.2217393138836083,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_LAST_EPOCH_RETURN_REALIZED",
         "APR_NOT_MODELED"
       ],
-      "status": "OBSERVED",
+      "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.2954588304262336,
+      "grossApyPct": 2.2217393138836083,
       "netApyPct": null,
-      "evidenceType": "MARKET_OBSERVED",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+      "evidenceType": "PRODUCT_REALIZED",
+      "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
       "headline": {
-        "mode": "OBSERVED",
-        "headlineYieldPct": 2.2954588304262336,
-        "label": "Market APY (Observed)",
-        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+        "mode": "REALIZED_EPOCH_RETURN",
+        "headlineYieldPct": 0,
+        "label": "Realized (Last Epoch)",
+        "evidenceRef": "ops/runtime/product-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 2.2954588304262336,
+          "apyPct": 2.2217393138836083,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0x1DD4b13fcAE900C60a350589BE8052959D2Ed27B",
+            "method": "erc4626_exchange_rate_delta",
+            "decimals": 6,
+            "priceNow": "1013959",
+            "priceOld": "1013898",
+            "blocksUsed": {
+              "now": 15845994,
+              "old": 15759594
+            },
+            "windowSeconds": 86400,
+            "growth": 0.00006016384291118726,
+            "aprPct": 2.1974843623311147,
+            "compoundingConvention": "daily_365.25",
+            "attemptsTotal": 5,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
-          "label": "Product APY (Realized)",
-          "status": "PENDING",
+          "label": "Realized (Last Epoch)",
+          "status": "ACTIVE",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": 0,
+          "realizedMetricKind": "EPOCH_RETURN",
+          "realizedMetricPct": 0,
+          "reasonCode": null,
+          "explanation": "Realized (last epoch return) comes from the most recent settled product-controlled epoch. Annualized Product APY remains pending until two settled epochs.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
-          "settledEpochCount": 0,
-          "latestSettleTx": null,
-          "currentEpochId": 1,
-          "epochStart": "2026-03-05T04:54:22.000Z",
-          "epochEnd": "2026-03-06T04:54:22.000Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
+          "settledEpochCount": 1,
+          "settlesCount": 1,
+          "latestSettleTx": "0x33bc594399f655e892de5c36fbabf295e9dd139808b8fa4daf67bf86dcebc437",
+          "lastSettleAt": "2026-03-06T06:08:47.000Z",
+          "currentEpochId": 2,
+          "epochStart": "2026-03-06T06:08:47.000Z",
+          "epochEnd": "2026-03-07T06:08:47.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 86400,
+          "guard": null
         }
       },
       "provenance": {
@@ -3438,7 +3530,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.045075429119,
+          "apy": 0.045075428282,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -3462,53 +3554,73 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 4.507542911948437,
+        "underlyingDirectNetApy": 4.507542828153421,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 4.507542911948437,
+      "grossApyPct": 4.507542828153421,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 4.507542911948437,
+        "headlineYieldPct": 4.507542828153421,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 4.507542911948437,
+          "apyPct": 4.507542828153421,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
+            "expiry": 1775692800,
+            "method": "PendleMarket._storage:lastLnImpliedRate",
+            "lastLnImpliedRateStr": "44089062985627965",
+            "scale": "uint96_div_1e18",
+            "attemptsTotal": 2,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T05:41:54.000Z",
           "epochEnd": "2026-03-06T05:41:54.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": null
         }
       },
       "provenance": {
@@ -3623,7 +3735,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.037689439407,
+          "apy": 0.037690937877,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -3647,53 +3759,73 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 3.768943940748981,
+        "underlyingDirectNetApy": 3.7690937877305153,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 3.768943940748981,
+      "grossApyPct": 3.7690937877305153,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 3.768943940748981,
+        "headlineYieldPct": 3.7690937877305153,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 3.768943940748981,
+          "apyPct": 3.7690937877305153,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
+            "expiry": 1775692800,
+            "method": "PendleMarket._storage:lastLnImpliedRate",
+            "lastLnImpliedRateStr": "36997992698321515",
+            "scale": "uint96_div_1e18",
+            "attemptsTotal": 2,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T05:12:11.000Z",
           "epochEnd": "2026-03-06T05:12:11.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": null
         }
       },
       "provenance": {
@@ -3839,7 +3971,7 @@
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
@@ -3854,6 +3986,7 @@
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
@@ -3862,23 +3995,42 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
+            "expiry": 1777507200,
+            "method": "PendleMarket._storage:lastLnImpliedRate",
+            "lastLnImpliedRateStr": "43234107464171066",
+            "scale": "uint96_div_1e18",
+            "attemptsTotal": 2,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T05:41:54.000Z",
           "epochEnd": "2026-03-06T05:41:54.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": null
         }
       },
       "provenance": {
@@ -3993,7 +4145,7 @@
       },
       "apy": {
         "gross": {
-          "apy": -0.000022003493,
+          "apy": -0.000021954131,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4017,53 +4169,121 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": -0.002200349279801098,
+        "underlyingDirectNetApy": -0.0021954130615741262,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
+        "STRATEGY_GUARD:CARRY_NOT_VIABLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": -0.002200349279801098,
+      "grossApyPct": -0.0021954130615741262,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": -0.002200349279801098,
+        "headlineYieldPct": -0.0021954130615741262,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
+      },
+      "strategyGuard": {
+        "status": "BLOCKED",
+        "reasonCode": "CARRY_NOT_VIABLE",
+        "explanation": "Observed carry is -0.002195% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
+        "nextAction": "PARK_IN_AAVE_SUSDE_SUPPLY",
+        "parkMode": "AAVE_SUSDE_SUPPLY",
+        "minCarryBps": 50,
+        "activeLeverageAllowed": false,
+        "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+        "updatedAt": "2026-03-06T06:15:54.074Z"
       },
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": -0.002200349279801098,
-          "reasonCode": null,
-          "explanation": "Refreshable anytime from onchain observer reads.",
+          "apyPct": -0.0021954130615741262,
+          "reasonCode": "CARRY_NOT_VIABLE",
+          "explanation": "Carry gate active: live loop carry is below the 50 bps minimum, so the product should park in aave susde supply.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
+            "collateralAsset": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+            "borrowAsset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+            "method": "AaveDataProvider.loop_carry_model",
+            "supplyRatePct": 0,
+            "borrowRatePct": 4.388630710087964,
+            "targetLtvBps": 6000,
+            "maxLtvBps": 7000,
+            "reserveLtvBps": 5,
+            "reserveLiquidationThresholdBps": 10,
+            "minHealthFactorBps": 13000,
+            "effectiveLtvBps": 5,
+            "leverage": 1.0005002501250624,
+            "positivityCondition": "supplyRatePct * leverage > borrowRatePct * (leverage - 1)",
+            "viabilityCondition": "grossApyPct >= 0.5%",
+            "rawGrossApyPct6": -0.002195,
+            "nearZero": true,
+            "displayEpsilonPct": 0.005,
+            "currentStrategyMode": "SINGLE_LOOP_IDLE_BORROW",
+            "currentStrategyNote": "Current strategy borrows USDT0 and leaves the borrow leg idle; it does not recurse through a swap back into sUSDe.",
+            "minCarryBps": 50,
+            "carryViable": false,
+            "parkMode": "AAVE_SUSDE_SUPPLY",
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": {
+            "status": "BLOCKED",
+            "reasonCode": "CARRY_NOT_VIABLE",
+            "explanation": "Observed carry is -0.002195% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
+            "nextAction": "PARK_IN_AAVE_SUSDE_SUPPLY",
+            "parkMode": "AAVE_SUSDE_SUPPLY",
+            "minCarryBps": 50,
+            "activeLeverageAllowed": false,
+            "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+            "updatedAt": "2026-03-06T06:15:54.074Z"
+          }
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement. Carry gate active: park in Aave sUSDe supply until carry recovers.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T05:12:11.000Z",
           "epochEnd": "2026-03-06T05:12:11.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": {
+            "status": "BLOCKED",
+            "reasonCode": "CARRY_NOT_VIABLE",
+            "explanation": "Observed carry is -0.002195% and below the configured 50 bps floor. Park in Aave sUSDe supply until carry recovers.",
+            "nextAction": "PARK_IN_AAVE_SUSDE_SUPPLY",
+            "parkMode": "AAVE_SUSDE_SUPPLY",
+            "minCarryBps": 50,
+            "activeLeverageAllowed": false,
+            "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
+            "updatedAt": "2026-03-06T06:15:54.074Z"
+          }
         }
       },
       "provenance": {
@@ -4178,7 +4398,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.093210905331,
+          "apy": 0.093210904931,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4202,53 +4422,78 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 9.321090533116516,
+        "underlyingDirectNetApy": 9.321090493111694,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 9.321090533116516,
+      "grossApyPct": 9.321090493111694,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 9.321090533116516,
+        "headlineYieldPct": 9.321090493111694,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 9.321090533116516,
+          "apyPct": 9.321090493111694,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
+            "method": "PendleMarket.lp_structural_yield",
+            "syApyPct": 3.5283737556783157,
+            "ptApyPct": 4.507542828153421,
+            "syPortion": 2.17543783768731,
+            "ptPortion": 0.3650176564556883,
+            "lastLnImpliedRateStr": "44089062985627965",
+            "syExchangeRateNowStr": "1222632524320413075",
+            "syExchangeRateHistStr": "1222516457460728570",
+            "note": "Conservative structural yield excluding swap fees & incentives.",
+            "attemptsTotal": 7,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T05:41:54.000Z",
           "epochEnd": "2026-03-06T05:41:54.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": null
         }
       },
       "provenance": {
@@ -4394,7 +4639,7 @@
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
@@ -4409,6 +4654,7 @@
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
@@ -4417,23 +4663,47 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
+            "method": "PendleMarket.lp_structural_yield",
+            "syApyPct": 4.224519460362575,
+            "ptApyPct": 4.418231711334997,
+            "syPortion": 1.951120325245725,
+            "ptPortion": 0.2991034917197592,
+            "lastLnImpliedRateStr": "43234107464171066",
+            "syExchangeRateNowStr": "1118475495456530685",
+            "syExchangeRateHistStr": "1118348796501338589",
+            "note": "Conservative structural yield excluding swap fees & incentives.",
+            "attemptsTotal": 7,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T05:41:54.000Z",
           "epochEnd": "2026-03-06T05:41:54.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": null
         }
       },
       "provenance": {
@@ -4548,7 +4818,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.010836918654,
+          "apy": 0.010837662893,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4572,53 +4842,78 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 1.083691865357233,
+        "underlyingDirectNetApy": 1.0837662893245268,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
       "reasonCode": null,
-      "grossApyPct": 1.083691865357233,
+      "grossApyPct": 1.0837662893245268,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "OBSERVED",
-        "headlineYieldPct": 1.083691865357233,
+        "headlineYieldPct": 1.0837662893245268,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 1.083691865357233,
+          "apyPct": 1.0837662893245268,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
+            "method": "PendleMarket.lp_structural_yield",
+            "syApyPct": 0,
+            "ptApyPct": 3.7690937877305153,
+            "syPortion": 2.4377376962598016,
+            "ptPortion": 0.2875402816593468,
+            "lastLnImpliedRateStr": "36997992698321515",
+            "syExchangeRateNowStr": "1000000000000000000",
+            "syExchangeRateHistStr": "1000000000000000000",
+            "note": "Conservative structural yield excluding swap fees & incentives.",
+            "attemptsTotal": 11,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T05:41:55.000Z",
           "epochEnd": "2026-03-06T05:41:55.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": null
         }
       },
       "provenance": {
@@ -4764,7 +5059,7 @@
       },
       "truthNotes": [
         "MARKET_APY_OBSERVED_FROM_RPC",
-        "PRODUCT_APY_PENDING:PENDING_FIRST_SETTLE_EPOCH_OPEN",
+        "PRODUCT_APY_PENDING:READY_TO_SETTLE",
         "APR_NOT_MODELED"
       ],
       "status": "OBSERVED",
@@ -4779,6 +5074,7 @@
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
+      "strategyGuard": null,
       "yieldTruth": {
         "marketObserved": {
           "label": "Market APY (Observed)",
@@ -4787,23 +5083,62 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.163Z"
+          "updatedAt": "2026-03-06T06:15:54.074Z",
+          "evidence": {
+            "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
+            "asset": "0xA3D68b74bF0528fdD07263c60d6488749044914b",
+            "method": "AaveDataProvider.getReserveData:liquidityRate + AaveOracleRatioProvider.latestRoundData",
+            "rateRayStr": "0",
+            "liquidityApyPct": 0,
+            "intrinsicApyPct": 2.6579721611965423,
+            "combinedGrossApyPct": 2.6579721611965423,
+            "intrinsicSource": {
+              "oracle": "0x33E0b3fc976DC9C516926BA48CfC0A9E10a2aAA5",
+              "oracleSource": "0xA7786e3042435f88869e5a4e384B0AD6B009800b",
+              "oracleSourceDescription": "Capped weETH / eETH(ETH) / USD",
+              "ratioProvider": "0x00D7d8816E969EA6cA9125c3f5D279f9a6D253f6",
+              "ratioProviderDescription": "weETH-eETH Exchange Rate",
+              "method": "AaveOracle.getSourceOfAsset -> RATIO_PROVIDER.latestRoundData",
+              "ratioNow": "1089617305685171669",
+              "ratioOld": "1089539051097598013",
+              "ratioDecimals": 18,
+              "blockNumberNow": 15845995,
+              "blockNumberOld": 15759595,
+              "blockTimestampNow": 1772777753,
+              "blockTimestampOld": 1772691353,
+              "windowSeconds": 86400,
+              "attemptsTotal": 9
+            },
+            "conversionMethod": "rayToPct_bigint_safe",
+            "attempts": 1,
+            "blockNumber": 15845989,
+            "blockTimestamp": 1772777747
+          },
+          "guard": null
         },
         "productRealized": {
           "label": "Product APY (Realized)",
           "status": "PENDING",
           "apyPct": null,
-          "reasonCode": "PENDING_FIRST_SETTLE_EPOCH_OPEN",
-          "explanation": "Pending first settle: deposits are queued and the current epoch has not ended yet.",
+          "annualizedApyPct": null,
+          "epochReturnPct": null,
+          "realizedMetricKind": null,
+          "realizedMetricPct": null,
+          "reasonCode": "READY_TO_SETTLE",
+          "explanation": "Pending first settle: deposits are queued and the epoch is ready for settlement.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-05T22:43:10.338Z",
+          "updatedAt": "2026-03-06T06:14:55.751Z",
           "settledEpochCount": 0,
+          "settlesCount": 0,
           "latestSettleTx": null,
+          "lastSettleAt": null,
           "currentEpochId": 1,
           "epochStart": "2026-03-05T05:12:11.000Z",
           "epochEnd": "2026-03-06T05:12:11.000Z",
           "epochDurationSeconds": 86400,
-          "realizedWindowSeconds": 0
+          "windowSeconds": 86400,
+          "realizedWindowSeconds": 0,
+          "guard": null
         }
       },
       "provenance": {
