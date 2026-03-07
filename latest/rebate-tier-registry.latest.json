@@ -1,13 +1,13 @@
 {
   "version": "rebate_tier_registry.v1",
-  "generatedAt": "2026-03-06T21:41:26.911Z",
+  "generatedAt": "2026-03-07T00:38:42.585Z",
   "status": "NOT_ENABLED",
   "reasonCode": "STAKERS_BPS_ZERO",
   "instructions": [
     "Set stakersBps > 0 in config/fees.policy.json to enable rebate tiers."
   ],
   "params": null,
-  "policyVersionHash": "sha256:616c6537414fd7059d106775f2c172ee76249ada1b5d328b69ece090e7cf1e9a",
+  "policyVersionHash": "sha256:20af1a028c02c7cd58dac326375c73b0e001a219ac3a0c9f4c42f5cb76524adf",
   "tiers": [],
   "invariants": {
     "valid": true,

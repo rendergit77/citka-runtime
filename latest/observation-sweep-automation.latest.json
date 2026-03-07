@@ -1,7 +1,7 @@
 {
   "version": "observation_sweep_automation.v1",
-  "asOfTimestamp": "2026-03-06T21:41:00.293Z",
-  "tag": "ci-obs-22783065390",
+  "asOfTimestamp": "2026-03-07T00:38:12.646Z",
+  "tag": "ci-obs-22787873848",
   "rpcMode": "ci",
   "status": "RAN",
   "reasonCode": "OK",
@@ -17,17 +17,17 @@
   "lanes": {
     "plasma_pendle_yt_syrupusdt_volatility": {
       "observationCount": 2,
-      "windowDays": 2.8855,
+      "windowDays": 3.0086,
       "annualizedEligible": false
     },
     "plasma_flow_engine_pendle_lp_susde": {
       "observationCount": 2,
-      "windowDays": 2.8855,
+      "windowDays": 3.0086,
       "annualizedEligible": false
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
       "observationCount": 2,
-      "windowDays": 2.8855,
+      "windowDays": 3.0086,
       "annualizedEligible": false
     }
   },
@@ -38,5 +38,5 @@
     "computeApy": "SKIPPED_NO_INPUTS",
     "staleness": "OK"
   },
-  "checksum": "sha256:7ded39d2b4fd7b34802576547f4f0a087c90cd41b7a97808fc4af10be0efed1c"
+  "checksum": "sha256:cb24516a1d55262f510b41679ca57cc6b344a9a7ea572026e4dabfc0a8773c70"
 }

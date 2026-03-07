@@ -1,10 +1,10 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-06T21:41:05.666Z",
-  "ageSeconds": 22,
+  "generatedAt": "2026-03-07T00:38:19.272Z",
+  "ageSeconds": 24,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 15901503,
+  "blockNumber": 15912135,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
@@ -21,19 +21,19 @@
       "reasonCode": null
     },
     "plasma_aave_usdt0": {
-      "apyPct": 3.215953910886092,
+      "apyPct": 3.3673165864005186,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
     },
     "plasma_fluid_usdt0": {
-      "apyPct": 2.0377109358934,
+      "apyPct": 2.037696726116378,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_usdt0",
       "reasonCode": null
     },
     "plasma_pt_susde": {
-      "apyPct": 4.36182566414034,
+      "apyPct": 4.363760638844516,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
       "reasonCode": null
@@ -50,14 +50,14 @@
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_syrup",
       "reasonCode": null
     },
-    "plasma_susde_loop": {
-      "apyPct": -0.0021457118505285484,
+    "plasma_aave_weth": {
+      "apyPct": 4.332732419882994,
       "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_susde_loop",
-      "reasonCode": "CARRY_NOT_VIABLE"
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_weth",
+      "reasonCode": null
     },
     "plasma_lp_susde": {
-      "apyPct": 9.086954354751962,
+      "apyPct": 9.087843422521534,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_lp_susde",
       "reasonCode": null
