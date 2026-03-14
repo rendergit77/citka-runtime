@@ -1,13 +1,12 @@
 {
   "version": "observation_sweep_automation.v1",
-  "asOfTimestamp": "2026-03-07T02:45:24.161Z",
-  "tag": "ci-obs-22790354261",
+  "asOfTimestamp": "2026-03-14T09:21:58.137Z",
+  "tag": "ci-obs-23085103252",
   "rpcMode": "ci",
-  "status": "RAN",
-  "reasonCode": "OK",
-  "note": "Sweep completed. Snapshot + APY + staleness updated.",
+  "status": "NOOP",
+  "reasonCode": "FRESH",
+  "note": "State is not stale yet. Use --force to bypass.",
   "startArtifactMode": "existing",
-  "snapshotMode": "ci_minimal",
   "policy": {
     "headlineWindowDays": 7,
     "secondaryWindowsDays": [
@@ -16,27 +15,22 @@
   },
   "lanes": {
     "plasma_pendle_yt_syrupusdt_volatility": {
-      "observationCount": 2,
-      "windowDays": 3.0969,
+      "observationCount": 1,
+      "windowDays": 0,
       "annualizedEligible": false
     },
     "plasma_flow_engine_pendle_lp_susde": {
-      "observationCount": 2,
-      "windowDays": 3.0969,
+      "observationCount": 1,
+      "windowDays": 0,
       "annualizedEligible": false
     },
     "plasma_delta_fee_engine_pendle_lp_usde": {
-      "observationCount": 2,
-      "windowDays": 3.0969,
+      "observationCount": 1,
+      "windowDays": 0,
       "annualizedEligible": false
     }
   },
-  "staleBefore": null,
+  "staleBefore": false,
   "staleAfter": false,
-  "steps": {
-    "snapshot": "OK",
-    "computeApy": "SKIPPED_NO_INPUTS",
-    "staleness": "OK"
-  },
-  "checksum": "sha256:6a25bc066c8af2184c5f43155973f460fae5e25668d3186e56430dd74415a251"
+  "checksum": "sha256:5c190269e6efd8bac1b50cc1cb15ff29e0264a9ee8aa89b4a23ffb377e755cbe"
 }

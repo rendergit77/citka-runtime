@@ -1,83 +1,65 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-07T02:45:31.256Z",
-  "ageSeconds": 22,
+  "generatedAt": "2026-03-14T09:22:04.392Z",
+  "ageSeconds": 72,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 15919766,
+  "blockNumber": 16548362,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
-  "observedApyNumericCount": 11,
+  "observedApyNumericCount": 7,
   "observedApyZeroCount": 0,
-  "missingCount": 0,
+  "missingCount": 1,
   "rpcErrorCount": 0,
-  "status": "FRESH",
+  "status": "DEGRADED",
   "lanes": {
-    "plasma_aave_susde": {
-      "apyPct": 3.452257114271595,
-      "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_susde",
-      "reasonCode": null
-    },
     "plasma_aave_usdt0": {
-      "apyPct": 3.367182616036947,
+      "apyPct": 2.474461766213997,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
     },
-    "plasma_fluid_usdt0": {
-      "apyPct": 2.0376865763950924,
+    "plasma_stable_allocator_v2": {
+      "apyPct": 4.1,
       "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_usdt0",
-      "reasonCode": null
-    },
-    "plasma_pt_susde": {
-      "apyPct": 4.363760638844516,
-      "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_stable_allocator_v2",
       "reasonCode": null
     },
     "plasma_pt_usde": {
-      "apyPct": 3.76880690400756,
+      "apyPct": 3.429718971582285,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usde",
       "reasonCode": null
     },
+    "plasma_pt_susde": {
+      "apyPct": 3.999010908725942,
+      "status": "OK",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
+      "reasonCode": null
+    },
     "plasma_pt_syrup": {
-      "apyPct": 4.418231711334997,
+      "apyPct": 4.580084202428547,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_syrup",
       "reasonCode": null
     },
-    "plasma_aave_weth": {
-      "apyPct": 1.896577046346903,
+    "plasma_pt_usdai": {
+      "apyPct": 9.43951591911565,
       "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_weth",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usdai",
       "reasonCode": null
     },
-    "plasma_lp_susde": {
-      "apyPct": 9.087843422521534,
-      "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_lp_susde",
-      "reasonCode": null
+    "plasma_fluid_susdai_recursive_carry": {
+      "apyPct": null,
+      "status": "MISSING",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
+      "reasonCode": "POSITION_NOT_OPEN"
     },
-    "plasma_lp_syrup": {
-      "apyPct": 9.551168187510818,
+    "plasma_fluid_weeth_recursive_carry": {
+      "apyPct": 3.3,
       "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_lp_syrup",
-      "reasonCode": null
-    },
-    "plasma_lp_usde": {
-      "apyPct": 1.083623807249307,
-      "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_lp_usde",
-      "reasonCode": null
-    },
-    "plasma_aave_weeth": {
-      "apyPct": 2.5227581713310743,
-      "status": "OK",
-      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_weeth",
+      "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
     }
   }

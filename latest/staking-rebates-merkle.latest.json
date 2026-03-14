@@ -1,6 +1,6 @@
 {
-  "version": "staking_rebates_merkle.v2",
-  "generatedAt": "2026-03-07T02:45:52.594Z",
+  "version": "staking_rebates_merkle.v3",
+  "generatedAt": "2026-03-14T09:23:16.549Z",
   "status": "NOT_ENABLED",
   "reasonCode": "STAKERS_BPS_ZERO",
   "instructions": [
@@ -8,10 +8,23 @@
   ],
   "epochId": null,
   "merkleRoot": null,
-  "policyVersionHash": "sha256:20af1a028c02c7cd58dac326375c73b0e001a219ac3a0c9f4c42f5cb76524adf",
+  "policyVersionHash": "sha256:c84a48cc109277303c8b7858c979081b4b89b761930d4193f9d2e7a52277e240",
   "snapshotVersionHash": null,
   "leavesCount": 0,
   "claims": [],
+  "rails": [],
+  "claimTupleShape": {
+    "fields": [
+      "epochId",
+      "user",
+      "token",
+      "amount",
+      "policyVersionHash"
+    ],
+    "hashEncoding": "keccak256(abi.encode(...))",
+    "grouping": "PER_POLICY_HASH",
+    "alignedWithRebateEscrow": true
+  },
   "totals": {
     "previousCumulativeAmountWei": "0",
     "cumulativeAmountWei": "0",

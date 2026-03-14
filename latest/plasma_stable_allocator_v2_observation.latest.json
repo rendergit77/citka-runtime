@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-03-14T09:21:58.931Z",
+  "laneId": "plasma_stable_allocator_v2",
+  "manifestRef": "config/v2-manifests/plasma_stable_allocator_v2.json",
+  "addressSource": "config/addresses.plasma.json",
+  "blockNumber": 16548360,
+  "blockTimestamp": 1773480118,
+  "blockIso": "2026-03-14T09:21:58.000Z",
+  "endpoints": {
+    "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+    "aaveAddressesProvider": "0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9",
+    "aaveDataProvider": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
+    "aToken": "0x5D72a9d9A9510Cd8cBdBA12aC62593A58930a948",
+    "eulerVenue": "0x0a660B3Cbd7DF118501E7Bb0f2D6eC5E5e583Bf8"
+  },
+  "vaultState": {
+    "totalAssetsRaw": "5005718",
+    "totalSupplyRaw": "5004982576679203471",
+    "totalManagedAssetsRaw": "5005718",
+    "adapterAvailableAssetsRaw": "5005718"
+  },
+  "targetState": {
+    "targetAaveBps": 3500,
+    "mode": "HEALTHY",
+    "emergency": false,
+    "coverageBps": 10000
+  },
+  "modeDiagnosis": {
+    "premiumHealthy": true,
+    "premiumDrainHealthy": true,
+    "cashSoftHealthy": true,
+    "cashHardHealthy": true,
+    "coverageHealthy": true,
+    "coverageHardHealthy": true,
+    "reserveHealthy": true,
+    "previewHealthy": true,
+    "parityHealthy": true,
+    "exitHealthy": true,
+    "depositHealthy": true,
+    "reasonCodes": [
+      "HEALTHY_OR_POLICY_DEFAULT"
+    ]
+  },
+  "policy": {
+    "targets": {
+      "healthyAaveTargetBps": 3500,
+      "degradedAaveTargetBps": 5000,
+      "minAaveBps": 3500,
+      "maxAaveBps": 10000,
+      "minEulerBps": 0,
+      "maxEulerBps": 6500
+    },
+    "thresholds": {
+      "premiumActivateBps": 125,
+      "premiumDrainBps": 75,
+      "cashRatioSoftBps": 1800,
+      "cashRatioHardBps": 1200,
+      "coverageTargetBps": 4500,
+      "coverageHardBps": 3000,
+      "rebalanceBandBps": 1000,
+      "maxParityDriftBps": 50,
+      "cooldownSeconds": 21600
+    },
+    "reference": {
+      "eulerReferenceSharePriceRaw": "1025683273324618903",
+      "eulerReferenceTimestamp": 1771931756
+    }
+  },
+  "legs": {
+    "aave": {
+      "managedAssetsRaw": "4967",
+      "availableAssetsRaw": "4967",
+      "supplyAprBps": 247,
+      "reserveHealthy": true,
+      "weightBps": 9
+    },
+    "euler": {
+      "managedAssetsRaw": "5000751",
+      "availableAssetsRaw": "5000751",
+      "cashRatioBps": 1838,
+      "sharePriceRaw": "1027753296325377630",
+      "observedAprBps": 411,
+      "premiumBps": 164,
+      "previewHealthy": true,
+      "parityHealthy": true,
+      "exitHealthy": true,
+      "depositHealthy": true,
+      "weightBps": 9990
+    }
+  },
+  "weightedApySemantics": {
+    "grossObservedCarryAprBps": 410,
+    "netObservedCarryAprBpsAfterPerfFeeOnly": 369,
+    "performanceFeeBps": 1000,
+    "exitFeeBpsExcludedFromHeadlineApr": 10,
+    "note": "Headline APY remains recurring-only. Exit fee is separate one-time withdrawal cost."
+  },
+  "exitTruth": {
+    "sameBlockCoverageBps": 10000,
+    "previewHealthy": true,
+    "previewParityHealthy": true,
+    "eulerExitHealthy": true,
+    "eulerDepositHealthy": true,
+    "note": "Coverage counts only Aave liquidity plus the Euler portion that remains preview/maxWithdraw sane."
+  }
+}
