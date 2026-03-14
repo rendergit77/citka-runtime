@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-14T16:38:48.453Z",
+  "generatedAt": "2026-03-14T17:03:38.191Z",
   "laneId": "plasma_stable_allocator_v2",
   "manifestRef": "config/v2-manifests/plasma_stable_allocator_v2.json",
   "addressSource": "config/addresses.plasma.json",
-  "blockNumber": 16574569,
-  "blockTimestamp": 1773506327,
-  "blockIso": "2026-03-14T16:38:47.000Z",
+  "blockNumber": 16576059,
+  "blockTimestamp": 1773507817,
+  "blockIso": "2026-03-14T17:03:37.000Z",
   "endpoints": {
     "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
     "aaveAddressesProvider": "0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9",
@@ -14,10 +14,10 @@
     "eulerVenue": "0x0a660B3Cbd7DF118501E7Bb0f2D6eC5E5e583Bf8"
   },
   "vaultState": {
-    "totalAssetsRaw": "5005985",
+    "totalAssetsRaw": "5006000",
     "totalSupplyRaw": "5004982576679203471",
-    "totalManagedAssetsRaw": "5005985",
-    "adapterAvailableAssetsRaw": "5005985"
+    "totalManagedAssetsRaw": "5006000",
+    "adapterAvailableAssetsRaw": "5006000"
   },
   "targetState": {
     "targetAaveBps": 3500,
@@ -71,16 +71,16 @@
     "aave": {
       "managedAssetsRaw": "4967",
       "availableAssetsRaw": "4967",
-      "supplyAprBps": 251,
+      "supplyAprBps": 252,
       "reserveHealthy": true,
       "weightBps": 9
     },
     "euler": {
-      "managedAssetsRaw": "5001018",
-      "availableAssetsRaw": "5001018",
+      "managedAssetsRaw": "5001033",
+      "availableAssetsRaw": "5001033",
       "cashRatioBps": 1837,
-      "sharePriceRaw": "1027808076588848437",
-      "observedAprBps": 414,
+      "sharePriceRaw": "1027811190884399343",
+      "observedAprBps": 415,
       "premiumBps": 163,
       "previewHealthy": true,
       "parityHealthy": true,
@@ -90,8 +90,8 @@
     }
   },
   "weightedApySemantics": {
-    "grossObservedCarryAprBps": 413,
-    "netObservedCarryAprBpsAfterPerfFeeOnly": 371,
+    "grossObservedCarryAprBps": 414,
+    "netObservedCarryAprBpsAfterPerfFeeOnly": 372,
     "performanceFeeBps": 1000,
     "exitFeeBpsExcludedFromHeadlineApr": 10,
     "note": "Headline APY remains recurring-only. Exit fee is separate one-time withdrawal cost."
