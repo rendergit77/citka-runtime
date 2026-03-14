@@ -1,12 +1,12 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-14T22:36:21.713Z",
+  "generatedAt": "2026-03-14T22:36:44.428Z",
   "rpcUrl": "https://rpc.plasma.to",
   "summary": {
     "totalLanes": 8,
     "depositAllowed": 8,
     "depositBlocked": 0,
-    "tvlUsdBackfilled": 1,
+    "tvlUsdBackfilled": 2,
     "errors": 0
   },
   "lanes": {
@@ -310,18 +310,24 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": null,
+        "totalAssets": 6.852041,
+        "tvlUsd": 6.852041,
         "assetSymbol": "syrupUSDT",
-        "reasonCode": "TVL_DATA_UNAVAILABLE"
+        "reasonCode": null,
+        "source": "vault_total_assets",
+        "priceUsd": 1,
+        "priceSource": "PEG_ASSUMPTION_STABLE"
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
         "onchainAssetSymbol": "syrupUSDT",
-        "assetDecimals": 6
+        "assetDecimals": 6,
+        "vaultTotalAssetsRaw": "6852041",
+        "tvlAssetAmount": 6.852041,
+        "tvlSource": "vault_total_assets"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -496,7 +502,7 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0.000987359488499071,
+        "totalAssets": 0.000987359443069106,
         "assetSymbol": "WETH",
         "tvlUsd": null,
         "priceUsd": null,
