@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-15T03:27:31.496Z",
+  "generatedAt": "2026-03-15T05:23:08.968Z",
   "laneId": "plasma_stable_allocator_v2",
   "manifestRef": "config/v2-manifests/plasma_stable_allocator_v2.json",
   "addressSource": "config/addresses.plasma.json",
-  "blockNumber": 16613492,
-  "blockTimestamp": 1773545250,
-  "blockIso": "2026-03-15T03:27:30.000Z",
+  "blockNumber": 16620430,
+  "blockTimestamp": 1773552188,
+  "blockIso": "2026-03-15T05:23:08.000Z",
   "endpoints": {
     "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
     "aaveAddressesProvider": "0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9",
@@ -14,21 +14,21 @@
     "eulerVenue": "0x0a660B3Cbd7DF118501E7Bb0f2D6eC5E5e583Bf8"
   },
   "vaultState": {
-    "totalAssetsRaw": "5006380",
+    "totalAssetsRaw": "5006452",
     "totalSupplyRaw": "5004982576679203471",
-    "totalManagedAssetsRaw": "5006380",
-    "adapterAvailableAssetsRaw": "5006380"
+    "totalManagedAssetsRaw": "5006452",
+    "adapterAvailableAssetsRaw": "5006452"
   },
   "targetState": {
-    "targetAaveBps": 3500,
-    "mode": "NORMAL",
+    "targetAaveBps": 5000,
+    "mode": "PREMIUM_ACTIVE",
     "emergency": false,
     "coverageBps": 10000
   },
   "modeDiagnosis": {
     "premiumHealthy": false,
     "premiumDrainHealthy": false,
-    "cashSoftHealthy": true,
+    "cashSoftHealthy": false,
     "cashHardHealthy": true,
     "coverageHealthy": true,
     "coverageHardHealthy": true,
@@ -39,7 +39,8 @@
     "depositHealthy": true,
     "reasonCodes": [
       "EULER_PREMIUM_ABOVE_ACTIVATE",
-      "EULER_PREMIUM_BELOW_DRAIN"
+      "EULER_PREMIUM_BELOW_DRAIN",
+      "EULER_CASH_RATIO_BELOW_SOFT"
     ]
   },
   "policy": {
@@ -76,12 +77,12 @@
       "weightBps": 9
     },
     "euler": {
-      "managedAssetsRaw": "5001413",
-      "availableAssetsRaw": "5001413",
-      "cashRatioBps": 1837,
-      "sharePriceRaw": "1027889435007656509",
-      "observedAprBps": 420,
-      "premiumBps": 166,
+      "managedAssetsRaw": "5001485",
+      "availableAssetsRaw": "5001485",
+      "cashRatioBps": 1696,
+      "sharePriceRaw": "1027904229975624349",
+      "observedAprBps": 421,
+      "premiumBps": 167,
       "previewHealthy": true,
       "parityHealthy": true,
       "exitHealthy": true,
@@ -90,8 +91,8 @@
     }
   },
   "weightedApySemantics": {
-    "grossObservedCarryAprBps": 419,
-    "netObservedCarryAprBpsAfterPerfFeeOnly": 377,
+    "grossObservedCarryAprBps": 420,
+    "netObservedCarryAprBpsAfterPerfFeeOnly": 378,
     "performanceFeeBps": 1000,
     "exitFeeBpsExcludedFromHeadlineApr": 10,
     "note": "Headline APY remains recurring-only. Exit fee is separate one-time withdrawal cost."
