@@ -1,15 +1,15 @@
 {
   "version": "scenario_yields_v2",
-  "tag": "ci-obs-23109663780",
-  "generatedAt": "2026-03-15T11:44:42.570Z",
+  "tag": "ci-obs-23111328600",
+  "generatedAt": "2026-03-15T13:29:09.969Z",
   "policyHash": "sha256:1862c4ffe44cf1766e6a34b8a34fc39aa716a9b35df1fd4c1d8e45aed424e0b7",
   "coverage": {
     "total": 19,
-    "measured": 7,
+    "measured": 8,
     "observed": 3,
     "scenario": 0,
-    "missing": 9,
-    "headlineReady": 10
+    "missing": 8,
+    "headlineReady": 11
   },
   "hardRules": {
     "scenarioNeverPopulatesMeasured": true,
@@ -149,7 +149,7 @@
     },
     "plasma_aave_usdt0": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 2.5482,
+      "measuredGrossApyPct": 2.5551,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -159,7 +159,7 @@
     },
     "plasma_stable_allocator_v2": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 4.23,
+      "measuredGrossApyPct": 4.24,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -208,18 +208,18 @@
       "explanationShort": "Yield measured onchain."
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "status": "MISSING",
-      "measuredGrossApyPct": null,
+      "status": "MEASURED",
+      "measuredGrossApyPct": -30543726404.61,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
       "assumptionsHash": null,
       "labels": [],
-      "explanationShort": "POSITION_NOT_OPEN"
+      "explanationShort": "Yield measured onchain."
     },
     "plasma_fluid_weeth_recursive_carry": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 5.53,
+      "measuredGrossApyPct": 5.4,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -228,5 +228,5 @@
       "explanationShort": "Yield measured onchain."
     }
   },
-  "checksum": "sha256:dacebe4b12748983d6e0ed4a7dd0a6385a7c2c9844c1da87fbca388f77e8a360"
+  "checksum": "sha256:6ccde5f918796d6efd08041d932fd450a064c31e00d2f9594c44d3c13f28fe5e"
 }

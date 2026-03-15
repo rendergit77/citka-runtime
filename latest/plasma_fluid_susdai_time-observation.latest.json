@@ -1,7 +1,54 @@
 {
-  "generatedAt": "2026-03-15T11:44:24.014Z",
+  "generatedAt": "2026-03-15T13:28:52.886Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
-  "status": "NO_BASELINE_ACTIVE",
-  "reasonCode": "BASELINE_NOT_FOUND",
-  "baselineRef": "ops/runtime/plasma_fluid_susdai_time-observation-baseline.latest.json"
+  "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
+  "status": "OBSERVATION_RUNNING",
+  "currentBlockNumber": 16649574,
+  "currentTimestamp": 1773581332,
+  "currentIso": "2026-03-15T13:28:52.000Z",
+  "historicBlockNumber": 16563174,
+  "elapsedSeconds": 86400,
+  "elapsedHours": 24,
+  "observationWindowBlocks": 86400,
+  "laneState": {
+    "totalAssetsRaw": "4918700",
+    "totalSupplyRaw": "4653629376505762646",
+    "laneHasTvl": true,
+    "totalAssetsDisplay": 4.9187
+  },
+  "collateralSideInput": {
+    "source": "resolver.getVaultEntireData(fluidVault).configs.oraclePriceOperate",
+    "observationModel": "LANE_OBJECTIVE",
+    "oraclePriceNowRaw": "8800",
+    "oraclePriceHistRaw": "8800",
+    "blockNow": 16649574,
+    "blockHist": 16563174,
+    "elapsedSeconds": 86400,
+    "observedAnnualizedAprPct": 0,
+    "status": "OBSERVED_WINDOW"
+  },
+  "borrowSideInput": {
+    "source": "resolver.getVaultEntireData(fluidVault).exchangePricesAndRates.borrowRateVault",
+    "observationModel": "LANE_OBJECTIVE",
+    "borrowRateVaultRaw": "1018124213487",
+    "borrowAprPct": 10181242134.87,
+    "status": "LIVE_ONCHAIN"
+  },
+  "laneLevelCarry": {
+    "targetDebtRatioBps": 7500,
+    "leverageMultiple": 4,
+    "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
+    "impliedGrossCarryAprPct": -30543726404.61,
+    "status": "OBSERVED_WINDOW"
+  },
+  "freshnessAndNotes": {
+    "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
+    "positionScopedDependency": "NONE",
+    "notes": [
+      "Collateral APR derived from lane-level resolver.getVaultEntireData().configs.oraclePriceOperate delta — no operator position required.",
+      "Borrow APR from resolver.exchangePricesAndRates.borrowRateVault — lane-level.",
+      "Leverage from manifest targetDebtRatioBps=7500 — deterministic, lane-level.",
+      "Operator positions may be used for calibration/canary only, not as APY prerequisite."
+    ]
+  }
 }
