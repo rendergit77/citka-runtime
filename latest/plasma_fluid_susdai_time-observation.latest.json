@@ -1,15 +1,21 @@
 {
-  "generatedAt": "2026-03-15T13:34:54.025Z",
+  "generatedAt": "2026-03-15T13:47:49.484Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
   "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 16649935,
-  "currentTimestamp": 1773581693,
-  "currentIso": "2026-03-15T13:34:53.000Z",
-  "historicBlockNumber": 16563535,
+  "currentBlockNumber": 16650710,
+  "currentTimestamp": 1773582468,
+  "currentIso": "2026-03-15T13:47:48.000Z",
+  "historicBlockNumber": 16564310,
   "elapsedSeconds": 86400,
   "elapsedHours": 24,
   "observationWindowBlocks": 86400,
+  "addressesUsed": {
+    "resolverAddr": "0xB21C67DD518F6d31257d3A4F12B0A6344885b268",
+    "fluidVaultAddr": "0xA9FF23CfF9439c418DA08CE7954a92E46311761e",
+    "citkaVaultAddr": "0xf4b462203d930630eed218b7d381C01c39BB1fF8",
+    "resolverType": "fluid.positionResolver (bps×100 rate format)"
+  },
   "laneState": {
     "totalAssetsRaw": "4918700",
     "totalSupplyRaw": "4653629376505762646",
@@ -17,28 +23,29 @@
     "totalAssetsDisplay": 4.9187
   },
   "collateralSideInput": {
-    "source": "resolver.getVaultEntireData(fluidVault).configs.oraclePriceOperate",
+    "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
     "observationModel": "LANE_OBJECTIVE",
-    "oraclePriceNowRaw": "8800",
-    "oraclePriceHistRaw": "8800",
-    "blockNow": 16649935,
-    "blockHist": 16563535,
+    "oraclePriceNowRaw": "1073931198101327",
+    "oraclePriceHistRaw": "1073745757314997",
+    "blockNow": 16650710,
+    "blockHist": 16564310,
     "elapsedSeconds": 86400,
-    "observedAnnualizedAprPct": 0,
+    "observedAnnualizedAprPct": 6.308033977835803,
     "status": "OBSERVED_WINDOW"
   },
   "borrowSideInput": {
-    "source": "resolver.getVaultEntireData(fluidVault).exchangePricesAndRates.borrowRateVault",
+    "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.borrowRateVault",
     "observationModel": "LANE_OBJECTIVE",
-    "borrowRateVaultRaw": "1018124213487",
-    "borrowAprPct": 10181242134.87,
+    "rateFormat": "bps×100 (e.g. 406 = 4.06%)",
+    "borrowRateVaultRaw": "401",
+    "borrowAprPct": 4.01,
     "status": "LIVE_ONCHAIN"
   },
   "laneLevelCarry": {
     "targetDebtRatioBps": 7500,
     "leverageMultiple": 4,
     "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
-    "impliedGrossCarryAprPct": -30543726404.61,
+    "impliedGrossCarryAprPct": 13.202135911343214,
     "status": "OBSERVED_WINDOW"
   },
   "freshnessAndNotes": {
@@ -46,7 +53,7 @@
     "positionScopedDependency": "NONE",
     "notes": [
       "Collateral APR derived from lane-level resolver.getVaultEntireData().configs.oraclePriceOperate delta — no operator position required.",
-      "Borrow APR from resolver.exchangePricesAndRates.borrowRateVault — lane-level.",
+      "Borrow APR from Fluid PositionResolver.exchangePricesAndRates.borrowRateVault (bps×100 format) — lane-level.",
       "Leverage from manifest targetDebtRatioBps=7500 — deterministic, lane-level.",
       "Operator positions may be used for calibration/canary only, not as APY prerequisite."
     ]
