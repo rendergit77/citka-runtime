@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-14T23:38:55.037Z",
+  "generatedAt": "2026-03-15T00:00:10.387Z",
   "laneId": "plasma_stable_allocator_v2",
   "manifestRef": "config/v2-manifests/plasma_stable_allocator_v2.json",
   "addressSource": "config/addresses.plasma.json",
-  "blockNumber": 16599776,
-  "blockTimestamp": 1773531534,
-  "blockIso": "2026-03-14T23:38:54.000Z",
+  "blockNumber": 16601051,
+  "blockTimestamp": 1773532809,
+  "blockIso": "2026-03-15T00:00:09.000Z",
   "endpoints": {
     "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
     "aaveAddressesProvider": "0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9",
@@ -14,10 +14,10 @@
     "eulerVenue": "0x0a660B3Cbd7DF118501E7Bb0f2D6eC5E5e583Bf8"
   },
   "vaultState": {
-    "totalAssetsRaw": "5006241",
+    "totalAssetsRaw": "5006254",
     "totalSupplyRaw": "5004982576679203471",
-    "totalManagedAssetsRaw": "5006241",
-    "adapterAvailableAssetsRaw": "5006241"
+    "totalManagedAssetsRaw": "5006254",
+    "adapterAvailableAssetsRaw": "5006254"
   },
   "targetState": {
     "targetAaveBps": 3500,
@@ -76,10 +76,10 @@
       "weightBps": 9
     },
     "euler": {
-      "managedAssetsRaw": "5001274",
-      "availableAssetsRaw": "5001274",
+      "managedAssetsRaw": "5001287",
+      "availableAssetsRaw": "5001287",
       "cashRatioBps": 1837,
-      "sharePriceRaw": "1027860762208071988",
+      "sharePriceRaw": "1027863429372091175",
       "observedAprBps": 418,
       "premiumBps": 166,
       "previewHealthy": true,
