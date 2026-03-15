@@ -1,7 +1,7 @@
 {
   "version": "scenario_yields_v2",
-  "tag": "ci-obs-23117376429",
-  "generatedAt": "2026-03-15T19:17:15.925Z",
+  "tag": "ci-obs-23117665823",
+  "generatedAt": "2026-03-15T19:33:47.158Z",
   "policyHash": "sha256:1862c4ffe44cf1766e6a34b8a34fc39aa716a9b35df1fd4c1d8e45aed424e0b7",
   "coverage": {
     "total": 19,
@@ -149,7 +149,7 @@
     },
     "plasma_aave_usdt0": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 2.8158,
+      "measuredGrossApyPct": 2.8029,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -219,7 +219,7 @@
     },
     "plasma_fluid_weeth_recursive_carry": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 7.5,
+      "measuredGrossApyPct": 7.45,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -228,5 +228,5 @@
       "explanationShort": "Yield measured onchain."
     }
   },
-  "checksum": "sha256:067d35e3544e28b2d823baed6c09c65eaf5ce177119872eaf80e745a5ba4eef5"
+  "checksum": "sha256:b76314bbf834b076ed70263f4dd545d03f267faf36f4b69c160217e93229e35e"
 }
