@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-15T15:59:10.399Z",
+  "generatedAt": "2026-03-15T16:09:25.824Z",
   "laneId": "plasma_stable_allocator_v2",
   "manifestRef": "config/v2-manifests/plasma_stable_allocator_v2.json",
   "addressSource": "config/addresses.plasma.json",
-  "blockNumber": 16658591,
-  "blockTimestamp": 1773590349,
-  "blockIso": "2026-03-15T15:59:09.000Z",
+  "blockNumber": 16659207,
+  "blockTimestamp": 1773590965,
+  "blockIso": "2026-03-15T16:09:25.000Z",
   "endpoints": {
     "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
     "aaveAddressesProvider": "0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9",
@@ -14,10 +14,10 @@
     "eulerVenue": "0x0a660B3Cbd7DF118501E7Bb0f2D6eC5E5e583Bf8"
   },
   "vaultState": {
-    "totalAssetsRaw": "5006853",
+    "totalAssetsRaw": "5006860",
     "totalSupplyRaw": "5004982576679203471",
-    "totalManagedAssetsRaw": "5006853",
-    "adapterAvailableAssetsRaw": "5006853"
+    "totalManagedAssetsRaw": "5006860",
+    "adapterAvailableAssetsRaw": "5006860"
   },
   "targetState": {
     "targetAaveBps": 5000,
@@ -77,12 +77,12 @@
       "weightBps": 9
     },
     "euler": {
-      "managedAssetsRaw": "5001886",
-      "availableAssetsRaw": "5001886",
+      "managedAssetsRaw": "5001893",
+      "availableAssetsRaw": "5001893",
       "cashRatioBps": 1696,
-      "sharePriceRaw": "1027986628301281880",
-      "observedAprBps": 426,
-      "premiumBps": 171,
+      "sharePriceRaw": "1027987956266269256",
+      "observedAprBps": 427,
+      "premiumBps": 172,
       "previewHealthy": true,
       "parityHealthy": true,
       "exitHealthy": true,
@@ -91,8 +91,8 @@
     }
   },
   "weightedApySemantics": {
-    "grossObservedCarryAprBps": 425,
-    "netObservedCarryAprBpsAfterPerfFeeOnly": 382,
+    "grossObservedCarryAprBps": 426,
+    "netObservedCarryAprBpsAfterPerfFeeOnly": 383,
     "performanceFeeBps": 1000,
     "exitFeeBpsExcludedFromHeadlineApr": 10,
     "note": "Headline APY remains recurring-only. Exit fee is separate one-time withdrawal cost."
