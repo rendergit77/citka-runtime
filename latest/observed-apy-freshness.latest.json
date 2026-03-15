@@ -1,10 +1,10 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-15T11:31:10.945Z",
-  "ageSeconds": 85,
+  "generatedAt": "2026-03-15T11:44:27.976Z",
+  "ageSeconds": 129,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 16642511,
+  "blockNumber": 16643307,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
@@ -15,7 +15,7 @@
   "status": "DEGRADED",
   "lanes": {
     "plasma_aave_usdt0": {
-      "apyPct": 2.5482143900951444,
+      "apyPct": 2.548215357379562,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
@@ -57,7 +57,7 @@
       "reasonCode": "POSITION_NOT_OPEN"
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 5.58,
+      "apyPct": 5.53,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
