@@ -1,32 +1,32 @@
 {
   "version": "onchain_yield_observations.v1",
   "tag": "b4.22.85",
-  "generatedAt": "2026-03-15T10:36:24.480Z",
+  "generatedAt": "2026-03-15T10:40:55.069Z",
   "provenance": {
     "rpcUsed": "https://rpc.plasma.to",
     "rpcAttempts": 1,
     "rpcEndpointsAvailable": 1,
     "chainId": 9745,
-    "blockNumber": 16639224,
-    "blockTimestamp": 1773570982
+    "blockNumber": 16639495,
+    "blockTimestamp": 1773571253
   },
   "vaults": {
     "plasma_aave_usdt0": {
       "status": "MEASURED",
-      "grossApyPct": 2.548198914785443,
+      "grossApyPct": 2.548192373054324,
       "evidence": {
         "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
         "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "method": "AaveDataProvider.getReserveData:liquidityRate",
-        "rateRayStr": "25481989147854431566486140",
-        "liquidityApyPct": 2.548198914785443,
+        "rateRayStr": "25481923730543242046896427",
+        "liquidityApyPct": 2.548192373054324,
         "intrinsicApyPct": null,
-        "combinedGrossApyPct": 2.548198914785443,
+        "combinedGrossApyPct": 2.548192373054324,
         "intrinsicSource": null,
         "conversionMethod": "rayToPct_bigint_safe",
         "attempts": 1,
-        "blockNumber": 16639224,
-        "blockTimestamp": 1773570982
+        "blockNumber": 16639495,
+        "blockTimestamp": 1773571253
       },
       "reasonCode": null,
       "instructions": null,
@@ -42,8 +42,8 @@
         "aprBps": 423,
         "targetMode": "PREMIUM_ACTIVE",
         "evidenceRef": "ops/runtime/plasma_stable_allocator_v2_observation.latest.json",
-        "blockNumber": 16639224,
-        "blockTimestamp": 1773570982
+        "blockNumber": 16639495,
+        "blockTimestamp": 1773571253
       },
       "reasonCode": null,
       "instructions": null,
@@ -60,8 +60,8 @@
         "lastLnImpliedRateStr": "33515315162121665",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16639224,
-        "blockTimestamp": 1773570982
+        "blockNumber": 16639495,
+        "blockTimestamp": 1773571253
       },
       "reasonCode": null,
       "instructions": null,
@@ -78,8 +78,8 @@
         "lastLnImpliedRateStr": "39232019068114209",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16639224,
-        "blockTimestamp": 1773570982
+        "blockNumber": 16639495,
+        "blockTimestamp": 1773571253
       },
       "reasonCode": null,
       "instructions": null,
@@ -96,8 +96,8 @@
         "lastLnImpliedRateStr": "44787939555051428",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16639224,
-        "blockTimestamp": 1773570982
+        "blockNumber": 16639495,
+        "blockTimestamp": 1773571253
       },
       "reasonCode": null,
       "instructions": null,
@@ -114,8 +114,8 @@
         "lastLnImpliedRateStr": "109136682138975080",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16639224,
-        "blockTimestamp": 1773570982
+        "blockNumber": 16639495,
+        "blockTimestamp": 1773571253
       },
       "reasonCode": null,
       "instructions": null,
@@ -148,8 +148,8 @@
           "minSpreadBps": 30
         },
         "leverageBps": 48572,
-        "blockNumber": 16639224,
-        "blockTimestamp": 1773570982
+        "blockNumber": 16639495,
+        "blockTimestamp": 1773571253
       },
       "reasonCode": null,
       "instructions": null,
