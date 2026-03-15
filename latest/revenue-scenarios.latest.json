@@ -1,14 +1,14 @@
 {
   "version": "revenue_scenarios_v2",
   "tag": "b4.22.74.0",
-  "generatedAt": "2026-03-15T18:55:25.085Z",
+  "generatedAt": "2026-03-15T18:56:01.117Z",
   "modeSupport": [
     "MEASURED",
     "SCENARIO"
   ],
   "inputs": {
     "feePolicyHash": "sha256:c84a48cc109277303c8b7858c979081b4b89b761930d4193f9d2e7a52277e240",
-    "economicsChecksum": "sha256:bbb7cf6f151cd107076bbfc2e1b308211d451ebbf2d5e5cbe6af27f883f83c9a",
+    "economicsChecksum": "sha256:b51acdd7bdbe1e29d2f6d92537d4f3e65832e0cdf35c8e044fd13bbace093b78",
     "yieldAvailability": "PARTIAL",
     "excludedVaults": []
   },
@@ -280,7 +280,7 @@
             },
             "truthInputs": {
               "netApyFraction": null,
-              "grossApyFraction": 0.02842133235,
+              "grossApyFraction": 0.028421332771,
               "grossSource": "market_observed_onchain",
               "apyAvailable": true
             },
@@ -776,7 +776,7 @@
             },
             "truthInputs": {
               "netApyFraction": null,
-              "grossApyFraction": 0.02842133235,
+              "grossApyFraction": 0.028421332771,
               "grossSource": "market_observed_onchain",
               "apyAvailable": true
             },
@@ -1272,7 +1272,7 @@
             },
             "truthInputs": {
               "netApyFraction": null,
-              "grossApyFraction": 0.02842133235,
+              "grossApyFraction": 0.028421332771,
               "grossSource": "market_observed_onchain",
               "apyAvailable": true
             },
@@ -1506,5 +1506,5 @@
     "notes": "Using actual observed APY fractions where available."
   },
   "scenario": null,
-  "checksum": "sha256:dc32f06bd4cecc2b88662b5868a4b6e121dec2af00b0f7b17d58637283da97f0"
+  "checksum": "sha256:d3a9482d273df7ff150254597a05ce8fb8bb5a6e84b38e4ad4094190fc7a503c"
 }
