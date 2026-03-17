@@ -1,10 +1,10 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-17T16:56:53.178Z",
-  "ageSeconds": 164,
+  "generatedAt": "2026-03-17T18:48:45.685Z",
+  "ageSeconds": 105,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 16834852,
+  "blockNumber": 16841565,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
@@ -15,25 +15,25 @@
   "status": "FRESH",
   "lanes": {
     "plasma_aave_usdt0": {
-      "apyPct": 2.6899476528586446,
+      "apyPct": 2.689991816841097,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
     },
     "plasma_stable_allocator_v2": {
-      "apyPct": 4.25,
+      "apyPct": 4.24,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_stable_allocator_v2",
       "reasonCode": null
     },
     "plasma_pt_usde": {
-      "apyPct": 3.3240739604905034,
+      "apyPct": 3.3239671120384173,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usde",
       "reasonCode": null
     },
     "plasma_pt_susde": {
-      "apyPct": 4.141319669918864,
+      "apyPct": 4.141336197587653,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
       "reasonCode": null
@@ -45,7 +45,7 @@
       "reasonCode": null
     },
     "plasma_pt_usdai": {
-      "apyPct": 12.907670136540883,
+      "apyPct": 13.054312394960066,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usdai",
       "reasonCode": null
@@ -57,7 +57,7 @@
       "reasonCode": null
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 5.85,
+      "apyPct": 5.65,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
