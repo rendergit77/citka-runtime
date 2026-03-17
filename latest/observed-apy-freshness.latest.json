@@ -1,39 +1,39 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-17T18:48:45.685Z",
-  "ageSeconds": 105,
+  "generatedAt": "2026-03-17T22:04:13.396Z",
+  "ageSeconds": 173,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 16841565,
-  "rpcUsed": "https://rpc.plasma.to",
+  "blockNumber": 16853292,
+  "rpcUsed": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
   "rpcAttempts": 1,
-  "rpcEndpointsAvailable": 1,
-  "observedApyNumericCount": 8,
+  "rpcEndpointsAvailable": 2,
+  "observedApyNumericCount": 7,
   "observedApyZeroCount": 0,
   "missingCount": 0,
   "rpcErrorCount": 0,
   "status": "FRESH",
   "lanes": {
     "plasma_aave_usdt0": {
-      "apyPct": 2.689991816841097,
+      "apyPct": 2.6899810109068634,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
     },
     "plasma_stable_allocator_v2": {
-      "apyPct": 4.24,
+      "apyPct": 4.22,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_stable_allocator_v2",
       "reasonCode": null
     },
     "plasma_pt_usde": {
-      "apyPct": 3.3239671120384173,
+      "apyPct": 3.6212906878341444,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usde",
       "reasonCode": null
     },
     "plasma_pt_susde": {
-      "apyPct": 4.141336197587653,
+      "apyPct": 4.164314770938571,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
       "reasonCode": null
@@ -45,19 +45,19 @@
       "reasonCode": null
     },
     "plasma_pt_usdai": {
-      "apyPct": 13.054312394960066,
+      "apyPct": 13.278229832200172,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usdai",
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": 14.044478028199624,
-      "status": "OK",
+      "apyPct": null,
+      "status": "MISSING",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
-      "reasonCode": null
+      "reasonCode": "CARRY_OBSERVATION_PENDING_WINDOW"
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 5.65,
+      "apyPct": 5.3,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null

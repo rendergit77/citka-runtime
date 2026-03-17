@@ -1,15 +1,23 @@
 {
-  "generatedAt": "2026-03-17T18:48:42.216Z",
+  "generatedAt": "2026-03-17T22:04:08.724Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
-  "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 16841563,
-  "currentTimestamp": 1773773321,
-  "currentIso": "2026-03-17T18:48:41.000Z",
-  "historicBlockNumber": 16755163,
-  "elapsedSeconds": 86400,
-  "elapsedHours": 24,
-  "observationWindowBlocks": 86400,
+  "deltaSource": "WARMING",
+  "status": "PENDING_CHECKPOINT_WINDOW",
+  "currentBlockNumber": 16853290,
+  "currentTimestamp": 1773785048,
+  "currentIso": "2026-03-17T22:04:08.000Z",
+  "historicBlockNumber": null,
+  "elapsedSeconds": null,
+  "elapsedHours": null,
+  "checkpointInfo": {
+    "checkpointFile": "ops/runtime/checkpoints/fluid-susdai-carry.checkpoint.json",
+    "historicCheckpointObservedAt": null,
+    "historicCheckpointBlockNumber": null,
+    "targetWindowSeconds": 86400,
+    "minWindowSeconds": 21600,
+    "archiveRpcRequired": false
+  },
   "addressesUsed": {
     "resolverAddr": "0xB21C67DD518F6d31257d3A4F12B0A6344885b268",
     "fluidVaultAddr": "0xA9FF23CfF9439c418DA08CE7954a92E46311761e",
@@ -25,13 +33,14 @@
   "collateralSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
     "observationModel": "LANE_OBJECTIVE",
-    "oraclePriceNowRaw": "1074289591838934",
-    "oraclePriceHistRaw": "1074109805428005",
-    "blockNow": 16841563,
-    "blockHist": 16755163,
-    "elapsedSeconds": 86400,
-    "observedAnnualizedAprPct": 6.113619507049906,
-    "status": "OBSERVED_WINDOW"
+    "deltaSource": "WARMING",
+    "oraclePriceNowRaw": "1074467692463038",
+    "oraclePriceHistRaw": null,
+    "blockNow": 16853290,
+    "blockHist": null,
+    "elapsedSeconds": null,
+    "observedAnnualizedAprPct": null,
+    "status": "PENDING_CHECKPOINT_WINDOW"
   },
   "borrowSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.borrowRateVault",
@@ -45,14 +54,15 @@
     "targetDebtRatioBps": 7500,
     "leverageMultiple": 4,
     "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
-    "impliedGrossCarryAprPct": 14.044478028199624,
-    "status": "OBSERVED_WINDOW"
+    "impliedGrossCarryAprPct": null,
+    "status": "PENDING_CHECKPOINT_WINDOW"
   },
   "freshnessAndNotes": {
     "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
     "positionScopedDependency": "NONE",
     "notes": [
-      "Collateral APR derived from lane-level resolver.getVaultEntireData().configs.oraclePriceOperate delta — no operator position required.",
+      "Checkpoint store warming — no historical checkpoint old enough for delta computation. Will be ready after ~24h of sweeps.",
+      "Collateral APR derived from persisted checkpoint delta of resolver.getVaultEntireData().configs.oraclePriceOperate — no archive RPC required.",
       "Borrow APR from Fluid PositionResolver.exchangePricesAndRates.borrowRateVault (bps×100 format) — lane-level.",
       "Leverage from manifest targetDebtRatioBps=7500 — deterministic, lane-level.",
       "Operator positions may be used for calibration/canary only, not as APY prerequisite."
