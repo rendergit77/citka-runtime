@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-03-17T08:40:49.540Z",
+  "generatedAt": "2026-03-17T10:41:39.016Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
   "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 16805090,
-  "currentTimestamp": 1773736848,
-  "currentIso": "2026-03-17T08:40:48.000Z",
-  "historicBlockNumber": 16718690,
+  "currentBlockNumber": 16812340,
+  "currentTimestamp": 1773744098,
+  "currentIso": "2026-03-17T10:41:38.000Z",
+  "historicBlockNumber": 16725940,
   "elapsedSeconds": 86400,
   "elapsedHours": 24,
   "observationWindowBlocks": 86400,
@@ -27,8 +27,8 @@
     "observationModel": "LANE_OBJECTIVE",
     "oraclePriceNowRaw": "1074289591838934",
     "oraclePriceHistRaw": "1074109805428005",
-    "blockNow": 16805090,
-    "blockHist": 16718690,
+    "blockNow": 16812340,
+    "blockHist": 16725940,
     "elapsedSeconds": 86400,
     "observedAnnualizedAprPct": 6.113619507049906,
     "status": "OBSERVED_WINDOW"
@@ -37,15 +37,15 @@
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.borrowRateVault",
     "observationModel": "LANE_OBJECTIVE",
     "rateFormat": "bps×100 (e.g. 406 = 4.06%)",
-    "borrowRateVaultRaw": "371",
-    "borrowAprPct": 3.71,
+    "borrowRateVaultRaw": "369",
+    "borrowAprPct": 3.69,
     "status": "LIVE_ONCHAIN"
   },
   "laneLevelCarry": {
     "targetDebtRatioBps": 7500,
     "leverageMultiple": 4,
     "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
-    "impliedGrossCarryAprPct": 13.324478028199625,
+    "impliedGrossCarryAprPct": 13.384478028199624,
     "status": "OBSERVED_WINDOW"
   },
   "freshnessAndNotes": {
