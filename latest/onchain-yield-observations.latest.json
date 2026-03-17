@@ -1,32 +1,32 @@
 {
   "version": "onchain_yield_observations.v1",
   "tag": "b4.22.85",
-  "generatedAt": "2026-03-17T22:04:13.396Z",
+  "generatedAt": "2026-03-17T22:24:17.914Z",
   "provenance": {
-    "rpcUsed": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
+    "rpcUsed": "https://rpc.plasma.to",
     "rpcAttempts": 1,
-    "rpcEndpointsAvailable": 2,
+    "rpcEndpointsAvailable": 1,
     "chainId": 9745,
-    "blockNumber": 16853292,
-    "blockTimestamp": 1773785050
+    "blockNumber": 16854497,
+    "blockTimestamp": 1773786255
   },
   "vaults": {
     "plasma_aave_usdt0": {
       "status": "MEASURED",
-      "grossApyPct": 2.6899810109068634,
+      "grossApyPct": 2.690192012703296,
       "evidence": {
         "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
         "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "method": "AaveDataProvider.getReserveData:liquidityRate",
-        "rateRayStr": "26899810109068636100317243",
-        "liquidityApyPct": 2.6899810109068634,
+        "rateRayStr": "26901920127032957186924759",
+        "liquidityApyPct": 2.690192012703296,
         "intrinsicApyPct": null,
-        "combinedGrossApyPct": 2.6899810109068634,
+        "combinedGrossApyPct": 2.690192012703296,
         "intrinsicSource": null,
         "conversionMethod": "rayToPct_bigint_safe",
         "attempts": 1,
-        "blockNumber": 16853292,
-        "blockTimestamp": 1773785050
+        "blockNumber": 16854497,
+        "blockTimestamp": 1773786255
       },
       "reasonCode": null,
       "instructions": null,
@@ -42,8 +42,8 @@
         "aprBps": 422,
         "targetMode": "NORMAL",
         "evidenceRef": "ops/runtime/plasma_stable_allocator_v2_observation.latest.json",
-        "blockNumber": 16853292,
-        "blockTimestamp": 1773785050
+        "blockNumber": 16854497,
+        "blockTimestamp": 1773786255
       },
       "reasonCode": null,
       "instructions": null,
@@ -60,8 +60,8 @@
         "lastLnImpliedRateStr": "35572631293125572",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16853292,
-        "blockTimestamp": 1773785050
+        "blockNumber": 16854497,
+        "blockTimestamp": 1773786255
       },
       "reasonCode": null,
       "instructions": null,
@@ -70,16 +70,16 @@
     },
     "plasma_pt_susde": {
       "status": "MEASURED",
-      "grossApyPct": 4.164314770938571,
+      "grossApyPct": 4.165259711575131,
       "evidence": {
         "venue": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
         "expiry": 1775692800,
         "method": "PendleMarket._storage:lastLnImpliedRate",
-        "lastLnImpliedRateStr": "40799416066374091",
+        "lastLnImpliedRateStr": "40808487660159263",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16853292,
-        "blockTimestamp": 1773785050
+        "blockNumber": 16854497,
+        "blockTimestamp": 1773786255
       },
       "reasonCode": null,
       "instructions": null,
@@ -96,8 +96,8 @@
         "lastLnImpliedRateStr": "44787939555051428",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16853292,
-        "blockTimestamp": 1773785050
+        "blockNumber": 16854497,
+        "blockTimestamp": 1773786255
       },
       "reasonCode": null,
       "instructions": null,
@@ -106,16 +106,16 @@
     },
     "plasma_pt_usdai": {
       "status": "MEASURED",
-      "grossApyPct": 13.278229832200172,
+      "grossApyPct": 13.313629622917688,
       "evidence": {
         "venue": "0x15735f2f53c5cd25a57dff83b11c93eceaf72073",
         "expiry": 1773878400,
         "method": "PendleMarket._storage:lastLnImpliedRate",
-        "lastLnImpliedRateStr": "124676817353939685",
+        "lastLnImpliedRateStr": "124989271570879758",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16853292,
-        "blockTimestamp": 1773785050
+        "blockNumber": 16854497,
+        "blockTimestamp": 1773786255
       },
       "reasonCode": null,
       "instructions": null,
@@ -133,7 +133,7 @@
     },
     "plasma_fluid_weeth_recursive_carry": {
       "status": "MEASURED",
-      "grossApyPct": 5.3,
+      "grossApyPct": 5.25,
       "evidence": {
         "venue": "Fluid recursive carry (weETH / WETH)",
         "method": "lane_level_tactical_carry_artifact",
@@ -142,16 +142,16 @@
         "observationRole": "LANE_OBJECTIVE",
         "primaryPublicApySource": "LANE_OBJECTIVE_SPREAD_LEVERAGE",
         "spreadSnapshot": {
-          "collateralSupplyAPR_bps": 286,
+          "collateralSupplyAPR_bps": 285,
           "borrowAPR_bps": 180,
-          "spreadBps": 106,
+          "spreadBps": 105,
           "spreadHealthy": true,
           "minSpreadBps": 30
         },
         "leverageBps": 50000,
         "leverageSource": "manifest.targetDebtRatioBps=8000 — lane-objective, no operator position",
-        "blockNumber": 16853292,
-        "blockTimestamp": 1773785050
+        "blockNumber": 16854497,
+        "blockTimestamp": 1773786255
       },
       "reasonCode": null,
       "instructions": null,
