@@ -1,32 +1,32 @@
 {
   "version": "onchain_yield_observations.v1",
   "tag": "b4.22.85",
-  "generatedAt": "2026-03-18T08:29:04.737Z",
+  "generatedAt": "2026-03-18T08:37:44.844Z",
   "provenance": {
     "rpcUsed": "https://rpc.plasma.to",
     "rpcAttempts": 1,
     "rpcEndpointsAvailable": 1,
     "chainId": 9745,
-    "blockNumber": 16890784,
-    "blockTimestamp": 1773822542
+    "blockNumber": 16891305,
+    "blockTimestamp": 1773823063
   },
   "vaults": {
     "plasma_aave_usdt0": {
       "status": "MEASURED",
-      "grossApyPct": 2.6731244019511555,
+      "grossApyPct": 2.661377051590395,
       "evidence": {
         "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
         "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "method": "AaveDataProvider.getReserveData:liquidityRate",
-        "rateRayStr": "26731244019511556892018919",
-        "liquidityApyPct": 2.6731244019511555,
+        "rateRayStr": "26613770515903950915172472",
+        "liquidityApyPct": 2.661377051590395,
         "intrinsicApyPct": null,
-        "combinedGrossApyPct": 2.6731244019511555,
+        "combinedGrossApyPct": 2.661377051590395,
         "intrinsicSource": null,
         "conversionMethod": "rayToPct_bigint_safe",
         "attempts": 1,
-        "blockNumber": 16890784,
-        "blockTimestamp": 1773822542
+        "blockNumber": 16891305,
+        "blockTimestamp": 1773823063
       },
       "reasonCode": null,
       "instructions": null,
@@ -42,8 +42,8 @@
         "aprBps": 417,
         "targetMode": "NORMAL",
         "evidenceRef": "ops/runtime/plasma_stable_allocator_v2_observation.latest.json",
-        "blockNumber": 16890784,
-        "blockTimestamp": 1773822542
+        "blockNumber": 16891305,
+        "blockTimestamp": 1773823063
       },
       "reasonCode": null,
       "instructions": null,
@@ -60,8 +60,8 @@
         "lastLnImpliedRateStr": "35572631293125572",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16890784,
-        "blockTimestamp": 1773822542
+        "blockNumber": 16891305,
+        "blockTimestamp": 1773823063
       },
       "reasonCode": null,
       "instructions": null,
@@ -78,8 +78,8 @@
         "lastLnImpliedRateStr": "40808051922727960",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16890784,
-        "blockTimestamp": 1773822542
+        "blockNumber": 16891305,
+        "blockTimestamp": 1773823063
       },
       "reasonCode": null,
       "instructions": null,
@@ -96,8 +96,8 @@
         "lastLnImpliedRateStr": "44787939555051428",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16890784,
-        "blockTimestamp": 1773822542
+        "blockNumber": 16891305,
+        "blockTimestamp": 1773823063
       },
       "reasonCode": null,
       "instructions": null,
@@ -114,8 +114,8 @@
         "lastLnImpliedRateStr": "126121845896687222",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 16890784,
-        "blockTimestamp": 1773822542
+        "blockNumber": 16891305,
+        "blockTimestamp": 1773823063
       },
       "reasonCode": null,
       "instructions": null,
@@ -135,8 +135,8 @@
         "carryStatus": "CURRENT_PROTOCOL_RATE",
         "collateralInputSource": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.supplyRateVault",
         "borrowInputSource": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.borrowRateVault",
-        "blockNumber": 16890784,
-        "blockTimestamp": 1773822542
+        "blockNumber": 16891305,
+        "blockTimestamp": 1773823063
       },
       "reasonCode": null,
       "instructions": null,
@@ -162,8 +162,8 @@
         },
         "leverageBps": 50000,
         "leverageSource": "manifest.targetDebtRatioBps=8000 — lane-objective, no operator position",
-        "blockNumber": 16890784,
-        "blockTimestamp": 1773822542
+        "blockNumber": 16891305,
+        "blockTimestamp": 1773823063
       },
       "reasonCode": null,
       "instructions": null,
