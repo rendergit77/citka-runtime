@@ -1,10 +1,10 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-18T08:55:22.606Z",
-  "ageSeconds": 210,
+  "generatedAt": "2026-03-18T09:01:53.302Z",
+  "ageSeconds": 111,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 16892362,
+  "blockNumber": 16892753,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
@@ -15,7 +15,7 @@
   "status": "FRESH",
   "lanes": {
     "plasma_aave_usdt0": {
-      "apyPct": 2.6614598904514857,
+      "apyPct": 2.6481533591674102,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
