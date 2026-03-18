@@ -1,8 +1,8 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-03-18T18:47:22.791Z",
-  "observedAt": "2026-03-18T18:47:22.791Z",
-  "expiresAt": "2026-03-18T22:47:22.791Z",
+  "generatedAt": "2026-03-18T20:29:26.658Z",
+  "observedAt": "2026-03-18T20:29:26.658Z",
+  "expiresAt": "2026-03-19T00:29:26.658Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -23,8 +23,8 @@
     "vaultsTotal": 8,
     "computableVaults": 8,
     "railModeCounts": {
-      "settlementActive": 22,
-      "disclosureOnly": 1,
+      "settlementActive": 23,
+      "disclosureOnly": 0,
       "notMeasured": 9
     }
   },
@@ -32,10 +32,10 @@
     "plasma_aave_usdt0": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 5.006898,
+      "aumUsd": 5.006924,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.025941509573,
+      "grossApyFraction": 0.02594334155,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -55,10 +55,10 @@
     "plasma_stable_allocator_v2": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 5.008254,
+      "aumUsd": 5.00827,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.0412,
+      "grossApyFraction": 0.0411,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -78,7 +78,7 @@
     "plasma_pt_usde": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 6.565105,
+      "aumUsd": 6.565152,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": 0.036213239055,
@@ -101,10 +101,10 @@
     "plasma_pt_susde": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 5.347865,
+      "aumUsd": 5.347903,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.036989075916,
+      "grossApyFraction": 0.036991831471,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -124,7 +124,7 @@
     "plasma_pt_syrup": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 6.852507,
+      "aumUsd": 6.852568,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": 0.045806062293,
@@ -147,10 +147,10 @@
     "plasma_pt_usdai": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 6.444406,
+      "aumUsd": 6.444431,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.134592653531,
+      "grossApyFraction": 0.135450184259,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -173,12 +173,12 @@
       "aumUsd": 4.9187,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": null,
+      "grossApyFraction": 0.27244001818,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
         "exec": "SETTLEMENT_ACTIVE",
-        "perf": "DISCLOSE_ONLY",
+        "perf": "SETTLEMENT_ACTIVE",
         "exit": "SETTLEMENT_ACTIVE"
       },
       "feeScheduleBps": {
@@ -193,10 +193,10 @@
     "plasma_fluid_weeth_recursive_carry": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 3.260206,
+      "aumUsd": 3.260164,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.056,
+      "grossApyFraction": 0.0545,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
