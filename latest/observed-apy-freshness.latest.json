@@ -1,10 +1,10 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-18T10:42:15.805Z",
-  "ageSeconds": 152,
+  "generatedAt": "2026-03-18T12:46:09.181Z",
+  "ageSeconds": 119,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 16898775,
+  "blockNumber": 16906209,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
@@ -15,13 +15,13 @@
   "status": "FRESH",
   "lanes": {
     "plasma_aave_usdt0": {
-      "apyPct": 2.6156263050145534,
+      "apyPct": 2.574480318079875,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
     },
     "plasma_stable_allocator_v2": {
-      "apyPct": 4.16,
+      "apyPct": 4.15,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_stable_allocator_v2",
       "reasonCode": null
@@ -33,7 +33,7 @@
       "reasonCode": null
     },
     "plasma_pt_susde": {
-      "apyPct": 4.165156472147569,
+      "apyPct": 4.115111779503544,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
       "reasonCode": null
@@ -45,19 +45,19 @@
       "reasonCode": null
     },
     "plasma_pt_usdai": {
-      "apyPct": 13.44203843312739,
+      "apyPct": 13.454678165467882,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usdai",
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": -10.74,
+      "apyPct": -10.68,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 4.05,
+      "apyPct": 3.85,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
