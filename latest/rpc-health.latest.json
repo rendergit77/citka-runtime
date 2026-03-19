@@ -1,15 +1,15 @@
 {
   "version": "rpc_health_v1",
-  "tag": "ci-obs-23295208863",
-  "generatedAt": "2026-03-19T12:39:36.779Z",
+  "tag": "ci-obs-23300443883",
+  "generatedAt": "2026-03-19T14:42:09.759Z",
   "chainId": 9745,
   "endpoints": [
     {
       "label": "primary_env",
       "priority": 0,
       "status": "GREEN",
-      "latestBlock": 16992218,
-      "avgLatencyMs": 241,
+      "latestBlock": 16999571,
+      "avgLatencyMs": 245,
       "successRate": 1,
       "reasons": []
     },
@@ -17,8 +17,8 @@
       "label": "public_fallback",
       "priority": 1,
       "status": "GREEN",
-      "latestBlock": 16992218,
-      "avgLatencyMs": 202,
+      "latestBlock": 16999571,
+      "avgLatencyMs": 102,
       "successRate": 1,
       "reasons": []
     }

@@ -1,10 +1,10 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-19T12:40:01.215Z",
-  "ageSeconds": 205,
+  "generatedAt": "2026-03-19T14:42:32.841Z",
+  "ageSeconds": 119,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 16992240,
+  "blockNumber": 16999592,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
@@ -15,25 +15,25 @@
   "status": "FRESH",
   "lanes": {
     "plasma_aave_usdt0": {
-      "apyPct": 2.6535817518434204,
+      "apyPct": 2.6582693285849963,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
     },
     "plasma_stable_allocator_v2": {
-      "apyPct": 4.04,
+      "apyPct": 4.03,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_stable_allocator_v2",
       "reasonCode": null
     },
     "plasma_pt_usde": {
-      "apyPct": 3.6213239054747826,
+      "apyPct": 3.621322786182035,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usde",
       "reasonCode": null
     },
     "plasma_pt_susde": {
-      "apyPct": 3.997659078231175,
+      "apyPct": 4.01171849584534,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
       "reasonCode": null
@@ -51,13 +51,13 @@
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": 13.183236236251277,
+      "apyPct": 13.365654779009011,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 4.1,
+      "apyPct": 3.95,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
