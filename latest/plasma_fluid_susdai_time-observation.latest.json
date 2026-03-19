@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-18T22:24:21.994Z",
+  "generatedAt": "2026-03-19T01:16:55.439Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
   "deltaSource": "PERSISTED_CHECKPOINT",
   "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 16940903,
-  "currentTimestamp": 1773872661,
-  "currentIso": "2026-03-18T22:24:21.000Z",
+  "currentBlockNumber": 16951257,
+  "currentTimestamp": 1773883015,
+  "currentIso": "2026-03-19T01:16:55.000Z",
   "historicBlockNumber": 16878505,
-  "elapsedSeconds": 62398,
-  "elapsedHours": 17.3328,
+  "elapsedSeconds": 72752,
+  "elapsedHours": 20.2089,
   "checkpointInfo": {
     "checkpointFile": "ops/runtime/checkpoints/fluid-susdai-carry.checkpoint.json",
     "historicCheckpointObservedAt": "2026-03-18T05:04:23.858Z",
@@ -36,18 +36,18 @@
     "deltaSource": "PERSISTED_CHECKPOINT",
     "oraclePriceNowRaw": "1074646395444484",
     "oraclePriceHistRaw": "1074467692463038",
-    "blockNow": 16940903,
+    "blockNow": 16951257,
     "blockHist": 16878505,
-    "elapsedSeconds": 62398,
-    "observedAnnualizedAprPct": 8.411466780349265,
+    "elapsedSeconds": 72752,
+    "observedAnnualizedAprPct": 7.2143543017406175,
     "status": "OBSERVED_WINDOW"
   },
   "borrowSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.borrowRateVault",
     "observationModel": "LANE_OBJECTIVE",
     "rateFormat": "bps×100 (e.g. 406 = 4.06%)",
-    "borrowRateVaultRaw": "360",
-    "borrowAprPct": 3.6,
+    "borrowRateVaultRaw": "363",
+    "borrowAprPct": 3.63,
     "status": "LIVE_ONCHAIN"
   },
   "supplySideInput": {
@@ -62,8 +62,8 @@
     "targetDebtRatioBps": 7500,
     "leverageMultiple": 4,
     "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
-    "impliedGrossCarryAprPct": 22.84586712139706,
-    "currentProtocolCarryAprPct": -10.8,
+    "impliedGrossCarryAprPct": 17.96741720696247,
+    "currentProtocolCarryAprPct": -10.89,
     "status": "OBSERVED_WINDOW"
   },
   "freshnessAndNotes": {
