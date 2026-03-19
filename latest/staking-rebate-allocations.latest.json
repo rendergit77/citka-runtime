@@ -1,6 +1,6 @@
 {
   "version": "staking_rebate_allocations.v2",
-  "generatedAt": "2026-03-19T22:20:55.935Z",
+  "generatedAt": "2026-03-19T22:32:03.424Z",
   "status": "NOT_ENABLED",
   "reasonCode": "STAKERS_BPS_ZERO",
   "model": "FEE_PAID_TIMES_TIER_REBATE",
@@ -38,7 +38,8 @@
     "feeLedgerRef": "ops/runtime/fee-ledger.latest.json",
     "attributionRef": "ops/runtime/fee-paid-attribution.latest.json",
     "tierRegistryRef": "ops/runtime/rebate-tier-registry.latest.json",
-    "productTruthRef": "ops/runtime/product-state-truth.latest.json"
+    "productTruthRef": "ops/runtime/product-state-truth.latest.json",
+    "incentivesPolicyRef": "config/incentives-program.policy.json"
   },
   "invariants": {
     "valid": true,

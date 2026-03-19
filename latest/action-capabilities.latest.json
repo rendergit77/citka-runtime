@@ -1,6 +1,6 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-19T22:19:07.840Z",
+  "generatedAt": "2026-03-19T22:30:00.685Z",
   "rpcUrl": "https://rpc.plasma.to",
   "summary": {
     "totalLanes": 8,
@@ -56,8 +56,8 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 5.007312,
-        "tvlUsd": 5.007312,
+        "totalAssets": 5.007314,
+        "tvlUsd": 5.007314,
         "assetSymbol": "USDT0",
         "reasonCode": null,
         "source": "vault_total_assets",
@@ -69,8 +69,8 @@
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
         "assetDecimals": 6,
-        "vaultTotalAssetsRaw": "5007312",
-        "tvlAssetAmount": 5.007312,
+        "vaultTotalAssetsRaw": "5007314",
+        "tvlAssetAmount": 5.007314,
         "tvlSource": "vault_total_assets"
       },
       "readErrors": [
@@ -198,7 +198,7 @@
       },
       "readErrors": [
         "missing revert data",
-        "missing revert data",
+        "could not decode result data",
         "missing revert data"
       ]
     },
@@ -496,7 +496,7 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0.000988005048628527,
+        "totalAssets": 0.00098800368849916,
         "assetSymbol": "WETH",
         "tvlUsd": null,
         "priceUsd": null,
