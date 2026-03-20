@@ -1,11 +1,11 @@
 {
   "version": "fee_paid_attribution.v1",
-  "generatedAt": "2026-03-20T16:35:32.844Z",
+  "generatedAt": "2026-03-20T17:20:23.129Z",
   "status": "MISSING",
   "reasonCode": "FEE_LEDGER_NOT_ACTIVE:ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
-  "model": "PRO_RATA_BY_USER_SHARES",
+  "model": "PRO_RATA_BY_EPOCH_AVG_SHARES",
   "instructions": [
-    "Ensure fee-ledger.latest.json is ACTIVE and points-epoch share snapshots are available."
+    "Ensure fee-ledger.latest.json is ACTIVE and epoch-average share inputs are available."
   ],
   "diagnostics": {
     "requiredInputs": [
