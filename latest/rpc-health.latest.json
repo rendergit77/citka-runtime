@@ -1,15 +1,15 @@
 {
   "version": "rpc_health_v1",
-  "tag": "ci-obs-23332066210",
-  "generatedAt": "2026-03-20T06:42:03.151Z",
+  "tag": "ci-obs-23334975077",
+  "generatedAt": "2026-03-20T08:30:43.233Z",
   "chainId": 9745,
   "endpoints": [
     {
       "label": "primary_env",
       "priority": 0,
       "status": "GREEN",
-      "latestBlock": 17057164,
-      "avgLatencyMs": 234,
+      "latestBlock": 17063684,
+      "avgLatencyMs": 128,
       "successRate": 1,
       "reasons": []
     },
@@ -17,13 +17,13 @@
       "label": "public_fallback",
       "priority": 1,
       "status": "GREEN",
-      "latestBlock": 17057165,
-      "avgLatencyMs": 256,
+      "latestBlock": 17063685,
+      "avgLatencyMs": 61,
       "successRate": 1,
       "reasons": []
     }
   ],
-  "rpcUsed": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
+  "rpcUsed": "https://rpc.plasma.to",
   "status": "GREEN",
   "failClosed": false,
   "instructions": null
