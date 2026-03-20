@@ -1,18 +1,56 @@
 {
   "version": "rebate_tier_registry.v1",
-  "generatedAt": "2026-03-20T18:01:41.417Z",
-  "status": "NOT_ENABLED",
-  "reasonCode": "STAKERS_BPS_ZERO",
-  "instructions": [
-    "Set stakersBps > 0 in config/fees.policy.json to enable rebate tiers."
-  ],
-  "params": null,
+  "generatedAt": "2026-03-20T18:22:52.416Z",
+  "status": "ACTIVE",
+  "reasonCode": null,
+  "activationState": "NOT_ENABLED",
+  "activationReasonCode": "STAKERS_BPS_ZERO",
+  "params": {
+    "d_max_bps": 500,
+    "k": 1000,
+    "tierCount": 5,
+    "maxScore": 10000
+  },
   "policyVersionHash": "sha256:c84a48cc109277303c8b7858c979081b4b89b761930d4193f9d2e7a52277e240",
-  "tiers": [],
+  "tiers": [
+    {
+      "tierIndex": 0,
+      "scoreMin": 0,
+      "scoreMax": 2000,
+      "rebateRateBps": 316
+    },
+    {
+      "tierIndex": 1,
+      "scoreMin": 2000,
+      "scoreMax": 4000,
+      "rebateRateBps": 475
+    },
+    {
+      "tierIndex": 2,
+      "scoreMin": 4000,
+      "scoreMax": 6000,
+      "rebateRateBps": 496
+    },
+    {
+      "tierIndex": 3,
+      "scoreMin": 6000,
+      "scoreMax": 8000,
+      "rebateRateBps": 499
+    },
+    {
+      "tierIndex": 4,
+      "scoreMin": 8000,
+      "scoreMax": 10000,
+      "rebateRateBps": 499
+    }
+  ],
   "invariants": {
     "valid": true,
     "monotonic": true,
     "bounded": true,
     "errors": []
-  }
+  },
+  "instructions": [
+    "Tier curve is fresh, but rebate payouts stay disabled until stakersBps > 0 in config/fees.policy.json."
+  ]
 }
