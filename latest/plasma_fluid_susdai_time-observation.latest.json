@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-21T18:42:56.478Z",
+  "generatedAt": "2026-03-21T20:16:08.924Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
   "deltaSource": "PERSISTED_CHECKPOINT",
   "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 17186818,
-  "currentTimestamp": 1774118576,
-  "currentIso": "2026-03-21T18:42:56.000Z",
+  "currentBlockNumber": 17192410,
+  "currentTimestamp": 1774124168,
+  "currentIso": "2026-03-21T20:16:08.000Z",
   "historicBlockNumber": 17100790,
-  "elapsedSeconds": 86028,
-  "elapsedHours": 23.8967,
+  "elapsedSeconds": 91620,
+  "elapsedHours": 25.45,
   "checkpointInfo": {
     "checkpointFile": "ops/runtime/checkpoints/fluid-susdai-carry.checkpoint.json",
     "historicCheckpointObservedAt": "2026-03-20T18:49:08.524Z",
@@ -25,21 +25,21 @@
     "resolverType": "fluid.positionResolver (bps×100 rate format)"
   },
   "laneState": {
-    "totalAssetsRaw": "12205489",
+    "totalAssetsRaw": "12211980",
     "totalSupplyRaw": "13000000000000000000",
     "laneHasTvl": true,
-    "totalAssetsDisplay": 12.205489
+    "totalAssetsDisplay": 12.21198
   },
   "collateralSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
     "observationModel": "LANE_OBJECTIVE",
     "deltaSource": "PERSISTED_CHECKPOINT",
-    "oraclePriceNowRaw": "1074992355972520",
+    "oraclePriceNowRaw": "1075155489548552",
     "oraclePriceHistRaw": "1074820991738756",
-    "blockNow": 17186818,
+    "blockNow": 17192410,
     "blockHist": 17100790,
-    "elapsedSeconds": 86028,
-    "observedAnnualizedAprPct": 5.848549692167169,
+    "elapsedSeconds": 91620,
+    "observedAnnualizedAprPct": 10.71940842041573,
     "status": "OBSERVED_WINDOW"
   },
   "borrowSideInput": {
@@ -62,7 +62,7 @@
     "targetDebtRatioBps": 7500,
     "leverageMultiple": 4,
     "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
-    "impliedGrossCarryAprPct": 11.274198768668676,
+    "impliedGrossCarryAprPct": 30.75763368166292,
     "currentProtocolCarryAprPct": -12.120000000000001,
     "status": "OBSERVED_WINDOW"
   },
