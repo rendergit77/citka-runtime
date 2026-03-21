@@ -1,14 +1,14 @@
 {
   "version": "staking_rebate_allocations.v2",
-  "generatedAt": "2026-03-20T18:51:58.091Z",
-  "status": "NOT_ENABLED",
-  "reasonCode": "STAKERS_BPS_ZERO",
+  "generatedAt": "2026-03-21T11:14:23.142Z",
+  "status": "MISSING",
+  "reasonCode": "LEDGER_NOT_ACTIVE:ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
   "model": "FEE_PAID_TIMES_TIER_REBATE",
   "instructions": [
     "Ensure all upstream artifacts are ACTIVE: fee-ledger, fee-paid-attribution, incentives-standing, rebate-tier-registry."
   ],
   "epochId": null,
-  "policyVersionHash": "sha256:c84a48cc109277303c8b7858c979081b4b89b761930d4193f9d2e7a52277e240",
+  "policyVersionHash": "sha256:bb06ee7ee3d5608a1158e9f36bcb1b90e609dc967640db01a803811b015056af",
   "snapshotVersionHash": null,
   "stakersPoolUsd": 0,
   "stressGuard": {
@@ -43,10 +43,12 @@
     "incentivesPolicyRef": "config/incentives-program.policy.json"
   },
   "invariants": {
-    "valid": true,
+    "valid": false,
     "noNegative": true,
     "sumsReconcile": true,
     "deterministicOrder": true,
-    "errors": []
+    "errors": [
+      "LEDGER_NOT_ACTIVE:ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING"
+    ]
   }
 }

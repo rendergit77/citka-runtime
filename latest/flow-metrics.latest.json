@@ -1,15 +1,15 @@
 {
   "version": "flow_metrics.v1",
-  "generatedAt": "2026-03-20T18:49:26.432Z",
-  "observedAt": "2026-03-20T18:49:26.432Z",
-  "expiresAt": "2026-03-20T22:49:26.432Z",
+  "generatedAt": "2026-03-21T11:14:06.275Z",
+  "observedAt": "2026-03-21T11:14:06.275Z",
+  "expiresAt": "2026-03-21T15:14:06.275Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
   "window": {
     "mode": "CUMULATIVE_SINCE_VAULT_DEPLOY",
-    "fromBlock": 16111494,
-    "toBlock": 17100808
+    "fromBlock": 17111693,
+    "toBlock": 17159888
   },
   "instructions": [],
   "sourceRefs": {
@@ -24,7 +24,7 @@
     "activeVaults": 8,
     "missingVaults": 0,
     "blockedVaults": 0,
-    "totalVolumeUsd": 0,
+    "totalVolumeUsd": 3.8,
     "totalWithdrawUsd": 0
   },
   "invariants": {
@@ -37,24 +37,24 @@
       "vaultId": "plasma_aave_usdt0",
       "status": "ACTIVE",
       "reasonCode": null,
-      "volumeUsd": 0,
+      "volumeUsd": 1.5,
       "withdrawUsd": 0,
-      "volumeAssetsRaw": "0",
+      "volumeAssetsRaw": "1500000",
       "withdrawAssetsRaw": "0",
       "requiredInputs": [],
       "howToFix": [],
       "flowReadMethod": "VAULT_TOTAL_ASSETS_OR_STRATEGY_TVL",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-20T18:49:26.432Z",
-      "expiresAt": "2026-03-20T22:49:26.432Z",
+      "observedAt": "2026-03-21T11:14:06.275Z",
+      "expiresAt": "2026-03-21T15:14:06.275Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "DIRECT_VAULT_EVENT_LOGS",
-        "fromBlock": 16228166,
-        "toBlock": 17100808,
-        "vaultAddress": "0x1567AAa43a6DDbbE3D3a8032136CD2f476a2D2BE",
+        "fromBlock": 17111693,
+        "toBlock": 17159888,
+        "vaultAddress": "0xdd8f817a7df18408f23bf667aa399f308e197e2c",
         "logs": {
-          "depositCount": 0,
+          "depositCount": 2,
           "redeemCount": 0
         },
         "price": {
@@ -76,14 +76,14 @@
       "howToFix": [],
       "flowReadMethod": "VAULT_TOTAL_ASSETS_OR_STRATEGY_TVL",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-20T18:49:26.432Z",
-      "expiresAt": "2026-03-20T22:49:26.432Z",
+      "observedAt": "2026-03-21T11:14:06.275Z",
+      "expiresAt": "2026-03-21T15:14:06.275Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "DIRECT_VAULT_EVENT_LOGS",
-        "fromBlock": 16465131,
-        "toBlock": 17100808,
-        "vaultAddress": "0x6E17981F62Ef79b26E1c4c1739F466b090ccac7c",
+        "fromBlock": 17112210,
+        "toBlock": 17159888,
+        "vaultAddress": "0x2b7c0Cb2e2Ea953Aa82eFE94DcFB40D93486bB65",
         "logs": {
           "depositCount": 0,
           "redeemCount": 0
@@ -101,22 +101,22 @@
       "reasonCode": null,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "volumeAssetsRaw": "0",
+      "volumeAssetsRaw": "1050000",
       "withdrawAssetsRaw": "0",
       "requiredInputs": [],
       "howToFix": [],
       "flowReadMethod": "VAULT_TOTAL_ASSETS_OR_STRATEGY_TVL",
       "assetAddress": "0x5d3a1Ff2b6BAb83b63cd9AD0787074081a52ef34",
-      "observedAt": "2026-03-20T18:49:26.432Z",
-      "expiresAt": "2026-03-20T22:49:26.432Z",
+      "observedAt": "2026-03-21T11:14:06.275Z",
+      "expiresAt": "2026-03-21T15:14:06.275Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "DIRECT_VAULT_EVENT_LOGS",
-        "fromBlock": 16228241,
-        "toBlock": 17100808,
-        "vaultAddress": "0x5271EC3b277B5831F2C58fB90AF599cc08334600",
+        "fromBlock": 17112079,
+        "toBlock": 17159888,
+        "vaultAddress": "0x7124852609F2C77c1fabb885dF7e388a3AA35e6e",
         "logs": {
-          "depositCount": 0,
+          "depositCount": 2,
           "redeemCount": 0
         },
         "price": {
@@ -130,24 +130,24 @@
       "vaultId": "plasma_pt_susde",
       "status": "ACTIVE",
       "reasonCode": null,
-      "volumeUsd": 0,
+      "volumeUsd": 1,
       "withdrawUsd": 0,
-      "volumeAssetsRaw": "0",
+      "volumeAssetsRaw": "1000000000000000000",
       "withdrawAssetsRaw": "0",
       "requiredInputs": [],
       "howToFix": [],
       "flowReadMethod": "VAULT_TOTAL_ASSETS_OR_STRATEGY_TVL",
       "assetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
-      "observedAt": "2026-03-20T18:49:26.432Z",
-      "expiresAt": "2026-03-20T22:49:26.432Z",
+      "observedAt": "2026-03-21T11:14:06.275Z",
+      "expiresAt": "2026-03-21T15:14:06.275Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "DIRECT_VAULT_EVENT_LOGS",
-        "fromBlock": 16111494,
-        "toBlock": 17100808,
-        "vaultAddress": "0x90ddc3879eCE249b0BF1Dc3dddb644f9714e7203",
+        "fromBlock": 17112085,
+        "toBlock": 17159888,
+        "vaultAddress": "0x8a1C34614453dF5aa1F239C0aC36CC9b7584b9A6",
         "logs": {
-          "depositCount": 0,
+          "depositCount": 2,
           "redeemCount": 0
         },
         "price": {
@@ -161,24 +161,24 @@
       "vaultId": "plasma_pt_syrup",
       "status": "ACTIVE",
       "reasonCode": null,
-      "volumeUsd": 0,
+      "volumeUsd": 1.3,
       "withdrawUsd": 0,
-      "volumeAssetsRaw": "0",
+      "volumeAssetsRaw": "1300000",
       "withdrawAssetsRaw": "0",
       "requiredInputs": [],
       "howToFix": [],
       "flowReadMethod": "VAULT_TOTAL_ASSETS_OR_STRATEGY_TVL",
       "assetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
-      "observedAt": "2026-03-20T18:49:26.432Z",
-      "expiresAt": "2026-03-20T22:49:26.432Z",
+      "observedAt": "2026-03-21T11:14:06.275Z",
+      "expiresAt": "2026-03-21T15:14:06.275Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "DIRECT_VAULT_EVENT_LOGS",
-        "fromBlock": 16111558,
-        "toBlock": 17100808,
-        "vaultAddress": "0xaF704aC091747dCE42542111a4B3b51cB3e727d5",
+        "fromBlock": 17112090,
+        "toBlock": 17159888,
+        "vaultAddress": "0x04393938cf955eF9aE9cbd02E2e75e16F8913330",
         "logs": {
-          "depositCount": 0,
+          "depositCount": 2,
           "redeemCount": 0
         },
         "price": {
@@ -188,8 +188,8 @@
         }
       }
     },
-    "plasma_pt_usdai": {
-      "vaultId": "plasma_pt_usdai",
+    "plasma_pt_syzusd": {
+      "vaultId": "plasma_pt_syzusd",
       "status": "ACTIVE",
       "reasonCode": null,
       "volumeUsd": 0,
@@ -199,15 +199,15 @@
       "requiredInputs": [],
       "howToFix": [],
       "flowReadMethod": "VAULT_TOTAL_ASSETS_OR_STRATEGY_TVL",
-      "assetAddress": "0x0A1a1A107E45b7Ced86833863f482BC5f4ed82EF",
-      "observedAt": "2026-03-20T18:49:26.432Z",
-      "expiresAt": "2026-03-20T22:49:26.432Z",
+      "assetAddress": "0x6695c0f8706C5ACe3Bdf8995073179cCA47926dc",
+      "observedAt": "2026-03-21T11:14:06.275Z",
+      "expiresAt": "2026-03-21T15:14:06.275Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "DIRECT_VAULT_EVENT_LOGS",
-        "fromBlock": 16155122,
-        "toBlock": 17100808,
-        "vaultAddress": "0x98a4a88BaAEa3fdAF42903AE610d2D6C61567c7f",
+        "fromBlock": 17123867,
+        "toBlock": 17159888,
+        "vaultAddress": "0xbcE3c219d31ACe2F189Fc2084D7ea4900d88a23b",
         "logs": {
           "depositCount": 0,
           "redeemCount": 0
@@ -231,14 +231,14 @@
       "howToFix": [],
       "flowReadMethod": "VAULT_TOTAL_ASSETS_OR_STRATEGY_TVL",
       "assetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-      "observedAt": "2026-03-20T18:49:26.432Z",
-      "expiresAt": "2026-03-20T22:49:26.432Z",
+      "observedAt": "2026-03-21T11:14:06.275Z",
+      "expiresAt": "2026-03-21T15:14:06.275Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "DIRECT_VAULT_EVENT_LOGS",
-        "fromBlock": 16416793,
-        "toBlock": 17100808,
-        "vaultAddress": "0xf4b462203d930630eed218b7d381C01c39BB1fF8",
+        "fromBlock": 17112789,
+        "toBlock": 17159888,
+        "vaultAddress": "0xEBa79B6Ca05f54171e299E62F39403F1716146bc",
         "logs": {
           "depositCount": 0,
           "redeemCount": 0
@@ -262,20 +262,20 @@
       "howToFix": [],
       "flowReadMethod": "VAULT_TOTAL_ASSETS_OR_STRATEGY_TVL",
       "assetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
-      "observedAt": "2026-03-20T18:49:26.432Z",
-      "expiresAt": "2026-03-20T22:49:26.432Z",
+      "observedAt": "2026-03-21T11:14:06.275Z",
+      "expiresAt": "2026-03-21T15:14:06.275Z",
       "freshnessStatus": "FRESH",
       "evidence": {
         "flowMode": "DIRECT_VAULT_EVENT_LOGS",
-        "fromBlock": 16428526,
-        "toBlock": 17100808,
-        "vaultAddress": "0xE088Bda9d69C9bf8a3ef2ef7643915E2dE3f7e6b",
+        "fromBlock": 17112879,
+        "toBlock": 17159888,
+        "vaultAddress": "0x5cA4bAC41c18E3C88eB242C696f6bdB1Fd475Cc6",
         "logs": {
           "depositCount": 0,
           "redeemCount": 0
         },
         "price": {
-          "usd": 2126.46191298,
+          "usd": 2154.247,
           "source": "chainlink:WETH/USD:latestRoundData",
           "confidence": "CHAINLINK_LATEST_ROUND"
         }

@@ -1,17 +1,17 @@
 {
   "version": "rebate_tier_registry.v1",
-  "generatedAt": "2026-03-20T18:51:57.956Z",
+  "generatedAt": "2026-03-21T11:14:22.994Z",
   "status": "ACTIVE",
   "reasonCode": null,
-  "activationState": "NOT_ENABLED",
-  "activationReasonCode": "STAKERS_BPS_ZERO",
+  "activationState": "ENABLED",
+  "activationReasonCode": null,
   "params": {
     "d_max_bps": 500,
     "k": 1000,
     "tierCount": 5,
     "maxScore": 10000
   },
-  "policyVersionHash": "sha256:c84a48cc109277303c8b7858c979081b4b89b761930d4193f9d2e7a52277e240",
+  "policyVersionHash": "sha256:bb06ee7ee3d5608a1158e9f36bcb1b90e609dc967640db01a803811b015056af",
   "tiers": [
     {
       "tierIndex": 0,
@@ -50,7 +50,5 @@
     "bounded": true,
     "errors": []
   },
-  "instructions": [
-    "Tier curve is fresh, but rebate payouts stay disabled until stakersBps > 0 in config/fees.policy.json."
-  ]
+  "instructions": []
 }

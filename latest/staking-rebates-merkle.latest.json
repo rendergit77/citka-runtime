@@ -1,14 +1,14 @@
 {
   "version": "staking_rebates_merkle.v3",
-  "generatedAt": "2026-03-20T18:51:58.318Z",
-  "status": "NOT_ENABLED",
-  "reasonCode": "STAKERS_BPS_ZERO",
+  "generatedAt": "2026-03-21T11:14:23.381Z",
+  "status": "MISSING",
+  "reasonCode": "FEE_LEDGER_NOT_ACTIVE:ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
   "instructions": [
-    "Set config/fees.policy.json defaults.recipients.stakersBps > 0 after staking distribution policy is activated."
+    "Run compute-fee-ledger.js and ensure status=ACTIVE before merkle generation."
   ],
   "epochId": null,
   "merkleRoot": null,
-  "policyVersionHash": "sha256:c84a48cc109277303c8b7858c979081b4b89b761930d4193f9d2e7a52277e240",
+  "policyVersionHash": "sha256:bb06ee7ee3d5608a1158e9f36bcb1b90e609dc967640db01a803811b015056af",
   "snapshotVersionHash": null,
   "leavesCount": 0,
   "claims": [],
@@ -31,7 +31,7 @@
     "deltaAmountWei": "0",
     "globalCapWei": "1000000000000000000000000",
     "remainingCapWei": "1000000000000000000000000",
-    "stakersBps": 0
+    "stakersBps": 2000
   },
   "sourceRefs": {
     "feePolicyRef": "config/fees.policy.json",
@@ -40,14 +40,14 @@
     "previousMerkleRef": "ops/runtime/staking-rebates-merkle.latest.json"
   },
   "invariants": {
-    "valid": true,
-    "noReplay": true,
-    "noDowngrade": true,
-    "monotonicCumulative": true,
-    "capWithinGlobal": true,
-    "feeLedgerAligned": true,
+    "valid": false,
+    "noReplay": false,
+    "noDowngrade": false,
+    "monotonicCumulative": false,
+    "capWithinGlobal": false,
+    "feeLedgerAligned": false,
     "errors": [
-      "STAKERS_BPS_ZERO"
+      "FEE_LEDGER_NOT_ACTIVE:ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING"
     ]
   }
 }

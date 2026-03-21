@@ -1,11 +1,11 @@
 {
   "version": "perf_fee_hwm_state_v1",
-  "generatedAt": "2026-03-20T18:49:07.446Z",
+  "generatedAt": "2026-03-21T11:13:44.615Z",
   "stalenessPolicy": {
     "type": "HOURS",
     "value": 48
   },
-  "policyVersionHash": "sha256:6857a3c4390efddc5218bfe9a01118bd828caf177469f28c6b5cdf741c4e63fd",
+  "policyVersionHash": "sha256:295c19b2522fdaf51b651ca41d483e767f97d75efb5d6adb4241ad7c950d4b1b",
   "vaults": {
     "plasma_pendle_yt_syrupusdt_volatility": {
       "mode": "OFFCHAIN_ACCOUNTING",
@@ -189,7 +189,7 @@
         "Update address registry to enable onchain share price reads."
       ]
     },
-    "plasma_pt_usdai": {
+    "plasma_pt_syzusd": {
       "mode": "OFFCHAIN_ACCOUNTING",
       "lastHwmSharePrice": null,
       "lastHwmTimestamp": null,
@@ -232,5 +232,5 @@
       ]
     }
   },
-  "checksum": "sha256:e622fe855982c70a9c703ceb141c60ebe82b08add42c9f6332ca7dc762d0e6b9"
+  "checksum": "sha256:2384da663078fc48a3b4e7244da36c81f21e0b4b443bc8ad4d083e682656e040"
 }

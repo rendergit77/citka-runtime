@@ -1,6 +1,6 @@
 {
   "version": "product_yield_observations.v3",
-  "generatedAt": "2026-03-20T18:49:24.242Z",
+  "generatedAt": "2026-03-21T11:14:01.979Z",
   "chainId": 9745,
   "rpcUrl": "https://rpc.plasma.to",
   "sourceConfig": "config/vault-lineup.v4.json",
@@ -9,8 +9,8 @@
     "plasma_aave_usdt0": {
       "laneId": 2,
       "class": "CORE",
-      "vaultAddress": "0x1567AAa43a6DDbbE3D3a8032136CD2f476a2D2BE",
-      "strategyAddress": "0x32ee76a239F830Bc7e320f227118c17899Ff69b0",
+      "vaultAddress": "0xdd8f817a7df18408f23bf667aa399f308e197e2c",
+      "strategyAddress": "0xf63e000c1b7f475de4423168ca0c37e800165b03",
       "asset": "USDT0",
       "strategyType": "CitkaAaveCore",
       "status": "MISSING",
@@ -29,8 +29,8 @@
     "plasma_stable_allocator_v2": {
       "laneId": 3,
       "class": "CORE",
-      "vaultAddress": "0x6E17981F62Ef79b26E1c4c1739F466b090ccac7c",
-      "strategyAddress": "0x6bE367A13D95BF620f20a8902f560961652fd16b",
+      "vaultAddress": "0x2b7c0Cb2e2Ea953Aa82eFE94DcFB40D93486bB65",
+      "strategyAddress": "0xb29fDf336b61dE2bdF82591249D0B3A93CDe207a",
       "asset": "USDT0",
       "status": "MISSING",
       "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
@@ -48,8 +48,8 @@
     "plasma_pt_usde": {
       "laneId": 5,
       "class": "EDGE",
-      "vaultAddress": "0x5271EC3b277B5831F2C58fB90AF599cc08334600",
-      "strategyAddress": "0xb4ac85a53E41B9fca1a1e940dC0bE9d443ee2BA7",
+      "vaultAddress": "0x7124852609F2C77c1fabb885dF7e388a3AA35e6e",
+      "strategyAddress": "0xcCa19E1244b597D3550d3B404BD246A6Ea490683",
       "asset": "USDe",
       "strategyType": "CitkaPendlePT",
       "status": "MISSING",
@@ -68,8 +68,8 @@
     "plasma_pt_susde": {
       "laneId": 4,
       "class": "EDGE",
-      "vaultAddress": "0x90ddc3879eCE249b0BF1Dc3dddb644f9714e7203",
-      "strategyAddress": "0x1Ac50137a9035BD18c00C6374b424a42CF4DBb59",
+      "vaultAddress": "0x8a1C34614453dF5aa1F239C0aC36CC9b7584b9A6",
+      "strategyAddress": "0x90C8C8C59324e3CF8E31F784f00BD5C7fDDfE896",
       "asset": "sUSDe",
       "strategyType": "CitkaPendlePT",
       "status": "MISSING",
@@ -88,8 +88,8 @@
     "plasma_pt_syrup": {
       "laneId": 6,
       "class": "EDGE",
-      "vaultAddress": "0xaF704aC091747dCE42542111a4B3b51cB3e727d5",
-      "strategyAddress": "0x80F7FC46bcF69eb073b87Cc7e91c18e8582fA33f",
+      "vaultAddress": "0x04393938cf955eF9aE9cbd02E2e75e16F8913330",
+      "strategyAddress": "0xC25Be9ed2C74020d4DD198c580A1ef792BB6f9AD",
       "asset": "syrupUSDT",
       "strategyType": "CitkaPendlePT",
       "status": "MISSING",
@@ -105,12 +105,12 @@
       "strategyGuard": null,
       "nextAction": null
     },
-    "plasma_pt_usdai": {
+    "plasma_pt_syzusd": {
       "laneId": 7,
       "class": "EDGE",
-      "vaultAddress": "0x98a4a88BaAEa3fdAF42903AE610d2D6C61567c7f",
-      "strategyAddress": "0xb989Db72bb1b3f2003B257835ce59Ed55F5b5a40",
-      "asset": "USDai",
+      "vaultAddress": "0xbcE3c219d31ACe2F189Fc2084D7ea4900d88a23b",
+      "strategyAddress": "0x4deD3fF2F59ee15f96a013c5213610d133f9Ee08",
+      "asset": "yzUSD",
       "status": "MISSING",
       "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_IMPLIED_LANE",
       "explanation": "This lane is surfaced through implied hold-to-maturity economics, not product-realized APY.",
@@ -127,8 +127,8 @@
     "plasma_fluid_susdai_recursive_carry": {
       "laneId": 8,
       "class": "HIGH_RISK",
-      "vaultAddress": "0xf4b462203d930630eed218b7d381C01c39BB1fF8",
-      "strategyAddress": "0xB46FFdEE0C3dbBa3c88B0F1104Ff11DF7756Fc4F",
+      "vaultAddress": "0xEBa79B6Ca05f54171e299E62F39403F1716146bc",
+      "strategyAddress": "0x556d74c4b8697FcF1E93788A7C4E649C2040D647",
       "asset": "USDT0",
       "status": "MISSING",
       "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
@@ -146,8 +146,8 @@
     "plasma_fluid_weeth_recursive_carry": {
       "laneId": 9,
       "class": "HIGH_RISK",
-      "vaultAddress": "0xE088Bda9d69C9bf8a3ef2ef7643915E2dE3f7e6b",
-      "strategyAddress": "0x9a084fB7B2Ddb08f9355dAf638532180a858f7c6",
+      "vaultAddress": "0x5cA4bAC41c18E3C88eB242C696f6bdB1Fd475Cc6",
+      "strategyAddress": "0x163d70e3a8B8c4a48a55F1B2d455bD89E6B7f1da",
       "asset": "WETH",
       "status": "MISSING",
       "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",

@@ -1,8 +1,8 @@
 {
   "version": "fee_ledger.v1",
-  "generatedAt": "2026-03-20T18:51:57.368Z",
-  "observedAt": "2026-03-20T18:51:57.368Z",
-  "expiresAt": "2026-03-20T22:51:57.368Z",
+  "generatedAt": "2026-03-21T11:14:21.330Z",
+  "observedAt": "2026-03-21T11:14:21.330Z",
+  "expiresAt": "2026-03-21T15:14:21.330Z",
   "freshnessStatus": "FRESH",
   "status": "MISSING",
   "reasonCode": "ACCRUAL_INPUTS_NOT_ACTIVE:EPOCH_ID_MISSING",
@@ -12,7 +12,7 @@
   "epochId": null,
   "currentEpochReference": null,
   "currentEpochRef": null,
-  "policyVersionHash": "sha256:c84a48cc109277303c8b7858c979081b4b89b761930d4193f9d2e7a52277e240",
+  "policyVersionHash": "sha256:bb06ee7ee3d5608a1158e9f36bcb1b90e609dc967640db01a803811b015056af",
   "snapshotVersionHash": null,
   "sourceRefs": {
     "accrualInputsRef": "ops/runtime/fee-accrual-inputs.latest.json",
@@ -27,7 +27,7 @@
     "performanceFeeUsd": 0,
     "totalAccruedUsd": 0,
     "computableVaults": 0,
-    "stakersBps": 0,
+    "stakersBps": 2000,
     "stakersAccrualUsdCap": 0
   },
   "invariants": {
