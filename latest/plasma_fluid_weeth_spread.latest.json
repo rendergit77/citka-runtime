@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-22T16:19:18.481Z",
+  "generatedAt": "2026-03-22T17:28:13.555Z",
   "laneId": "plasma_fluid_weeth_recursive_carry",
-  "blockNumber": 17264600,
-  "blockTimestamp": 1774196358,
-  "timestamp": "2026-03-22T16:19:18.000Z",
+  "blockNumber": 17268735,
+  "blockTimestamp": 1774200493,
+  "timestamp": "2026-03-22T17:28:13.000Z",
   "nftId": "2415",
   "spreadSnapshot": {
-    "collateralSupplyAPR_bps": 228,
+    "collateralSupplyAPR_bps": 273,
     "borrowAPR_bps": 193,
-    "spreadBps": 35,
+    "spreadBps": 80,
     "spreadHealthy": true,
     "minSpreadBps": 30
   },
@@ -17,13 +17,13 @@
     "borrow": "0",
     "dustBorrow": "0",
     "debtRatioBps": 0,
-    "oraclePriceOperate": "1090743669124489868000000000",
+    "oraclePriceOperate": "1090884119495111693000000000",
     "healthFactorRay": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
   },
   "alerts": {
     "warningSpreadBps": 50,
     "criticalSpreadBps": 30,
-    "status": "WARNING"
+    "status": "OK"
   },
   "notes": [
     "Read-only 2h spread sweep for operator monitoring.",
