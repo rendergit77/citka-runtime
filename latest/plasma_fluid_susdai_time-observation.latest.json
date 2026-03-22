@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-03-22T17:28:12.083Z",
+  "generatedAt": "2026-03-22T17:55:19.628Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
   "deltaSource": "PERSISTED_CHECKPOINT",
   "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 17268733,
-  "currentTimestamp": 1774200491,
-  "currentIso": "2026-03-22T17:28:11.000Z",
-  "historicBlockNumber": 17183093,
-  "elapsedSeconds": 85640,
-  "elapsedHours": 23.7889,
+  "currentBlockNumber": 17270361,
+  "currentTimestamp": 1774202119,
+  "currentIso": "2026-03-22T17:55:19.000Z",
+  "historicBlockNumber": 17183700,
+  "elapsedSeconds": 86661,
+  "elapsedHours": 24.0725,
   "checkpointInfo": {
     "checkpointFile": "ops/runtime/checkpoints/fluid-susdai-carry.checkpoint.json",
-    "historicCheckpointObservedAt": "2026-03-21T17:40:51.608Z",
-    "historicCheckpointBlockNumber": 17183093,
+    "historicCheckpointObservedAt": "2026-03-21T17:50:58.394Z",
+    "historicCheckpointBlockNumber": 17183700,
     "targetWindowSeconds": 86400,
     "minWindowSeconds": 21600,
     "archiveRpcRequired": false
@@ -25,10 +25,10 @@
     "resolverType": "fluid.positionResolver (bps×100 rate format)"
   },
   "laneState": {
-    "totalAssetsRaw": "12195516",
+    "totalAssetsRaw": "12194962",
     "totalSupplyRaw": "13000000000000000000",
     "laneHasTvl": true,
-    "totalAssetsDisplay": 12.195516
+    "totalAssetsDisplay": 12.194962
   },
   "collateralSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
@@ -36,10 +36,10 @@
     "deltaSource": "PERSISTED_CHECKPOINT",
     "oraclePriceNowRaw": "1075155489548552",
     "oraclePriceHistRaw": "1074992355972520",
-    "blockNow": 17268733,
-    "blockHist": 17183093,
-    "elapsedSeconds": 85640,
-    "observedAnnualizedAprPct": 5.591975870857904,
+    "blockNow": 17270361,
+    "blockHist": 17183700,
+    "elapsedSeconds": 86661,
+    "observedAnnualizedAprPct": 5.526093785904512,
     "status": "OBSERVED_WINDOW"
   },
   "borrowSideInput": {
@@ -62,7 +62,7 @@
     "targetDebtRatioBps": 7500,
     "leverageMultiple": 4,
     "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
-    "impliedGrossCarryAprPct": -77.95209651656837,
+    "impliedGrossCarryAprPct": -78.21562485638195,
     "currentProtocolCarryAprPct": -100.32,
     "status": "OBSERVED_WINDOW"
   },
