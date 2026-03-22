@@ -1,32 +1,32 @@
 {
   "version": "onchain_yield_observations.v1",
   "tag": "b4.22.85",
-  "generatedAt": "2026-03-22T10:09:35.467Z",
+  "generatedAt": "2026-03-22T10:18:41.792Z",
   "provenance": {
-    "rpcUsed": "https://rpc.plasma.to",
+    "rpcUsed": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
     "rpcAttempts": 1,
-    "rpcEndpointsAvailable": 1,
+    "rpcEndpointsAvailable": 2,
     "chainId": 9745,
-    "blockNumber": 17242415,
-    "blockTimestamp": 1774174173
+    "blockNumber": 17242961,
+    "blockTimestamp": 1774174719
   },
   "vaults": {
     "plasma_aave_usdt0": {
       "status": "MEASURED",
-      "grossApyPct": 2.796698446467915,
+      "grossApyPct": 2.787834315056594,
       "evidence": {
         "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
         "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "method": "AaveDataProvider.getReserveData:liquidityRate",
-        "rateRayStr": "27966984464679152261087378",
-        "liquidityApyPct": 2.796698446467915,
+        "rateRayStr": "27878343150565938753513670",
+        "liquidityApyPct": 2.787834315056594,
         "intrinsicApyPct": null,
-        "combinedGrossApyPct": 2.796698446467915,
+        "combinedGrossApyPct": 2.787834315056594,
         "intrinsicSource": null,
         "conversionMethod": "rayToPct_bigint_safe",
         "attempts": 1,
-        "blockNumber": 17242415,
-        "blockTimestamp": 1774174173
+        "blockNumber": 17242961,
+        "blockTimestamp": 1774174719
       },
       "reasonCode": null,
       "instructions": null,
@@ -35,15 +35,15 @@
     },
     "plasma_stable_allocator_v2": {
       "status": "MEASURED",
-      "grossApyPct": 3.28,
+      "grossApyPct": 3.27,
       "evidence": {
         "venue": "0x0a660B3Cbd7DF118501E7Bb0f2D6eC5E5e583Bf8",
         "method": "stable_allocator_observation_weighted_gross_apr",
-        "aprBps": 328,
+        "aprBps": 327,
         "targetMode": "PREMIUM_ACTIVE",
         "evidenceRef": "ops/runtime/plasma_stable_allocator_v2_observation.latest.json",
-        "blockNumber": 17242415,
-        "blockTimestamp": 1774174173
+        "blockNumber": 17242961,
+        "blockTimestamp": 1774174719
       },
       "reasonCode": null,
       "instructions": null,
@@ -60,8 +60,8 @@
         "lastLnImpliedRateStr": "38053096781239596",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 17242415,
-        "blockTimestamp": 1774174173
+        "blockNumber": 17242961,
+        "blockTimestamp": 1774174719
       },
       "reasonCode": null,
       "instructions": null,
@@ -78,8 +78,8 @@
         "lastLnImpliedRateStr": "37912955840248788",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 17242415,
-        "blockTimestamp": 1774174173
+        "blockNumber": 17242961,
+        "blockTimestamp": 1774174719
       },
       "reasonCode": null,
       "instructions": null,
@@ -96,8 +96,8 @@
         "lastLnImpliedRateStr": "44816259041143839",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 17242415,
-        "blockTimestamp": 1774174173
+        "blockNumber": 17242961,
+        "blockTimestamp": 1774174719
       },
       "reasonCode": null,
       "instructions": null,
@@ -114,8 +114,8 @@
         "lastLnImpliedRateStr": "71444814078523196",
         "scale": "uint96_div_1e18",
         "attemptsTotal": 2,
-        "blockNumber": 17242415,
-        "blockTimestamp": 1774174173
+        "blockNumber": 17242961,
+        "blockTimestamp": 1774174719
       },
       "reasonCode": null,
       "instructions": null,
@@ -124,7 +124,7 @@
     },
     "plasma_fluid_susdai_recursive_carry": {
       "status": "MEASURED",
-      "grossApyPct": -76.1534186889444,
+      "grossApyPct": -75.79618911181483,
       "evidence": {
         "venue": "Fluid recursive carry (sUSDai / USDT0)",
         "method": "lane_level_carry_artifact",
@@ -135,8 +135,8 @@
         "carryStatus": "OBSERVED_WINDOW",
         "collateralInputSource": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
         "borrowInputSource": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.borrowRateVault",
-        "blockNumber": 17242415,
-        "blockTimestamp": 1774174173
+        "blockNumber": 17242961,
+        "blockTimestamp": 1774174719
       },
       "reasonCode": null,
       "instructions": null,
@@ -162,8 +162,8 @@
         },
         "leverageBps": 50000,
         "leverageSource": "manifest.targetDebtRatioBps=8000 — lane-objective, no operator position",
-        "blockNumber": 17242415,
-        "blockTimestamp": 1774174173
+        "blockNumber": 17242961,
+        "blockTimestamp": 1774174719
       },
       "reasonCode": null,
       "instructions": null,
