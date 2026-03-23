@@ -1,10 +1,10 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-23T10:44:21.440Z",
-  "ageSeconds": 57,
+  "generatedAt": "2026-03-23T12:43:10.441Z",
+  "ageSeconds": 109,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 17330901,
+  "blockNumber": 17338030,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
@@ -15,7 +15,7 @@
   "status": "FRESH",
   "lanes": {
     "plasma_aave_usdt0": {
-      "apyPct": 2.7731432707223327,
+      "apyPct": 2.772642402463738,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
@@ -33,7 +33,7 @@
       "reasonCode": null
     },
     "plasma_pt_susde": {
-      "apyPct": 3.9538694642255123,
+      "apyPct": 3.988109533834794,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
       "reasonCode": null
@@ -51,13 +51,13 @@
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": -27.656965239229507,
+      "apyPct": -27.57161808771146,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 2.05,
+      "apyPct": 1.95,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
