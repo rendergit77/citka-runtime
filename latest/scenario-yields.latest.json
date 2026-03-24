@@ -1,7 +1,7 @@
 {
   "version": "scenario_yields_v2",
-  "tag": "ci-obs-23495848788",
-  "generatedAt": "2026-03-24T14:52:20.714Z",
+  "tag": "ci-obs-23501631453",
+  "generatedAt": "2026-03-24T16:53:06.689Z",
   "policyHash": "sha256:1862c4ffe44cf1766e6a34b8a34fc39aa716a9b35df1fd4c1d8e45aed424e0b7",
   "coverage": {
     "total": 19,
@@ -149,7 +149,7 @@
     },
     "plasma_aave_usdt0": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 2.78,
+      "measuredGrossApyPct": 2.7768,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -159,7 +159,7 @@
     },
     "plasma_stable_allocator_v2": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 3.19,
+      "measuredGrossApyPct": 3.18,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -169,7 +169,7 @@
     },
     "plasma_pt_usde": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 3.9336,
+      "measuredGrossApyPct": 3.9581,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -179,7 +179,7 @@
     },
     "plasma_pt_susde": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 3.9849,
+      "measuredGrossApyPct": 4.0113,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -209,7 +209,7 @@
     },
     "plasma_fluid_susdai_recursive_carry": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 6.9484,
+      "measuredGrossApyPct": 9.0981,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -219,7 +219,7 @@
     },
     "plasma_fluid_weeth_recursive_carry": {
       "status": "MEASURED",
-      "measuredGrossApyPct": 1.9,
+      "measuredGrossApyPct": 2.8,
       "scenarioGrossApyPct": null,
       "scenarioNetApyPct": null,
       "observedHeadlineYieldPct": null,
@@ -228,5 +228,5 @@
       "explanationShort": "Yield measured onchain."
     }
   },
-  "checksum": "sha256:bdc84dc5e267309366cdb9e964c7dd1d118203f9c1740b3a864d67f69e1b7461"
+  "checksum": "sha256:6aa8b3cd7a735771b18e88aae22503c636d865bed069acd8163e6fea791283f2"
 }
