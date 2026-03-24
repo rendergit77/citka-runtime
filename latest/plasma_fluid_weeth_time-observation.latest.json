@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-03-24T01:10:35.851Z",
+  "generatedAt": "2026-03-24T04:09:49.102Z",
   "laneId": "plasma_fluid_weeth_recursive_carry",
   "checkpointSchemaVersion": "N10B_WEETH_NEXTGEN_V1",
   "baselineRef": "ops/runtime/plasma_fluid_weeth_time-observation-baseline.latest.json",
-  "blockNumber": 17382876,
-  "blockTimestamp": 1774314634,
-  "timestamp": "2026-03-24T01:10:34.000Z",
-  "elapsedSeconds": 953658,
+  "blockNumber": 17393630,
+  "blockTimestamp": 1774325388,
+  "timestamp": "2026-03-24T04:09:48.000Z",
+  "elapsedSeconds": 964412,
   "currentState": {
     "nftId": "2457",
     "ownerShares": "3061384844563283",
-    "totalAssets": "2407946833481317",
+    "totalAssets": "2407881128447797",
     "totalSupply": "3261384844563283",
-    "sharePriceRay": "738320360289695990",
+    "sharePriceRay": "738300213929590856",
     "hypotheticalUnwind": {
-      "grossAssets": "2260282755693634",
-      "feeAssets": "2260282755694",
-      "netAssets": "2258022472937940"
+      "grossAssets": "2260221085661879",
+      "feeAssets": "2260221085662",
+      "netAssets": "2257960864576217"
     },
-    "markToMarketEquity": "2258022472937940",
+    "markToMarketEquity": "2257960864576217",
     "oraclePrice": "1090964265868344795000000000",
     "healthFactor_1e4": 12464,
     "positionState": {
       "supply": "10823135149000000",
-      "borrow": "8997878029325299",
-      "dustBorrow": "1772611510236",
+      "borrow": "8997943682487816",
+      "dustBorrow": "1772624444124",
       "collateralValueInAsset": "11807653692222663",
       "debtRatioBps": 7621,
-      "healthFactorRay": "1246411828111819809",
-      "borrowable": "108128557648357124803",
+      "healthFactorRay": "1246402733714121731",
+      "borrowable": "108128323717153319067",
       "withdrawable": "148061286527160668748",
       "oraclePriceOperate": "1090964265868344795000000000",
       "oracleAge": "0",
@@ -36,25 +36,25 @@
     }
   },
   "spreadSnapshot": {
-    "collateralSupplyAPR_bps": 265,
+    "collateralSupplyAPR_bps": 262,
     "borrowAPR_bps": 214,
-    "spreadBps": 51,
+    "spreadBps": 48,
     "spreadHealthy": true,
     "minSpreadBps": 30
   },
   "impliedCarry": {
     "leverageBps": 50000,
     "leverageSource": "manifest.targetDebtRatioBps=8000 — lane-objective, no operator position",
-    "impliedGrossCarryAprBps": 255,
-    "impliedNetCarryAprBps": 216,
+    "impliedGrossCarryAprBps": 240,
+    "impliedNetCarryAprBps": 204,
     "performanceFeeBps": 1500,
     "exitFeeBpsExcludedFromHeadlineApr": 10
   },
   "realizedObservation": {
-    "realizedAprBps": -136905,
-    "netAssetsDeltaRaw": "-1593428169261527",
-    "sharePriceDeltaRaw": "-118805208386367703",
-    "deviationVsModeledNetCarryBps": -137121,
+    "realizedAprBps": -135383,
+    "netAssetsDeltaRaw": "-1593489777623250",
+    "sharePriceDeltaRaw": "-118825354746472837",
+    "deviationVsModeledNetCarryBps": -135587,
     "meaningfulWindow": true,
     "confidence": "MEDIUM_OR_HIGHER",
     "reason": "realized_apr_is_operator_only_calibration_signal"
@@ -66,7 +66,7 @@
     "alerts": {
       "warningSpreadBps": 50,
       "criticalSpreadBps": 30,
-      "currentStatus": "OK"
+      "currentStatus": "WARNING"
     }
   }
 }
