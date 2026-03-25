@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-03-25T16:54:41.955Z",
+  "generatedAt": "2026-03-25T18:43:44.998Z",
   "laneId": "plasma_fluid_weeth_recursive_carry",
   "checkpointSchemaVersion": "N10B_WEETH_NEXTGEN_V1",
   "baselineRef": "ops/runtime/plasma_fluid_weeth_time-observation-baseline.latest.json",
-  "blockNumber": 17525818,
-  "blockTimestamp": 1774457681,
-  "timestamp": "2026-03-25T16:54:41.000Z",
-  "elapsedSeconds": 1096705,
+  "blockNumber": 17532361,
+  "blockTimestamp": 1774464224,
+  "timestamp": "2026-03-25T18:43:44.000Z",
+  "elapsedSeconds": 1103248,
   "currentState": {
     "nftId": "2457",
     "ownerShares": "3061384844563283",
-    "totalAssets": "2408452221967441",
+    "totalAssets": "2408412053017760",
     "totalSupply": "3261384844563283",
-    "sharePriceRay": "738475321605275316",
+    "sharePriceRay": "738463005073619151",
     "hypotheticalUnwind": {
-      "grossAssets": "2260757157646386",
-      "feeAssets": "2260757157647",
-      "netAssets": "2258496400488739"
+      "grossAssets": "2260719452003036",
+      "feeAssets": "2260719452004",
+      "netAssets": "2258458732551032"
     },
-    "markToMarketEquity": "2258496400488739",
+    "markToMarketEquity": "2258458732551032",
     "oraclePrice": "1091096164707935533000000000",
     "healthFactor_1e4": 12464,
     "positionState": {
       "supply": "10823135149000000",
-      "borrow": "8998751761396419",
-      "dustBorrow": "1772783638322",
+      "borrow": "8998791902363761",
+      "dustBorrow": "1772791546224",
       "collateralValueInAsset": "11809081251189550",
       "debtRatioBps": 7621,
-      "healthFactorRay": "1246441485993055516",
-      "borrowable": "107967208128123308484",
+      "healthFactorRay": "1246435925983720330",
+      "borrowable": "107967143382497628147",
       "withdrawable": "148061286527160668748",
       "oraclePriceOperate": "1091096164707935533000000000",
       "oracleAge": "0",
@@ -36,34 +36,34 @@
     }
   },
   "spreadSnapshot": {
-    "collateralSupplyAPR_bps": 265,
+    "collateralSupplyAPR_bps": 263,
     "borrowAPR_bps": 215,
-    "spreadBps": 50,
+    "spreadBps": 48,
     "spreadHealthy": true,
     "minSpreadBps": 30
   },
   "impliedCarry": {
     "leverageBps": 50000,
     "leverageSource": "manifest.targetDebtRatioBps=8000 — lane-objective, no operator position",
-    "impliedGrossCarryAprBps": 250,
-    "impliedNetCarryAprBps": 212,
+    "impliedGrossCarryAprBps": 240,
+    "impliedNetCarryAprBps": 204,
     "performanceFeeBps": 1500,
     "exitFeeBpsExcludedFromHeadlineApr": 10
   },
   "realizedObservation": {
-    "realizedAprBps": -119012,
-    "netAssetsDeltaRaw": "-1592954241710728",
-    "sharePriceDeltaRaw": "-118650247070788377",
-    "deviationVsModeledNetCarryBps": -119224,
+    "realizedAprBps": -118309,
+    "netAssetsDeltaRaw": "-1592991909648435",
+    "sharePriceDeltaRaw": "-118662563602444542",
+    "deviationVsModeledNetCarryBps": -118513,
     "meaningfulWindow": true,
     "confidence": "MEDIUM_OR_HIGHER",
     "reason": "realized_apr_is_operator_only_calibration_signal"
   },
   "postureState": {
-    "posture": "YIELD_INFERRED",
+    "posture": "DEFENSE_INFERRED",
     "postureSource": "INFERRED_FROM_SPREAD",
     "postureNote": "V2 adapter not yet deployed — posture inferred from spread vs minSpreadBps (50). After V2 migration, this field reads adapter.currentPosture() directly.",
-    "spreadBps": 50,
+    "spreadBps": 48,
     "spreadHealthy": true,
     "effectiveLeverage": 5,
     "defenseEnteredAt": null,
@@ -71,7 +71,7 @@
   },
   "capacity": {
     "maxTotalAssetsWad": "50000000000000000000",
-    "currentTotalAssets": "2408452221967441",
+    "currentTotalAssets": "2408412053017760",
     "capacityUsedPct": 0,
     "capacitySource": "INFERRED_FROM_CONFIG",
     "capacityNote": "V2 adapter maxTotalAssetsWad not yet deployed — using config default (50 WETH)."
@@ -83,7 +83,7 @@
     "alerts": {
       "warningSpreadBps": 50,
       "criticalSpreadBps": 30,
-      "currentStatus": "OK"
+      "currentStatus": "WARNING"
     }
   }
 }
