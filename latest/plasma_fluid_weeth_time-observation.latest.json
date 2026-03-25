@@ -1,69 +1,69 @@
 {
-  "generatedAt": "2026-03-25T15:44:48.143Z",
+  "generatedAt": "2026-03-25T16:54:41.955Z",
   "laneId": "plasma_fluid_weeth_recursive_carry",
   "checkpointSchemaVersion": "N10B_WEETH_NEXTGEN_V1",
   "baselineRef": "ops/runtime/plasma_fluid_weeth_time-observation-baseline.latest.json",
-  "blockNumber": 17521624,
-  "blockTimestamp": 1774453487,
-  "timestamp": "2026-03-25T15:44:47.000Z",
-  "elapsedSeconds": 1092511,
+  "blockNumber": 17525818,
+  "blockTimestamp": 1774457681,
+  "timestamp": "2026-03-25T16:54:41.000Z",
+  "elapsedSeconds": 1096705,
   "currentState": {
     "nftId": "2457",
     "ownerShares": "3061384844563283",
-    "totalAssets": "2407839456557344",
+    "totalAssets": "2408452221967441",
     "totalSupply": "3261384844563283",
-    "sharePriceRay": "738287436568917685",
+    "sharePriceRay": "738475321605275316",
     "hypotheticalUnwind": {
-      "grossAssets": "2260181963480407",
-      "feeAssets": "2260181963481",
-      "netAssets": "2257921781516926"
+      "grossAssets": "2260757157646386",
+      "feeAssets": "2260757157647",
+      "netAssets": "2258496400488739"
     },
-    "markToMarketEquity": "2257921781516926",
-    "oraclePrice": "1091035124637175074000000000",
-    "healthFactor_1e4": 12463,
+    "markToMarketEquity": "2258496400488739",
+    "oraclePrice": "1091096164707935533000000000",
+    "healthFactor_1e4": 12464,
     "positionState": {
       "supply": "10823135149000000",
-      "borrow": "8998726037548306",
-      "dustBorrow": "1772778570639",
-      "collateralValueInAsset": "11808420606254205",
-      "debtRatioBps": 7622,
-      "healthFactorRay": "1246375318204724336",
-      "borrowable": "107967249619786596189",
+      "borrow": "8998751761396419",
+      "dustBorrow": "1772783638322",
+      "collateralValueInAsset": "11809081251189550",
+      "debtRatioBps": 7621,
+      "healthFactorRay": "1246441485993055516",
+      "borrowable": "107967208128123308484",
       "withdrawable": "148061286527160668748",
-      "oraclePriceOperate": "1091035124637175074000000000",
+      "oraclePriceOperate": "1091096164707935533000000000",
       "oracleAge": "0",
       "liquidationThresholdBps": 9500
     }
   },
   "spreadSnapshot": {
-    "collateralSupplyAPR_bps": 251,
+    "collateralSupplyAPR_bps": 265,
     "borrowAPR_bps": 215,
-    "spreadBps": 36,
+    "spreadBps": 50,
     "spreadHealthy": true,
     "minSpreadBps": 30
   },
   "impliedCarry": {
     "leverageBps": 50000,
     "leverageSource": "manifest.targetDebtRatioBps=8000 — lane-objective, no operator position",
-    "impliedGrossCarryAprBps": 180,
-    "impliedNetCarryAprBps": 153,
+    "impliedGrossCarryAprBps": 250,
+    "impliedNetCarryAprBps": 212,
     "performanceFeeBps": 1500,
     "exitFeeBpsExcludedFromHeadlineApr": 10
   },
   "realizedObservation": {
-    "realizedAprBps": -119512,
-    "netAssetsDeltaRaw": "-1593528860682541",
-    "sharePriceDeltaRaw": "-118838132107146008",
-    "deviationVsModeledNetCarryBps": -119665,
+    "realizedAprBps": -119012,
+    "netAssetsDeltaRaw": "-1592954241710728",
+    "sharePriceDeltaRaw": "-118650247070788377",
+    "deviationVsModeledNetCarryBps": -119224,
     "meaningfulWindow": true,
     "confidence": "MEDIUM_OR_HIGHER",
     "reason": "realized_apr_is_operator_only_calibration_signal"
   },
   "postureState": {
-    "posture": "DEFENSE_INFERRED",
+    "posture": "YIELD_INFERRED",
     "postureSource": "INFERRED_FROM_SPREAD",
     "postureNote": "V2 adapter not yet deployed — posture inferred from spread vs minSpreadBps (50). After V2 migration, this field reads adapter.currentPosture() directly.",
-    "spreadBps": 36,
+    "spreadBps": 50,
     "spreadHealthy": true,
     "effectiveLeverage": 5,
     "defenseEnteredAt": null,
@@ -71,7 +71,7 @@
   },
   "capacity": {
     "maxTotalAssetsWad": "50000000000000000000",
-    "currentTotalAssets": "2407839456557344",
+    "currentTotalAssets": "2408452221967441",
     "capacityUsedPct": 0,
     "capacitySource": "INFERRED_FROM_CONFIG",
     "capacityNote": "V2 adapter maxTotalAssetsWad not yet deployed — using config default (50 WETH)."
@@ -83,7 +83,7 @@
     "alerts": {
       "warningSpreadBps": 50,
       "criticalSpreadBps": 30,
-      "currentStatus": "WARNING"
+      "currentStatus": "OK"
     }
   }
 }
