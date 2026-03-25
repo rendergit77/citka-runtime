@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-25T15:06:09.867Z",
+  "generatedAt": "2026-03-25T15:31:33.188Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
   "deltaSource": "PERSISTED_CHECKPOINT",
   "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 17519306,
-  "currentTimestamp": 1774451169,
-  "currentIso": "2026-03-25T15:06:09.000Z",
+  "currentBlockNumber": 17520830,
+  "currentTimestamp": 1774452693,
+  "currentIso": "2026-03-25T15:31:33.000Z",
   "historicBlockNumber": 17432162,
-  "elapsedSeconds": 87249,
-  "elapsedHours": 24.2358,
+  "elapsedSeconds": 88773,
+  "elapsedHours": 24.6592,
   "checkpointInfo": {
     "checkpointFile": "ops/runtime/checkpoints/fluid-susdai-carry.checkpoint.json",
     "historicCheckpointObservedAt": "2026-03-24T14:52:00.727Z",
@@ -25,10 +25,10 @@
     "resolverType": "fluid.positionResolver (bps×100 rate format)"
   },
   "laneState": {
-    "totalAssetsRaw": "12182720",
+    "totalAssetsRaw": "12182647",
     "totalSupplyRaw": "13000000000000000000",
     "laneHasTvl": true,
-    "totalAssetsDisplay": 12.18272
+    "totalAssetsDisplay": 12.182647
   },
   "collateralSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
@@ -36,10 +36,10 @@
     "deltaSource": "PERSISTED_CHECKPOINT",
     "oraclePriceNowRaw": "1075622559698615",
     "oraclePriceHistRaw": "1075472097601359",
-    "blockNow": 17519306,
+    "blockNow": 17520830,
     "blockHist": 17432162,
-    "elapsedSeconds": 87249,
-    "observedAnnualizedAprPct": 5.060244164686378,
+    "elapsedSeconds": 88773,
+    "observedAnnualizedAprPct": 4.973373020228244,
     "status": "OBSERVED_WINDOW"
   },
   "borrowSideInput": {
@@ -62,7 +62,7 @@
     "targetDebtRatioBps": 7500,
     "leverageMultiple": 4,
     "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
-    "impliedGrossCarryAprPct": 6.0209766587455125,
+    "impliedGrossCarryAprPct": 5.673492080912974,
     "currentProtocolCarryAprPct": -14.22,
     "status": "OBSERVED_WINDOW"
   },
@@ -70,7 +70,7 @@
     "posture": "YIELD_INFERRED",
     "postureSource": "INFERRED_FROM_SPREAD",
     "postureNote": "V2 adapter not yet deployed — posture inferred from spread health. After V2 migration, this field reads adapter.currentPosture() directly.",
-    "spreadBps": 0.32,
+    "spreadBps": 0.23,
     "spreadHealthy": true,
     "effectiveLeverage": 4,
     "defenseEnteredAt": null,
