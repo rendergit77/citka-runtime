@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-03-24T20:32:35.108Z",
+  "generatedAt": "2026-03-25T15:06:11.191Z",
   "laneId": "plasma_fluid_weeth_recursive_carry",
   "checkpointSchemaVersion": "N10B_WEETH_NEXTGEN_V1",
   "baselineRef": "ops/runtime/plasma_fluid_weeth_time-observation-baseline.latest.json",
-  "blockNumber": 17452491,
-  "blockTimestamp": 1774384354,
-  "timestamp": "2026-03-24T20:32:34.000Z",
-  "elapsedSeconds": 1023378,
+  "blockNumber": 17519307,
+  "blockTimestamp": 1774451170,
+  "timestamp": "2026-03-25T15:06:10.000Z",
+  "elapsedSeconds": 1090194,
   "currentState": {
     "nftId": "2457",
     "ownerShares": "3061384844563283",
-    "totalAssets": "2408262062897877",
+    "totalAssets": "2407853681144680",
     "totalSupply": "3261384844563283",
-    "sharePriceRay": "738417015370768525",
+    "sharePriceRay": "738291798086498081",
     "hypotheticalUnwind": {
-      "grossAssets": "2260578654085627",
-      "feeAssets": "2260578654086",
-      "netAssets": "2258318075431541"
+      "grossAssets": "2260195315764226",
+      "feeAssets": "2260195315765",
+      "netAssets": "2257935120448461"
     },
-    "markToMarketEquity": "2258318075431541",
+    "markToMarketEquity": "2257935120448461",
     "oraclePrice": "1091035124637175074000000000",
-    "healthFactor_1e4": 12464,
+    "healthFactor_1e4": 12463,
     "positionState": {
       "supply": "10823135149000000",
-      "borrow": "8998303725575508",
-      "dustBorrow": "1772695373794",
+      "borrow": "8998711822870048",
+      "dustBorrow": "1772775770301",
       "collateralValueInAsset": "11808420606254205",
-      "debtRatioBps": 7621,
-      "healthFactorRay": "1246433813587357588",
-      "borrowable": "108003519665581927721",
+      "debtRatioBps": 7622,
+      "healthFactorRay": "1246377287022537972",
+      "borrowable": "107967272547500418885",
       "withdrawable": "148061286527160668748",
       "oraclePriceOperate": "1091035124637175074000000000",
       "oracleAge": "0",
@@ -36,28 +36,45 @@
     }
   },
   "spreadSnapshot": {
-    "collateralSupplyAPR_bps": 267,
-    "borrowAPR_bps": 214,
-    "spreadBps": 53,
+    "collateralSupplyAPR_bps": 251,
+    "borrowAPR_bps": 215,
+    "spreadBps": 36,
     "spreadHealthy": true,
     "minSpreadBps": 30
   },
   "impliedCarry": {
     "leverageBps": 50000,
     "leverageSource": "manifest.targetDebtRatioBps=8000 — lane-objective, no operator position",
-    "impliedGrossCarryAprBps": 265,
-    "impliedNetCarryAprBps": 225,
+    "impliedGrossCarryAprBps": 180,
+    "impliedNetCarryAprBps": 153,
     "performanceFeeBps": 1500,
     "exitFeeBpsExcludedFromHeadlineApr": 10
   },
   "realizedObservation": {
-    "realizedAprBps": -127554,
-    "netAssetsDeltaRaw": "-1593132566767926",
-    "sharePriceDeltaRaw": "-118708553305295168",
-    "deviationVsModeledNetCarryBps": -127779,
+    "realizedAprBps": -119765,
+    "netAssetsDeltaRaw": "-1593515521751006",
+    "sharePriceDeltaRaw": "-118833770589565612",
+    "deviationVsModeledNetCarryBps": -119918,
     "meaningfulWindow": true,
     "confidence": "MEDIUM_OR_HIGHER",
     "reason": "realized_apr_is_operator_only_calibration_signal"
+  },
+  "postureState": {
+    "posture": "DEFENSE_INFERRED",
+    "postureSource": "INFERRED_FROM_SPREAD",
+    "postureNote": "V2 adapter not yet deployed — posture inferred from spread vs minSpreadBps (50). After V2 migration, this field reads adapter.currentPosture() directly.",
+    "spreadBps": 36,
+    "spreadHealthy": true,
+    "effectiveLeverage": 5,
+    "defenseEnteredAt": null,
+    "lastPostureChangeAt": null
+  },
+  "capacity": {
+    "maxTotalAssetsWad": "50000000000000000000",
+    "currentTotalAssets": "2407853681144680",
+    "capacityUsedPct": 0,
+    "capacitySource": "INFERRED_FROM_CONFIG",
+    "capacityNote": "V2 adapter maxTotalAssetsWad not yet deployed — using config default (50 WETH)."
   },
   "freshnessAndNotes": {
     "observationRole": "OPERATOR_ONLY_RUNTIME_CALIBRATION",
@@ -66,7 +83,7 @@
     "alerts": {
       "warningSpreadBps": 50,
       "criticalSpreadBps": 30,
-      "currentStatus": "OK"
+      "currentStatus": "WARNING"
     }
   }
 }

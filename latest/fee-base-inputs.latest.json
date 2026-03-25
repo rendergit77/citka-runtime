@@ -1,8 +1,8 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-03-24T20:33:51.187Z",
-  "observedAt": "2026-03-24T20:33:51.187Z",
-  "expiresAt": "2026-03-25T00:33:51.187Z",
+  "generatedAt": "2026-03-25T15:08:20.316Z",
+  "observedAt": "2026-03-25T15:08:20.316Z",
+  "expiresAt": "2026-03-25T19:08:20.316Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -20,22 +20,68 @@
     "sharePriceRef": "ops/runtime/share-price-snapshots.latest.json"
   },
   "totals": {
-    "vaultsTotal": 8,
+    "vaultsTotal": 9,
     "computableVaults": 8,
     "railModeCounts": {
       "settlementActive": 23,
-      "disclosureOnly": 0,
-      "notMeasured": 9
+      "disclosureOnly": 1,
+      "notMeasured": 12
     }
   },
   "vaults": {
+    "plasma_core_boost_usdt0": {
+      "status": "MISSING",
+      "reasonCode": "REQUIRED_INPUTS_MISSING",
+      "aumUsd": null,
+      "volumeUsd": null,
+      "withdrawUsd": null,
+      "grossApyFraction": null,
+      "periodSeconds": 604800,
+      "railModes": {
+        "mgmt": "NOT_MEASURED",
+        "exec": "DISCLOSE_ONLY",
+        "perf": "NOT_MEASURED",
+        "exit": "NOT_MEASURED"
+      },
+      "feeScheduleBps": {
+        "mgmt": 0,
+        "exec": 10,
+        "perf": 0,
+        "exit": 0
+      },
+      "howToFix": [
+        "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution.",
+        "Provide a readable deploy block or working historical RPC for this vault.",
+        "Provide a readable deploy block or working historical RPC for this vault."
+      ],
+      "requiredInputs": [
+        {
+          "field": "aumUsd",
+          "reason": "NO_ONCHAIN_TVL_SOURCE",
+          "upgradeHint": "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution.",
+          "howToObtain": "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution."
+        },
+        {
+          "field": "volumeUsd",
+          "reason": "VAULT_DEPLOY_BLOCK_UNKNOWN",
+          "upgradeHint": "Provide a readable deploy block or working historical RPC for this vault.",
+          "howToObtain": "Provide a readable deploy block or working historical RPC for this vault."
+        },
+        {
+          "field": "withdrawUsd",
+          "reason": "VAULT_DEPLOY_BLOCK_UNKNOWN",
+          "upgradeHint": "Provide a readable deploy block or working historical RPC for this vault.",
+          "howToObtain": "Provide a readable deploy block or working historical RPC for this vault."
+        }
+      ]
+    },
     "plasma_aave_usdt0": {
       "status": "ACTIVE",
       "reasonCode": null,
       "aumUsd": 1.5,
       "volumeUsd": 1.5,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.027702423953,
+      "grossApyFraction": 0.026706346887,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -55,10 +101,10 @@
     "plasma_stable_allocator_v2": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 1.100233,
+      "aumUsd": 1.100273,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.0318,
+      "grossApyFraction": 0.0309,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -81,7 +127,7 @@
       "aumUsd": 1.052,
       "volumeUsd": 1.052,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.039581052941,
+      "grossApyFraction": 0.038902995255,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -104,7 +150,7 @@
       "aumUsd": 5.58378,
       "volumeUsd": 5.58378,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.040126299561,
+      "grossApyFraction": 0.039268996789,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -127,7 +173,7 @@
       "aumUsd": 6.933156,
       "volumeUsd": 6.933156,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.045835679403,
+      "grossApyFraction": 0.045040688712,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -147,10 +193,10 @@
     "plasma_pt_syzusd": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 6.42709,
+      "aumUsd": 6.427235,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.071443762338,
+      "grossApyFraction": 0.071462951232,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -170,10 +216,10 @@
     "plasma_fluid_susdai_recursive_carry": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 12.185842,
+      "aumUsd": 12.182719,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.069346837341,
+      "grossApyFraction": 0.060209766587,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -193,10 +239,10 @@
     "plasma_fluid_weeth_recursive_carry": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 5.163291,
+      "aumUsd": 5.238478,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.0265,
+      "grossApyFraction": 0.018,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
