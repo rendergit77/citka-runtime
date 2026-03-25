@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-03-25T15:31:34.408Z",
+  "generatedAt": "2026-03-25T15:44:48.143Z",
   "laneId": "plasma_fluid_weeth_recursive_carry",
   "checkpointSchemaVersion": "N10B_WEETH_NEXTGEN_V1",
   "baselineRef": "ops/runtime/plasma_fluid_weeth_time-observation-baseline.latest.json",
-  "blockNumber": 17520830,
-  "blockTimestamp": 1774452693,
-  "timestamp": "2026-03-25T15:31:33.000Z",
-  "elapsedSeconds": 1091717,
+  "blockNumber": 17521624,
+  "blockTimestamp": 1774453487,
+  "timestamp": "2026-03-25T15:44:47.000Z",
+  "elapsedSeconds": 1092511,
   "currentState": {
     "nftId": "2457",
     "ownerShares": "3061384844563283",
-    "totalAssets": "2407844331100564",
+    "totalAssets": "2407839456557344",
     "totalSupply": "3261384844563283",
-    "sharePriceRay": "738288931192659536",
+    "sharePriceRay": "738287436568917685",
     "hypotheticalUnwind": {
-      "grossAssets": "2260186539098879",
-      "feeAssets": "2260186539099",
-      "netAssets": "2257926352559780"
+      "grossAssets": "2260181963480407",
+      "feeAssets": "2260181963481",
+      "netAssets": "2257921781516926"
     },
-    "markToMarketEquity": "2257926352559780",
+    "markToMarketEquity": "2257921781516926",
     "oraclePrice": "1091035124637175074000000000",
     "healthFactor_1e4": 12463,
     "positionState": {
       "supply": "10823135149000000",
-      "borrow": "8998721166400771",
-      "dustBorrow": "1772777611007",
+      "borrow": "8998726037548306",
+      "dustBorrow": "1772778570639",
       "collateralValueInAsset": "11808420606254205",
       "debtRatioBps": 7622,
-      "healthFactorRay": "1246375992887042704",
-      "borrowable": "107967257476637495712",
+      "healthFactorRay": "1246375318204724336",
+      "borrowable": "107967249619786596189",
       "withdrawable": "148061286527160668748",
       "oraclePriceOperate": "1091035124637175074000000000",
       "oracleAge": "0",
@@ -51,10 +51,10 @@
     "exitFeeBpsExcludedFromHeadlineApr": 10
   },
   "realizedObservation": {
-    "realizedAprBps": -119599,
-    "netAssetsDeltaRaw": "-1593524289639687",
-    "sharePriceDeltaRaw": "-118836637483404157",
-    "deviationVsModeledNetCarryBps": -119752,
+    "realizedAprBps": -119512,
+    "netAssetsDeltaRaw": "-1593528860682541",
+    "sharePriceDeltaRaw": "-118838132107146008",
+    "deviationVsModeledNetCarryBps": -119665,
     "meaningfulWindow": true,
     "confidence": "MEDIUM_OR_HIGHER",
     "reason": "realized_apr_is_operator_only_calibration_signal"
@@ -71,7 +71,7 @@
   },
   "capacity": {
     "maxTotalAssetsWad": "50000000000000000000",
-    "currentTotalAssets": "2407844331100564",
+    "currentTotalAssets": "2407839456557344",
     "capacityUsedPct": 0,
     "capacitySource": "INFERRED_FROM_CONFIG",
     "capacityNote": "V2 adapter maxTotalAssetsWad not yet deployed — using config default (50 WETH)."
