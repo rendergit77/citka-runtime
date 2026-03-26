@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-26T08:44:00.859Z",
+  "generatedAt": "2026-03-26T10:43:53.138Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
   "deltaSource": "PERSISTED_CHECKPOINT",
   "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 17582777,
-  "currentTimestamp": 1774514640,
-  "currentIso": "2026-03-26T08:44:00.000Z",
+  "currentBlockNumber": 17589969,
+  "currentTimestamp": 1774521832,
+  "currentIso": "2026-03-26T10:43:52.000Z",
   "historicBlockNumber": 17519306,
-  "elapsedSeconds": 63471,
-  "elapsedHours": 17.6308,
+  "elapsedSeconds": 70663,
+  "elapsedHours": 19.6286,
   "checkpointInfo": {
     "checkpointFile": "ops/runtime/checkpoints/fluid-susdai-carry.checkpoint.json",
     "historicCheckpointObservedAt": "2026-03-25T15:06:09.789Z",
@@ -25,10 +25,10 @@
     "resolverType": "fluid.positionResolver (bps×100 rate format)"
   },
   "laneState": {
-    "totalAssetsRaw": "12186213",
+    "totalAssetsRaw": "12185918",
     "totalSupplyRaw": "13000000000000000000",
     "laneHasTvl": true,
-    "totalAssetsDisplay": 12.186213
+    "totalAssetsDisplay": 12.185918
   },
   "collateralSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
@@ -36,18 +36,18 @@
     "deltaSource": "PERSISTED_CHECKPOINT",
     "oraclePriceNowRaw": "1075774599017537",
     "oraclePriceHistRaw": "1075622559698615",
-    "blockNow": 17582777,
+    "blockNow": 17589969,
     "blockHist": 17519306,
-    "elapsedSeconds": 63471,
-    "observedAnnualizedAprPct": 7.027884887440322,
+    "elapsedSeconds": 70663,
+    "observedAnnualizedAprPct": 6.3125947340294735,
     "status": "OBSERVED_WINDOW"
   },
   "borrowSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.borrowRateVault",
     "observationModel": "LANE_OBJECTIVE",
     "rateFormat": "bps×100 (e.g. 406 = 4.06%)",
-    "borrowRateVaultRaw": "417",
-    "borrowAprPct": 4.17,
+    "borrowRateVaultRaw": "399",
+    "borrowAprPct": 3.99,
     "status": "LIVE_ONCHAIN"
   },
   "supplySideInput": {
@@ -62,15 +62,15 @@
     "targetDebtRatioBps": 7500,
     "leverageMultiple": 4,
     "leverageSource": "manifest.targetDebtRatioBps — deterministic, lane-level",
-    "impliedGrossCarryAprPct": 15.60153954976129,
-    "currentProtocolCarryAprPct": -12.51,
+    "impliedGrossCarryAprPct": 13.280378936117893,
+    "currentProtocolCarryAprPct": -11.97,
     "status": "OBSERVED_WINDOW"
   },
   "postureState": {
     "posture": "YIELD_INFERRED",
     "postureSource": "INFERRED_FROM_SPREAD",
     "postureNote": "V2 adapter not yet deployed — posture inferred from spread health. After V2 migration, this field reads adapter.currentPosture() directly.",
-    "spreadBps": 2.86,
+    "spreadBps": 2.32,
     "spreadHealthy": true,
     "effectiveLeverage": 4,
     "defenseEnteredAt": null,
