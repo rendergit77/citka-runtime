@@ -1,6 +1,6 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-27T20:28:26.446Z",
+  "generatedAt": "2026-03-27T22:22:31.630Z",
   "rpcUrl": "https://rpc.plasma.to",
   "summary": {
     "totalLanes": 9,
@@ -74,11 +74,11 @@
       "laneId": "plasma_aave_usdt0",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:50:51.000Z",
-        "epochEnd": "2026-03-21T21:50:51.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
       },
       "requiredAsset": {
         "symbol": "USDT0",
@@ -124,13 +124,10 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6,
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:50:51.000Z",
-        "epochEnd": "2026-03-21T21:50:51.000Z",
-        "epochDurationSeconds": 86400
+        "assetDecimals": 6
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -250,8 +247,7 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "onchainAssetSymbol": "USDT0"
       },
       "readErrors": [
         "missing revert data",
@@ -330,11 +326,11 @@
       "laneId": "plasma_pt_syrup",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:28.000Z",
-        "epochEnd": "2026-03-21T21:57:28.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
       },
       "requiredAsset": {
         "symbol": "syrupUSDT",
@@ -380,10 +376,7 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
         "onchainAssetSymbol": "syrupUSDT",
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:28.000Z",
-        "epochEnd": "2026-03-21T21:57:28.000Z",
-        "epochDurationSeconds": 86400
+        "assetDecimals": 6
       },
       "readErrors": [
         "missing revert data",
@@ -561,7 +554,7 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0.0024090364205608,
+        "totalAssets": 0.002408994387619162,
         "assetSymbol": "WETH",
         "tvlUsd": null,
         "priceUsd": null,
