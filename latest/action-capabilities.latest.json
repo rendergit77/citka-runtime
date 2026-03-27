@@ -1,12 +1,12 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-27T18:43:57.575Z",
+  "generatedAt": "2026-03-27T20:28:26.446Z",
   "rpcUrl": "https://rpc.plasma.to",
   "summary": {
     "totalLanes": 9,
     "depositAllowed": 8,
     "depositBlocked": 1,
-    "tvlUsdBackfilled": 2,
+    "tvlUsdBackfilled": 0,
     "errors": 1
   },
   "lanes": {
@@ -72,7 +72,7 @@
     },
     "plasma_aave_usdt0": {
       "laneId": "plasma_aave_usdt0",
-      "liveReadStatus": "ACTIVE",
+      "liveReadStatus": "PARTIAL",
       "epoch": {
         "epochId": 1,
         "epochStart": "2026-03-20T21:50:51.000Z",
@@ -116,28 +116,24 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0,
-        "tvlUsd": 0,
+        "totalAssets": null,
         "assetSymbol": "USDT0",
-        "reasonCode": null,
-        "source": "strategy_getTVL",
-        "priceUsd": 1,
-        "priceSource": "PEG_ASSUMPTION_STABLE"
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
       },
       "liveState": {
-        "liveReadStatus": "ACTIVE",
+        "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
         "assetDecimals": 6,
         "epochId": 1,
         "epochStart": "2026-03-20T21:50:51.000Z",
         "epochEnd": "2026-03-21T21:50:51.000Z",
-        "epochDurationSeconds": 86400,
-        "strategyTvlRaw": "0",
-        "tvlAssetAmount": 0,
-        "tvlSource": "strategy_getTVL"
+        "epochDurationSeconds": 86400
       },
-      "readErrors": []
+      "readErrors": [
+        "missing revert data",
+        "missing revert data"
+      ]
     },
     "plasma_stable_allocator_v2": {
       "laneId": "plasma_stable_allocator_v2",
@@ -185,37 +181,31 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 1.100378,
-        "tvlUsd": 1.100378,
+        "totalAssets": null,
         "assetSymbol": "USDT0",
-        "reasonCode": null,
-        "source": "vault_total_assets",
-        "priceUsd": 1,
-        "priceSource": "PEG_ASSUMPTION_STABLE"
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6,
-        "vaultTotalAssetsRaw": "1100378",
-        "tvlAssetAmount": 1.100378,
-        "tvlSource": "vault_total_assets"
+        "assetDecimals": 6
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
     },
     "plasma_pt_usde": {
       "laneId": "plasma_pt_usde",
-      "liveReadStatus": "ACTIVE",
+      "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:17.000Z",
-        "epochEnd": "2026-03-21T21:57:17.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
       },
       "requiredAsset": {
         "symbol": "USDT0",
@@ -253,38 +243,31 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0,
-        "tvlUsd": 0,
+        "totalAssets": null,
         "assetSymbol": "USDT0",
-        "reasonCode": null,
-        "source": "strategy_getTVL",
-        "priceUsd": 1,
-        "priceSource": "PEG_ASSUMPTION_STABLE"
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
       },
       "liveState": {
-        "liveReadStatus": "ACTIVE",
+        "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6,
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:17.000Z",
-        "epochEnd": "2026-03-21T21:57:17.000Z",
-        "epochDurationSeconds": 86400,
-        "strategyTvlRaw": "0",
-        "tvlAssetAmount": 0,
-        "tvlSource": "strategy_getTVL"
+        "assetDecimals": 6
       },
-      "readErrors": []
+      "readErrors": [
+        "missing revert data",
+        "missing revert data",
+        "missing revert data"
+      ]
     },
     "plasma_pt_susde": {
       "laneId": "plasma_pt_susde",
-      "liveReadStatus": "ACTIVE",
+      "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:23.000Z",
-        "epochEnd": "2026-03-21T21:57:23.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
       },
       "requiredAsset": {
         "symbol": "sUSDe",
@@ -331,23 +314,21 @@
         "priceSource": "PEG_ASSUMPTION_STABLE"
       },
       "liveState": {
-        "liveReadStatus": "ACTIVE",
+        "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
         "onchainAssetSymbol": "sUSDe",
         "assetDecimals": 18,
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:23.000Z",
-        "epochEnd": "2026-03-21T21:57:23.000Z",
-        "epochDurationSeconds": 86400,
         "strategyTvlRaw": "0",
         "tvlAssetAmount": 0,
         "tvlSource": "strategy_getTVL"
       },
-      "readErrors": []
+      "readErrors": [
+        "missing revert data"
+      ]
     },
     "plasma_pt_syrup": {
       "laneId": "plasma_pt_syrup",
-      "liveReadStatus": "ACTIVE",
+      "liveReadStatus": "PARTIAL",
       "epoch": {
         "epochId": 1,
         "epochStart": "2026-03-20T21:57:28.000Z",
@@ -391,28 +372,24 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0,
-        "tvlUsd": 0,
+        "totalAssets": null,
         "assetSymbol": "syrupUSDT",
-        "reasonCode": null,
-        "source": "strategy_getTVL",
-        "priceUsd": 1,
-        "priceSource": "PEG_ASSUMPTION_STABLE"
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
       },
       "liveState": {
-        "liveReadStatus": "ACTIVE",
+        "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
         "onchainAssetSymbol": "syrupUSDT",
-        "assetDecimals": 6,
         "epochId": 1,
         "epochStart": "2026-03-20T21:57:28.000Z",
         "epochEnd": "2026-03-21T21:57:28.000Z",
-        "epochDurationSeconds": 86400,
-        "strategyTvlRaw": "0",
-        "tvlAssetAmount": 0,
-        "tvlSource": "strategy_getTVL"
+        "epochDurationSeconds": 86400
       },
-      "readErrors": []
+      "readErrors": [
+        "missing revert data",
+        "missing revert data",
+        "missing revert data"
+      ]
     },
     "plasma_pt_syzusd": {
       "laneId": "plasma_pt_syzusd",
@@ -460,24 +437,18 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 6.426530850670762,
-        "tvlUsd": null,
+        "totalAssets": null,
         "assetSymbol": "yzUSD",
-        "reasonCode": null,
-        "source": "vault_total_assets",
-        "priceUsd": null,
-        "priceSource": null
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x6695c0f8706C5ACe3Bdf8995073179cCA47926dc",
         "onchainAssetSymbol": "yzUSD",
-        "assetDecimals": 18,
-        "vaultTotalAssetsRaw": "6426530850670761578",
-        "tvlAssetAmount": 6.426530850670762,
-        "tvlSource": "vault_total_assets"
+        "assetDecimals": 18
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -496,7 +467,7 @@
         "symbol": "USDT0",
         "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
         "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": null,
+        "onchainSymbol": "USDT0",
         "assetMismatch": false
       },
       "methods": {
@@ -528,21 +499,15 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 12.186984,
-        "tvlUsd": 12.186984,
+        "totalAssets": null,
         "assetSymbol": "USDT0",
-        "reasonCode": null,
-        "source": "vault_total_assets",
-        "priceUsd": 1,
-        "priceSource": "PEG_ASSUMPTION_STABLE"
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "assetDecimals": 6,
-        "vaultTotalAssetsRaw": "12186984",
-        "tvlAssetAmount": 12.186984,
-        "tvlSource": "vault_total_assets"
+        "onchainAssetSymbol": "USDT0",
+        "assetDecimals": 6
       },
       "readErrors": [
         "missing revert data",
@@ -596,7 +561,7 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0.002409074910847287,
+        "totalAssets": 0.0024090364205608,
         "assetSymbol": "WETH",
         "tvlUsd": null,
         "priceUsd": null,
@@ -606,12 +571,10 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
         "onchainAssetSymbol": "WETH",
-        "assetDecimals": 18,
-        "vaultTotalAssetsRaw": "2409074800324504",
-        "tvlAssetAmount": 0.002409074800324504,
-        "tvlSource": "vault_total_assets"
+        "assetDecimals": 18
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-03-27T18:43:43.129Z",
+  "generatedAt": "2026-03-27T20:28:11.581Z",
   "laneId": "plasma_fluid_weeth_recursive_carry",
-  "blockNumber": 17705160,
-  "blockTimestamp": 1774637023,
-  "timestamp": "2026-03-27T18:43:43.000Z",
+  "blockNumber": 17711428,
+  "blockTimestamp": 1774643291,
+  "timestamp": "2026-03-27T20:28:11.000Z",
   "nftId": "2415",
   "spreadSnapshot": {
-    "collateralSupplyAPR_bps": 265,
+    "collateralSupplyAPR_bps": 264,
     "borrowAPR_bps": 215,
-    "spreadBps": 50,
+    "spreadBps": 49,
     "spreadHealthy": true,
     "minSpreadBps": 30
   },
@@ -23,7 +23,7 @@
   "alerts": {
     "warningSpreadBps": 50,
     "criticalSpreadBps": 30,
-    "status": "OK"
+    "status": "WARNING"
   },
   "notes": [
     "Read-only 2h spread sweep for operator monitoring.",
