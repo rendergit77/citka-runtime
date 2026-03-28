@@ -1,6 +1,6 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-28T16:23:23.253Z",
+  "generatedAt": "2026-03-28T18:27:40.242Z",
   "rpcUrl": "https://rpc.plasma.to",
   "summary": {
     "totalLanes": 9,
@@ -188,10 +188,10 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "onchainAssetSymbol": "USDT0"
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -201,11 +201,11 @@
       "laneId": "plasma_pt_usde",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": null,
-        "epochStart": null,
-        "epochEnd": null,
-        "epochDurationSeconds": null,
-        "expired": false
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:17.000Z",
+        "epochEnd": "2026-03-21T21:57:17.000Z",
+        "epochDurationSeconds": 86400,
+        "expired": true
       },
       "requiredAsset": {
         "symbol": "USDT0",
@@ -251,10 +251,13 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "assetDecimals": 6,
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:17.000Z",
+        "epochEnd": "2026-03-21T21:57:17.000Z",
+        "epochDurationSeconds": 86400
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -263,17 +266,17 @@
       "laneId": "plasma_pt_susde",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": null,
-        "epochStart": null,
-        "epochEnd": null,
-        "epochDurationSeconds": null,
-        "expired": false
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:23.000Z",
+        "epochEnd": "2026-03-21T21:57:23.000Z",
+        "epochDurationSeconds": 86400,
+        "expired": true
       },
       "requiredAsset": {
         "symbol": "sUSDe",
         "address": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
         "onchainAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-        "onchainSymbol": null,
+        "onchainSymbol": "sUSDe",
         "assetMismatch": false
       },
       "methods": {
@@ -312,11 +315,14 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
-        "assetDecimals": 18
+        "onchainAssetSymbol": "sUSDe",
+        "assetDecimals": 18,
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:23.000Z",
+        "epochEnd": "2026-03-21T21:57:23.000Z",
+        "epochDurationSeconds": 86400
       },
       "readErrors": [
-        "missing revert data",
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -325,11 +331,11 @@
       "laneId": "plasma_pt_syrup",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": null,
-        "epochStart": null,
-        "epochEnd": null,
-        "epochDurationSeconds": null,
-        "expired": false
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:28.000Z",
+        "epochEnd": "2026-03-21T21:57:28.000Z",
+        "epochDurationSeconds": 86400,
+        "expired": true
       },
       "requiredAsset": {
         "symbol": "syrupUSDT",
@@ -375,10 +381,13 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
         "onchainAssetSymbol": "syrupUSDT",
-        "assetDecimals": 6
+        "assetDecimals": 6,
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:28.000Z",
+        "epochEnd": "2026-03-21T21:57:28.000Z",
+        "epochDurationSeconds": 86400
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -553,7 +562,7 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0.002408596201581544,
+        "totalAssets": 0.002409278472084254,
         "assetSymbol": "WETH",
         "tvlUsd": null,
         "priceUsd": null,
