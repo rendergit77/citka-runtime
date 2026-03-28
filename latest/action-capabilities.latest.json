@@ -1,12 +1,12 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-28T18:27:40.242Z",
+  "generatedAt": "2026-03-28T20:19:46.154Z",
   "rpcUrl": "https://rpc.plasma.to",
   "summary": {
     "totalLanes": 9,
     "depositAllowed": 8,
     "depositBlocked": 1,
-    "tvlUsdBackfilled": 0,
+    "tvlUsdBackfilled": 2,
     "errors": 1
   },
   "lanes": {
@@ -74,11 +74,11 @@
       "laneId": "plasma_aave_usdt0",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:50:51.000Z",
-        "epochEnd": "2026-03-21T21:50:51.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
       },
       "requiredAsset": {
         "symbol": "USDT0",
@@ -124,13 +124,10 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6,
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:50:51.000Z",
-        "epochEnd": "2026-03-21T21:50:51.000Z",
-        "epochDurationSeconds": 86400
+        "assetDecimals": 6
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -181,281 +178,30 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": null,
+        "totalAssets": 1.100426,
+        "tvlUsd": 1.100426,
         "assetSymbol": "USDT0",
-        "reasonCode": "TVL_DATA_UNAVAILABLE"
-      },
-      "liveState": {
-        "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0"
-      },
-      "readErrors": [
-        "missing revert data",
-        "missing revert data",
-        "missing revert data",
-        "missing revert data"
-      ]
-    },
-    "plasma_pt_usde": {
-      "laneId": "plasma_pt_usde",
-      "liveReadStatus": "PARTIAL",
-      "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:17.000Z",
-        "epochEnd": "2026-03-21T21:57:17.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
-      },
-      "requiredAsset": {
-        "symbol": "USDT0",
-        "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": "USDT0",
-        "assetMismatch": false
-      },
-      "methods": {
-        "deposit": "deposit",
-        "withdraw": "redeem",
-        "claim": "claim"
-      },
-      "deposit": {
-        "status": "OPEN",
-        "allowed": true,
         "reasonCode": null,
-        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
-        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
-        "ctaLabel": "Approve USDT0",
-        "nextWindowAt": null
-      },
-      "withdraw": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
-        "tooltip": "Redeems are instant subject to live liquidity guards."
-      },
-      "claim": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
-        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
-      },
-      "tvl": {
-        "totalAssets": null,
-        "assetSymbol": "USDT0",
-        "reasonCode": "TVL_DATA_UNAVAILABLE"
+        "source": "vault_total_assets",
+        "priceUsd": 1,
+        "priceSource": "PEG_ASSUMPTION_STABLE"
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
         "assetDecimals": 6,
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:17.000Z",
-        "epochEnd": "2026-03-21T21:57:17.000Z",
-        "epochDurationSeconds": 86400
+        "vaultTotalAssetsRaw": "1100426",
+        "tvlAssetAmount": 1.100426,
+        "tvlSource": "vault_total_assets"
       },
       "readErrors": [
         "missing revert data",
         "missing revert data"
       ]
     },
-    "plasma_pt_susde": {
-      "laneId": "plasma_pt_susde",
-      "liveReadStatus": "PARTIAL",
-      "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:23.000Z",
-        "epochEnd": "2026-03-21T21:57:23.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
-      },
-      "requiredAsset": {
-        "symbol": "sUSDe",
-        "address": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-        "onchainAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-        "onchainSymbol": "sUSDe",
-        "assetMismatch": false
-      },
-      "methods": {
-        "deposit": "deposit",
-        "withdraw": "redeem",
-        "claim": "claim"
-      },
-      "deposit": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
-        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
-        "ctaLabel": "Approve sUSDe",
-        "nextWindowAt": null
-      },
-      "withdraw": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
-        "tooltip": "Redeems are instant subject to live liquidity guards."
-      },
-      "claim": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
-        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
-      },
-      "tvl": {
-        "totalAssets": null,
-        "assetSymbol": "sUSDe",
-        "reasonCode": "TVL_DATA_UNAVAILABLE"
-      },
-      "liveState": {
-        "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
-        "onchainAssetSymbol": "sUSDe",
-        "assetDecimals": 18,
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:23.000Z",
-        "epochEnd": "2026-03-21T21:57:23.000Z",
-        "epochDurationSeconds": 86400
-      },
-      "readErrors": [
-        "missing revert data",
-        "missing revert data"
-      ]
-    },
-    "plasma_pt_syrup": {
-      "laneId": "plasma_pt_syrup",
-      "liveReadStatus": "PARTIAL",
-      "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:28.000Z",
-        "epochEnd": "2026-03-21T21:57:28.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
-      },
-      "requiredAsset": {
-        "symbol": "syrupUSDT",
-        "address": "0xc4374775489cb9c56003bf2c9b12495fc64f0771",
-        "onchainAddress": "0xc4374775489cb9c56003bf2c9b12495fc64f0771",
-        "onchainSymbol": "syrupUSDT",
-        "assetMismatch": false
-      },
-      "methods": {
-        "deposit": "deposit",
-        "withdraw": "redeem",
-        "claim": "claim"
-      },
-      "deposit": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
-        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
-        "ctaLabel": "Approve syrupUSDT",
-        "nextWindowAt": null
-      },
-      "withdraw": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
-        "tooltip": "Redeems are instant subject to live liquidity guards."
-      },
-      "claim": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
-        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
-      },
-      "tvl": {
-        "totalAssets": null,
-        "assetSymbol": "syrupUSDT",
-        "reasonCode": "TVL_DATA_UNAVAILABLE"
-      },
-      "liveState": {
-        "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
-        "onchainAssetSymbol": "syrupUSDT",
-        "assetDecimals": 6,
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:28.000Z",
-        "epochEnd": "2026-03-21T21:57:28.000Z",
-        "epochDurationSeconds": 86400
-      },
-      "readErrors": [
-        "missing revert data",
-        "missing revert data"
-      ]
-    },
-    "plasma_pt_syzusd": {
-      "laneId": "plasma_pt_syzusd",
-      "liveReadStatus": "PARTIAL",
-      "epoch": {
-        "epochId": null,
-        "epochStart": null,
-        "epochEnd": null,
-        "epochDurationSeconds": null,
-        "expired": false
-      },
-      "requiredAsset": {
-        "symbol": "yzUSD",
-        "address": "0x6695c0f8706c5ace3bdf8995073179cca47926dc",
-        "onchainAddress": "0x6695c0f8706c5ace3bdf8995073179cca47926dc",
-        "onchainSymbol": "yzUSD",
-        "assetMismatch": false
-      },
-      "methods": {
-        "deposit": "deposit",
-        "withdraw": "redeem",
-        "claim": "claim"
-      },
-      "deposit": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
-        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
-        "ctaLabel": "Approve yzUSD",
-        "nextWindowAt": null
-      },
-      "withdraw": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
-        "tooltip": "Redeems are instant subject to live liquidity guards."
-      },
-      "claim": {
-        "status": "OPEN",
-        "allowed": true,
-        "reasonCode": null,
-        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
-        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
-      },
-      "tvl": {
-        "totalAssets": null,
-        "assetSymbol": "yzUSD",
-        "reasonCode": "TVL_DATA_UNAVAILABLE"
-      },
-      "liveState": {
-        "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0x6695c0f8706C5ACe3Bdf8995073179cCA47926dc",
-        "onchainAssetSymbol": "yzUSD",
-        "assetDecimals": 18
-      },
-      "readErrors": [
-        "missing revert data",
-        "missing revert data",
-        "missing revert data"
-      ]
-    },
-    "plasma_fluid_susdai_recursive_carry": {
-      "laneId": "plasma_fluid_susdai_recursive_carry",
+    "plasma_pt_usde": {
+      "laneId": "plasma_pt_usde",
       "liveReadStatus": "PARTIAL",
       "epoch": {
         "epochId": null,
@@ -516,6 +262,266 @@
         "missing revert data"
       ]
     },
+    "plasma_pt_susde": {
+      "laneId": "plasma_pt_susde",
+      "liveReadStatus": "PARTIAL",
+      "epoch": {
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
+      },
+      "requiredAsset": {
+        "symbol": "sUSDe",
+        "address": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+        "onchainAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
+        "onchainSymbol": null,
+        "assetMismatch": false
+      },
+      "methods": {
+        "deposit": "deposit",
+        "withdraw": "redeem",
+        "claim": "claim"
+      },
+      "deposit": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "ctaLabel": "Approve sUSDe",
+        "nextWindowAt": null
+      },
+      "withdraw": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
+        "tooltip": "Redeems are instant subject to live liquidity guards."
+      },
+      "claim": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
+        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
+      },
+      "tvl": {
+        "totalAssets": null,
+        "assetSymbol": "sUSDe",
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
+      },
+      "liveState": {
+        "liveReadStatus": "PARTIAL",
+        "onchainAssetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
+        "assetDecimals": 18
+      },
+      "readErrors": [
+        "missing revert data",
+        "missing revert data",
+        "missing revert data",
+        "missing revert data"
+      ]
+    },
+    "plasma_pt_syrup": {
+      "laneId": "plasma_pt_syrup",
+      "liveReadStatus": "PARTIAL",
+      "epoch": {
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
+      },
+      "requiredAsset": {
+        "symbol": "syrupUSDT",
+        "address": "0xc4374775489cb9c56003bf2c9b12495fc64f0771",
+        "onchainAddress": "0xc4374775489cb9c56003bf2c9b12495fc64f0771",
+        "onchainSymbol": "syrupUSDT",
+        "assetMismatch": false
+      },
+      "methods": {
+        "deposit": "deposit",
+        "withdraw": "redeem",
+        "claim": "claim"
+      },
+      "deposit": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "ctaLabel": "Approve syrupUSDT",
+        "nextWindowAt": null
+      },
+      "withdraw": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
+        "tooltip": "Redeems are instant subject to live liquidity guards."
+      },
+      "claim": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
+        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
+      },
+      "tvl": {
+        "totalAssets": null,
+        "assetSymbol": "syrupUSDT",
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
+      },
+      "liveState": {
+        "liveReadStatus": "PARTIAL",
+        "onchainAssetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
+        "onchainAssetSymbol": "syrupUSDT",
+        "assetDecimals": 6
+      },
+      "readErrors": [
+        "missing revert data",
+        "missing revert data",
+        "missing revert data"
+      ]
+    },
+    "plasma_pt_syzusd": {
+      "laneId": "plasma_pt_syzusd",
+      "liveReadStatus": "PARTIAL",
+      "epoch": {
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
+      },
+      "requiredAsset": {
+        "symbol": "yzUSD",
+        "address": "0x6695c0f8706c5ace3bdf8995073179cca47926dc",
+        "onchainAddress": "0x6695c0f8706c5ace3bdf8995073179cca47926dc",
+        "onchainSymbol": "yzUSD",
+        "assetMismatch": false
+      },
+      "methods": {
+        "deposit": "deposit",
+        "withdraw": "redeem",
+        "claim": "claim"
+      },
+      "deposit": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "ctaLabel": "Approve yzUSD",
+        "nextWindowAt": null
+      },
+      "withdraw": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
+        "tooltip": "Redeems are instant subject to live liquidity guards."
+      },
+      "claim": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
+        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
+      },
+      "tvl": {
+        "totalAssets": 6.426691228676745,
+        "tvlUsd": null,
+        "assetSymbol": "yzUSD",
+        "reasonCode": null,
+        "source": "vault_total_assets",
+        "priceUsd": null,
+        "priceSource": null
+      },
+      "liveState": {
+        "liveReadStatus": "PARTIAL",
+        "onchainAssetAddress": "0x6695c0f8706C5ACe3Bdf8995073179cCA47926dc",
+        "onchainAssetSymbol": "yzUSD",
+        "assetDecimals": 18,
+        "vaultTotalAssetsRaw": "6426691228676744722",
+        "tvlAssetAmount": 6.426691228676745,
+        "tvlSource": "vault_total_assets"
+      },
+      "readErrors": [
+        "missing revert data",
+        "missing revert data"
+      ]
+    },
+    "plasma_fluid_susdai_recursive_carry": {
+      "laneId": "plasma_fluid_susdai_recursive_carry",
+      "liveReadStatus": "PARTIAL",
+      "epoch": {
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
+      },
+      "requiredAsset": {
+        "symbol": "USDT0",
+        "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+        "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+        "onchainSymbol": "USDT0",
+        "assetMismatch": false
+      },
+      "methods": {
+        "deposit": "deposit",
+        "withdraw": "redeem",
+        "claim": "claim"
+      },
+      "deposit": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "ctaLabel": "Approve USDT0",
+        "nextWindowAt": null
+      },
+      "withdraw": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
+        "tooltip": "Redeems are instant subject to live liquidity guards."
+      },
+      "claim": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
+        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
+      },
+      "tvl": {
+        "totalAssets": 12.195133,
+        "tvlUsd": 12.195133,
+        "assetSymbol": "USDT0",
+        "reasonCode": null,
+        "source": "vault_total_assets",
+        "priceUsd": 1,
+        "priceSource": "PEG_ASSUMPTION_STABLE"
+      },
+      "liveState": {
+        "liveReadStatus": "PARTIAL",
+        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "onchainAssetSymbol": "USDT0",
+        "assetDecimals": 6,
+        "vaultTotalAssetsRaw": "12195133",
+        "tvlAssetAmount": 12.195133,
+        "tvlSource": "vault_total_assets"
+      },
+      "readErrors": [
+        "missing revert data",
+        "missing revert data"
+      ]
+    },
     "plasma_fluid_weeth_recursive_carry": {
       "laneId": "plasma_fluid_weeth_recursive_carry",
       "liveReadStatus": "PARTIAL",
@@ -562,7 +568,7 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 0.002409278472084254,
+        "totalAssets": 0.002409237173134551,
         "assetSymbol": "WETH",
         "tvlUsd": null,
         "priceUsd": null,
@@ -572,10 +578,12 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
         "onchainAssetSymbol": "WETH",
-        "assetDecimals": 18
+        "assetDecimals": 18,
+        "vaultTotalAssetsRaw": "2409237068751428",
+        "tvlAssetAmount": 0.002409237068751428,
+        "tvlSource": "vault_total_assets"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
