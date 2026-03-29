@@ -1,13 +1,13 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-28T22:19:32.560Z",
-  "ageSeconds": 249,
+  "generatedAt": "2026-03-29T01:24:24.968Z",
+  "ageSeconds": 260,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 17804506,
-  "rpcUsed": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
+  "blockNumber": 17815599,
+  "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
-  "rpcEndpointsAvailable": 2,
+  "rpcEndpointsAvailable": 1,
   "observedApyNumericCount": 8,
   "observedApyZeroCount": 0,
   "missingCount": 0,
@@ -21,7 +21,7 @@
       "reasonCode": "CORE_BOOST_CONFIG_PENDING"
     },
     "plasma_aave_usdt0": {
-      "apyPct": 2.767746834529112,
+      "apyPct": 2.7670569667126315,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
@@ -39,7 +39,7 @@
       "reasonCode": null
     },
     "plasma_pt_susde": {
-      "apyPct": 3.903131354569611,
+      "apyPct": 3.903980167480192,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_susde",
       "reasonCode": null
@@ -51,19 +51,19 @@
       "reasonCode": null
     },
     "plasma_pt_syzusd": {
-      "apyPct": 8.555991162803366,
+      "apyPct": 8.55772548771836,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_syzusd",
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": 7.160031356190752,
+      "apyPct": 7.348237043805241,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 2.3,
+      "apyPct": 2.2,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
