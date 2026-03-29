@@ -1,8 +1,13 @@
 {
   "schemaVersion": "citka-observation-history-v0",
-  "exportedAt": "2026-03-29T08:32:34.205Z",
+  "exportedAt": "2026-03-29T10:28:28.665Z",
   "lanes": {
     "plasma_aave_usdt0": [
+      {
+        "apyPct": 2.8089854874325124,
+        "observedAt": "2026-03-29T10:23:58.969Z",
+        "source": "AaveDataProvider.getReserveData:liquidityRate"
+      },
       {
         "apyPct": 2.7985520046192347,
         "observedAt": "2026-03-29T08:30:18.909Z",
@@ -377,24 +382,14 @@
         "apyPct": 2.7876353392025166,
         "observedAt": "2026-03-22T11:53:17.127Z",
         "source": "AaveDataProvider.getReserveData:liquidityRate"
-      },
-      {
-        "apyPct": 2.787834315056594,
-        "observedAt": "2026-03-22T10:18:41.792Z",
-        "source": "AaveDataProvider.getReserveData:liquidityRate"
-      },
-      {
-        "apyPct": 2.796698446467915,
-        "observedAt": "2026-03-22T10:09:35.467Z",
-        "source": "AaveDataProvider.getReserveData:liquidityRate"
-      },
-      {
-        "apyPct": 2.79679947331019,
-        "observedAt": "2026-03-22T08:51:37.351Z",
-        "source": "AaveDataProvider.getReserveData:liquidityRate"
       }
     ],
     "plasma_stable_allocator_v2": [
+      {
+        "apyPct": 2.96,
+        "observedAt": "2026-03-29T10:23:58.969Z",
+        "source": "stable_allocator_observation_weighted_gross_apr"
+      },
       {
         "apyPct": 2.96,
         "observedAt": "2026-03-29T08:30:18.909Z",
@@ -769,24 +764,14 @@
         "apyPct": 3.27,
         "observedAt": "2026-03-22T11:53:17.127Z",
         "source": "stable_allocator_observation_weighted_gross_apr"
-      },
-      {
-        "apyPct": 3.27,
-        "observedAt": "2026-03-22T10:18:41.792Z",
-        "source": "stable_allocator_observation_weighted_gross_apr"
-      },
-      {
-        "apyPct": 3.28,
-        "observedAt": "2026-03-22T10:09:35.467Z",
-        "source": "stable_allocator_observation_weighted_gross_apr"
-      },
-      {
-        "apyPct": 3.28,
-        "observedAt": "2026-03-22T08:51:37.351Z",
-        "source": "stable_allocator_observation_weighted_gross_apr"
       }
     ],
     "plasma_pt_usde": [
+      {
+        "apyPct": 3.773783206001191,
+        "observedAt": "2026-03-29T10:23:58.969Z",
+        "source": "PendleMarket._storage:lastLnImpliedRate"
+      },
       {
         "apyPct": 3.9507641376799185,
         "observedAt": "2026-03-29T08:30:18.909Z",
@@ -1161,24 +1146,14 @@
         "apyPct": 3.8786387627793406,
         "observedAt": "2026-03-22T11:53:17.127Z",
         "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 3.8786387627793406,
-        "observedAt": "2026-03-22T10:18:41.792Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 3.8786387627793406,
-        "observedAt": "2026-03-22T10:09:35.467Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 3.878638832910508,
-        "observedAt": "2026-03-22T08:51:37.351Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
       }
     ],
     "plasma_pt_susde": [
+      {
+        "apyPct": 3.904119651888416,
+        "observedAt": "2026-03-29T10:23:58.969Z",
+        "source": "PendleMarket._storage:lastLnImpliedRate"
+      },
       {
         "apyPct": 3.9039798028625228,
         "observedAt": "2026-03-29T08:30:18.909Z",
@@ -1553,24 +1528,14 @@
         "apyPct": 3.9813908274891174,
         "observedAt": "2026-03-22T11:53:17.127Z",
         "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 3.8640821326080266,
-        "observedAt": "2026-03-22T10:18:41.792Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 3.8640821326080266,
-        "observedAt": "2026-03-22T10:09:35.467Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 3.8640821326080266,
-        "observedAt": "2026-03-22T08:51:37.351Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
       }
     ],
     "plasma_pt_syrup": [
+      {
+        "apyPct": 4.504068871170208,
+        "observedAt": "2026-03-29T10:23:58.969Z",
+        "source": "PendleMarket._storage:lastLnImpliedRate"
+      },
       {
         "apyPct": 4.504068871170208,
         "observedAt": "2026-03-29T08:30:18.909Z",
@@ -1945,24 +1910,14 @@
         "apyPct": 4.583567940300304,
         "observedAt": "2026-03-22T11:53:17.127Z",
         "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 4.583567940300304,
-        "observedAt": "2026-03-22T10:18:41.792Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 4.583567940300304,
-        "observedAt": "2026-03-22T10:09:35.467Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 4.583567940300304,
-        "observedAt": "2026-03-22T08:51:37.351Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
       }
     ],
     "plasma_fluid_susdai_recursive_carry": [
+      {
+        "apyPct": 7.590006292234483,
+        "observedAt": "2026-03-29T10:23:58.969Z",
+        "source": "lane_level_carry_artifact"
+      },
       {
         "apyPct": 7.876405048753043,
         "observedAt": "2026-03-29T08:30:18.909Z",
@@ -2337,24 +2292,14 @@
         "apyPct": -77.8888045155939,
         "observedAt": "2026-03-22T11:53:17.127Z",
         "source": "lane_level_carry_artifact"
-      },
-      {
-        "apyPct": -75.79618911181483,
-        "observedAt": "2026-03-22T10:18:41.792Z",
-        "source": "lane_level_carry_artifact"
-      },
-      {
-        "apyPct": -76.1534186889444,
-        "observedAt": "2026-03-22T10:09:35.467Z",
-        "source": "lane_level_carry_artifact"
-      },
-      {
-        "apyPct": -73.55955752913798,
-        "observedAt": "2026-03-22T08:51:37.351Z",
-        "source": "lane_level_carry_artifact"
       }
     ],
     "plasma_fluid_weeth_recursive_carry": [
+      {
+        "apyPct": 1.9,
+        "observedAt": "2026-03-29T10:23:58.969Z",
+        "source": "lane_level_tactical_carry_artifact"
+      },
       {
         "apyPct": 1.95,
         "observedAt": "2026-03-29T08:30:18.909Z",
@@ -2729,24 +2674,14 @@
         "apyPct": 2.05,
         "observedAt": "2026-03-22T11:53:17.127Z",
         "source": "lane_level_tactical_carry_artifact"
-      },
-      {
-        "apyPct": 2.2,
-        "observedAt": "2026-03-22T10:18:41.792Z",
-        "source": "lane_level_tactical_carry_artifact"
-      },
-      {
-        "apyPct": 2.2,
-        "observedAt": "2026-03-22T10:09:35.467Z",
-        "source": "lane_level_tactical_carry_artifact"
-      },
-      {
-        "apyPct": 2.25,
-        "observedAt": "2026-03-22T08:51:37.351Z",
-        "source": "lane_level_tactical_carry_artifact"
       }
     ],
     "plasma_pt_syzusd": [
+      {
+        "apyPct": 8.575728541572293,
+        "observedAt": "2026-03-29T10:23:58.969Z",
+        "source": "PendleMarket._storage:lastLnImpliedRate"
+      },
       {
         "apyPct": 8.55772548771836,
         "observedAt": "2026-03-29T08:30:18.909Z",
@@ -3120,21 +3055,6 @@
       {
         "apyPct": 7.405887613696827,
         "observedAt": "2026-03-22T11:53:17.127Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 7.405887613696827,
-        "observedAt": "2026-03-22T10:18:41.792Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 7.405887613696827,
-        "observedAt": "2026-03-22T10:09:35.467Z",
-        "source": "PendleMarket._storage:lastLnImpliedRate"
-      },
-      {
-        "apyPct": 7.405887613696827,
-        "observedAt": "2026-03-22T08:51:37.351Z",
         "source": "PendleMarket._storage:lastLnImpliedRate"
       }
     ]
