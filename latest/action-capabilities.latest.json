@@ -1,12 +1,12 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-30T12:55:19.519Z",
+  "generatedAt": "2026-03-30T14:47:45.009Z",
   "rpcUrl": "https://rpc.plasma.to",
   "summary": {
     "totalLanes": 10,
     "depositAllowed": 9,
     "depositBlocked": 1,
-    "tvlUsdBackfilled": 9,
+    "tvlUsdBackfilled": 8,
     "errors": 1
   },
   "lanes": {
@@ -75,7 +75,7 @@
     },
     "plasma_aave_usdt0": {
       "laneId": "plasma_aave_usdt0",
-      "liveReadStatus": "ACTIVE",
+      "liveReadStatus": "PARTIAL",
       "epoch": {
         "epochId": 1,
         "epochStart": "2026-03-20T21:50:51.000Z",
@@ -126,19 +126,18 @@
         "assetSymbol": "USDT0"
       },
       "liveState": {
-        "liveReadStatus": "ACTIVE",
+        "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6,
         "epochId": 1,
         "epochStart": "2026-03-20T21:50:51.000Z",
         "epochEnd": "2026-03-21T21:50:51.000Z",
-        "epochDurationSeconds": 86400,
-        "strategyTvlRaw": "0",
-        "tvlAssetAmount": 0,
-        "tvlSource": "strategy_getTVL"
+        "epochDurationSeconds": 86400
       },
-      "readErrors": []
+      "readErrors": [
+        "missing revert data",
+        "missing revert data"
+      ]
     },
     "plasma_stable_allocator_v2": {
       "laneId": "plasma_stable_allocator_v2",
@@ -154,7 +153,7 @@
         "symbol": "USDT0",
         "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
         "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": null,
+        "onchainSymbol": "USDT0",
         "assetMismatch": false
       },
       "methods": {
@@ -194,18 +193,21 @@
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"
+        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "onchainAssetSymbol": "USDT0",
+        "assetDecimals": 6,
+        "vaultTotalAssetsRaw": "1100505",
+        "tvlAssetAmount": 1.100505,
+        "tvlSource": "vault_total_assets"
       },
       "readErrors": [
-        "missing revert data",
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
     },
     "plasma_pt_usde": {
       "laneId": "plasma_pt_usde",
-      "liveReadStatus": "PARTIAL",
+      "liveReadStatus": "ACTIVE",
       "epoch": {
         "epochId": 1,
         "epochStart": "2026-03-20T21:57:17.000Z",
@@ -217,7 +219,7 @@
         "symbol": "USDT0",
         "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
         "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": null,
+        "onchainSymbol": "USDT0",
         "assetMismatch": false
       },
       "methods": {
@@ -256,8 +258,9 @@
         "assetSymbol": "USDT0"
       },
       "liveState": {
-        "liveReadStatus": "PARTIAL",
+        "liveReadStatus": "ACTIVE",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "onchainAssetSymbol": "USDT0",
         "assetDecimals": 6,
         "epochId": 1,
         "epochStart": "2026-03-20T21:57:17.000Z",
@@ -267,9 +270,7 @@
         "tvlAssetAmount": 0,
         "tvlSource": "strategy_getTVL"
       },
-      "readErrors": [
-        "missing revert data"
-      ]
+      "readErrors": []
     },
     "plasma_pt_susde": {
       "laneId": "plasma_pt_susde",
@@ -285,7 +286,7 @@
         "symbol": "sUSDe",
         "address": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
         "onchainAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-        "onchainSymbol": "sUSDe",
+        "onchainSymbol": null,
         "assetMismatch": false
       },
       "methods": {
@@ -326,13 +327,13 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
-        "onchainAssetSymbol": "sUSDe",
         "epochId": 1,
         "epochStart": "2026-03-20T21:57:23.000Z",
         "epochEnd": "2026-03-21T21:57:23.000Z",
         "epochDurationSeconds": 86400
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -460,10 +461,12 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x6695c0f8706C5ACe3Bdf8995073179cCA47926dc",
         "onchainAssetSymbol": "yzUSD",
-        "assetDecimals": 18
+        "assetDecimals": 18,
+        "vaultTotalAssetsRaw": "6427074561815684604",
+        "tvlAssetAmount": 6.427074561815685,
+        "tvlSource": "vault_total_assets"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -525,8 +528,8 @@
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
         "assetDecimals": 6,
-        "vaultTotalAssetsRaw": "12194745",
-        "tvlAssetAmount": 12.194745,
+        "vaultTotalAssetsRaw": "12194453",
+        "tvlAssetAmount": 12.194453,
         "tvlSource": "vault_total_assets"
       },
       "readErrors": [
@@ -589,13 +592,10 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
-        "onchainAssetSymbol": "WETH",
-        "assetDecimals": 18,
-        "vaultTotalAssetsRaw": "2409163922616137",
-        "tvlAssetAmount": 0.002409163922616137,
-        "tvlSource": "vault_total_assets"
+        "onchainAssetSymbol": "WETH"
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -646,24 +646,21 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 15,
-        "tvlUsd": 15,
+        "totalAssets": null,
+        "tvlUsd": null,
+        "priceUsd": null,
+        "priceSource": null,
         "assetSymbol": "USDT0",
-        "reasonCode": null,
-        "source": "vault_total_assets",
-        "priceUsd": 1,
-        "priceSource": "PEG_ASSUMPTION_STABLE"
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6,
-        "vaultTotalAssetsRaw": "15000000",
-        "tvlAssetAmount": 15,
-        "tvlSource": "vault_total_assets"
+        "assetDecimals": 6
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
