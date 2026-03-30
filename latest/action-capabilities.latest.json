@@ -1,7 +1,7 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-30T09:57:06.894Z",
-  "rpcUrl": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
+  "generatedAt": "2026-03-30T10:55:37.091Z",
+  "rpcUrl": "https://rpc.plasma.to",
   "summary": {
     "totalLanes": 10,
     "depositAllowed": 9,
@@ -69,19 +69,19 @@
       "readErrors": [
         "could not decode result data",
         "could not decode result data",
-        "missing revert data",
-        "missing revert data"
+        "could not decode result data",
+        "could not decode result data"
       ]
     },
     "plasma_aave_usdt0": {
       "laneId": "plasma_aave_usdt0",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": null,
-        "epochStart": null,
-        "epochEnd": null,
-        "epochDurationSeconds": null,
-        "expired": false
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:50:51.000Z",
+        "epochEnd": "2026-03-21T21:50:51.000Z",
+        "epochDurationSeconds": 86400,
+        "expired": true
       },
       "requiredAsset": {
         "symbol": "USDT0",
@@ -129,7 +129,10 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:50:51.000Z",
+        "epochEnd": "2026-03-21T21:50:51.000Z",
+        "epochDurationSeconds": 86400
       },
       "readErrors": [
         "missing revert data",
@@ -151,7 +154,7 @@
         "symbol": "USDT0",
         "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
         "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": "USDT0",
+        "onchainSymbol": null,
         "assetMismatch": false
       },
       "methods": {
@@ -191,11 +194,11 @@
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"
       },
       "readErrors": [
+        "missing revert data",
+        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -205,17 +208,17 @@
       "laneId": "plasma_pt_usde",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": null,
-        "epochStart": null,
-        "epochEnd": null,
-        "epochDurationSeconds": null,
-        "expired": false
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:17.000Z",
+        "epochEnd": "2026-03-21T21:57:17.000Z",
+        "epochDurationSeconds": 86400,
+        "expired": true
       },
       "requiredAsset": {
         "symbol": "USDT0",
         "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
         "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": "USDT0",
+        "onchainSymbol": null,
         "assetMismatch": false
       },
       "methods": {
@@ -256,8 +259,11 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "assetDecimals": 6,
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:17.000Z",
+        "epochEnd": "2026-03-21T21:57:17.000Z",
+        "epochDurationSeconds": 86400
       },
       "readErrors": [
         "missing revert data",
@@ -269,11 +275,11 @@
       "laneId": "plasma_pt_susde",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": null,
-        "epochStart": null,
-        "epochEnd": null,
-        "epochDurationSeconds": null,
-        "expired": false
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:23.000Z",
+        "epochEnd": "2026-03-21T21:57:23.000Z",
+        "epochDurationSeconds": 86400,
+        "expired": true
       },
       "requiredAsset": {
         "symbol": "sUSDe",
@@ -321,10 +327,13 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
         "onchainAssetSymbol": "sUSDe",
-        "assetDecimals": 18
+        "assetDecimals": 18,
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:23.000Z",
+        "epochEnd": "2026-03-21T21:57:23.000Z",
+        "epochDurationSeconds": 86400
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -333,11 +342,11 @@
       "laneId": "plasma_pt_syrup",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": null,
-        "epochStart": null,
-        "epochEnd": null,
-        "epochDurationSeconds": null,
-        "expired": false
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:28.000Z",
+        "epochEnd": "2026-03-21T21:57:28.000Z",
+        "epochDurationSeconds": 86400,
+        "expired": true
       },
       "requiredAsset": {
         "symbol": "syrupUSDT",
@@ -385,10 +394,13 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
         "onchainAssetSymbol": "syrupUSDT",
-        "assetDecimals": 6
+        "assetDecimals": 6,
+        "epochId": 1,
+        "epochStart": "2026-03-20T21:57:28.000Z",
+        "epochEnd": "2026-03-21T21:57:28.000Z",
+        "epochDurationSeconds": 86400
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -512,10 +524,10 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0"
+        "onchainAssetSymbol": "USDT0",
+        "assetDecimals": 6
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -535,7 +547,7 @@
         "symbol": "WETH",
         "address": "0x9895d81bb462a195b4922ed7de0e3acd007c32cb",
         "onchainAddress": "0x9895d81bb462a195b4922ed7de0e3acd007c32cb",
-        "onchainSymbol": null,
+        "onchainSymbol": "WETH",
         "assetMismatch": false
       },
       "methods": {
@@ -575,11 +587,11 @@
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB"
+        "onchainAssetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
+        "onchainAssetSymbol": "WETH",
+        "assetDecimals": 18
       },
       "readErrors": [
-        "missing revert data",
-        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -599,7 +611,7 @@
         "symbol": "USDT0",
         "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
         "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": null,
+        "onchainSymbol": "USDT0",
         "assetMismatch": false
       },
       "methods": {
@@ -641,10 +653,10 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "onchainAssetSymbol": "USDT0",
         "assetDecimals": 6
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
