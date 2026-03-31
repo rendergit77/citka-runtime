@@ -1,27 +1,27 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-03-31T21:00:32.260Z",
-  "ageSeconds": 170,
+  "generatedAt": "2026-03-31T21:25:03.700Z",
+  "ageSeconds": 341,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 18058967,
+  "blockNumber": 18060438,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
-  "observedApyNumericCount": 9,
+  "observedApyNumericCount": 11,
   "observedApyZeroCount": 0,
   "missingCount": 0,
   "rpcErrorCount": 0,
   "status": "FRESH",
   "lanes": {
     "plasma_core_boost_usdt0": {
-      "apyPct": null,
-      "status": "MISSING",
+      "apyPct": 2.71,
+      "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_core_boost_usdt0",
-      "reasonCode": "CORE_BOOST_CONFIG_PENDING"
+      "reasonCode": null
     },
     "plasma_aave_usdt0": {
-      "apyPct": 2.7141837215539333,
+      "apyPct": 2.7141874685326233,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
@@ -57,7 +57,7 @@
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": 17.767959150538474,
+      "apyPct": 17.33456864942285,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
       "reasonCode": null
@@ -69,16 +69,16 @@
       "reasonCode": null
     },
     "plasma_fluid_susde_recursive_carry": {
-      "apyPct": 7.763578817640836,
+      "apyPct": 7.464346391448435,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susde_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_susde_carry_barbell": {
-      "apyPct": null,
-      "status": "MISSING",
+      "apyPct": 2.71,
+      "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susde_carry_barbell",
-      "reasonCode": "BARBELL_OBSERVATION_PENDING"
+      "reasonCode": null
     },
     "plasma_dual_carry_engine": {
       "apyPct": null,
