@@ -1,9 +1,9 @@
 {
   "version": "vault_economics_snapshot.v3",
   "policyVersionHash": "sha256:aa48bc4892a1bfb2c29bc4dfef413cf4420765502f55915dbb4219bedfa1e930",
-  "generatedAt": "2026-03-31T20:34:57.094Z",
-  "observedAt": "2026-03-31T20:34:57.094Z",
-  "expiresAt": "2026-04-01T00:34:57.094Z",
+  "generatedAt": "2026-03-31T21:00:48.853Z",
+  "observedAt": "2026-03-31T21:00:48.853Z",
+  "expiresAt": "2026-04-01T01:00:48.853Z",
   "freshnessStatus": "FRESH",
   "totalsByMode": {
     "MEASURED": 9,
@@ -58,7 +58,7 @@
         "priceUsd": 1,
         "priceSource": "STABLE_PEG_1_USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -226,7 +226,7 @@
         "priceUsd": null,
         "priceSource": "UNKNOWN",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -727,12 +727,12 @@
     "plasma_emode_usde_looper": {
       "tvl": {
         "tvlUsd": 0.001001,
-        "totalAssets": "1000679781038941",
+        "totalAssets": "1000680186379353",
         "assetSymbol": null,
         "priceUsd": null,
         "priceSource": "UNKNOWN",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -3073,13 +3073,13 @@
           "reasonCode": "CORE_BOOST_CONFIG_PENDING",
           "explanation": "Market APY unavailable from the onchain observer.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "core_boost_barbell",
             "method": "core_boost_observation_blended_apr",
             "evidenceRef": "ops/runtime/core-boost-observation.latest.json",
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -3094,7 +3094,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
           "explanation": "This lane exposes market-observed APY only. Product-realized APY is not an active runtime rail for this lane type.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -3134,7 +3134,7 @@
         "priceUsd": 1,
         "priceSource": "STABLE_PEG_1_USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -3226,7 +3226,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.027142080865,
+          "apy": 0.027141837216,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -3250,7 +3250,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 2.714208086521491,
+        "underlyingDirectNetApy": 2.7141837215539333,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -3262,13 +3262,13 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.714208086521491,
+      "grossApyPct": 2.7141837215539333,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.714208086521491,
+        "headlineYieldPct": 2.7141837215539333,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -3277,24 +3277,24 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 2.714208086521491,
+          "apyPct": 2.7141837215539333,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "0xf2D6E38B407e31E7E7e4a16E6769728b76c7419F",
             "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
             "method": "AaveDataProvider.getReserveData:liquidityRate",
-            "rateRayStr": "27142080865214910529115103",
-            "liquidityApyPct": 2.714208086521491,
+            "rateRayStr": "27141837215539333796414168",
+            "liquidityApyPct": 2.7141837215539333,
             "intrinsicApyPct": null,
-            "combinedGrossApyPct": 2.714208086521491,
+            "combinedGrossApyPct": 2.7141837215539333,
             "intrinsicSource": null,
             "conversionMethod": "rayToPct_bigint_safe",
             "attempts": 1,
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -3309,7 +3309,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
           "explanation": "This lane exposes market-observed APY only. Product-realized APY is not an active runtime rail for this lane type.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -3341,15 +3341,15 @@
     },
     "plasma_stable_allocator_v2": {
       "tvl": {
-        "tvlUsd": 1.100561,
-        "totalAssets": "1100561",
+        "tvlUsd": 1.100562,
+        "totalAssets": "1100562",
         "assetAmount": null,
         "decimals": 6,
         "assetSymbol": "USDT0",
         "priceUsd": 1,
         "priceSource": "STABLE_PEG_1_USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -3501,15 +3501,15 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "0x0a660B3Cbd7DF118501E7Bb0f2D6eC5E5e583Bf8",
             "method": "stable_allocator_observation_weighted_gross_apr",
             "aprBps": 281,
             "targetMode": "PREMIUM_DRAIN",
             "evidenceRef": "ops/runtime/plasma_stable_allocator_v2_observation.latest.json",
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -3524,7 +3524,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
           "explanation": "This lane exposes market-observed APY only. Product-realized APY is not an active runtime rail for this lane type.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -3564,7 +3564,7 @@
         "priceUsd": 1,
         "priceSource": "STABLE_PEG_1_USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -3716,7 +3716,7 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "0x4bab3368dedb3398664e845612d189666c6c3f5f",
             "expiry": 1775692800,
@@ -3724,8 +3724,8 @@
             "lastLnImpliedRateStr": "38814728611423989",
             "scale": "uint96_div_1e18",
             "attemptsTotal": 2,
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -3740,7 +3740,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_IMPLIED_LANE",
           "explanation": "This lane is surfaced through implied hold-to-maturity economics, not product-realized APY.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -3780,7 +3780,7 @@
         "priceUsd": 1,
         "priceSource": "STABLE_PEG_1_USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -3877,7 +3877,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.03916987381,
+          "apy": 0.039170826331,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -3901,7 +3901,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 3.91698738104278,
+        "underlyingDirectNetApy": 3.917082633053015,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -3913,13 +3913,13 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 3.91698738104278,
+      "grossApyPct": 3.917082633053015,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 3.91698738104278,
+        "headlineYieldPct": 3.917082633053015,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -3928,20 +3928,20 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 3.91698738104278,
+          "apyPct": 3.917082633053015,
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "0x5fa69163085efd4767f24639eb1fb87ed34bbb12",
             "expiry": 1775692800,
             "method": "PendleMarket._storage:lastLnImpliedRate",
-            "lastLnImpliedRateStr": "38422196164229026",
+            "lastLnImpliedRateStr": "38423112780164260",
             "scale": "uint96_div_1e18",
             "attemptsTotal": 2,
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -3956,7 +3956,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_IMPLIED_LANE",
           "explanation": "This lane is surfaced through implied hold-to-maturity economics, not product-realized APY.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -3996,7 +3996,7 @@
         "priceUsd": 1,
         "priceSource": "STABLE_PEG_1_USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -4148,7 +4148,7 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "0x5f6b7f7105340ce6e7c8844279f33776262b5180",
             "expiry": 1777507200,
@@ -4156,8 +4156,8 @@
             "lastLnImpliedRateStr": "44055821224987916",
             "scale": "uint96_div_1e18",
             "attemptsTotal": 2,
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -4172,7 +4172,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_IMPLIED_LANE",
           "explanation": "This lane is surfaced through implied hold-to-maturity economics, not product-realized APY.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4204,15 +4204,15 @@
     },
     "plasma_pt_syzusd": {
       "tvl": {
-        "tvlUsd": 6.428181,
-        "totalAssets": "6428180905993033478",
+        "tvlUsd": 6.428184,
+        "totalAssets": "6428184456052872152",
         "assetAmount": null,
         "decimals": 18,
         "assetSymbol": "yzUSD",
         "priceUsd": 1,
         "priceSource": "STABLE_PEG_1_USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -4364,7 +4364,7 @@
           "reasonCode": null,
           "explanation": "Refreshable anytime from onchain observer reads.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "0x798af9720d9497b00a4ce885f91d14f21bd05932",
             "expiry": 1777507200,
@@ -4372,8 +4372,8 @@
             "lastLnImpliedRateStr": "71952481603592215",
             "scale": "uint96_div_1e18",
             "attemptsTotal": 2,
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -4388,7 +4388,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_IMPLIED_LANE",
           "explanation": "This lane is surfaced through implied hold-to-maturity economics, not product-realized APY.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4420,15 +4420,15 @@
     },
     "plasma_fluid_susdai_recursive_carry": {
       "tvl": {
-        "tvlUsd": 12.201525,
-        "totalAssets": "12201525",
+        "tvlUsd": 12.201448,
+        "totalAssets": "12201448",
         "assetAmount": null,
         "decimals": 6,
         "assetSymbol": "USDT0",
         "priceUsd": 1,
         "priceSource": "STABLE_PEG_1_USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -4525,7 +4525,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.182381895946,
+          "apy": 0.177679591505,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4549,7 +4549,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 18.23818959457052,
+        "underlyingDirectNetApy": 17.767959150538474,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -4561,13 +4561,13 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 18.23818959457052,
+      "grossApyPct": 17.767959150538474,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 18.23818959457052,
+        "headlineYieldPct": 17.767959150538474,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -4576,11 +4576,11 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 18.23818959457052,
+          "apyPct": 17.767959150538474,
           "reasonCode": null,
           "explanation": "Carry APY from lane-level oracle price delta and borrow rate — no operator position required.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "Fluid recursive carry (sUSDai / USDT0)",
             "method": "lane_level_carry_artifact",
@@ -4591,8 +4591,8 @@
             "carryStatus": "OBSERVED_WINDOW",
             "collateralInputSource": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
             "borrowInputSource": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).exchangePricesAndRates.borrowRateVault",
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -4607,7 +4607,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
           "explanation": "This lane exposes market-observed APY only. Product-realized APY is not an active runtime rail for this lane type.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4639,15 +4639,15 @@
     },
     "plasma_fluid_weeth_recursive_carry": {
       "tvl": {
-        "tvlUsd": 5.064033,
-        "totalAssets": "2410006137837025",
+        "tvlUsd": 5.064013,
+        "totalAssets": "2409996479911192",
         "assetAmount": null,
         "decimals": 18,
         "assetSymbol": "WETH",
         "priceUsd": 2101.25327244,
         "priceSource": "chainlink:WETH/USD",
         "reasonCode": null,
-        "generatedAt": "2026-03-31T20:34:55.935Z"
+        "generatedAt": "2026-03-31T21:00:47.448Z"
       },
       "metrics": {
         "executionLoss": {
@@ -4744,7 +4744,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.0215,
+          "apy": 0.021,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4768,7 +4768,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 2.15,
+        "underlyingDirectNetApy": 2.1,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -4780,13 +4780,13 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 2.15,
+      "grossApyPct": 2.1,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 2.15,
+        "headlineYieldPct": 2.1,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -4795,11 +4795,11 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 2.15,
+          "apyPct": 2.1,
           "reasonCode": null,
           "explanation": "Carry APY from lane-level computeCurrentSpread() and manifest leverage — no operator position required.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "Fluid recursive carry (weETH / WETH)",
             "method": "lane_level_tactical_carry_artifact",
@@ -4808,16 +4808,16 @@
             "observationRole": "LANE_OBJECTIVE",
             "primaryPublicApySource": "LANE_OBJECTIVE_SPREAD_LEVERAGE",
             "spreadSnapshot": {
-              "collateralSupplyAPR_bps": 261,
+              "collateralSupplyAPR_bps": 260,
               "borrowAPR_bps": 218,
-              "spreadBps": 43,
+              "spreadBps": 42,
               "spreadHealthy": true,
               "minSpreadBps": 30
             },
             "leverageBps": 50000,
             "leverageSource": "manifest.targetDebtRatioBps=8000 — lane-objective, no operator position",
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -4832,7 +4832,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
           "explanation": "This lane exposes market-observed APY only. Product-realized APY is not an active runtime rail for this lane type.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -4864,15 +4864,15 @@
     },
     "plasma_fluid_susde_recursive_carry": {
       "tvl": {
-        "tvlUsd": null,
-        "totalAssets": null,
+        "tvlUsd": 15,
+        "totalAssets": 15,
         "assetAmount": null,
         "decimals": null,
         "assetSymbol": "USDT0",
-        "priceUsd": null,
-        "priceSource": null,
-        "reasonCode": "AUM_SNAPSHOT_MISSING",
-        "generatedAt": null
+        "priceUsd": 1,
+        "priceSource": "PEG_ASSUMPTION_STABLE",
+        "reasonCode": null,
+        "generatedAt": "2026-03-31T21:00:32.260Z"
       },
       "metrics": {
         "executionLoss": {
@@ -4969,7 +4969,7 @@
       },
       "apy": {
         "gross": {
-          "apy": 0.080882472925,
+          "apy": 0.077635788176,
           "apr": null,
           "source": "market_observed_onchain"
         },
@@ -4993,7 +4993,7 @@
         }
       },
       "baselines": {
-        "underlyingDirectNetApy": 8.088247292500688,
+        "underlyingDirectNetApy": 7.763578817640836,
         "citkaEdgeApy": null,
         "edgeComputed": false,
         "formula": "citkaEdgeApy = productRealizedApyPct - marketObservedApyPct"
@@ -5005,13 +5005,13 @@
       ],
       "status": "MEASURED",
       "reasonCode": null,
-      "grossApyPct": 8.088247292500688,
+      "grossApyPct": 7.763578817640836,
       "netApyPct": null,
       "evidenceType": "MARKET_OBSERVED",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
       "headline": {
         "mode": "MEASURED",
-        "headlineYieldPct": 8.088247292500688,
+        "headlineYieldPct": 7.763578817640836,
         "label": "Market APY (Observed)",
         "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json"
       },
@@ -5020,11 +5020,11 @@
         "marketObserved": {
           "label": "Market APY (Observed)",
           "status": "ACTIVE",
-          "apyPct": 8.088247292500688,
+          "apyPct": 7.763578817640836,
           "reasonCode": null,
           "explanation": "sUSDe carry APY from lane-level oracle price delta and borrow rate — no operator position required.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": {
             "venue": "Fluid recursive carry (sUSDe / USDT0)",
             "method": "lane_level_carry_artifact",
@@ -5035,8 +5035,8 @@
             "carryStatus": "OBSERVED_WINDOW",
             "collateralInputSource": "fluid.positionResolver.getVaultEntireData(vaultSusdeUsdt0).configs.oraclePriceOperate",
             "borrowInputSource": "fluid.positionResolver.getVaultEntireData(vaultSusdeUsdt0).exchangePricesAndRates.borrowRateVault",
-            "blockNumber": 18057416,
-            "blockTimestamp": 1774989279
+            "blockNumber": 18058967,
+            "blockTimestamp": 1774990830
           },
           "guard": null
         },
@@ -5051,7 +5051,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
           "explanation": "This lane exposes market-observed APY only. Product-realized APY is not an active runtime rail for this lane type.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -5083,15 +5083,15 @@
     },
     "plasma_fluid_susde_carry_barbell": {
       "tvl": {
-        "tvlUsd": null,
-        "totalAssets": null,
+        "tvlUsd": 15.000252,
+        "totalAssets": 15.000252,
         "assetAmount": null,
         "decimals": null,
         "assetSymbol": "USDT0",
-        "priceUsd": null,
-        "priceSource": null,
-        "reasonCode": "AUM_SNAPSHOT_MISSING",
-        "generatedAt": null
+        "priceUsd": 1,
+        "priceSource": "PEG_ASSUMPTION_STABLE",
+        "reasonCode": null,
+        "generatedAt": "2026-03-31T21:00:32.260Z"
       },
       "metrics": {
         "executionLoss": {
@@ -5243,7 +5243,7 @@
           "reasonCode": "BARBELL_OBSERVATION_PENDING",
           "explanation": "Barbell observer could not read required onchain surfaces. Output remains fail-closed.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": null,
           "guard": null
         },
@@ -5258,7 +5258,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
           "explanation": "This lane exposes market-observed APY only. Product-realized APY is not an active runtime rail for this lane type.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,
@@ -5290,15 +5290,15 @@
     },
     "plasma_dual_carry_engine": {
       "tvl": {
-        "tvlUsd": null,
-        "totalAssets": null,
+        "tvlUsd": 15,
+        "totalAssets": 15,
         "assetAmount": null,
         "decimals": null,
         "assetSymbol": "USDT0",
-        "priceUsd": null,
-        "priceSource": null,
-        "reasonCode": "AUM_SNAPSHOT_MISSING",
-        "generatedAt": null
+        "priceUsd": 1,
+        "priceSource": "PEG_ASSUMPTION_STABLE",
+        "reasonCode": null,
+        "generatedAt": "2026-03-31T21:00:32.260Z"
       },
       "metrics": {
         "executionLoss": {
@@ -5450,7 +5450,7 @@
           "reasonCode": "DUAL_CARRY_OBSERVATION_PENDING",
           "explanation": "Dual carry engine observation artifact not yet available. Lane is in pre-observation state.",
           "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:41.634Z",
+          "updatedAt": "2026-03-31T21:00:32.260Z",
           "evidence": null,
           "guard": null
         },
@@ -5465,7 +5465,7 @@
           "reasonCode": "PRODUCT_REALIZED_NOT_APPLICABLE_OBSERVED_LANE",
           "explanation": "This lane exposes market-observed APY only. Product-realized APY is not an active runtime rail for this lane type.",
           "evidenceRef": "ops/runtime/product-yield-observations.latest.json",
-          "updatedAt": "2026-03-31T20:34:53.776Z",
+          "updatedAt": "2026-03-31T21:00:44.401Z",
           "settledEpochCount": 0,
           "settlesCount": 0,
           "latestSettleTx": null,

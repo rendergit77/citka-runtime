@@ -1,8 +1,8 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-03-31T20:37:29.382Z",
-  "observedAt": "2026-03-31T20:37:29.382Z",
-  "expiresAt": "2026-04-01T00:37:29.382Z",
+  "generatedAt": "2026-03-31T21:03:19.976Z",
+  "observedAt": "2026-03-31T21:03:19.976Z",
+  "expiresAt": "2026-04-01T01:03:19.976Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -23,8 +23,8 @@
     "vaultsTotal": 12,
     "computableVaults": 11,
     "railModeCounts": {
-      "settlementActive": 28,
-      "disclosureOnly": 3,
+      "settlementActive": 29,
+      "disclosureOnly": 2,
       "notMeasured": 17
     }
   },
@@ -81,7 +81,7 @@
       "aumUsd": 1.5,
       "volumeUsd": 1.5,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.027142080865,
+      "grossApyFraction": 0.027141837216,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -101,7 +101,7 @@
     "plasma_stable_allocator_v2": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 1.100561,
+      "aumUsd": 1.100562,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": 0.0281,
@@ -150,7 +150,7 @@
       "aumUsd": 5.58378,
       "volumeUsd": 5.58378,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.03916987381,
+      "grossApyFraction": 0.039170826331,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -193,7 +193,7 @@
     "plasma_pt_syzusd": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 6.428181,
+      "aumUsd": 6.428184,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": 0.074604279378,
@@ -216,10 +216,10 @@
     "plasma_fluid_susdai_recursive_carry": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 12.201525,
+      "aumUsd": 12.201448,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.182381895946,
+      "grossApyFraction": 0.177679591505,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -239,10 +239,10 @@
     "plasma_fluid_weeth_recursive_carry": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 5.064033,
+      "aumUsd": 5.064013,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.0215,
+      "grossApyFraction": 0.021,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -262,15 +262,15 @@
     "plasma_fluid_susde_recursive_carry": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": null,
+      "aumUsd": 15,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.080882472925,
+      "grossApyFraction": 0.077635788176,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
         "exec": "SETTLEMENT_ACTIVE",
-        "perf": "DISCLOSE_ONLY",
+        "perf": "SETTLEMENT_ACTIVE",
         "exit": "SETTLEMENT_ACTIVE"
       },
       "feeScheduleBps": {
@@ -279,22 +279,13 @@
         "perf": 1200,
         "exit": 10
       },
-      "howToFix": [
-        "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution."
-      ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution.",
-          "howToObtain": "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution."
-        }
-      ]
+      "howToFix": [],
+      "requiredInputs": []
     },
     "plasma_fluid_susde_carry_barbell": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": null,
+      "aumUsd": 15.000252,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": null,
@@ -311,22 +302,13 @@
         "perf": 1000,
         "exit": 10
       },
-      "howToFix": [
-        "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution."
-      ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution.",
-          "howToObtain": "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution."
-        }
-      ]
+      "howToFix": [],
+      "requiredInputs": []
     },
     "plasma_dual_carry_engine": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": null,
+      "aumUsd": 15,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": null,
@@ -343,17 +325,8 @@
         "perf": 0,
         "exit": 0
       },
-      "howToFix": [
-        "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution."
-      ],
-      "requiredInputs": [
-        {
-          "field": "aumUsd",
-          "reason": "NO_ONCHAIN_TVL_SOURCE",
-          "upgradeHint": "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution.",
-          "howToObtain": "Integrate onchain totalAssets()/strategy TVL or lane-level AUM attribution."
-        }
-      ]
+      "howToFix": [],
+      "requiredInputs": []
     }
   }
 }
