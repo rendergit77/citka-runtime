@@ -1,10 +1,10 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-03-30T14:58:17.396Z",
+  "generatedAt": "2026-03-31T20:18:43.883Z",
   "rpcUrl": "https://rpc.plasma.to",
   "summary": {
-    "totalLanes": 10,
-    "depositAllowed": 9,
+    "totalLanes": 12,
+    "depositAllowed": 11,
     "depositBlocked": 1,
     "tvlUsdBackfilled": 8,
     "errors": 1
@@ -128,10 +128,10 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "onchainAssetSymbol": "USDT0"
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -193,10 +193,12 @@
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
         "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "assetDecimals": 6,
+        "vaultTotalAssetsRaw": "1100561",
+        "tvlAssetAmount": 1.100561,
+        "tvlSource": "vault_total_assets"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -215,7 +217,7 @@
         "symbol": "USDT0",
         "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
         "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": "USDT0",
+        "onchainSymbol": null,
         "assetMismatch": false
       },
       "methods": {
@@ -256,10 +258,10 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0",
         "assetDecimals": 6
       },
       "readErrors": [
+        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -279,7 +281,7 @@
         "symbol": "sUSDe",
         "address": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
         "onchainAddress": "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2",
-        "onchainSymbol": "sUSDe",
+        "onchainSymbol": null,
         "assetMismatch": false
       },
       "methods": {
@@ -319,11 +321,11 @@
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2",
-        "onchainAssetSymbol": "sUSDe",
-        "assetDecimals": 18
+        "onchainAssetAddress": "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
       },
       "readErrors": [
+        "missing revert data",
+        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -333,17 +335,17 @@
       "laneId": "plasma_pt_syrup",
       "liveReadStatus": "PARTIAL",
       "epoch": {
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:28.000Z",
-        "epochEnd": "2026-03-21T21:57:28.000Z",
-        "epochDurationSeconds": 86400,
-        "expired": true
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
       },
       "requiredAsset": {
         "symbol": "syrupUSDT",
         "address": "0xc4374775489cb9c56003bf2c9b12495fc64f0771",
         "onchainAddress": "0xc4374775489cb9c56003bf2c9b12495fc64f0771",
-        "onchainSymbol": null,
+        "onchainSymbol": "syrupUSDT",
         "assetMismatch": false
       },
       "methods": {
@@ -384,11 +386,8 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xC4374775489CB9C56003BF2C9b12495fC64F0771",
-        "assetDecimals": 6,
-        "epochId": 1,
-        "epochStart": "2026-03-20T21:57:28.000Z",
-        "epochEnd": "2026-03-21T21:57:28.000Z",
-        "epochDurationSeconds": 86400
+        "onchainAssetSymbol": "syrupUSDT",
+        "assetDecimals": 6
       },
       "readErrors": [
         "missing revert data",
@@ -410,7 +409,7 @@
         "symbol": "yzUSD",
         "address": "0x6695c0f8706c5ace3bdf8995073179cca47926dc",
         "onchainAddress": "0x6695c0f8706c5ace3bdf8995073179cca47926dc",
-        "onchainSymbol": null,
+        "onchainSymbol": "yzUSD",
         "assetMismatch": false
       },
       "methods": {
@@ -450,12 +449,14 @@
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0x6695c0f8706C5ACe3Bdf8995073179cCA47926dc"
+        "onchainAssetAddress": "0x6695c0f8706C5ACe3Bdf8995073179cCA47926dc",
+        "onchainAssetSymbol": "yzUSD",
+        "assetDecimals": 18,
+        "vaultTotalAssetsRaw": "6428178682637216818",
+        "tvlAssetAmount": 6.428178682637217,
+        "tvlSource": "vault_total_assets"
       },
       "readErrors": [
-        "missing revert data",
-        "missing revert data",
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -474,7 +475,7 @@
         "symbol": "USDT0",
         "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
         "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-        "onchainSymbol": "USDT0",
+        "onchainSymbol": null,
         "assetMismatch": false
       },
       "methods": {
@@ -514,11 +515,11 @@
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0",
-        "assetDecimals": 6
+        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb"
       },
       "readErrors": [
+        "missing revert data",
+        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -538,7 +539,7 @@
         "symbol": "WETH",
         "address": "0x9895d81bb462a195b4922ed7de0e3acd007c32cb",
         "onchainAddress": "0x9895d81bb462a195b4922ed7de0e3acd007c32cb",
-        "onchainSymbol": "WETH",
+        "onchainSymbol": null,
         "assetMismatch": false
       },
       "methods": {
@@ -578,11 +579,11 @@
       },
       "liveState": {
         "liveReadStatus": "PARTIAL",
-        "onchainAssetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
-        "onchainAssetSymbol": "WETH",
-        "assetDecimals": 18
+        "onchainAssetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB"
       },
       "readErrors": [
+        "missing revert data",
+        "missing revert data",
         "missing revert data",
         "missing revert data",
         "missing revert data"
@@ -644,7 +645,137 @@
       "liveState": {
         "liveReadStatus": "PARTIAL",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "onchainAssetSymbol": "USDT0"
+        "onchainAssetSymbol": "USDT0",
+        "assetDecimals": 6
+      },
+      "readErrors": [
+        "missing revert data",
+        "missing revert data",
+        "missing revert data"
+      ]
+    },
+    "plasma_fluid_susde_carry_barbell": {
+      "laneId": "plasma_fluid_susde_carry_barbell",
+      "liveReadStatus": "PARTIAL",
+      "epoch": {
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
+      },
+      "requiredAsset": {
+        "symbol": "USDT0",
+        "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+        "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+        "onchainSymbol": "USDT0",
+        "assetMismatch": false
+      },
+      "methods": {
+        "deposit": "deposit",
+        "withdraw": "redeem",
+        "claim": "claim"
+      },
+      "deposit": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "ctaLabel": "Approve USDT0",
+        "nextWindowAt": null
+      },
+      "withdraw": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
+        "tooltip": "Redeems are instant subject to live liquidity guards."
+      },
+      "claim": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
+        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
+      },
+      "tvl": {
+        "totalAssets": null,
+        "tvlUsd": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "assetSymbol": "USDT0",
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
+      },
+      "liveState": {
+        "liveReadStatus": "PARTIAL",
+        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "onchainAssetSymbol": "USDT0",
+        "assetDecimals": 6
+      },
+      "readErrors": [
+        "missing revert data",
+        "missing revert data",
+        "missing revert data"
+      ]
+    },
+    "plasma_dual_carry_engine": {
+      "laneId": "plasma_dual_carry_engine",
+      "liveReadStatus": "PARTIAL",
+      "epoch": {
+        "epochId": null,
+        "epochStart": null,
+        "epochEnd": null,
+        "epochDurationSeconds": null,
+        "expired": false
+      },
+      "requiredAsset": {
+        "symbol": "USDT0",
+        "address": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+        "onchainAddress": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+        "onchainSymbol": null,
+        "assetMismatch": false
+      },
+      "methods": {
+        "deposit": "deposit",
+        "withdraw": "redeem",
+        "claim": "claim"
+      },
+      "deposit": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "tooltip": "Deposits are instant. Epochs only track rewards, fees, and points.",
+        "ctaLabel": "Approve USDT0",
+        "nextWindowAt": null
+      },
+      "withdraw": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Withdrawals are instant when live liquidity is available. If liquidity is insufficient, the transaction reverts rather than queueing.",
+        "tooltip": "Redeems are instant subject to live liquidity guards."
+      },
+      "claim": {
+        "status": "OPEN",
+        "allowed": true,
+        "reasonCode": null,
+        "userMessage": "Legacy claim carryover appears only when older epoch balances remain claimable.",
+        "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
+      },
+      "tvl": {
+        "totalAssets": null,
+        "tvlUsd": null,
+        "priceUsd": null,
+        "priceSource": null,
+        "assetSymbol": "USDT0",
+        "reasonCode": "TVL_DATA_UNAVAILABLE"
+      },
+      "liveState": {
+        "liveReadStatus": "PARTIAL",
+        "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
+        "assetDecimals": 6
       },
       "readErrors": [
         "missing revert data",
