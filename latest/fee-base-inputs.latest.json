@@ -1,8 +1,8 @@
 {
   "version": "fee_base_inputs.v1",
-  "generatedAt": "2026-04-01T17:46:39.397Z",
-  "observedAt": "2026-04-01T17:46:39.397Z",
-  "expiresAt": "2026-04-01T21:46:39.397Z",
+  "generatedAt": "2026-04-01T18:10:55.204Z",
+  "observedAt": "2026-04-01T18:10:55.204Z",
+  "expiresAt": "2026-04-01T22:10:55.204Z",
   "freshnessStatus": "FRESH",
   "status": "ACTIVE",
   "reasonCode": null,
@@ -23,8 +23,8 @@
     "vaultsTotal": 12,
     "computableVaults": 12,
     "railModeCounts": {
-      "settlementActive": 28,
-      "disclosureOnly": 3,
+      "settlementActive": 29,
+      "disclosureOnly": 2,
       "notMeasured": 17
     }
   },
@@ -58,7 +58,7 @@
       "aumUsd": 1.5,
       "volumeUsd": 1.5,
       "withdrawUsd": 0,
-      "grossApyFraction": 0.027110516202,
+      "grossApyFraction": 0.027110738888,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
@@ -170,7 +170,7 @@
     "plasma_pt_syzusd": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 6.42846,
+      "aumUsd": 6.428463,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": 0.073153425682,
@@ -193,7 +193,7 @@
     "plasma_fluid_susdai_recursive_carry": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 12.197495,
+      "aumUsd": 12.197419,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": null,
@@ -216,7 +216,7 @@
     "plasma_fluid_weeth_recursive_carry": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 5.161933,
+      "aumUsd": 5.135931,
       "volumeUsd": 0,
       "withdrawUsd": 0,
       "grossApyFraction": 0.021,
@@ -262,15 +262,15 @@
     "plasma_fluid_susde_carry_barbell": {
       "status": "ACTIVE",
       "reasonCode": null,
-      "aumUsd": 15.001208,
+      "aumUsd": 15.001225,
       "volumeUsd": 0,
       "withdrawUsd": 0,
-      "grossApyFraction": null,
+      "grossApyFraction": 0.0271,
       "periodSeconds": 604800,
       "railModes": {
         "mgmt": "NOT_MEASURED",
         "exec": "SETTLEMENT_ACTIVE",
-        "perf": "DISCLOSE_ONLY",
+        "perf": "SETTLEMENT_ACTIVE",
         "exit": "SETTLEMENT_ACTIVE"
       },
       "feeScheduleBps": {

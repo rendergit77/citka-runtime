@@ -1,7 +1,7 @@
 {
   "version": "action_capabilities.v1",
-  "generatedAt": "2026-04-01T17:43:01.693Z",
-  "rpcUrl": "https://rpc.plasma.to",
+  "generatedAt": "2026-04-01T18:05:11.507Z",
+  "rpcUrl": "https://plasma-mainnet.core.chainstack.com/d02e5a926186742f6383a7ad213f0fe9",
   "summary": {
     "totalLanes": 12,
     "depositAllowed": 12,
@@ -478,12 +478,11 @@
         "assetDecimals": 18,
         "onchainAssetSymbol": "yzUSD",
         "onchainAssetAddress": "0x6695c0f8706C5ACe3Bdf8995073179cCA47926dc",
-        "strategyTvlRaw": "1002824285204676587",
-        "tvlAssetAmount": 1.0028242852046765,
+        "strategyTvlRaw": "1002827273410471104",
+        "tvlAssetAmount": 1.002827273410471,
         "tvlSource": "strategy_total_managed_assets"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -545,12 +544,11 @@
         "assetDecimals": 6,
         "onchainAssetSymbol": "USDT0",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "strategyTvlRaw": "12197495",
-        "tvlAssetAmount": 12.197495,
+        "strategyTvlRaw": "12197419",
+        "tvlAssetAmount": 12.197419,
         "tvlSource": "strategy_total_managed_assets"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -612,12 +610,11 @@
         "assetDecimals": 18,
         "onchainAssetSymbol": "WETH",
         "onchainAssetAddress": "0x9895D81bB462A195b4922ED7De0e3ACD007c32CB",
-        "strategyTvlRaw": "2410240408724748",
-        "tvlAssetAmount": 0.002410240408724748,
+        "strategyTvlRaw": "2410232114488644",
+        "tvlAssetAmount": 0.002410232114488644,
         "tvlSource": "strategy_total_managed_assets"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -688,7 +685,6 @@
       },
       "readErrors": [
         "missing revert data",
-        "missing revert data",
         "missing revert data"
       ]
     },
@@ -738,8 +734,8 @@
         "tooltip": "Historical epoch claims are only relevant for carryover balances from legacy flows."
       },
       "tvl": {
-        "totalAssets": 15.001208,
-        "tvlUsd": 15.001208,
+        "totalAssets": 15.001225,
+        "tvlUsd": 15.001225,
         "assetSymbol": "USDT0",
         "reasonCode": null,
         "source": "strategy_total_managed_assets",
@@ -751,12 +747,11 @@
         "assetDecimals": 6,
         "onchainAssetSymbol": "USDT0",
         "onchainAssetAddress": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
-        "strategyTvlRaw": "15001208",
-        "tvlAssetAmount": 15.001208,
+        "strategyTvlRaw": "15001225",
+        "tvlAssetAmount": 15.001225,
         "tvlSource": "strategy_total_managed_assets"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
@@ -826,7 +821,6 @@
         "vaultTotalAssetsRaw": "15000000"
       },
       "readErrors": [
-        "missing revert data",
         "missing revert data",
         "missing revert data"
       ]
