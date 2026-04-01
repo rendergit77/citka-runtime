@@ -1,14 +1,14 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-04-01T20:36:02.458Z",
-  "ageSeconds": 206,
+  "generatedAt": "2026-04-01T21:55:42.098Z",
+  "ageSeconds": 226,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 18143897,
+  "blockNumber": 18148677,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
-  "observedApyNumericCount": 10,
+  "observedApyNumericCount": 11,
   "observedApyZeroCount": 0,
   "missingCount": 0,
   "rpcErrorCount": 0,
@@ -21,13 +21,13 @@
       "reasonCode": null
     },
     "plasma_aave_usdt0": {
-      "apyPct": 2.711393722441366,
+      "apyPct": 2.7116500622521653,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
     },
     "plasma_stable_allocator_v2": {
-      "apyPct": 2.78,
+      "apyPct": 2.77,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_stable_allocator_v2",
       "reasonCode": null
@@ -57,28 +57,28 @@
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": 2.782164255696081,
+      "apyPct": 4.96350282132374,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 2.05,
+      "apyPct": 2,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_susde_recursive_carry": {
-      "apyPct": -3.08971253715192,
+      "apyPct": -0.852169166480758,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susde_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_susde_carry_barbell": {
-      "apyPct": null,
-      "status": "MISSING",
+      "apyPct": 2.71,
+      "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susde_carry_barbell",
-      "reasonCode": "BARBELL_OBSERVATION_PENDING"
+      "reasonCode": null
     },
     "plasma_dual_carry_engine": {
       "apyPct": null,
