@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-04-01T18:27:08.142Z",
+  "generatedAt": "2026-04-01T18:51:36.948Z",
   "laneId": "plasma_fluid_susdai_recursive_carry",
   "observationModel": "LANE_OBJECTIVE_ORACLE_DELTA",
   "deltaSource": "PERSISTED_CHECKPOINT",
   "status": "OBSERVATION_RUNNING",
-  "currentBlockNumber": 18136164,
-  "currentTimestamp": 1775068027,
-  "currentIso": "2026-04-01T18:27:07.000Z",
+  "currentBlockNumber": 18137633,
+  "currentTimestamp": 1775069496,
+  "currentIso": "2026-04-01T18:51:36.000Z",
   "historicBlockNumber": 18056444,
-  "elapsedSeconds": 79720,
-  "elapsedHours": 22.1444,
+  "elapsedSeconds": 81189,
+  "elapsedHours": 22.5525,
   "checkpointInfo": {
     "checkpointFile": "ops/runtime/checkpoints/fluid-susdai-carry.checkpoint.json",
     "historicCheckpointObservedAt": "2026-03-31T20:18:27.338Z",
@@ -25,10 +25,10 @@
     "resolverType": "fluid.positionResolver (bps×100 rate format)"
   },
   "laneState": {
-    "totalAssetsRaw": "12197344",
+    "totalAssetsRaw": "12197261",
     "totalSupplyRaw": "13000000000000000000",
     "laneHasTvl": true,
-    "totalAssetsDisplay": 12.197344
+    "totalAssetsDisplay": 12.197261
   },
   "collateralSideInput": {
     "source": "fluid.positionResolver.getVaultEntireData(vaultSusdaiUsdt0).configs.oraclePriceOperate",
@@ -36,9 +36,9 @@
     "deltaSource": "PERSISTED_CHECKPOINT",
     "oraclePriceNowRaw": "1076670477814338",
     "oraclePriceHistRaw": "1076670477814338",
-    "blockNow": 18136164,
+    "blockNow": 18137633,
     "blockHist": 18056444,
-    "elapsedSeconds": 79720,
+    "elapsedSeconds": 81189,
     "observedAnnualizedAprPct": 0,
     "status": "OBSERVED_WINDOW"
   },
