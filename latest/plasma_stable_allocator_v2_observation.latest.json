@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-02T01:19:15.359Z",
+  "generatedAt": "2026-04-02T04:21:06.553Z",
   "laneId": "plasma_stable_allocator_v2",
   "manifestRef": "config/v2-manifests/plasma_stable_allocator_v2.json",
   "addressSource": "config/addresses.plasma.json",
-  "blockNumber": 18160891,
-  "blockTimestamp": 1775092754,
-  "blockIso": "2026-04-02T01:19:14.000Z",
+  "blockNumber": 18171802,
+  "blockTimestamp": 1775103665,
+  "blockIso": "2026-04-02T04:21:05.000Z",
   "endpoints": {
     "asset": "0xB8CE59FC3717ada4C02eaDF9682A9e934F625ebb",
     "aaveAddressesProvider": "0x061D8e131F26512348ee5FA42e2DF1bA9d6505E9",
@@ -14,10 +14,10 @@
     "eulerVenue": "0x0a660B3Cbd7DF118501E7Bb0f2D6eC5E5e583Bf8"
   },
   "vaultState": {
-    "totalAssetsRaw": "1100613",
+    "totalAssetsRaw": "1100619",
     "totalSupplyRaw": "1100000010000080999",
-    "totalManagedAssetsRaw": "1100613",
-    "adapterAvailableAssetsRaw": "1100613"
+    "totalManagedAssetsRaw": "1100619",
+    "adapterAvailableAssetsRaw": "1100619"
   },
   "targetState": {
     "targetAaveBps": 10000,
@@ -68,19 +68,19 @@
   },
   "legs": {
     "aave": {
-      "managedAssetsRaw": "550498",
-      "availableAssetsRaw": "550498",
-      "supplyAprBps": 272,
+      "managedAssetsRaw": "550503",
+      "availableAssetsRaw": "550503",
+      "supplyAprBps": 270,
       "reserveHealthy": true,
       "weightBps": 5001
     },
     "euler": {
-      "managedAssetsRaw": "550115",
-      "availableAssetsRaw": "550115",
+      "managedAssetsRaw": "550116",
+      "availableAssetsRaw": "550116",
       "cashRatioBps": 8765,
-      "sharePriceRaw": "1028611041188113621",
-      "observedAprBps": 284,
-      "premiumBps": 12,
+      "sharePriceRaw": "1028611896961883229",
+      "observedAprBps": 283,
+      "premiumBps": 13,
       "previewHealthy": true,
       "parityHealthy": true,
       "exitHealthy": true,
@@ -89,8 +89,8 @@
     }
   },
   "weightedApySemantics": {
-    "grossObservedCarryAprBps": 277,
-    "netObservedCarryAprBpsAfterPerfFeeOnly": 249,
+    "grossObservedCarryAprBps": 276,
+    "netObservedCarryAprBpsAfterPerfFeeOnly": 248,
     "performanceFeeBps": 1000,
     "exitFeeBpsExcludedFromHeadlineApr": 10,
     "note": "Headline APY remains recurring-only. Exit fee is separate one-time withdrawal cost."
