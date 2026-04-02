@@ -1,10 +1,10 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-04-02T04:21:11.920Z",
-  "ageSeconds": 212,
+  "generatedAt": "2026-04-02T07:01:45.045Z",
+  "ageSeconds": 310,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 18171806,
+  "blockNumber": 18181439,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
@@ -15,25 +15,25 @@
   "status": "FRESH",
   "lanes": {
     "plasma_core_boost_usdt0": {
-      "apyPct": 2.7,
+      "apyPct": 2.72,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_core_boost_usdt0",
       "reasonCode": null
     },
     "plasma_aave_usdt0": {
-      "apyPct": 2.7056115316394678,
+      "apyPct": 2.7205683650137136,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
     },
     "plasma_stable_allocator_v2": {
-      "apyPct": 2.76,
+      "apyPct": 2.77,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_stable_allocator_v2",
       "reasonCode": null
     },
     "plasma_pt_usde": {
-      "apyPct": 3.9577861773063994,
+      "apyPct": 3.958003682154887,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_pt_usde",
       "reasonCode": null
@@ -57,25 +57,25 @@
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": 5.385240141194519,
+      "apyPct": 5.219965840753634,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 1.85,
+      "apyPct": 1.8,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_susde_recursive_carry": {
-      "apyPct": -0.5732901892212521,
+      "apyPct": -0.6896069865399905,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susde_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_susde_carry_barbell": {
-      "apyPct": 2.7,
+      "apyPct": 2.72,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susde_carry_barbell",
       "reasonCode": null
