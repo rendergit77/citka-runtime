@@ -1,14 +1,14 @@
 {
   "version": "observed_apy_freshness.v1",
-  "generatedAt": "2026-04-02T16:46:19.288Z",
-  "ageSeconds": 211,
+  "generatedAt": "2026-04-02T18:42:53.532Z",
+  "ageSeconds": 394,
   "maxAgeSeconds": 14400,
   "chainId": 9745,
-  "blockNumber": 18216514,
+  "blockNumber": 18223508,
   "rpcUsed": "https://rpc.plasma.to",
   "rpcAttempts": 1,
   "rpcEndpointsAvailable": 1,
-  "observedApyNumericCount": 10,
+  "observedApyNumericCount": 11,
   "observedApyZeroCount": 0,
   "missingCount": 0,
   "rpcErrorCount": 0,
@@ -21,7 +21,7 @@
       "reasonCode": null
     },
     "plasma_aave_usdt0": {
-      "apyPct": 2.723075662383553,
+      "apyPct": 2.7248188109350555,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_aave_usdt0",
       "reasonCode": null
@@ -57,28 +57,28 @@
       "reasonCode": null
     },
     "plasma_fluid_susdai_recursive_carry": {
-      "apyPct": 4.455487410676016,
+      "apyPct": 5.052511235706596,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susdai_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_weeth_recursive_carry": {
-      "apyPct": 1.55,
+      "apyPct": 2.1,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_weeth_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_susde_recursive_carry": {
-      "apyPct": -1.441072700860845,
+      "apyPct": -0.8588487574461556,
       "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susde_recursive_carry",
       "reasonCode": null
     },
     "plasma_fluid_susde_carry_barbell": {
-      "apyPct": null,
-      "status": "MISSING",
+      "apyPct": 2.72,
+      "status": "OK",
       "evidenceRef": "ops/runtime/onchain-yield-observations.latest.json#vaults.plasma_fluid_susde_carry_barbell",
-      "reasonCode": "BARBELL_OBSERVATION_PENDING"
+      "reasonCode": null
     },
     "plasma_dual_carry_engine": {
       "apyPct": null,
